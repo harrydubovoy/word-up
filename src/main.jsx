@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { initDB } from "react-indexed-db-hook";
-import { ThemeProvider } from "@material-tailwind/react";
+import { initDB } from 'react-indexed-db-hook';
+import { ThemeProvider } from '@material-tailwind/react';
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
 
 import App from './App';
 
@@ -13,42 +13,33 @@ import AddScreen from './screen/AddScreen';
 import ListScreen from './screen/ListScreen';
 import TestScreen from './screen/TestScreen';
 import TrashBinScreen from './screen/TrashBinScreen';
-import SettingsScreen from './screen/SettingsScreen';
 
-import "./translations/config";
-import dbConfig from "./dbConfig";
+import './translations/config';
+import dbConfig from './dbConfig';
 
 initDB(dbConfig);
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <TestScreen />,
       },
       {
-        path: "/add",
+        path: '/add',
         element: <AddScreen />,
       },
       {
-        path: "/list",
+        path: '/list',
         element: <ListScreen />,
       },
       {
-        path: "/trash",
+        path: '/trash',
         element: <TrashBinScreen />,
       },
-      {
-        path: "/settings",
-        element: <SettingsScreen />,
-      },
-      // {
-      //   path: "/monitoring",
-      //   element: <MonitoringScreen />,
-      // }
     ]
   },
 ]);

@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { useIndexedDB } from "react-indexed-db-hook";
+import { useRef } from 'react';
+import { useIndexedDB } from 'react-indexed-db-hook';
 
 import { WORD_PAIRS_STORE_NAME, DICTIONARY_STORE_NAME, TRASH_BIN_STORE_NAME } from '../dbConfig';
 

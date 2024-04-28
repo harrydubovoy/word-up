@@ -1,4 +1,4 @@
-import { Input as InputCore } from "@material-tailwind/react";
+import { Input as InputCore } from '@material-tailwind/react';
 
 const Input = (props) => <InputCore className="bg-white" {...props} />
 

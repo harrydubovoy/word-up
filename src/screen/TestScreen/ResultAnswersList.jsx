@@ -1,10 +1,10 @@
-import React from "react";
-import { map, prop, addIndex, nth, equals } from "ramda";
+import React from 'react';
+import { map, prop, addIndex, nth, equals } from 'ramda';
 
 import {
   getQuestionWordKeyByReverse,
   getAnswerWordKeyByReverse,
-} from "./utils";
+} from './utils';
 
 const ResultAnswersList = ({ userAnswers, data, isTestRevered }) => (
   <ul className="flex flex-col gap-2">

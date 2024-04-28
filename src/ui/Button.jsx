@@ -1,5 +1,5 @@
-import { forwardRef } from "react";
-import { Button as ButtonCore } from "@material-tailwind/react";
+import { forwardRef } from 'react';
+import { Button as ButtonCore } from '@material-tailwind/react';
 
 const Button = forwardRef(({ children, ...restProps }, ref) => (
   <ButtonCore
@@ -9,5 +9,7 @@ const Button = forwardRef(({ children, ...restProps }, ref) => (
     {children}
   </ButtonCore>
 ));
+
+Button.displayName = 'Button';
 
 export default Button;

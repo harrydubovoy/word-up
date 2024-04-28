@@ -1,4 +1,4 @@
-import { Alert as AlertCore } from "@material-tailwind/react";
+import { Alert as AlertCore } from '@material-tailwind/react';
 
 const Alert = ({ children, ...restProps }) => {
   if (!children) {

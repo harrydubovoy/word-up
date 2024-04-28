@@ -3,7 +3,7 @@ import {
   MenuHandler as MenuHandlerCore,
   MenuList as MenuListCore,
   MenuItem as MenuItemCore,
-} from "@material-tailwind/react";
+} from '@material-tailwind/react';
 
 const Menu = ({ children, ...restProps }) => <MenuCore {...restProps}>{children}</MenuCore>;
 const MenuHandler = ({ children, ...restProps }) => <MenuHandlerCore {...restProps}>{children}</MenuHandlerCore>;

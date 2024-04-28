@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from 'react';
 import { toLower } from 'ramda'
 
 import Button from '../../ui/Button';
@@ -21,8 +21,8 @@ import { useWordPairsDatabase, useDictionaryDatabase} from '../../database';
 import DictionarySvg from '../../icons/DictionarySvg';
 import ChecklistSvg from '../../icons/ChecklistSvg';
 
-import ScreenContainer from "../../screen-components/ScreenContainer";
-import ScreenHeader from "../../screen-components/ScreenHeader";
+import ScreenContainer from '../../screen-components/ScreenContainer';
+import ScreenHeader from '../../screen-components/ScreenHeader';
 
 import { useAlertContext } from '../../components/Alert';
 

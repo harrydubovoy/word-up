@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import { map, addIndex, length, prop, reverse } from 'ramda';
 
 import IconButton from '../../ui/IconButton';
 import Typography from '../../ui/Typography';
-import Hr from "../../ui/Hr";
+import Hr from '../../ui/Hr';
 
 import EmptyContent from '../../screen-components/EmptyContent';
 import { useAlertContext } from '../../components/Alert';
@@ -23,7 +23,7 @@ import {
   LIST_SCREEN__ADD_TO_TEST_PLAN_NOTIFICATION_SUCCESS,
   LIST_SCREEN__EMPTY_DICTIONARY,
 } from '../../translations/resources/constants';
-import classNames from "classnames";
+import classNames from 'classnames';
 
 const Dictionary = () => {
   const { getAll, removeById } = useDictionaryDatabase();

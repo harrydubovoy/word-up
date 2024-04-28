@@ -1,24 +1,24 @@
-import React, {useEffect, useState} from "react";
-import classNames from "classnames";
-import { addIndex, length, map, prop, reverse } from "ramda";
+import React, {useEffect, useState} from 'react';
+import classNames from 'classnames';
+import { addIndex, length, map, prop, reverse } from 'ramda';
 
-import IconButton from "../../ui/IconButton";
-import Typography from "../../ui/Typography";
-import Hr from "../../ui/Hr";
+import IconButton from '../../ui/IconButton';
+import Typography from '../../ui/Typography';
+import Hr from '../../ui/Hr';
 
-import DoneSvg from "../../icons/DoneSvg";
+import DoneSvg from '../../icons/DoneSvg';
 
-import EmptyContent from "../../screen-components/EmptyContent";
+import EmptyContent from '../../screen-components/EmptyContent';
 import { useAlertContext } from '../../components/Alert';
-import FlagIcon, {FLAG_ICON_TYPE} from "../../components/FlagIcon";
+import FlagIcon, {FLAG_ICON_TYPE} from '../../components/FlagIcon';
 
-import { useTrashBinDatabase, useWordPairsDatabase } from "../../database";
-import { useTranslation } from "../../translations";
+import { useTrashBinDatabase, useWordPairsDatabase } from '../../database';
+import { useTranslation } from '../../translations';
 
 import {
   LIST_SCREEN__EMPTY_TEST_PLAN,
   LIST_SCREEN__REMOVE_WORD_NOTIFICATION_SUCCESS,
-} from "../../translations/resources/constants";
+} from '../../translations/resources/constants';
 
 const TestPlan = () => {
   const { getAll, removeById } = useWordPairsDatabase();

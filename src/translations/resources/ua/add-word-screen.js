@@ -5,16 +5,16 @@ import {
   ADD_WORD_SCREEN__TITLE, ADD_WORD_SCREEN__WORD_ADDED_NOTIFICATION_ERROR,
   ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS,
   ADD_WORD_SCREEN__WORD_ADDED_TO_TEST_PLAN_NOTIFICATION_SUCCESS
-} from "../constants";
+} from '../constants';
 
 const translations = {
-  [ADD_WORD_SCREEN__TITLE]: "Додати слово",
-  [ADD_WORD_SCREEN__DESCRIPTION]: "Додайте нове слово до свого списку тестування",
-  [ADD_WORD_SCREEN__ACTION_ADD_TO_TEST_PLAN]: "До Тесту",
-  [ADD_WORD_SCREEN__ACTION_ADD_TO_LIST]: "До Словнику",
-  [ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS]: "Слово додано до словника",
-  [ADD_WORD_SCREEN__WORD_ADDED_TO_TEST_PLAN_NOTIFICATION_SUCCESS]: "Слово додано до спуску тесту",
-  [ADD_WORD_SCREEN__WORD_ADDED_NOTIFICATION_ERROR]: "Щось пішло не так",
+  [ADD_WORD_SCREEN__TITLE]: 'Додати слово',
+  [ADD_WORD_SCREEN__DESCRIPTION]: 'Додайте нове слово до свого списку тестування',
+  [ADD_WORD_SCREEN__ACTION_ADD_TO_TEST_PLAN]: 'До Тесту',
+  [ADD_WORD_SCREEN__ACTION_ADD_TO_LIST]: 'До Словнику',
+  [ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS]: 'Слово додано до словника',
+  [ADD_WORD_SCREEN__WORD_ADDED_TO_TEST_PLAN_NOTIFICATION_SUCCESS]: 'Слово додано до спуску тесту',
+  [ADD_WORD_SCREEN__WORD_ADDED_NOTIFICATION_ERROR]: 'Щось пішло не так',
 }
 
 export default translations;

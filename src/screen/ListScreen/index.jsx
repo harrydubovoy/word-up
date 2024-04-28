@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { equals } from 'ramda'
 
-import ScreenContainer from "../../screen-components/ScreenContainer";
-import ScrollContainer from "../../screen-components/ScrollContainer";
-import IconButton from "../../ui/IconButton";
-import Typography from "../../ui/Typography";
-import Hr from "../../ui/Hr";
+import ScreenContainer from '../../screen-components/ScreenContainer';
+import ScrollContainer from '../../screen-components/ScrollContainer';
+import IconButton from '../../ui/IconButton';
+import Typography from '../../ui/Typography';
+import Hr from '../../ui/Hr';
 
-import TestPlan from "./TestPlan";
-import Dictionary from "./Dictionary";
+import TestPlan from './TestPlan';
+import Dictionary from './Dictionary';
 
 import DictionarySvg from '../../icons/DictionarySvg';
 import ChecklistSvg from '../../icons/ChecklistSvg';

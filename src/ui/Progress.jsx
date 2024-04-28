@@ -1,4 +1,4 @@
-import { Progress as ProgressCore } from "@material-tailwind/react";
+import { Progress as ProgressCore } from '@material-tailwind/react';
 
 const Progress = (props) => <ProgressCore {...props} />;
 

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import Typography from "../../ui/Typography";
+import Typography from '../../ui/Typography';
 import Hr from '../../ui/Hr';
 
 const ScreenHeader = ({ title, description }) => (

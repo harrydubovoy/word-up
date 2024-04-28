@@ -1,5 +1,4 @@
-import React from "react";
-import classNames from "classnames";
+import classNames from 'classnames';
 
 const Container = ({ children, className }) => (
   <div className={classNames('px-4', className)}>

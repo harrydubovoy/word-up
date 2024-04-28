@@ -1,4 +1,4 @@
-import { Typography as TypographyCore } from "@material-tailwind/react";
+import { Typography as TypographyCore } from '@material-tailwind/react';
 
 export const Typography = ({ children, ...restProps }) => <TypographyCore {...restProps}>{children}</TypographyCore>;
 

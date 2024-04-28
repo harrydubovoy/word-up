@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import {map, addIndex, length, prop, reverse} from 'ramda';
 
 import IconButton from '../../ui/IconButton';
@@ -7,10 +7,10 @@ import Typography from '../../ui/Typography';
 import TrashForeverSvg from '../../icons/TrashForeverSvg';
 import RefreshSvg from '../../icons/RefreshSvg';
 
-import ScreenContainer from "../../screen-components/ScreenContainer";
-import ScrollContainer from "../../screen-components/ScrollContainer";
-import ScreenHeader from "../../screen-components/ScreenHeader";
-import EmptyContent from "../../screen-components/EmptyContent";
+import ScreenContainer from '../../screen-components/ScreenContainer';
+import ScrollContainer from '../../screen-components/ScrollContainer';
+import ScreenHeader from '../../screen-components/ScreenHeader';
+import EmptyContent from '../../screen-components/EmptyContent';
 import { useAlertContext } from '../../components/Alert';
 
 import { useTrashBinDatabase, useDictionaryDatabase } from '../../database';
@@ -22,9 +22,9 @@ import {
   TRASH_BIN_SCREEN__RESTORE_NOTIFICATION_SUCCESS,
   TRASH_BIN_SCREEN__REMOVE_FOREVER_NOTIFICATION_SUCCESS,
 } from '../../translations/resources/constants';
-import classNames from "classnames";
-import FlagIcon, {FLAG_ICON_TYPE} from "../../components/FlagIcon";
-import Hr from "../../ui/Hr";
+import classNames from 'classnames';
+import FlagIcon, {FLAG_ICON_TYPE} from '../../components/FlagIcon';
+import Hr from '../../ui/Hr';
 
 const TrashBinScreen = () => {
   const { getAll, removeById } = useTrashBinDatabase();

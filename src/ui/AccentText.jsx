@@ -1,7 +1,7 @@
-import classNames from "classnames";
+import classNames from 'classnames';
 
 const AccentText = ({ children, className, ...restProps }) => (
-  <span {...restProps} className={classNames("text-pantone", className)}>
+  <span {...restProps} className={classNames('text-pantone', className)}>
     {children}
   </span>
 )

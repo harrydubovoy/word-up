@@ -1,4 +1,4 @@
-import { List as ListCore, ListItem as ListItemCore } from "@material-tailwind/react";
+import { List as ListCore, ListItem as ListItemCore } from '@material-tailwind/react';
 
 const List = ({ children, ...restProps }) => <ListCore {...restProps}>{children}</ListCore>;
 

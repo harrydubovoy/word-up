@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from 'react';
 import {
   compose,
   length,
@@ -14,19 +14,19 @@ import Input from '../../ui/Input';
 import IconButton from '../../ui/IconButton';
 import Progress from '../../ui/Progress';
 import Typography from '../../ui/Typography';
-import Hr from "../../ui/Hr";
+import Hr from '../../ui/Hr';
 
-import FlagIcon, { FLAG_ICON_TYPE } from "../../components/FlagIcon";
+import FlagIcon, { FLAG_ICON_TYPE } from '../../components/FlagIcon';
 
-import ScreenContainer from "../../screen-components/ScreenContainer";
-import ScreenHeader from "../../screen-components/ScreenHeader";
+import ScreenContainer from '../../screen-components/ScreenContainer';
+import ScreenHeader from '../../screen-components/ScreenHeader';
 
 import EmptyScreen from '../EmptyScreen';
 import ResultAnswersList from './ResultAnswersList';
 import Restart from './Restart';
 import QuestionWord from './QuestionWord';
 
-import SendSvg from "../../icons/SendSvg";
+import SendSvg from '../../icons/SendSvg';
 
 import { useWordPairsDatabase } from '../../database';
 import { useTranslation } from '../../translations';

@@ -1,5 +1,5 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import Container from '../ui/Container';
 import { List, ListItem } from '../ui/List';
@@ -9,8 +9,6 @@ import HomeSvg from '../icons/HomeSvg';
 import ListSvg from '../icons/ListSvg';
 import AddSvg from '../icons/AddSvg';
 import TrashSvg from '../icons/TrashSvg';
-import SettingsSvg from '../icons/SettingsSvg';
-// import MonitoringSvg from '../icons/MonitoringSvg';
 
 const Navigation = () => {
   const location = useLocation();
@@ -39,16 +37,6 @@ const Navigation = () => {
               <TrashSvg />
             </ListItem>
           </Link>
-          <Link to="settings">
-            <ListItem selected={location.pathname === '/settings'}>
-              <SettingsSvg />
-            </ListItem>
-          </Link>
-          {/*<Link to="monitoring">*/}
-          {/*  <ListItem selected={location.pathname === '/monitoring'}>*/}
-          {/*    <MonitoringSvg />*/}
-          {/*  </ListItem>*/}
-          {/*</Link>*/}
         </List>
       </Container>
     </Card>
