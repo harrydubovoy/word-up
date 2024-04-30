@@ -9,11 +9,8 @@ export default withMT({
   ],
   theme: {
     colors: {
-      pantone: '#bb2649',
-      'seashell-peach': '#fff7f1',
-      tequila: '#ffe4c9',
-      'we-peep': '#f3d0d7',
-      tiara: '#bed1cf',
+      'jet-stream': '#afd0c9',
+      'lunar-green': '#384135',
     },
     extend: {},
   },

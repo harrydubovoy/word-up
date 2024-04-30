@@ -154,7 +154,7 @@ const TestScreen = () => {
       {length(data) > cursor ? (
         <div className="p-5 rounded-md bg-[#f8fafc]">
           <div className="mb-6">
-            <QuestionWord cursor={cursor}>
+            <QuestionWord>
               {compose(prop(questionWordKey), nth(cursor))(data)}
             </QuestionWord>
           </div>
