@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { equals } from 'ramda'
 
 import ScrollContainer from '../../screen-components/ScrollContainer';

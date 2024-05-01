@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Typography from '../../ui/Typography';
 import ScreenHeader from '../../screen-components/ScreenHeader';
 

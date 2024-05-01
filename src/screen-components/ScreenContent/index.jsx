@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ScreenContent = ({ children }) => (
   <div className="flex flex-col relative h-full max-h-full">
     {children}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { map, length, prop, reverse } from 'ramda';
 
 import IconButton from '../../ui/IconButton';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Typography from '../../ui/Typography';
 
 const EmptyContent = ({ children }) => (

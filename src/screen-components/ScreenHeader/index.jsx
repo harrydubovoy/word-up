@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Container from '../../ui/Container';
 import Hr from '../../ui/Hr';
 

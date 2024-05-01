@@ -1,4 +1,3 @@
-import React from 'react';
 import { map, prop, addIndex, nth, equals } from 'ramda';
 
 import {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { equals } from 'ramda';
 
 import ScreenHeader from '../../screen-components/ScreenHeader';

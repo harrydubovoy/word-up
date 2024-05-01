@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { toLower } from 'ramda'
 
 import Button from '../../ui/Button';

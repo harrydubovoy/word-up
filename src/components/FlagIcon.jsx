@@ -6,7 +6,7 @@ export const FLAG_ICON_TYPE = {
   ENG: 'eng',
 }
 
-const flagIconByType = (type) => {
+const FlagIconByType = ({ type }) => {
   if (type === FLAG_ICON_TYPE.ENG) {
     return <BritishFlagSvg />;
   }
@@ -19,7 +19,11 @@ const flagIconByType = (type) => {
 }
 
 const FlagIcon = ({ type }) => {
-  return <span className="inline-flex items-center justify-center w-[24px] h-[24px]">{flagIconByType(type)}</span>;
+  return (
+    <span className="inline-flex items-center justify-center w-[24px] h-[24px]">
+      <FlagIconByType type={type} />
+    </span>
+  );
 }
 
 export default FlagIcon;
