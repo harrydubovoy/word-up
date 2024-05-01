@@ -4,12 +4,14 @@ import { toLower } from 'ramda'
 import Button from '../../ui/Button';
 import Input from '../../ui/Input';
 
+import Header from './Heder';
+
+import ScreenBody from '../../screen-components/ScreenBody';
+
 import { useTranslation } from '../../translations';
 import {
   COMMON__FOREIGN,
   COMMON__NATIVE,
-  ADD_WORD_SCREEN__TITLE,
-  ADD_WORD_SCREEN__DESCRIPTION,
   ADD_WORD_SCREEN__ACTION_ADD_TO_TEST_PLAN,
   ADD_WORD_SCREEN__ACTION_ADD_TO_LIST,
   ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS,
@@ -20,9 +22,6 @@ import { useWordPairsDatabase, useDictionaryDatabase} from '../../database';
 
 import DictionarySvg from '../../icons/DictionarySvg';
 import ChecklistSvg from '../../icons/ChecklistSvg';
-
-import ScreenContainer from '../../screen-components/ScreenContainer';
-import ScreenHeader from '../../screen-components/ScreenHeader';
 
 import { useAlertContext } from '../../components/Alert';
 
@@ -84,40 +83,39 @@ const AddScreen = () => {
   }
 
   return (
-    <ScreenContainer>
-      <ScreenHeader
-        title={t(ADD_WORD_SCREEN__TITLE)}
-        description={t(ADD_WORD_SCREEN__DESCRIPTION)}
-      />
-      <form className="mb-2">
-        <div className="mb-4 flex flex-col gap-6">
-          <Input inputRef={foreignInputRef} size="lg" label={t(COMMON__FOREIGN)} />
-          <Input inputRef={nativeInputRef} size="lg" label={t(COMMON__NATIVE)} />
-        </div>
+    <>
+      <Header />
+      <ScreenBody>
+        <form className="mb-2">
+          <div className="mb-4 flex flex-col gap-6">
+            <Input inputRef={foreignInputRef} size="lg" label={t(COMMON__FOREIGN)} />
+            <Input inputRef={nativeInputRef} size="lg" label={t(COMMON__NATIVE)} />
+          </div>
 
-        <div className="flex items-center gap-2 mt-6">
-          <Button
-            fullWidth
-            size="sm"
-            variant="outlined"
-            className="flex justify-center items-center gap-2"
-            onClick={handleOnSubmitToTestPlan}
-          >
-            <ChecklistSvg />
-            {t(ADD_WORD_SCREEN__ACTION_ADD_TO_TEST_PLAN)}
-          </Button>
-          <Button
-            fullWidth
-            size="sm"
-            className="flex justify-center items-center gap-2"
-            onClick={handleOnSubmitToDictionary}
-          >
-            <DictionarySvg />
-            {t(ADD_WORD_SCREEN__ACTION_ADD_TO_LIST)}
-          </Button>
-        </div>
-      </form>
-    </ScreenContainer>
+          <div className="flex items-center gap-2 mt-6">
+            <Button
+              fullWidth
+              size="sm"
+              variant="outlined"
+              className="flex justify-center items-center gap-2"
+              onClick={handleOnSubmitToTestPlan}
+            >
+              <ChecklistSvg />
+              {t(ADD_WORD_SCREEN__ACTION_ADD_TO_TEST_PLAN)}
+            </Button>
+            <Button
+              fullWidth
+              size="sm"
+              className="flex justify-center items-center gap-2"
+              onClick={handleOnSubmitToDictionary}
+            >
+              <DictionarySvg />
+              {t(ADD_WORD_SCREEN__ACTION_ADD_TO_LIST)}
+            </Button>
+          </div>
+        </form>
+      </ScreenBody>
+    </>
   )
 }
 

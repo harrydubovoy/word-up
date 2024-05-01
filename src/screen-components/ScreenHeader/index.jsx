@@ -1,13 +1,14 @@
 import React from 'react';
 
-import Typography from '../../ui/Typography';
+import Container from '../../ui/Container';
 import Hr from '../../ui/Hr';
 
-const ScreenHeader = ({ title, description }) => (
-  <div className="mb-3">
-    <Typography variant="h5">{title}</Typography>
-    {description && (<Typography variant="small">{description}</Typography>)}
-    <div className="my-3">
+const ScreenHeader = ({ children }) => (
+  <div className="pt-6">
+    <Container>
+      {children}
+    </Container>
+    <div className="mt-3">
       <Hr />
     </div>
   </div>

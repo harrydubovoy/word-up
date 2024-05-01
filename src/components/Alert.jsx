@@ -66,7 +66,7 @@ const Alert = () => {
   }, [location.key]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className="absolute z-10 w-full">
+    <div className="absolute z-10 w-full p-2">
       <AlertCore
         color={getAlertColorByType(prop('type', alertData))}
         open={Boolean(prop('message', alertData))}

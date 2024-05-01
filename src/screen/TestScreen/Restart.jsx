@@ -19,14 +19,14 @@ const Restart = ({ onRestart }) => {
   }, [])
 
   return (
-    <>
+    <div className="text-center">
       <Typography >
         {t(TEST_SCREEN__COMPLETED_TITLE)}
       </Typography>
       <div className="mt-6">
         <Button fullWidth onClick={onRestart}>{t(TEST_SCREEN__COMPLETED_ACTION)}</Button>
       </div>
-    </>
+    </div>
   )
 }
 

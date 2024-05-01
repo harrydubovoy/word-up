@@ -1,16 +1,22 @@
 import React, {useEffect, useState} from 'react';
-import classNames from 'classnames';
-import { addIndex, length, map, prop, reverse } from 'ramda';
+import { length, map, prop, reverse } from 'ramda';
 
-import IconButton from '../../ui/IconButton';
 import Typography from '../../ui/Typography';
-import Hr from '../../ui/Hr';
-
+import {
+  Card,
+  CardBody,
+  CardFooter,
+} from '../../ui/Card';
+import IconButton from '../../ui/IconButton';
 import DoneSvg from '../../icons/DoneSvg';
+import EditSvg from '../../icons/EditSvg';
+import PublicSvg from '../../icons/PublicSvg';
 
 import EmptyContent from '../../screen-components/EmptyContent';
 import { useAlertContext } from '../../components/Alert';
-import FlagIcon, {FLAG_ICON_TYPE} from '../../components/FlagIcon';
+import FlagIcon, { FLAG_ICON_TYPE } from '../../components/FlagIcon';
+
+import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 
 import { useTrashBinDatabase, useWordPairsDatabase } from '../../database';
 import { useTranslation } from '../../translations';
@@ -49,6 +55,10 @@ const TestPlan = () => {
       .catch()
   }
 
+  const handleOnOpenDictionary = (wordPair) => () => {
+    openOxfordDictionaryPageByWord(prop('foreign')(wordPair))
+  }
+
   if (!isLoaded) {
     return null;
   }
@@ -58,44 +68,43 @@ const TestPlan = () => {
   }
 
   return (
-    <div className="w-full table-auto text-left">
-      <div>
-      {addIndex(map)((wordPair, index) => (
-        <div
-          key={prop('id')(wordPair)}
-          className={classNames('flex border-blue-gray-50', {
-            'border-b': index !== length(data) - 1,
-          })}
-        >
-          <div className="flex items-center justify-center shrink-0 p-3 w-12 text-sm bg-blue-gray-50/50">
-            {index + 1}
-          </div>
-          <div className="w-full p-3">
-            <Typography
-              variant="small"
-              color="blue-gray"
-              className="font-normal flex items-center gap-2"
-            >
-              <FlagIcon type={FLAG_ICON_TYPE.ENG} /> {prop('foreign')(wordPair)}
-            </Typography>
-            <div className="my-1">
-              <Hr />
-            </div>
-            <Typography
-              variant="small"
-              color="blue-gray"
-              className="font-normal flex gap-2 items-center"
-            >
-              <FlagIcon type={FLAG_ICON_TYPE.UA} /> {prop('native')(wordPair)}
-            </Typography>
-          </div>
-          <div className="flex items-center p-3 ml-auto">
-            <IconButton variant="filled" size="sm" onClick={handleOnRemove(wordPair)}>
-              <DoneSvg />
-            </IconButton>
-          </div>
-        </div>
-      ), reverse(data))}
+    <div className="w-full">
+      <div className="grid grid-cols-1 gap-4">
+        {map((wordPair) => (
+          <Card className="w-full p-3.5"  key={prop('id')(wordPair)}>
+            <CardBody className="p-0 pb-1">
+              <div className="w-full flex flex-col gap-2">
+                <Typography
+                  variant="small"
+                  color="blue-gray"
+                  className="font-normal flex items-center gap-2"
+                >
+                  <FlagIcon type={FLAG_ICON_TYPE.ENG} /> {prop('foreign')(wordPair)}
+                </Typography>
+                <Typography
+                  variant="small"
+                  color="blue-gray"
+                  className="font-normal flex gap-2 items-center"
+                >
+                  <FlagIcon type={FLAG_ICON_TYPE.UA} /> {prop('native')(wordPair)}
+                </Typography>
+              </div>
+            </CardBody>
+            <CardFooter className="p-0">
+              <div className="flex justify-end gap-2">
+                <IconButton variant="outlined" size="sm" onClick={handleOnOpenDictionary(wordPair)}>
+                  <PublicSvg />
+                </IconButton>
+                <IconButton variant="outlined" size="sm" disabled>
+                  <EditSvg />
+                </IconButton>
+                <IconButton variant="filled" size="sm" onClick={handleOnRemove(wordPair)}>
+                  <DoneSvg />
+                </IconButton>
+              </div>
+            </CardFooter>
+          </Card>
+        ), reverse(data))}
       </div>
     </div>
   )

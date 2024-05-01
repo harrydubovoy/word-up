@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom';
 import './App.css';
 
 import Navigation from './components/Navigation';
+import ScreenContainer from './screen-components/ScreenContainer';
 import { AlertProvider } from './components/Alert';
 
 const App = () => (
@@ -11,7 +12,9 @@ const App = () => (
     <div id="grid" className="h-full w-full max-h-[48rem] max-w-md p-2 gap-2">
       <div id="gridContent" className="rounded-xl shadow-xl shadow-blue-gray-900/5">
         <AlertProvider>
-          <Outlet />
+          <ScreenContainer>
+            <Outlet />
+          </ScreenContainer>
         </AlertProvider>
       </div>
       <div id="gridNavigation" className="rounded-xl shadow-xl shadow-blue-gray-900/5">
