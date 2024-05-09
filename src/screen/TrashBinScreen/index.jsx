@@ -74,7 +74,7 @@ const TrashBinScreen = () => {
               <div className="grid grid-cols-1 gap-4">
                 {map((wordPair) => (
                   <Card className="w-full p-3.5"  key={prop('id')(wordPair)}>
-                    <CardBody className="p-0 pb-1">
+                    <CardBody className="p-0">
                       <WordPair
                         native={prop('native')(wordPair)}
                         foreign={prop('foreign')(wordPair)}
