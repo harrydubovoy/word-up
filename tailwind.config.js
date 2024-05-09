@@ -11,6 +11,8 @@ export default withMT({
     colors: {
       'jet-stream': '#afd0c9',
       'lunar-green': '#384135',
+      'tropical-blue': '#d7e9f9',
+      'catskill-white': '#f8fafc',
     },
     extend: {},
   },

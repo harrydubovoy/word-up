@@ -1,32 +1,19 @@
-import { useNavigate } from 'react-router-dom';
+import EmptyScreenFactory, { EMPTY_SCREEN_TYPE } from './EmptyScreenFactory';
 
-import Button from '../../ui/Button';
+export {
+  EMPTY_SCREEN_TYPE,
+}
 
-import EmptyContent from '../../screen-components/EmptyContent';
-
-import { useTranslation } from '../../translations';
-import {
-  EMPTY_SCREEN__DESCRIPTION,
-  EMPTY_SCREEN__ACTION,
-} from '../../translations/resources/constants';
-
-const EmptyScreen = () => {
-  const navigate = useNavigate();
-  const { t } = useTranslation();
-
-  return (
-    <div className="flex flex-col justify-center h-full">
-      <EmptyContent>
-        {t(EMPTY_SCREEN__DESCRIPTION)}
-      </EmptyContent>
-
-      <div className="w-full flex justify-center">
-        <Button onClick={() => navigate('/add')}>
-          {t(EMPTY_SCREEN__ACTION)}
-        </Button>
+const EmptyScreen = ({ children, type }) => {
+  if (type) {
+    return (
+      <div className="flex flex-col items-center gap-4 justify-center h-full">
+        <EmptyScreenFactory type={type} />
       </div>
-    </div>
-  )
+    );
+  }
+
+  return <>{children}</>
 }
 
 export default EmptyScreen;

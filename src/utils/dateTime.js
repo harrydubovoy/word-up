@@ -9,4 +9,6 @@ export const getDateTime = () => {
 
 export const setTestDoneDateTime = (date) => storage().set(STORAGE_KEY, date);
 
-export const getTestDoneDateTime = () => storage().get(STORAGE_KEY)
+export const getTestDoneDateTime = () => storage().get(STORAGE_KEY);
+
+export const ensureTestDoneDateTime = () => getTestDoneDateTime() ?? 'It will be first time';

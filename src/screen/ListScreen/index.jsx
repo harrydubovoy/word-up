@@ -19,16 +19,13 @@ const ListScreen = () => {
       <Header tabId={tabId} onTabClick={setTabId} />
 
       <ScrollContainer>
-        <ScreenBody className="bg-[#f8fafc]">
-          {equals(tabId, TEST_PLAN_ID) && (
-            <TestPlan />
-          )}
-          {equals(tabId, DICTIONARY_ID) && (
-            <Dictionary />
-          )}
-        </ScreenBody>
+        {equals(tabId, TEST_PLAN_ID) && (
+          <TestPlan />
+        )}
+        {equals(tabId, DICTIONARY_ID) && (
+          <Dictionary />
+        )}
       </ScrollContainer>
-
     </>
   )
 }

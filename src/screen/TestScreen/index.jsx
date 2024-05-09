@@ -17,13 +17,13 @@ import Typography from '../../ui/Typography';
 
 import Header from './Header';
 
-import EmptyScreen from '../EmptyScreen';
 import ResultAnswersList from './ResultAnswersList';
 import Restart from './Restart';
 import QuestionWord from './QuestionWord';
 
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
+import EmptyScreen, { EMPTY_SCREEN_TYPE } from '../EmptyScreen';
 
 import SendSvg from '../../icons/SendSvg';
 
@@ -104,12 +104,6 @@ const TestScreen = () => {
     return null;
   }
 
-  if (!length(data)) {
-    return (
-      <EmptyScreen />
-    )
-  }
-
   const questionWordKey = getQuestionWordKeyByReverse(isTestRevered);
 
   return (
@@ -120,62 +114,64 @@ const TestScreen = () => {
         onReverseTest={handleReverseTest}
       />
 
-      <ScrollContainer>
-        <ScreenBody>
-          {length(data) > cursor ? (
-            <div className="p-5 rounded-md bg-[#f8fafc]">
-              <div className="mb-6">
-                <QuestionWord>
-                  {compose(prop(questionWordKey), nth(cursor))(data)}
-                </QuestionWord>
-              </div>
+      <EmptyScreen type={!length(data) && EMPTY_SCREEN_TYPE.TEST}>
+        <ScrollContainer>
+          <ScreenBody>
+            {length(data) > cursor ? (
+              <div className="p-5 rounded-md bg-catskill-white">
+                <div className="mb-6">
+                  <QuestionWord>
+                    {compose(prop(questionWordKey), nth(cursor))(data)}
+                  </QuestionWord>
+                </div>
 
-              <div className="flex gap-2">
-                <Input
-                  autoFocus
-                  label={t(TEST_SCREEN__ANSWER_INPUT_LABEL)}
-                  size="md"
-                  inputRef={answerInputRef}
-                  onKeyDown={handleOnKeyDown}
-                />
-                <IconButton
-                  aria-label="Send answer"
-                  className="shrink-0"
-                  size="md"
-                  onClick={handleSubmitAnswer}
-                >
-                  <SendSvg />
-                </IconButton>
-              </div>
-            </div>
-          ) : (
-            <Restart isTestRevered={isTestRevered} onRestart={handleRestart} />
-          )}
-
-          {isTestStarted && (
-            <>
-              <div className="mt-6 mb-3">
-                <Progress value={getProgress(data, cursor)} />
-                <div className="mt-2 flex items-center justify-between px-2">
-                  <Typography color="blue-gray" className="block antialiased text-gray-700 text-center text-xs">
-                    {t(TEST_SCREEN__PROGRESS_LABEL)}
-                  </Typography>
-                  <Typography color="blue-gray" className="block antialiased text-gray-700 text-center text-xs">
-                    {cursor} / {length(data)}
-                  </Typography>
+                <div className="flex gap-2">
+                  <Input
+                    autoFocus
+                    label={t(TEST_SCREEN__ANSWER_INPUT_LABEL)}
+                    size="md"
+                    inputRef={answerInputRef}
+                    onKeyDown={handleOnKeyDown}
+                  />
+                  <IconButton
+                    aria-label="Send answer"
+                    className="shrink-0"
+                    size="md"
+                    onClick={handleSubmitAnswer}
+                  >
+                    <SendSvg />
+                  </IconButton>
                 </div>
               </div>
-              <div className="px-6 my-6">
-                <ResultAnswersList
-                  isTestRevered={isTestRevered}
-                  userAnswers={userAnswers}
-                  data={slice(0, cursor)(data)}
-                />
-              </div>
-            </>
-          )}
-        </ScreenBody>
-      </ScrollContainer>
+            ) : (
+              <Restart isTestRevered={isTestRevered} onRestart={handleRestart} />
+            )}
+
+            {isTestStarted && (
+              <>
+                <div className="mt-6 mb-3">
+                  <Progress value={getProgress(data, cursor)} />
+                  <div className="mt-2 flex items-center justify-between px-2">
+                    <Typography color="blue-gray" className="block antialiased text-gray-700 text-center text-xs">
+                      {t(TEST_SCREEN__PROGRESS_LABEL)}
+                    </Typography>
+                    <Typography color="blue-gray" className="block antialiased text-gray-700 text-center text-xs">
+                      {cursor} / {length(data)}
+                    </Typography>
+                  </div>
+                </div>
+                <div className="px-6 my-6">
+                  <ResultAnswersList
+                    isTestRevered={isTestRevered}
+                    userAnswers={userAnswers}
+                    data={slice(0, cursor)(data)}
+                  />
+                </div>
+              </>
+            )}
+          </ScreenBody>
+        </ScrollContainer>
+      </EmptyScreen>
     </>
   );
 }
