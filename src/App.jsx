@@ -5,6 +5,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import ScreenContainer from './screen-components/ScreenContainer';
 import { AlertProvider } from './components/Alert';
+import Copyright from './components/Copyright';
 
 const App = () => (
   <div className="flex items-center justify-center bg-catskill-white h-full w-full">
@@ -18,6 +19,9 @@ const App = () => (
       </div>
       <div id="gridNavigation" className="rounded-xl shadow-xl shadow-blue-gray-900/5">
         <Navigation />
+      </div>
+      <div id="gridCopyright">
+        <Copyright />
       </div>
     </div>
   </div>
