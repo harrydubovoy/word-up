@@ -2,16 +2,11 @@ import { useEffect, useState } from 'react';
 import { map, length, prop, reverse } from 'ramda';
 
 import IconButton from '../../ui/IconButton';
-import {
-  Card,
-  CardBody,
-  CardFooter,
-} from '../../ui/Card';
 
 import ScreenBody from '../../screen-components/ScreenBody';
 import EmptyScreen, { EMPTY_SCREEN_TYPE } from '../EmptyScreen';
 import { useAlertContext } from '../../components/Alert';
-import WordPair from '../../components/WordPair';
+import WordPairCard from '../../components/WordPairCard';
 
 import TrashSvg from '../../icons/TrashSvg';
 import ListAdd from '../../icons/ListAdd';
@@ -89,30 +84,26 @@ const Dictionary = () => {
         <div className="w-full">
           <div className="grid grid-cols-1 gap-4">
             {map((wordPair) => (
-              <Card className="w-full p-3.5"  key={prop('id')(wordPair)}>
-                <CardBody className="p-0">
-                  <WordPair
-                    native={prop('native')(wordPair)}
-                    foreign={prop('foreign')(wordPair)}
-                  />
-                </CardBody>
-                <CardFooter className="p-0">
-                  <div className="flex justify-end gap-2">
-                    <IconButton variant="outlined" size="sm" onClick={handleOnRemove(wordPair)}>
-                      <TrashSvg />
-                    </IconButton>
-                    <IconButton variant="outlined" size="sm" onClick={handleOnOpenDictionary(wordPair)}>
-                      <PublicSvg />
-                    </IconButton>
-                    <IconButton variant="outlined" size="sm" disabled>
-                      <EditSvg />
-                    </IconButton>
-                    <IconButton size="sm" onClick={handleOnAddToTestPlan(wordPair)}>
-                      <ListAdd />
-                    </IconButton>
-                  </div>
-                </CardFooter>
-              </Card>
+              <WordPairCard key={prop('id')(wordPair)}>
+                <WordPairCard.Body
+                  foreign={prop('foreign')(wordPair)}
+                  native={prop('native')(wordPair)}
+                />
+                <WordPairCard.Footer>
+                  <IconButton variant="outlined" size="sm" onClick={handleOnRemove(wordPair)}>
+                    <TrashSvg />
+                  </IconButton>
+                  <IconButton variant="outlined" size="sm" onClick={handleOnOpenDictionary(wordPair)}>
+                    <PublicSvg />
+                  </IconButton>
+                  <IconButton variant="outlined" size="sm" disabled>
+                    <EditSvg />
+                  </IconButton>
+                  <IconButton size="sm" onClick={handleOnAddToTestPlan(wordPair)}>
+                    <ListAdd />
+                  </IconButton>
+                </WordPairCard.Footer>
+              </WordPairCard>
             ), reverse(data))}
           </div>
         </div>
