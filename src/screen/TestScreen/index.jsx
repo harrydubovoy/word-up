@@ -105,16 +105,18 @@ const TestScreen = () => {
   }
 
   const questionWordKey = getQuestionWordKeyByReverse(isTestRevered);
+  const isWordExists = length(data);
 
   return (
     <>
       <Header
+        isWordExists={isWordExists}
         isTestStarted={isTestStarted}
         isTestRevered={isTestRevered}
         onReverseTest={handleReverseTest}
       />
 
-      <EmptyScreen type={!length(data) && EMPTY_SCREEN_TYPE.TEST}>
+      <EmptyScreen type={!isWordExists && EMPTY_SCREEN_TYPE.TEST}>
         <ScrollContainer>
           <ScreenBody>
             {length(data) > cursor ? (
