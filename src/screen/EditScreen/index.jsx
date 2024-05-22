@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
-import { toLower, trim, compose } from 'ramda';
+import { toLower, trim, compose, prop } from 'ramda';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import Button from '../../ui/Button';
 import Input from '../../ui/Input';
@@ -8,7 +9,6 @@ import IconButton from '../../ui/IconButton';
 import Header from './Heder';
 import ScreenBody from '../../screen-components/ScreenBody';
 import ScrollContainer from '../../screen-components/ScrollContainer';
-import { useAlertContext } from '../../components/Alert';
 
 import PublicSvg from '../../icons/PublicSvg';
 
@@ -16,27 +16,32 @@ import { useTranslation } from '../../translations';
 import {
   COMMON__FOREIGN,
   COMMON__NATIVE,
-  ADD_WORD_SCREEN__ACTION_ADD_TO_LIST,
-  ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS,
 } from '../../translations/resources/constants';
 
-import { useAppDispatch } from '../../store/hooks'
-import { addOneDictionary, dictionaryPayload } from '../../store/reducer/dictionary.slice';
+import { useAppSelector, useAppDispatch } from '../../store/hooks';
+import {
+  updateOneDictionary,
+  selectByIdDictionary,
+} from '../../store/reducer/dictionary.slice';
 
 import { getTargetValue } from '../../utils/input';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 
 const getWordInputValue = (event) => compose(trim, toLower, getTargetValue)(event);
 
-const AddScreen = () => {
+const EditScreen = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+
   const dispatch = useAppDispatch();
+  const byIdDictionary = useAppSelector((state) => selectByIdDictionary(state, id));
+
   const { t } = useTranslation();
-  const { setSuccessAlertData } = useAlertContext();
 
   const foreignInputRef = useRef(null);
-  const [foreign, setForeign] = useState('');
-  const [native, setNative] = useState('');
-  const [transcription, setTranscription] = useState('');
+  const [foreign, setForeign] = useState(prop('foreign')(byIdDictionary));
+  const [native, setNative] = useState(prop('native')(byIdDictionary));
+  const [transcription, setTranscription] = useState(prop('transcription')(byIdDictionary));
 
   const handleOnChangeForeign = (event) => {
     setForeign(getWordInputValue(event));
@@ -52,18 +57,17 @@ const AddScreen = () => {
 
   const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
 
-  const handlePostSending = () => {
-    setForeign('');
-    setNative('');
-    setTranscription('');
-
-    foreignInputRef.current.focus();
+  const handleOnCancel = () => {
+    navigate(-1);
   }
 
-  const handleOnAdd = () => {
-    dispatch(addOneDictionary(dictionaryPayload({ foreign, native, transcription })));
-    setSuccessAlertData(t(ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS));
-    handlePostSending();
+  const handleOnUpdate = () => {
+    if (!foreign && !native) {
+      return;
+    }
+
+    dispatch(updateOneDictionary({ id, changes: { foreign, native, transcription }}));
+    navigate(-1);
   }
 
   return (
@@ -81,9 +85,9 @@ const AddScreen = () => {
                   required
                   className="pr-20"
                   size="lg"
+                  value={foreign}
                   label={t(COMMON__FOREIGN)}
                   inputRef={foreignInputRef}
-                  value={foreign}
                   onChange={handleOnChangeForeign}
                 />
                 <IconButton
@@ -120,11 +124,19 @@ const AddScreen = () => {
             <div className="flex items-center gap-2 mt-4">
               <Button
                 fullWidth
+                variant="outlined"
+                className="flex justify-center items-center gap-2"
+                onClick={handleOnCancel}
+              >
+                Cancel
+              </Button>
+              <Button
+                fullWidth
                 className="flex justify-center items-center gap-2"
                 disabled={!(foreign && native)}
-                onClick={handleOnAdd}
+                onClick={handleOnUpdate}
               >
-                {t(ADD_WORD_SCREEN__ACTION_ADD_TO_LIST)}
+                Update
               </Button>
             </div>
           </form>
@@ -134,4 +146,4 @@ const AddScreen = () => {
   )
 }
 
-export default AddScreen;
+export default EditScreen;
