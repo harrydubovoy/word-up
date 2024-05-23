@@ -10,7 +10,7 @@ import { useTranslation } from '../../translations';
 import { ensureTestDoneDateTime } from '../../utils/dateTime';
 
 
-const Header = ({ isTestStarted, isTestRevered, onReverseTest, isWordExists }) => {
+const Header = ({ isTestStarted, isTestReversed, onReverseTest, totalTestPlan }) => {
   const { t } = useTranslation();
 
   return (
@@ -26,10 +26,10 @@ const Header = ({ isTestStarted, isTestRevered, onReverseTest, isWordExists }) =
         <div className="mb-3 flex gap-2">
           <IconButton
             variant="text"
-            disabled={isTestStarted || !isWordExists}
+            disabled={isTestStarted || !totalTestPlan}
             onClick={onReverseTest}
           >
-            <FlagIcon type={isTestRevered ? FLAG_ICON_TYPE.UA : FLAG_ICON_TYPE.ENG} />
+            <FlagIcon type={isTestReversed ? FLAG_ICON_TYPE.UA : FLAG_ICON_TYPE.ENG} />
           </IconButton>
         </div>
       </div>

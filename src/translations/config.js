@@ -4,7 +4,6 @@ import { initReactI18next } from 'react-i18next';
 import { storage } from '../storage';
 
 import en from './resources/en';
-import ua from './resources/ua';
 
 const initLanguage = () => {
   const lng = storage().get('lng');
@@ -23,7 +22,7 @@ i18n
   .init({
     lng: initLanguage(),
     fallbackLng: 'en',
-    resources: { en, ua },
+    resources: { en },
     interpolation: {
       escapeValue: false,
     },

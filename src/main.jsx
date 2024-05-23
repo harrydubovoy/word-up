@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { initDB } from 'react-indexed-db-hook';
+import { Provider } from 'react-redux';
 import { ThemeProvider } from '@material-tailwind/react';
 import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
+
+import store from './store';
 
 import App from './App';
 
@@ -15,9 +17,6 @@ import TestScreen from './screen/TestScreen';
 import TrashBinScreen from './screen/TrashBinScreen';
 
 import './translations/config';
-import dbConfig from './dbConfig';
-
-initDB(dbConfig);
 
 const router = createBrowserRouter([
   {
@@ -48,7 +47,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <RouterProvider router={router} />
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
     </ThemeProvider>
   </React.StrictMode>
 );

@@ -1,11 +1,2 @@
-import { length } from 'ramda';
-
-const getProgress = (data, cursor) => Math.round((cursor / length(data)) * 100);
-const getQuestionWordKeyByReverse = (isReversed) => isReversed ? 'native' : 'foreign';
-const getAnswerWordKeyByReverse = (isReversed) => isReversed ? 'foreign' : 'native';
-
-export {
-  getProgress,
-  getQuestionWordKeyByReverse,
-  getAnswerWordKeyByReverse,
-}
+export const getProgress = (total, cursor) => Math.round((cursor / total) * 100);
+export const getWordPairKeyByReverse = (isReversed) => isReversed ? 'native' : 'foreign';
