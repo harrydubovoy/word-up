@@ -12,6 +12,7 @@ import store from './store';
 import App from './App';
 
 import AddScreen from './screen/AddScreen';
+import EditScreen from './screen/EditScreen';
 import ListScreen from './screen/ListScreen';
 import TestScreen from './screen/TestScreen';
 import TrashBinScreen from './screen/TrashBinScreen';
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/add',
         element: <AddScreen />,
+      },
+      {
+        path: '/edit/:id',
+        element: <EditScreen />,
       },
       {
         path: '/list',

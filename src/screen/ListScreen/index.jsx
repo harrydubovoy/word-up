@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { map, prop, reverse, has } from 'ramda';
 
 import IconButton from '../../ui/IconButton';
@@ -31,10 +32,12 @@ import {
 } from '../../store/reducer/test-plan.slice';
 import { addOneTrashBin } from '../../store/reducer/trash-bin.slice';
 
-import { getNativeWordById, getForeignWordById } from '../../utils/word';
+import { getNativeWordById, getForeignWordById, getTranscriptionWordById } from '../../utils/word';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 
 const ListScreen = () => {
+  const navigate = useNavigate();
+
   const dispatch = useAppDispatch();
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
   const entitiesTestPlan = useAppSelector(selectEntitiesTestPlan);
@@ -53,6 +56,10 @@ const ListScreen = () => {
     dispatch(addOneTrashBin(prop(wordPairId)(entitiesDictionary)));
     dispatch(removeOneDictionary(wordPairId));
     dispatch(removeOneTestPlan(wordPairId));
+  }
+
+  const handleOnEdit = (wordPairId) => () => {
+    navigate(`/edit/${wordPairId}`);
   }
 
   const handleOnOpenDictionary = (wordPairId) => () => {
@@ -75,6 +82,7 @@ const ListScreen = () => {
                         isSelected={has(wordPairId)(entitiesTestPlan)}
                         foreign={getForeignWordById(entitiesDictionary)(wordPairId)}
                         native={getNativeWordById(entitiesDictionary)(wordPairId)}
+                        transcription={getTranscriptionWordById(entitiesDictionary)(wordPairId)}
                       />
                     </WordPairCard.Body>
                     <WordPairCard.Footer>
@@ -84,7 +92,7 @@ const ListScreen = () => {
                       <IconButton variant="outlined" size="sm" onClick={handleOnOpenDictionary(wordPairId)}>
                         <PublicSvg />
                       </IconButton>
-                      <IconButton variant="outlined" size="sm" disabled>
+                      <IconButton variant="outlined" size="sm" onClick={handleOnEdit(wordPairId)}>
                         <EditSvg />
                       </IconButton>
                       {entitiesTestPlan[wordPairId] ? (
