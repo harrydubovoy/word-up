@@ -1,13 +1,8 @@
 import { CardBody } from '../../ui/Card';
 
-import WordPair from '../WordPair';
-
-const WordPairCardBody = ({ native, foreign }) => (
+const WordPairCardBody = ({ children }) => (
   <CardBody className="p-0">
-    <WordPair
-      native={native}
-      foreign={foreign}
-    />
+    {children}
   </CardBody>
 )
 

@@ -9,8 +9,8 @@ import {
 } from '../constants';
 
 const translations = {
-  [LIST_SCREEN__TITLE]: 'List of words',
-  [LIST_SCREEN__TEST_PLAN_DESCRIPTION]: 'Current list for testing',
+  [LIST_SCREEN__TITLE]: 'Dictionary',
+  [LIST_SCREEN__TEST_PLAN_DESCRIPTION]: 'You have {{totalTestPlan}}/{{totalDictionary}} words at test plan',
   [LIST_SCREEN__DICTIONARY_DESCRIPTION]: 'Dictionary',
   [LIST_SCREEN__EMPTY_DICTIONARY]: 'Your dictionary is empty',
   [LIST_SCREEN__EMPTY_TEST_PLAN]: 'Your test plan is empty',

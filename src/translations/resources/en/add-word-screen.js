@@ -9,7 +9,7 @@ import {
 
 const translations = {
   [ADD_WORD_SCREEN__TITLE]: 'Add word',
-  [ADD_WORD_SCREEN__DESCRIPTION]: 'Add new word to your testing list',
+  [ADD_WORD_SCREEN__DESCRIPTION]: 'Add new word to dictionary',
   [ADD_WORD_SCREEN__ACTION_ADD_TO_TEST_PLAN]: 'To Test',
   [ADD_WORD_SCREEN__ACTION_ADD_TO_LIST]: 'To Dictionary',
   [ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS]: 'Word was added to dictionary',

@@ -1,40 +1,60 @@
-import { map, prop, addIndex, nth, equals } from 'ramda';
+import classNames from 'classnames';
+import { map, addIndex, nth, equals, prop, compose } from 'ramda';
 
-import {
-  getQuestionWordKeyByReverse,
-  getAnswerWordKeyByReverse,
-} from './utils';
+import { useAppSelector } from '../../store/hooks'
+import { selectEntitiesDictionary } from '../../store/reducer/dictionary.slice';
 
-const ResultAnswersList = ({ userAnswers, data, isTestRevered }) => (
-  <ul className="flex flex-col gap-2">
-    {addIndex(map)((item, index) => {
-      const questionWord = prop(getQuestionWordKeyByReverse(isTestRevered))(item);
-      const answerWord = prop(getAnswerWordKeyByReverse(isTestRevered))(item);
-      const userAnswerWord = nth(index)(userAnswers);
+import If from '../../util-components/If'
+import { getWordPairKeyByReverse } from './utils';
 
-      return (
-        <li key={questionWord}>
-          <div className="flex justify-center">
+const ResultAnswersList = ({ userAnswers, ids, isTestReversed }) => {
+  const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
+
+  return (
+    <ul className="flex flex-col gap-2">
+      {addIndex(map)((wordPairId, index) => {
+        const userAnswerWord = nth(index)(userAnswers);
+        const isRightAnswer = compose(
+          equals(userAnswerWord),
+          prop(getWordPairKeyByReverse(!isTestReversed)),
+          prop(wordPairId),
+        )(entitiesDictionary);
+        const questionWord = compose(
+          prop(getWordPairKeyByReverse(isTestReversed)),
+          prop(wordPairId),
+        )(entitiesDictionary);
+        const rightAnswerWord = compose(
+          prop(getWordPairKeyByReverse(!isTestReversed)),
+          prop(wordPairId),
+        )(entitiesDictionary);
+
+        return (
+          <li key={wordPairId}>
+            <div className="flex justify-center">
               <span>
                 {questionWord}
               </span>
-            {!equals(answerWord, userAnswerWord) && (
-              <>
-                &nbsp;&ndash;&nbsp;
-                <span className="text-red-500">
-                    {userAnswerWord}
-                  </span>
-              </>
-            )}
-            &nbsp;&ndash;&nbsp;
-            <span className="text-green-500">
-                {answerWord}
+              &nbsp;&ndash;&nbsp;
+              <span className={classNames('font-semibold', {
+                'text-red-500': !isRightAnswer,
+                'text-green-500': isRightAnswer,
+              })}>
+                {userAnswerWord}
               </span>
-          </div>
-        </li>
-      )
-    }, data)}
-  </ul>
-);
+              <If condition={!isRightAnswer}>
+                <>
+                  &nbsp;&ndash;&nbsp;
+                  <span className="text-green-500">
+                   {rightAnswerWord}
+                  </span>
+                </>
+              </If>
+            </div>
+          </li>
+        )
+      }, ids)}
+    </ul>
+  );
+}
 
 export default ResultAnswersList;

@@ -1,8 +1,13 @@
+import classNames from 'classnames';
+
 import Typography from '../ui/Typography';
 import FlagIcon, { FLAG_ICON_TYPE } from './FlagIcon';
 
-const WordPair = ({ foreign, native }) => (
-  <div className="bg-tropical-blue rounded-ss-xl rounded-ee-xl w-full transform flex flex-col gap-2 -translate-x-3.5 -translate-y-3.5 p-3">
+const WordPair = ({ foreign, native, isSelected }) => (
+  <div className={classNames('rounded-ss-xl rounded-ee-xl w-full transform flex flex-col gap-2 -translate-x-3.5 -translate-y-3.5 p-3', {
+    'bg-tropical-blue': !isSelected,
+    'bg-caper': isSelected,
+  })}>
     <Typography
       variant="small"
       color="blue-gray"
