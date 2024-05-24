@@ -101,6 +101,10 @@ const TestScreen = () => {
     prop(questionWordKey),
     prop(nth(cursor)(data)),
   )(entitiesDictionary);
+  const transcription = compose(
+    prop('transcription'),
+    prop(nth(cursor)(data)),
+  )(entitiesDictionary);
 
   return (
     <>
@@ -118,6 +122,13 @@ const TestScreen = () => {
                 <div className="mb-6">
                   <QuestionWord>
                     {questionWord}
+                    <If condition={!isTestReversed && transcription}>
+                      <div className="mt-2">
+                        <Typography variant="small">
+                          /{transcription}/
+                        </Typography>
+                      </div>
+                    </If>
                   </QuestionWord>
                 </div>
 

@@ -20,7 +20,7 @@ const WordPair = ({ foreign, native, transcription, isSelected }) => (
       <FlagIcon type={FLAG_ICON_TYPE.ENG} />
       {foreign}
       <If condition={transcription}>
-        <Typography variant="small" >/{transcription}/</Typography>
+        <Typography variant="small">/{transcription}/</Typography>
       </If>
     </Typography>
     <Typography

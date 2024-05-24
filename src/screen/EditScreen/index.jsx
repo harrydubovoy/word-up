@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { toLower, compose, prop } from 'ramda';
+import { prop } from 'ramda';
 import { useParams, useNavigate } from 'react-router-dom';
 
 import Button from '../../ui/Button';
@@ -26,8 +26,7 @@ import {
 
 import { getTargetValue } from '../../utils/input';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
-
-const getWordInputValue = (event) => compose(toLower, getTargetValue)(event);
+import { normalizeValue } from '../../utils/data';
 
 const EditScreen = () => {
   const { id } = useParams();
@@ -44,15 +43,15 @@ const EditScreen = () => {
   const [transcription, setTranscription] = useState(prop('transcription')(byIdDictionary));
 
   const handleOnChangeForeign = (event) => {
-    setForeign(getWordInputValue(event));
+    setForeign(getTargetValue(event));
   }
 
   const handleOnChangeNative = (event) => {
-    setNative(getWordInputValue(event));
+    setNative(getTargetValue(event));
   }
 
   const handleOnChangeTranscription = (event) => {
-    setTranscription(getWordInputValue(event));
+    setTranscription(getTargetValue(event));
   }
 
   const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
@@ -66,7 +65,14 @@ const EditScreen = () => {
       return;
     }
 
-    dispatch(updateOneDictionary({ id, changes: { foreign, native, transcription }}));
+    dispatch(updateOneDictionary({
+      id,
+      changes: {
+        foreign: normalizeValue(foreign),
+        native: normalizeValue(native),
+        transcription: normalizeValue(transcription),
+      }
+    }));
     navigate(-1);
   }
 

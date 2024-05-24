@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-import { toLower, trim, compose } from 'ramda';
 
 import Button from '../../ui/Button';
 import Input from '../../ui/Input';
@@ -24,9 +23,8 @@ import { useAppDispatch } from '../../store/hooks'
 import { addOneDictionary, dictionaryPayload } from '../../store/reducer/dictionary.slice';
 
 import { getTargetValue } from '../../utils/input';
+import { normalizeValue } from '../../utils/data';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
-
-const getWordInputValue = (event) => compose(toLower, getTargetValue)(event);
 
 const AddScreen = () => {
   const dispatch = useAppDispatch();
@@ -39,20 +37,20 @@ const AddScreen = () => {
   const [transcription, setTranscription] = useState('');
 
   const handleOnChangeForeign = (event) => {
-    setForeign(getWordInputValue(event));
+    setForeign(getTargetValue(event));
   }
 
   const handleOnChangeNative = (event) => {
-    setNative(getWordInputValue(event));
+    setNative(getTargetValue(event));
   }
 
   const handleOnChangeTranscription = (event) => {
-    setTranscription(getWordInputValue(event));
+    setTranscription(getTargetValue(event));
   }
 
   const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
 
-  const handlePostSending = () => {
+  const handleAfterSending = () => {
     setForeign('');
     setNative('');
     setTranscription('');
@@ -61,9 +59,13 @@ const AddScreen = () => {
   }
 
   const handleOnAdd = () => {
-    dispatch(addOneDictionary(dictionaryPayload({ foreign, native, transcription })));
+    dispatch(addOneDictionary(dictionaryPayload({
+      foreign: normalizeValue(foreign),
+      native: normalizeValue(native),
+      transcription: normalizeValue(transcription),
+    })));
     setSuccessAlertData(t(ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS));
-    handlePostSending();
+    handleAfterSending();
   }
 
   return (

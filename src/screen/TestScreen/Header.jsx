@@ -9,7 +9,6 @@ import { TEST_SCREEN__DESCRIPTION, TEST_SCREEN__TITLE } from '../../translations
 import { useTranslation } from '../../translations';
 import { ensureTestDoneDateTime } from '../../utils/dateTime';
 
-
 const Header = ({ isTestStarted, isTestReversed, onReverseTest, totalTestPlan }) => {
   const { t } = useTranslation();
 
@@ -35,6 +34,6 @@ const Header = ({ isTestStarted, isTestReversed, onReverseTest, totalTestPlan })
       </div>
     </ScreenHeader>
   )
-}
+};
 
 export default Header;
