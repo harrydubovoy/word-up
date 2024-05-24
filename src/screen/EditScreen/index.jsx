@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { toLower, trim, compose, prop } from 'ramda';
+import { toLower, compose, prop } from 'ramda';
 import { useParams, useNavigate } from 'react-router-dom';
 
 import Button from '../../ui/Button';
@@ -27,7 +27,7 @@ import {
 import { getTargetValue } from '../../utils/input';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 
-const getWordInputValue = (event) => compose(trim, toLower, getTargetValue)(event);
+const getWordInputValue = (event) => compose(toLower, getTargetValue)(event);
 
 const EditScreen = () => {
   const { id } = useParams();

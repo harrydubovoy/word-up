@@ -26,7 +26,7 @@ import { addOneDictionary, dictionaryPayload } from '../../store/reducer/diction
 import { getTargetValue } from '../../utils/input';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 
-const getWordInputValue = (event) => compose(trim, toLower, getTargetValue)(event);
+const getWordInputValue = (event) => compose(toLower, getTargetValue)(event);
 
 const AddScreen = () => {
   const dispatch = useAppDispatch();
