@@ -14,15 +14,11 @@ const Header = ({ isTestStarted, isTestReversed, onReverseTest, totalTestPlan })
 
   return (
     <ScreenHeader>
-      <div className="flex justify-between gap-2">
+      <div className="flex items-center justify-between gap-2">
         <div>
           <Typography variant="h5">{t(TEST_SCREEN__TITLE)}</Typography>
-          <Typography variant="small">
-            {t(TEST_SCREEN__DESCRIPTION)}
-            <span className="font-semibold text-gray-600">{ensureTestDoneDateTime()}</span>
-          </Typography>
         </div>
-        <div className="mb-3 flex gap-2">
+        <div>
           <IconButton
             variant="text"
             disabled={isTestStarted || !totalTestPlan}

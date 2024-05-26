@@ -26,6 +26,8 @@ import { getTargetValue } from '../../utils/input';
 import { normalizeValue } from '../../utils/data';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 
+import { WORD_PAIR_KEYS } from '../../constants/word';
+
 const AddScreen = () => {
   const dispatch = useAppDispatch();
   const { t } = useTranslation();
@@ -60,9 +62,9 @@ const AddScreen = () => {
 
   const handleOnAdd = () => {
     dispatch(addOneDictionary(dictionaryPayload({
-      foreign: normalizeValue(foreign),
-      native: normalizeValue(native),
-      transcription: normalizeValue(transcription),
+      [WORD_PAIR_KEYS.FOREIGN]: normalizeValue(foreign),
+      [WORD_PAIR_KEYS.NATIVE]: normalizeValue(native),
+      [WORD_PAIR_KEYS.TRANSCRIPTION]: normalizeValue(transcription),
     })));
     setSuccessAlertData(t(ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS));
     handleAfterSending();

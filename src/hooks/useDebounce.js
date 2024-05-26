@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function useDebounce(value, delay) {
+function useDebounce(value, delay = 500) {
   // value and delay in ms (1000ms = 1s)
   // debounced values
   const [debouncedValue, setDebouncedValue] = useState(value);
@@ -19,6 +19,7 @@ function useDebounce(value, delay) {
     },
     [value, delay] // re-run if value or delay changes
   );
+
   return debouncedValue;
 }
 

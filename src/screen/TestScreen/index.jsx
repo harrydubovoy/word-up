@@ -45,6 +45,8 @@ import {
 import { getTargetValue, getRefValue, setRefValue, isEnterKey } from '../../utils/input';
 import { shuffleArray } from '../../utils/list';
 
+import { WORD_PAIR_KEYS } from '../../constants/word';
+
 const TestScreen = () => {
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
   const idsTestPlan = useAppSelector(selectIdsTestPlan);
@@ -95,16 +97,16 @@ const TestScreen = () => {
     }
   }
 
-  const questionWordKey = getWordPairKeyByReverse(isTestReversed);
   const isTestInProgress = lt(cursor, totalTestPlan);
-  const questionWord = compose(
-    prop(questionWordKey),
-    prop(nth(cursor)(data)),
-  )(entitiesDictionary);
-  const transcription = compose(
-    prop('transcription'),
-    prop(nth(cursor)(data)),
-  )(entitiesDictionary);
+  const getCurrentEntityId = () => nth(cursor)(data);
+  const getQuestionWord = compose(
+    prop(getWordPairKeyByReverse(isTestReversed)),
+    prop(getCurrentEntityId()),
+  );
+  const getTranslation = compose(
+    prop(WORD_PAIR_KEYS.TRANSCRIPTION),
+    prop(getCurrentEntityId()),
+  );
 
   return (
     <>
@@ -121,11 +123,11 @@ const TestScreen = () => {
               <div className="p-5 rounded-md bg-catskill-white">
                 <div className="mb-6">
                   <QuestionWord>
-                    {questionWord}
-                    <If condition={!isTestReversed && transcription}>
+                    {getQuestionWord(entitiesDictionary)}
+                    <If condition={!isTestReversed && getTranslation(entitiesDictionary)}>
                       <div className="mt-2">
                         <Typography variant="small">
-                          /{transcription}/
+                          /{getTranslation(entitiesDictionary)}/
                         </Typography>
                       </div>
                     </If>

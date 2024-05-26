@@ -28,6 +28,8 @@ import { getTargetValue } from '../../utils/input';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 import { normalizeValue } from '../../utils/data';
 
+import { WORD_PAIR_KEYS } from '../../constants/word';
+
 const EditScreen = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -38,9 +40,9 @@ const EditScreen = () => {
   const { t } = useTranslation();
 
   const foreignInputRef = useRef(null);
-  const [foreign, setForeign] = useState(prop('foreign')(byIdDictionary));
-  const [native, setNative] = useState(prop('native')(byIdDictionary));
-  const [transcription, setTranscription] = useState(prop('transcription')(byIdDictionary));
+  const [foreign, setForeign] = useState(prop(WORD_PAIR_KEYS.FOREIGN)(byIdDictionary));
+  const [native, setNative] = useState(prop(WORD_PAIR_KEYS.NATIVE)(byIdDictionary));
+  const [transcription, setTranscription] = useState(prop(WORD_PAIR_KEYS.TRANSCRIPTION)(byIdDictionary));
 
   const handleOnChangeForeign = (event) => {
     setForeign(getTargetValue(event));
@@ -68,9 +70,9 @@ const EditScreen = () => {
     dispatch(updateOneDictionary({
       id,
       changes: {
-        foreign: normalizeValue(foreign),
-        native: normalizeValue(native),
-        transcription: normalizeValue(transcription),
+        [WORD_PAIR_KEYS.FOREIGN]: normalizeValue(foreign),
+        [WORD_PAIR_KEYS.NATIVE]: normalizeValue(native),
+        [WORD_PAIR_KEYS.TRANSCRIPTION]: normalizeValue(transcription),
       }
     }));
     navigate(-1);
