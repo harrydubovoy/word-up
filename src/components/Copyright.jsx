@@ -7,7 +7,7 @@ const Copyright = () => (
     color="blue-gray"
     className="!text-sm !font-normal text-gray-500 text-center"
   >
-    Copyright &copy; 2023 - {getYear()} WordUp by
+    &copy; 2023 - {getYear()} WordUp by
     <Typography
       as="a"
       href="https://github.com/harrydubovoy"
@@ -17,7 +17,6 @@ const Copyright = () => (
     >
       &nbsp;@harrydubovyi
     </Typography>
-    .
   </Typography>
 )
 

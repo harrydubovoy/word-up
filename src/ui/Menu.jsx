@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import {
   Menu as MenuCore,
   MenuHandler as MenuHandlerCore,
@@ -5,10 +6,25 @@ import {
   MenuItem as MenuItemCore,
 } from '@material-tailwind/react';
 
-const Menu = ({ children, ...restProps }) => <MenuCore {...restProps}>{children}</MenuCore>;
-const MenuHandler = ({ children, ...restProps }) => <MenuHandlerCore {...restProps}>{children}</MenuHandlerCore>;
-const MenuList = ({ children, ...restProps }) => <MenuListCore {...restProps}>{children}</MenuListCore>;
-const MenuItem = ({ children, ...restProps }) => <MenuItemCore {...restProps}>{children}</MenuItemCore>;
+const Menu = forwardRef(({ children, ...restProps }, ref) => (
+  <MenuCore ref={ref} {...restProps}>{children}</MenuCore>
+));
+Menu.displayName = 'Menu';
+
+const MenuHandler = forwardRef(({ children, ...restProps }, ref) => (
+  <MenuHandlerCore ref={ref} {...restProps}>{children}</MenuHandlerCore>
+));
+MenuHandler.displayName = 'MenuHandler';
+
+const MenuList = forwardRef(({ children, ...restProps }, ref) => (
+  <MenuListCore ref={ref} {...restProps}>{children}</MenuListCore>
+));
+MenuList.displayName = 'MenuList';
+
+const MenuItem = forwardRef(({ children, ...restProps }, ref) => (
+  <MenuItemCore ref={ref} {...restProps}>{children}</MenuItemCore>
+));
+MenuItem.displayName = 'MenuItem';
 
 export {
   Menu,

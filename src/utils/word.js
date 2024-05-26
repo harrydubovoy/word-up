@@ -1,5 +1,7 @@
 import { compose, prop } from 'ramda';
 
-export const getNativeWordById = (entities) => (id) => compose(prop('native'), prop(id))(entities);
-export const getForeignWordById = (entities) => (id) => compose(prop('foreign'), prop(id))(entities);
-export const getTranscriptionWordById = (entities) => (id) => compose(prop('transcription'), prop(id))(entities);
+import { WORD_PAIR_KEYS } from '../constants/word'
+
+export const getNativeWordById = (id) => (entities) => compose(prop(WORD_PAIR_KEYS.NATIVE), prop(id))(entities);
+export const getForeignWordById = (id) => (entities) => compose(prop(WORD_PAIR_KEYS.FOREIGN), prop(id))(entities);
+export const getTranscriptionWordById = (entities) => (id) => compose(prop(WORD_PAIR_KEYS.TRANSCRIPTION), prop(id))(entities);

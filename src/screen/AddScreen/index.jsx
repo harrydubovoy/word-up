@@ -23,7 +23,7 @@ import { useAppDispatch } from '../../store/hooks'
 import { addOneDictionary, dictionaryPayload } from '../../store/reducer/dictionary.slice';
 
 import { getTargetValue } from '../../utils/input';
-import { normalizeValue } from '../../utils/data';
+import { normalizeValue } from '../../utils/string';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 
 import { WORD_PAIR_KEYS } from '../../constants/word';
@@ -61,6 +61,10 @@ const AddScreen = () => {
   }
 
   const handleOnAdd = () => {
+    if (!(foreign && native)) {
+      return null;
+    }
+
     dispatch(addOneDictionary(dictionaryPayload({
       [WORD_PAIR_KEYS.FOREIGN]: normalizeValue(foreign),
       [WORD_PAIR_KEYS.NATIVE]: normalizeValue(native),
@@ -125,7 +129,6 @@ const AddScreen = () => {
               <Button
                 fullWidth
                 className="flex justify-center items-center gap-2"
-                disabled={!(foreign && native)}
                 onClick={handleOnAdd}
               >
                 {t(ADD_WORD_SCREEN__ACTION_ADD_TO_LIST)}

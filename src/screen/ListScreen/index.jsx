@@ -1,7 +1,13 @@
+import { useMemo } from 'react';
+
 import { useNavigate } from 'react-router-dom';
-import { map, prop, reverse, has } from 'ramda';
+import { map, prop, reverse, has, compose, length } from 'ramda';
 
 import IconButton from '../../ui/IconButton';
+import Input from '../../ui/Input';
+import { Menu, MenuItem, MenuHandler, MenuList } from '../../ui/Menu';
+import Button from '../../ui/Button';
+import { Navbar } from '../../ui/Navbar';
 
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
@@ -16,6 +22,9 @@ import EditSvg from '../../icons/EditSvg';
 import ListAdd from '../../icons/ListAdd';
 import ListRemove from '../../icons/ListRemove';
 
+import useSearchQuery from '../../hooks/useSearchQuery'
+import useFilterType from '../../hooks/useFilterType'
+
 import Header from './Header';
 
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
@@ -23,17 +32,20 @@ import {
   removeOneDictionary,
   selectEntitiesDictionary,
   selectIdsDictionary,
-  selectTotalDictionary,
 } from '../../store/reducer/dictionary.slice';
 import {
   addOneTestPlan,
   removeOneTestPlan,
   selectEntitiesTestPlan,
+  selectIdsTestPlan,
 } from '../../store/reducer/test-plan.slice';
 import { addOneTrashBin } from '../../store/reducer/trash-bin.slice';
 
 import { getNativeWordById, getForeignWordById, getTranscriptionWordById } from '../../utils/word';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
+import { filterByType, filterBySearchString } from '../../utils/filter';
+
+import { FILTER_MAP } from '../../constants/filter';
 
 const ListScreen = () => {
   const navigate = useNavigate();
@@ -42,7 +54,10 @@ const ListScreen = () => {
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
   const entitiesTestPlan = useAppSelector(selectEntitiesTestPlan);
   const idsDictionary = useAppSelector(selectIdsDictionary);
-  const totalDictionary = useAppSelector(selectTotalDictionary);
+  const idsTestPlan = useAppSelector(selectIdsTestPlan);
+
+  const { searchString, handleOnSearchChange } = useSearchQuery();
+  const { filterValue, filterDisplayValue, handleFilterTypeChange, } = useFilterType();
 
   const handleOnAddToTestPlan = (wordPairId) => () => {
     dispatch(addOneTestPlan({ id: wordPairId }));
@@ -63,14 +78,44 @@ const ListScreen = () => {
   }
 
   const handleOnOpenDictionary = (wordPairId) => () => {
-    openOxfordDictionaryPageByWord(getForeignWordById(entitiesDictionary)(wordPairId))
+    openOxfordDictionaryPageByWord(getForeignWordById(wordPairId)(entitiesDictionary))
   }
+
+  const data = useMemo(() => (
+    compose(
+      filterBySearchString(searchString, { entities: entitiesDictionary }),
+      filterByType(filterValue, { includedIds: idsTestPlan }),
+    )(idsDictionary)
+  ), [idsDictionary, idsTestPlan, searchString, filterValue, entitiesDictionary]);
 
   return (
     <>
       <Header />
       <ScrollContainer>
-        <EmptyScreen type={!totalDictionary && EMPTY_SCREEN_TYPE.DEFAULT}>
+        <Navbar className="rounded-t-none sticky top-0 z-10 p-4">
+          <div className="flex items-center justify-between gap-3">
+            <Input onChange={handleOnSearchChange} size="md" label="Search" />
+            <div className="shrink-0">
+              <Menu placement="top-end">
+                <MenuHandler>
+                  <Button>{filterDisplayValue}</Button>
+                </MenuHandler>
+                <MenuList>
+                  <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.ALL.value)}>
+                    {FILTER_MAP.ALL.displayValue}
+                  </MenuItem>
+                  <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.INCLUDED.value)}>
+                    {FILTER_MAP.INCLUDED.displayValue}
+                  </MenuItem>
+                  <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.EXCLUDED.value)}>
+                    {FILTER_MAP.EXCLUDED.displayValue}
+                  </MenuItem>
+                </MenuList>
+              </Menu>
+            </div>
+          </div>
+        </Navbar>
+        <EmptyScreen type={!length(data) && EMPTY_SCREEN_TYPE.DEFAULT}>
           <ScreenBody className="bg-catskill-white">
             <div className="w-full">
               <div className="grid grid-cols-1 gap-4">
@@ -80,8 +125,8 @@ const ListScreen = () => {
                     >
                       <WordPair
                         isSelected={has(wordPairId)(entitiesTestPlan)}
-                        foreign={getForeignWordById(entitiesDictionary)(wordPairId)}
-                        native={getNativeWordById(entitiesDictionary)(wordPairId)}
+                        foreign={getForeignWordById(wordPairId)(entitiesDictionary)}
+                        native={getNativeWordById(wordPairId)(entitiesDictionary)}
                         transcription={getTranscriptionWordById(entitiesDictionary)(wordPairId)}
                       />
                     </WordPairCard.Body>
@@ -106,7 +151,7 @@ const ListScreen = () => {
                       )}
                     </WordPairCard.Footer>
                   </WordPairCard>
-                ), reverse(idsDictionary))}
+                ), reverse(data))}
               </div>
             </div>
           </ScreenBody>

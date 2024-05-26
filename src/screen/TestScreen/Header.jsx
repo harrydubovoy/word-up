@@ -3,11 +3,9 @@ import IconButton from '../../ui/IconButton';
 import ScreenHeader from '../../screen-components/ScreenHeader';
 import FlagIcon, { FLAG_ICON_TYPE } from '../../components/FlagIcon';
 
-import { TEST_SCREEN__DESCRIPTION, TEST_SCREEN__TITLE } from '../../translations/resources/constants';
-
+import { TEST_SCREEN__TITLE } from '../../translations/resources/constants';
 
 import { useTranslation } from '../../translations';
-import { ensureTestDoneDateTime } from '../../utils/dateTime';
 
 const Header = ({ isTestStarted, isTestReversed, onReverseTest, totalTestPlan }) => {
   const { t } = useTranslation();
