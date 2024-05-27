@@ -32,6 +32,7 @@ import {
   removeOneDictionary,
   selectEntitiesDictionary,
   selectIdsDictionary,
+  selectTotalDictionary,
 } from '../../store/reducer/dictionary.slice';
 import {
   addOneTestPlan,
@@ -54,6 +55,7 @@ const ListScreen = () => {
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
   const entitiesTestPlan = useAppSelector(selectEntitiesTestPlan);
   const idsDictionary = useAppSelector(selectIdsDictionary);
+  const totalDictionary = useAppSelector(selectTotalDictionary);
   const idsTestPlan = useAppSelector(selectIdsTestPlan);
 
   const { searchString, handleOnSearchChange } = useSearchQuery();
@@ -94,11 +96,11 @@ const ListScreen = () => {
       <ScrollContainer>
         <Navbar className="rounded-t-none sticky top-0 z-10 p-4">
           <div className="flex items-center justify-between gap-3">
-            <Input onChange={handleOnSearchChange} size="md" label="Search" />
+            <Input disabled={!totalDictionary} onChange={handleOnSearchChange} size="md" label="Search" />
             <div className="shrink-0">
               <Menu placement="top-end">
                 <MenuHandler>
-                  <Button>{filterDisplayValue}</Button>
+                  <Button disabled={!totalDictionary}>{filterDisplayValue}</Button>
                 </MenuHandler>
                 <MenuList>
                   <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.ALL.value)}>
