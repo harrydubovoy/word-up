@@ -1,13 +1,13 @@
 import classNames from 'classnames';
 import { map, addIndex, nth, equals, prop, compose } from 'ramda';
 
-import { useAppSelector } from '../../store/hooks'
+import { useAppSelector } from '../../store/hooks';
 import { selectEntitiesDictionary } from '../../store/reducer/dictionary.slice';
 
-import If from '../../util-components/If'
+import If from '../../util-components/If';
 import { getWordPairKeyByReverse } from './utils';
 
-const ResultAnswersList = ({ userAnswers, ids, isTestReversed }) => {
+function ResultAnswersList({ userAnswers, ids, isTestReversed }) {
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
 
   return (
@@ -38,20 +38,21 @@ const ResultAnswersList = ({ userAnswers, ids, isTestReversed }) => {
               <span className={classNames('font-semibold', {
                 'text-red-500': !isRightAnswer,
                 'text-green-500': isRightAnswer,
-              })}>
+              })}
+              >
                 {userAnswerWord}
               </span>
               <If condition={!isRightAnswer}>
                 <>
                   &nbsp;&ndash;&nbsp;
                   <span className="text-green-500">
-                   {rightAnswerWord}
+                    {rightAnswerWord}
                   </span>
                 </>
               </If>
             </div>
           </li>
-        )
+        );
       }, ids)}
     </ul>
   );

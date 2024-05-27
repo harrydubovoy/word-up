@@ -7,7 +7,9 @@ import { rootReducer } from './reducer';
 
 const store = configureStore({
   reducer: rootReducer,
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger, localStorageMiddleware),
+  middleware: (getDefaultMiddleware) => (
+    getDefaultMiddleware().concat(logger, localStorageMiddleware)
+  ),
   // devTools: process.env.NODE_ENV !== 'production',
   preloadedState: reHydrateStore(),
 });

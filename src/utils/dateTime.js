@@ -8,9 +8,7 @@ export const getYear = (date = getDate()) => date.getFullYear();
 export const getMonth = (date = getDate()) => (date.getMonth()) + 1;
 export const getDay = (date = getDate()) => date.getDate();
 
-export const getDateTime = (date = getDate()) => {
-  return `${getYear(date)}/${getMonth(date)}/${getDay(date)}`;
-}
+export const getDateTime = (date = getDate()) => `${getYear(date)}/${getMonth(date)}/${getDay(date)}`;
 
 export const setTestDoneDateTime = (date) => storage().set(STORAGE_KEY, date);
 

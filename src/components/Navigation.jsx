@@ -2,21 +2,21 @@ import { Link, useLocation } from 'react-router-dom';
 
 import Container from '../ui/Container';
 import { List, ListItem } from '../ui/List';
-import Card from '../ui/Card';
+import { Card } from '../ui/Card';
 
 import HomeSvg from '../icons/HomeSvg';
 import ListSvg from '../icons/ListSvg';
 import AddSvg from '../icons/AddSvg';
 import TrashSvg from '../icons/TrashSvg';
 
-const Navigation = () => {
+function Navigation() {
   const location = useLocation();
 
   return (
     <Card shadow={false}>
       <Container>
         <List className="flex flex-row justify-between px-0 py-2">
-          <Link to="">
+          <Link to="/">
             <ListItem selected={location.pathname === '/'}>
               <HomeSvg />
             </ListItem>

@@ -16,7 +16,9 @@ const ALERT_TYPE_ERROR = 'error';
 const useAlertContext = () => {
   const { setAlertData, alertData } = useContext(AlertContext);
 
-  const handleSetSuccessAlertData = (message) => setAlertData({ type: ALERT_TYPE_SUCCESS, message });
+  const handleSetSuccessAlertData = (message) => (
+    setAlertData({ type: ALERT_TYPE_SUCCESS, message })
+  );
   const handleSetErrorAlertData = (message) => setAlertData({ type: ALERT_TYPE_SUCCESS, message });
   const handleResetAlertData = () => setAlertData(DEFAULT_ALERT);
 
@@ -25,23 +27,24 @@ const useAlertContext = () => {
     setSuccessAlertData: handleSetSuccessAlertData,
     setErrorAlertData: handleSetErrorAlertData,
     resetAlertData: handleResetAlertData,
-  }
+  };
 };
 
-const AlertProvider = ({ children }) => {
+function AlertProvider({ children }) {
   const [alertData, setAlertData] = useState(DEFAULT_ALERT);
 
   return (
+    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <AlertContext.Provider value={{ alertData, setAlertData }}>
       {children}
     </AlertContext.Provider>
-  )
+  );
 }
 
 export {
   AlertProvider,
-  useAlertContext
-}
+  useAlertContext,
+};
 
 const getAlertColorByType = (type) => {
   switch (type) {
@@ -55,15 +58,15 @@ const getAlertColorByType = (type) => {
       return 'gray';
     }
   }
-}
+};
 
-const Alert = () => {
+function Alert() {
   const { alertData, resetAlertData } = useAlertContext();
   const location = useLocation();
 
   useEffect(() => {
     resetAlertData();
-  }, [location.key]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [location.key]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="absolute z-10 w-full p-2">
@@ -75,7 +78,7 @@ const Alert = () => {
         {prop('message', alertData)}
       </AlertCore>
     </div>
-  )
+  );
 }
 
 export default Alert;

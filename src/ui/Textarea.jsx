@@ -1,5 +1,6 @@
-import { Textarea as TextareaCore  } from '@material-tailwind/react';
+// eslint-disable jsx-props-no-spreading
+import { Textarea as TextareaCore } from '@material-tailwind/react';
 
-export const Textarea = (props) => (
-  <TextareaCore className="bg-white" {...props} />
-);
+export function Textarea(props) {
+  return <TextareaCore className="bg-white" {...props} />;
+}

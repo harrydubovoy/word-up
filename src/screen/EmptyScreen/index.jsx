@@ -1,10 +1,6 @@
-import EmptyScreenFactory, { EMPTY_SCREEN_TYPE } from './EmptyScreenFactory';
+import EmptyScreenFactory from './EmptyScreenFactory';
 
-export {
-  EMPTY_SCREEN_TYPE,
-}
-
-const EmptyScreen = ({ children, type }) => {
+function EmptyScreen({ children, type }) {
   if (type) {
     return (
       <div className="flex flex-col items-center gap-4 justify-center mt-28">
@@ -13,7 +9,7 @@ const EmptyScreen = ({ children, type }) => {
     );
   }
 
-  return <>{children}</>
+  return children;
 }
 
 export default EmptyScreen;

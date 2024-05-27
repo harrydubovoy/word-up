@@ -32,4 +32,4 @@ export const dictionaryPayload = ({ foreign, native, transcription }) => ({
   foreign,
   native,
   transcription,
-})
+});

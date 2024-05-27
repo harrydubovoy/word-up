@@ -2,7 +2,7 @@ const getRandom = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 export const shuffleArray = (array) => {
   const copiedArray = [...array];
-  let list = [];
+  const list = [];
 
   while (copiedArray.length) {
     const index = getRandom(0, copiedArray.length - 1);
@@ -12,8 +12,4 @@ export const shuffleArray = (array) => {
   }
 
   return list;
-}
-
-
-
-
+};

@@ -1,7 +1,7 @@
-import Typography from '../../ui/Typography';
+import { Typography } from '../../ui/Typography';
 import ScreenHeader from '../../screen-components/ScreenHeader';
 
-const Header = () => {
+function Header() {
   return (
     <ScreenHeader>
       <div className="flex justify-between gap-2">
@@ -10,7 +10,7 @@ const Header = () => {
         </div>
       </div>
     </ScreenHeader>
-  )
+  );
 }
 
 export default Header;

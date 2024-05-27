@@ -9,12 +9,12 @@ const useSearchQuery = () => {
 
   const handleOnSearchChange = (event) => {
     setSearchString(getTargetValue(event));
-  }
+  };
 
   return {
     searchString: debouncedSearchString,
     handleOnSearchChange,
-  }
-}
+  };
+};
 
 export default useSearchQuery;

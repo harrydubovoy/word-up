@@ -1,9 +1,11 @@
 import { CardBody } from '../../ui/Card';
 
-const WordPairCardBody = ({ children }) => (
-  <CardBody className="p-0">
-    {children}
-  </CardBody>
-)
+function WordPairCardBody({ children }) {
+  return (
+    <CardBody className="p-0">
+      {children}
+    </CardBody>
+  );
+}
 
 export default WordPairCardBody;

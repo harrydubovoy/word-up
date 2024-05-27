@@ -1,4 +1,4 @@
-import Typography from '../../ui/Typography';
+import { Typography } from '../../ui/Typography';
 import ScreenHeader from '../../screen-components/ScreenHeader';
 
 import { selectTotalTrashBin } from '../../store/reducer/trash-bin.slice';
@@ -11,7 +11,7 @@ import {
 
 import { useTranslation } from '../../translations';
 
-const Header = () => {
+function Header() {
   const totalTrashBin = useAppSelector(selectTotalTrashBin);
   const { t } = useTranslation();
 
@@ -26,7 +26,7 @@ const Header = () => {
         </div>
       </div>
     </ScreenHeader>
-  )
+  );
 }
 
 export default Header;

@@ -6,5 +6,3 @@ export const Typography = forwardRef(({ children, ...restProps }, ref) => (
 ));
 
 Typography.displayName = 'Typography';
-
-export default Typography;

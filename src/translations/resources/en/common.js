@@ -5,6 +5,6 @@ const translations = {
   [COMMON__UKRAINIAN]: 'Ukrainian',
   [COMMON__NATIVE]: 'Native',
   [COMMON__FOREIGN]: 'Foreign',
-}
+};
 
 export default translations;

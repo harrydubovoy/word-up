@@ -17,7 +17,7 @@ function useDebounce(value, delay = 500) {
         clearTimeout(t);
       };
     },
-    [value, delay] // re-run if value or delay changes
+    [value, delay], // re-run if value or delay changes
   );
 
   return debouncedValue;

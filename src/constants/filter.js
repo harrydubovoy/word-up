@@ -10,7 +10,7 @@ export const FILTER_MAP = {
   EXCLUDED: {
     value: 'EXCLUDED',
     displayValue: 'Unused',
-  }
-}
+  },
+};
 
 export const STORAGE_FILTER_TYPE_KEY = 'filterType';

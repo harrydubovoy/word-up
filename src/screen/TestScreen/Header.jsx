@@ -1,13 +1,15 @@
-import Typography from '../../ui/Typography';
+import { Typography } from '../../ui/Typography';
 import IconButton from '../../ui/IconButton';
 import ScreenHeader from '../../screen-components/ScreenHeader';
-import FlagIcon, { FLAG_ICON_TYPE } from '../../components/FlagIcon';
+import FlagIcon from '../../components/FlagIcon';
 
 import { TEST_SCREEN__TITLE } from '../../translations/resources/constants';
 
 import { useTranslation } from '../../translations';
 
-const Header = ({ isTestStarted, isTestReversed, onReverseTest, totalTestPlan }) => {
+import { FLAG_ICON_TYPE } from '../../constants/icons';
+
+function Header({ isTestStarted, isTestReversed, onReverseTest, totalTestPlan }) {
   const { t } = useTranslation();
 
   return (
@@ -27,7 +29,7 @@ const Header = ({ isTestStarted, isTestReversed, onReverseTest, totalTestPlan })
         </div>
       </div>
     </ScreenHeader>
-  )
-};
+  );
+}
 
 export default Header;

@@ -1,6 +1,6 @@
 import ScreenHeader from '../../screen-components/ScreenHeader';
 
-import Typography from '../../ui/Typography';
+import { Typography } from '../../ui/Typography';
 
 import {
   LIST_SCREEN__TITLE,
@@ -13,7 +13,7 @@ import { selectTotalDictionary } from '../../store/reducer/dictionary.slice';
 
 import { useTranslation } from '../../translations';
 
-const Header = () => {
+function Header() {
   const totalTestPlan = useAppSelector(selectTotalTestPlan);
   const totalDictionary = useAppSelector(selectTotalDictionary);
   const { t } = useTranslation();
@@ -29,7 +29,7 @@ const Header = () => {
         </div>
       </div>
     </ScreenHeader>
-  )
+  );
 }
 
 export default Header;

@@ -9,7 +9,7 @@ import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
 import WordPairCard from '../../components/WordPairCard';
 import WordPair from '../../components/WordPair';
-import EmptyScreen, { EMPTY_SCREEN_TYPE } from '../EmptyScreen';
+import EmptyScreen from '../EmptyScreen';
 
 import Header from './Header';
 
@@ -22,9 +22,11 @@ import {
 } from '../../store/reducer/trash-bin.slice';
 import { addOneDictionary } from '../../store/reducer/dictionary.slice';
 
-import { getNativeWordById, getForeignWordById } from '../../utils/word';
+import { getNativeWordById, getForeignWordById, getTranscriptionWordById } from '../../utils/word';
 
-const TrashBinScreen = () => {
+import { EMPTY_SCREEN_TYPE } from '../../constants/screens';
+
+function TrashBinScreen() {
   const dispatch = useAppDispatch();
   const entitiesTrashBin = useAppSelector(selectEntitiesTrashBin);
   const idsTrashBin = useAppSelector(selectIdsTrashBin);
@@ -32,12 +34,12 @@ const TrashBinScreen = () => {
 
   const handleOnRemove = (wordPairId) => () => {
     dispatch(removeOneTrashBin(wordPairId));
-  }
+  };
 
   const handleRestore = (wordPairId) => () => {
     dispatch(addOneDictionary(prop(wordPairId)(entitiesTrashBin)));
     dispatch(removeOneTrashBin(wordPairId));
-  }
+  };
 
   return (
     <>
@@ -53,6 +55,7 @@ const TrashBinScreen = () => {
                       <WordPair
                         native={getNativeWordById(wordPairId)(entitiesTrashBin)}
                         foreign={getForeignWordById(wordPairId)(entitiesTrashBin)}
+                        transcription={getTranscriptionWordById(wordPairId)(entitiesTrashBin)}
                       />
                     </WordPairCard.Body>
                     <WordPairCard.Footer>
@@ -71,7 +74,7 @@ const TrashBinScreen = () => {
         </EmptyScreen>
       </ScrollContainer>
     </>
-  )
+  );
 }
 
 export default TrashBinScreen;

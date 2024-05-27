@@ -30,7 +30,7 @@ import { normalizeValue } from '../../utils/string';
 
 import { WORD_PAIR_KEYS } from '../../constants/word';
 
-const EditScreen = () => {
+function EditScreen() {
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -42,25 +42,28 @@ const EditScreen = () => {
   const foreignInputRef = useRef(null);
   const [foreign, setForeign] = useState(prop(WORD_PAIR_KEYS.FOREIGN)(byIdDictionary));
   const [native, setNative] = useState(prop(WORD_PAIR_KEYS.NATIVE)(byIdDictionary));
-  const [transcription, setTranscription] = useState(prop(WORD_PAIR_KEYS.TRANSCRIPTION)(byIdDictionary));
+  const [
+    transcription,
+    setTranscription,
+  ] = useState(prop(WORD_PAIR_KEYS.TRANSCRIPTION)(byIdDictionary));
 
   const handleOnChangeForeign = (event) => {
     setForeign(getTargetValue(event));
-  }
+  };
 
   const handleOnChangeNative = (event) => {
     setNative(getTargetValue(event));
-  }
+  };
 
   const handleOnChangeTranscription = (event) => {
     setTranscription(getTargetValue(event));
-  }
+  };
 
   const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
 
   const handleOnCancel = () => {
     navigate(-1);
-  }
+  };
 
   const handleOnUpdate = () => {
     if (!(foreign && native)) {
@@ -73,10 +76,10 @@ const EditScreen = () => {
         [WORD_PAIR_KEYS.FOREIGN]: normalizeValue(foreign),
         [WORD_PAIR_KEYS.NATIVE]: normalizeValue(native),
         [WORD_PAIR_KEYS.TRANSCRIPTION]: normalizeValue(transcription),
-      }
+      },
     }));
     navigate(-1);
-  }
+  };
 
   return (
     <>
@@ -88,7 +91,7 @@ const EditScreen = () => {
               <div className="relative flex w-full">
                 <Input
                   containerProps={{
-                    className: 'min-w-0'
+                    className: 'min-w-0',
                   }}
                   required
                   className="pr-20"
@@ -110,7 +113,7 @@ const EditScreen = () => {
               </div>
               <Input
                 containerProps={{
-                  className: 'min-w-0'
+                  className: 'min-w-0',
                 }}
                 required
                 size="lg"
@@ -120,7 +123,7 @@ const EditScreen = () => {
               />
               <Input
                 containerProps={{
-                  className: 'min-w-0'
+                  className: 'min-w-0',
                 }}
                 size="lg"
                 label="Transcription"
@@ -150,7 +153,7 @@ const EditScreen = () => {
         </ScreenBody>
       </ScrollContainer>
     </>
-  )
+  );
 }
 
 export default EditScreen;

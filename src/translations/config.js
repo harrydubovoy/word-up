@@ -15,7 +15,7 @@ const initLanguage = () => {
   storage().set('lng', 'en');
 
   return 'en';
-}
+};
 
 i18n
   .use(initReactI18next)

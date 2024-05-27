@@ -3,7 +3,7 @@ import {
   TRASH_BIN_SCREEN__EMPTY_DESCRIPTION,
   TRASH_BIN_SCREEN__REMOVE_FOREVER_NOTIFICATION_SUCCESS,
   TRASH_BIN_SCREEN__RESTORE_NOTIFICATION_SUCCESS,
-  TRASH_BIN_SCREEN__TITLE
+  TRASH_BIN_SCREEN__TITLE,
 } from '../constants';
 
 const translations = {
@@ -12,6 +12,6 @@ const translations = {
   [TRASH_BIN_SCREEN__EMPTY_DESCRIPTION]: 'No trashed words.',
   [TRASH_BIN_SCREEN__RESTORE_NOTIFICATION_SUCCESS]: 'Word was restored to dictionary',
   [TRASH_BIN_SCREEN__REMOVE_FOREVER_NOTIFICATION_SUCCESS]: 'Word was removed',
-}
+};
 
 export default translations;

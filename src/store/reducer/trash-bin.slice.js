@@ -1,6 +1,6 @@
-import { createSlice, createEntityAdapter } from '@reduxjs/toolkit'
+import { createSlice, createEntityAdapter } from '@reduxjs/toolkit';
 
-const trashBinAdapter = createEntityAdapter()
+const trashBinAdapter = createEntityAdapter();
 
 export const trashBinSlice = createSlice({
   name: 'trashBin',

@@ -13,10 +13,9 @@ export default withMT({
       'lunar-green': '#384135',
       'tropical-blue': '#d7e9f9',
       'catskill-white': '#f8fafc',
-      'caper': '#c5ebaa',
+      caper: '#c5ebaa',
     },
     extend: {},
   },
   plugins: [],
-})
-
+});

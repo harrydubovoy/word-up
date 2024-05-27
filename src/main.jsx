@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         path: '/trash',
         element: <TrashBinScreen />,
       },
-    ]
+    ],
   },
 ]);
 
@@ -56,5 +56,5 @@ root.render(
         <RouterProvider router={router} />
       </Provider>
     </ThemeProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

@@ -12,7 +12,7 @@ import { Navbar } from '../../ui/Navbar';
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
 
-import EmptyScreen, { EMPTY_SCREEN_TYPE } from '../EmptyScreen';
+import EmptyScreen from '../EmptyScreen';
 import WordPairCard from '../../components/WordPairCard';
 import WordPair from '../../components/WordPair';
 
@@ -22,8 +22,8 @@ import EditSvg from '../../icons/EditSvg';
 import ListAdd from '../../icons/ListAdd';
 import ListRemove from '../../icons/ListRemove';
 
-import useSearchQuery from '../../hooks/useSearchQuery'
-import useFilterType from '../../hooks/useFilterType'
+import useSearchQuery from '../../hooks/useSearchQuery';
+import useFilterType from '../../hooks/useFilterType';
 
 import Header from './Header';
 
@@ -47,8 +47,9 @@ import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 import { filterByType, filterBySearchString } from '../../utils/filter';
 
 import { FILTER_MAP } from '../../constants/filter';
+import { EMPTY_SCREEN_TYPE } from '../../constants/screens';
 
-const ListScreen = () => {
+function ListScreen() {
   const navigate = useNavigate();
 
   const dispatch = useAppDispatch();
@@ -59,29 +60,29 @@ const ListScreen = () => {
   const idsTestPlan = useAppSelector(selectIdsTestPlan);
 
   const { searchString, handleOnSearchChange } = useSearchQuery();
-  const { filterValue, filterDisplayValue, handleFilterTypeChange, } = useFilterType();
+  const { filterValue, filterDisplayValue, handleFilterTypeChange } = useFilterType();
 
   const handleOnAddToTestPlan = (wordPairId) => () => {
     dispatch(addOneTestPlan({ id: wordPairId }));
-  }
+  };
 
   const handleOnRemoveFromTestPlan = (wordPairId) => () => {
     dispatch(removeOneTestPlan(wordPairId));
-  }
+  };
 
   const handleOnRemove = (wordPairId) => () => {
     dispatch(addOneTrashBin(prop(wordPairId)(entitiesDictionary)));
     dispatch(removeOneDictionary(wordPairId));
     dispatch(removeOneTestPlan(wordPairId));
-  }
+  };
 
   const handleOnEdit = (wordPairId) => () => {
     navigate(`/edit/${wordPairId}`);
-  }
+  };
 
   const handleOnOpenDictionary = (wordPairId) => () => {
-    openOxfordDictionaryPageByWord(getForeignWordById(wordPairId)(entitiesDictionary))
-  }
+    openOxfordDictionaryPageByWord(getForeignWordById(wordPairId)(entitiesDictionary));
+  };
 
   const data = useMemo(() => (
     compose(
@@ -123,8 +124,7 @@ const ListScreen = () => {
               <div className="grid grid-cols-1 gap-4">
                 {map((wordPairId) => (
                   <WordPairCard key={wordPairId}>
-                    <WordPairCard.Body
-                    >
+                    <WordPairCard.Body>
                       <WordPair
                         isSelected={has(wordPairId)(entitiesTestPlan)}
                         foreign={getForeignWordById(wordPairId)(entitiesDictionary)}
@@ -160,7 +160,7 @@ const ListScreen = () => {
         </EmptyScreen>
       </ScrollContainer>
     </>
-  )
+  );
 }
 
 export default ListScreen;

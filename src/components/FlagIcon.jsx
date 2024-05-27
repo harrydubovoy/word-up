@@ -1,12 +1,9 @@
 import BritishFlagSvg from '../icons/BritishFlagSvg';
 import UkrainianFlagSvg from '../icons/UkrainianFlagSvg';
 
-export const FLAG_ICON_TYPE = {
-  UA: 'ua',
-  ENG: 'eng',
-}
+import { FLAG_ICON_TYPE } from '../constants/icons';
 
-const FlagIconByType = ({ type }) => {
+function FlagIconByType({ type }) {
   if (type === FLAG_ICON_TYPE.ENG) {
     return <BritishFlagSvg />;
   }
@@ -15,10 +12,10 @@ const FlagIconByType = ({ type }) => {
     return <UkrainianFlagSvg />;
   }
 
-  return <></>;
+  return null;
 }
 
-const FlagIcon = ({ type }) => {
+function FlagIcon({ type }) {
   return (
     <span className="inline-flex items-center justify-center w-[24px] h-[24px]">
       <FlagIconByType type={type} />

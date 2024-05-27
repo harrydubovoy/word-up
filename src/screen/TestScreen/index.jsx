@@ -12,8 +12,8 @@ import {
 
 import Input from '../../ui/Input';
 import IconButton from '../../ui/IconButton';
-import Progress from '../../ui/Progress';
-import Typography from '../../ui/Typography';
+import { Progress } from '../../ui/Progress';
+import { Typography } from '../../ui/Typography';
 
 import Header from './Header';
 
@@ -24,7 +24,7 @@ import QuestionWord from './QuestionWord';
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
 import If from '../../util-components/If';
-import EmptyScreen, { EMPTY_SCREEN_TYPE } from '../EmptyScreen';
+import EmptyScreen from '../EmptyScreen';
 
 import SendSvg from '../../icons/SendSvg';
 
@@ -46,8 +46,9 @@ import { getTargetValue, getRefValue, setRefValue, isEnterKey } from '../../util
 import { shuffleArray } from '../../utils/list';
 
 import { WORD_PAIR_KEYS } from '../../constants/word';
+import { EMPTY_SCREEN_TYPE } from '../../constants/screens';
 
-const TestScreen = () => {
+function TestScreen() {
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
   const idsTestPlan = useAppSelector(selectIdsTestPlan);
   const totalTestPlan = useAppSelector(selectTotalTestPlan);
@@ -68,12 +69,12 @@ const TestScreen = () => {
     setUserAnswers([]);
     setData(shuffleArray(idsTestPlan));
     setCursor(0);
-  }
+  };
 
   const handleReverseTest = () => {
     setIsTestReversed((prev) => !prev);
     answerInputRef.current.focus();
-  }
+  };
 
   const handleAnswer = (value) => {
     const userAnswerWord = compose(toLower, trim)(value);
@@ -85,17 +86,17 @@ const TestScreen = () => {
       setRefValue(answerInputRef, '');
       answerInputRef.current.focus();
     }
-  }
+  };
 
   const handleSubmitAnswer = () => {
     handleAnswer(getRefValue(answerInputRef));
-  }
+  };
 
   const handleOnKeyDown = (event) => {
     if (isEnterKey(event)) {
-      handleAnswer(getTargetValue(event))
+      handleAnswer(getTargetValue(event));
     }
-  }
+  };
 
   const isTestInProgress = lt(cursor, totalTestPlan);
   const getCurrentEntityId = () => nth(cursor)(data);
@@ -127,7 +128,9 @@ const TestScreen = () => {
                     <If condition={!isTestReversed && getTranslation(entitiesDictionary)}>
                       <span className="flex justify-center mt-2">
                         <Typography as="span" variant="small">
-                          /{getTranslation(entitiesDictionary)}/
+                          /
+                          {getTranslation(entitiesDictionary)}
+                          /
                         </Typography>
                       </span>
                     </If>
@@ -148,24 +151,27 @@ const TestScreen = () => {
                     size="md"
                     onClick={handleSubmitAnswer}
                   >
-                    <SendSvg/>
+                    <SendSvg />
                   </IconButton>
                 </div>
               </div>
             )}
             <If condition={!isTestInProgress}>
-              <Restart isTestReversed={isTestReversed} onRestart={handleRestart}/>
+              <Restart isTestReversed={isTestReversed} onRestart={handleRestart} />
             </If>
             <If condition={isTestStarted}>
               <>
                 <div className="mt-6 mb-3">
-                  <Progress value={getProgress(totalTestPlan, cursor)}/>
+                  <Progress value={getProgress(totalTestPlan, cursor)} />
                   <div className="mt-2 flex items-center justify-between px-2">
                     <Typography color="blue-gray" className="block antialiased text-gray-700 text-center text-xs">
                       {t(TEST_SCREEN__PROGRESS_LABEL)}
                     </Typography>
                     <Typography color="blue-gray" className="block antialiased text-gray-700 text-center text-xs">
-                      {cursor} / {totalTestPlan}
+                      {cursor}
+                      {' '}
+                      /
+                      {totalTestPlan}
                     </Typography>
                   </div>
                 </div>

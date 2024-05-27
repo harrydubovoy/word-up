@@ -19,7 +19,7 @@ import {
   ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS,
 } from '../../translations/resources/constants';
 
-import { useAppDispatch } from '../../store/hooks'
+import { useAppDispatch } from '../../store/hooks';
 import { addOneDictionary, dictionaryPayload } from '../../store/reducer/dictionary.slice';
 
 import { getTargetValue } from '../../utils/input';
@@ -28,7 +28,7 @@ import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 
 import { WORD_PAIR_KEYS } from '../../constants/word';
 
-const AddScreen = () => {
+function AddScreen() {
   const dispatch = useAppDispatch();
   const { t } = useTranslation();
   const { setSuccessAlertData } = useAlertContext();
@@ -40,15 +40,15 @@ const AddScreen = () => {
 
   const handleOnChangeForeign = (event) => {
     setForeign(getTargetValue(event));
-  }
+  };
 
   const handleOnChangeNative = (event) => {
     setNative(getTargetValue(event));
-  }
+  };
 
   const handleOnChangeTranscription = (event) => {
     setTranscription(getTargetValue(event));
-  }
+  };
 
   const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
 
@@ -58,7 +58,7 @@ const AddScreen = () => {
     setTranscription('');
 
     foreignInputRef.current.focus();
-  }
+  };
 
   const handleOnAdd = () => {
     if (!(foreign && native)) {
@@ -72,7 +72,9 @@ const AddScreen = () => {
     })));
     setSuccessAlertData(t(ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS));
     handleAfterSending();
-  }
+
+    return null;
+  };
 
   return (
     <>
@@ -84,7 +86,7 @@ const AddScreen = () => {
               <div className="relative flex w-full">
                 <Input
                   containerProps={{
-                    className: 'min-w-0'
+                    className: 'min-w-0',
                   }}
                   required
                   className="pr-20"
@@ -106,7 +108,7 @@ const AddScreen = () => {
               </div>
               <Input
                 containerProps={{
-                  className: 'min-w-0'
+                  className: 'min-w-0',
                 }}
                 required
                 size="lg"
@@ -116,7 +118,7 @@ const AddScreen = () => {
               />
               <Input
                 containerProps={{
-                  className: 'min-w-0'
+                  className: 'min-w-0',
                 }}
                 size="lg"
                 label="Transcription"
@@ -138,7 +140,7 @@ const AddScreen = () => {
         </ScreenBody>
       </ScrollContainer>
     </>
-  )
+  );
 }
 
 export default AddScreen;

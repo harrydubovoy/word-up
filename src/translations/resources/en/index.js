@@ -15,7 +15,7 @@ const en = {
     ...testScreen,
     ...settingsScreen,
     ...trashBinScreen,
-  }
-}
+  },
+};
 
 export default en;

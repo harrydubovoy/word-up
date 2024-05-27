@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 
 import EmptySvg from '../../../icons/EmptySvg';
-import Typography from '../../../ui/Typography';
+import { Typography } from '../../../ui/Typography';
 import Button from '../../../ui/Button';
 
-const TestScreenEmpty = () => {
+function TestScreenEmpty() {
   const navigate = useNavigate();
 
   return (
@@ -14,7 +14,7 @@ const TestScreenEmpty = () => {
       </div>
       <Typography className="text-center">
         No words for testing
-        <br/>
+        <br />
         Go to add screen for adding one
       </Typography>
       <div className="mt-4">
@@ -23,7 +23,7 @@ const TestScreenEmpty = () => {
         </Button>
       </div>
     </>
-  )
+  );
 }
 
 export default TestScreenEmpty;
