@@ -7,7 +7,7 @@ export {
 const EmptyScreen = ({ children, type }) => {
   if (type) {
     return (
-      <div className="flex flex-col items-center gap-4 justify-center h-full">
+      <div className="flex flex-col items-center gap-4 justify-center grow">
         <EmptyScreenFactory type={type} />
       </div>
     );

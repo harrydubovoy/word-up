@@ -26,7 +26,7 @@ import {
 
 import { getTargetValue } from '../../utils/input';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
-import { normalizeValue } from '../../utils/data';
+import { normalizeValue } from '../../utils/string';
 
 import { WORD_PAIR_KEYS } from '../../constants/word';
 
@@ -63,7 +63,7 @@ const EditScreen = () => {
   }
 
   const handleOnUpdate = () => {
-    if (!foreign && !native) {
+    if (!(foreign && native)) {
       return;
     }
 
@@ -141,7 +141,6 @@ const EditScreen = () => {
               <Button
                 fullWidth
                 className="flex justify-center items-center gap-2"
-                disabled={!(foreign && native)}
                 onClick={handleOnUpdate}
               >
                 Update

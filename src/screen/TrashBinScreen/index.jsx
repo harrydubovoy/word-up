@@ -51,8 +51,8 @@ const TrashBinScreen = () => {
                   <WordPairCard key={wordPairId}>
                     <WordPairCard.Body>
                       <WordPair
-                        native={getNativeWordById(entitiesTrashBin)(wordPairId)}
-                        foreign={getForeignWordById(entitiesTrashBin)(wordPairId)}
+                        native={getNativeWordById(wordPairId)(entitiesTrashBin)}
+                        foreign={getForeignWordById(wordPairId)(entitiesTrashBin)}
                       />
                     </WordPairCard.Body>
                     <WordPairCard.Footer>

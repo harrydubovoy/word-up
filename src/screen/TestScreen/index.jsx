@@ -125,11 +125,11 @@ const TestScreen = () => {
                   <QuestionWord>
                     {getQuestionWord(entitiesDictionary)}
                     <If condition={!isTestReversed && getTranslation(entitiesDictionary)}>
-                      <div className="mt-2">
-                        <Typography variant="small">
+                      <span className="flex justify-center mt-2">
+                        <Typography as="span" variant="small">
                           /{getTranslation(entitiesDictionary)}/
                         </Typography>
-                      </div>
+                      </span>
                     </If>
                   </QuestionWord>
                 </div>
