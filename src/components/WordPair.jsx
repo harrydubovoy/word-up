@@ -11,8 +11,8 @@ function WordPair({ foreign, native, transcription, isSelected }) {
   return (
     <div
       className={classNames('rounded-ss-xl rounded-ee-xl w-full transform flex flex-col gap-2 -translate-x-3.5 -translate-y-3.5 p-3', {
-        'bg-tropical-blue': !isSelected,
-        'bg-caper': isSelected,
+        'bg-link-water': !isSelected,
+        'bg-tea-green': isSelected,
       })}
     >
       <Typography
