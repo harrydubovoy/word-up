@@ -1,34 +1,31 @@
-import { compose, filter, or, equals } from 'ramda';
+import { compose, filter, or, equals, identity, ifElse } from 'ramda';
 
-import { FILTER_MAP } from '../constants/filter';
 import { includes } from './string';
 import { getForeignWordById, getNativeWordById } from './word';
+import { wrapByFn } from './function';
 
-const isAllType = (type) => (ids) => (equals(type, FILTER_MAP.ALL.value) ? ids : ids);
+import { FILTER_MAP } from '../constants/filter';
 
-const isIncludedType = (type, { includedIds }) => (ids) => (
-  equals(type, FILTER_MAP.INCLUDED.value) ? includedIds : ids
-);
+const isAllType = equals(FILTER_MAP.ALL.value);
+const isIncludedType = equals(FILTER_MAP.INCLUDED.value);
+const isExcludedType = equals(FILTER_MAP.EXCLUDED.value);
 
-const isExcludedType = (type, { includedIds }) => (ids) => (
-  equals(type, FILTER_MAP.EXCLUDED.value) ? filter((id) => !includedIds.includes(id), ids) : ids
-);
+const filterByIncluded = (includedIds) => filter((id) => !includedIds.includes(id));
 
 export const filterByType = (type, { includedIds }) => compose(
-  isAllType(type),
-  isIncludedType(type, { includedIds }),
-  isExcludedType(type, { includedIds }),
+  ifElse(wrapByFn(isAllType(type)), identity, identity),
+  ifElse(wrapByFn(isIncludedType(type)), wrapByFn(includedIds), identity),
+  ifElse(wrapByFn(isExcludedType(type)), filterByIncluded(includedIds), identity),
 );
 
-export const filterBySearchString = (searchString, { entities }) => (ids) => {
-  if (!searchString) {
-    return ids;
-  }
-
-  return filter((wordId) => (
-    or(
-      compose(includes(searchString), getNativeWordById(wordId))(entities),
-      compose(includes(searchString), getForeignWordById(wordId))(entities),
-    )
-  ), ids);
-};
+export const filterBySearchString = (searchString, { entities }) => (
+  ifElse(
+    wrapByFn(searchString),
+    filter((wordId) => (
+      or(
+        compose(includes(searchString), getNativeWordById(wordId))(entities),
+        compose(includes(searchString), getForeignWordById(wordId))(entities),
+      )
+    )),
+    identity,
+  ));

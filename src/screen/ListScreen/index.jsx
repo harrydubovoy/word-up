@@ -1,5 +1,3 @@
-import { useMemo } from 'react';
-
 import { useNavigate } from 'react-router-dom';
 import { map, prop, reverse, has, compose, length } from 'ramda';
 
@@ -84,12 +82,11 @@ function ListScreen() {
     openOxfordDictionaryPageByWord(getForeignWordById(wordPairId)(entitiesDictionary));
   };
 
-  const data = useMemo(() => (
-    compose(
-      filterBySearchString(searchString, { entities: entitiesDictionary }),
-      filterByType(filterValue, { includedIds: idsTestPlan }),
-    )(idsDictionary)
-  ), [idsDictionary, idsTestPlan, searchString, filterValue, entitiesDictionary]);
+  const filteredIdsDictionary = compose(
+    reverse,
+    filterBySearchString(searchString, { entities: entitiesDictionary }),
+    filterByType(filterValue, { includedIds: idsTestPlan }),
+  )(idsDictionary);
 
   return (
     <>
@@ -118,7 +115,7 @@ function ListScreen() {
             </div>
           </div>
         </Navbar>
-        <EmptyScreen type={!length(data) && EMPTY_SCREEN_TYPE.DEFAULT}>
+        <EmptyScreen type={!length(filteredIdsDictionary) && EMPTY_SCREEN_TYPE.DEFAULT}>
           <ScreenBody className="bg-catskill-white">
             <div className="w-full">
               <div className="grid grid-cols-1 gap-4">
@@ -129,7 +126,7 @@ function ListScreen() {
                         isSelected={has(wordPairId)(entitiesTestPlan)}
                         foreign={getForeignWordById(wordPairId)(entitiesDictionary)}
                         native={getNativeWordById(wordPairId)(entitiesDictionary)}
-                        transcription={getTranscriptionWordById(entitiesDictionary)(wordPairId)}
+                        transcription={getTranscriptionWordById(wordPairId)(entitiesDictionary)}
                       />
                     </WordPairCard.Body>
                     <WordPairCard.Footer>
@@ -153,7 +150,7 @@ function ListScreen() {
                       )}
                     </WordPairCard.Footer>
                   </WordPairCard>
-                ), reverse(data))}
+                ), filteredIdsDictionary)}
               </div>
             </div>
           </ScreenBody>

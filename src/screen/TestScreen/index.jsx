@@ -2,8 +2,6 @@ import { useState, useRef } from 'react';
 import {
   compose,
   append,
-  toLower,
-  trim,
   nth,
   slice,
   lt,
@@ -44,6 +42,7 @@ import {
 } from './utils';
 import { getTargetValue, getRefValue, setRefValue, isEnterKey } from '../../utils/input';
 import { shuffleArray } from '../../utils/list';
+import { normalizeValue } from '../../utils/string';
 
 import { WORD_PAIR_KEYS } from '../../constants/word';
 import { EMPTY_SCREEN_TYPE } from '../../constants/screens';
@@ -77,7 +76,7 @@ function TestScreen() {
   };
 
   const handleAnswer = (value) => {
-    const userAnswerWord = compose(toLower, trim)(value);
+    const userAnswerWord = normalizeValue(value);
 
     if (userAnswerWord) {
       setCursor((prev) => prev + 1);
