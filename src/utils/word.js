@@ -11,3 +11,6 @@ export const getForeignWordById = (id) => (entities) => (
 export const getTranscriptionWordById = (id) => (entities) => (
   compose(prop(WORD_PAIR_KEYS.TRANSCRIPTION), prop(id))(entities)
 );
+export const getPartOfSpeechWordById = (id) => (entities) => (
+  compose(prop(WORD_PAIR_KEYS.PART_OF_SPEECH), prop(id))(entities)
+);

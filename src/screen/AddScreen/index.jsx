@@ -37,6 +37,7 @@ function AddScreen() {
   const [foreign, setForeign] = useState('');
   const [native, setNative] = useState('');
   const [transcription, setTranscription] = useState('');
+  const [partOfSpeech, setPartOfSpeech] = useState('');
 
   const handleOnChangeForeign = (event) => {
     setForeign(getTargetValue(event));
@@ -50,12 +51,17 @@ function AddScreen() {
     setTranscription(getTargetValue(event));
   };
 
+  const handleOnChangePartOfSpeech = (event) => {
+    setPartOfSpeech(getTargetValue(event));
+  };
+
   const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
 
   const handleAfterSending = () => {
     setForeign('');
     setNative('');
     setTranscription('');
+    setPartOfSpeech('');
 
     foreignInputRef.current.focus();
   };
@@ -69,6 +75,7 @@ function AddScreen() {
       [WORD_PAIR_KEYS.FOREIGN]: normalizeValue(foreign),
       [WORD_PAIR_KEYS.NATIVE]: normalizeValue(native),
       [WORD_PAIR_KEYS.TRANSCRIPTION]: normalizeValue(transcription),
+      [WORD_PAIR_KEYS.PART_OF_SPEECH]: normalizeValue(partOfSpeech),
     })));
     setSuccessAlertData(t(ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS));
     handleAfterSending();
@@ -124,6 +131,15 @@ function AddScreen() {
                 label="Transcription"
                 value={transcription}
                 onChange={handleOnChangeTranscription}
+              />
+              <Input
+                containerProps={{
+                  className: 'min-w-0',
+                }}
+                size="lg"
+                label="Part of speech"
+                value={partOfSpeech}
+                onChange={handleOnChangePartOfSpeech}
               />
             </div>
 

@@ -103,8 +103,12 @@ function TestScreen() {
     prop(getWordPairKeyByReverse(isTestReversed)),
     prop(getCurrentEntityId()),
   );
-  const getTranslation = compose(
+  const getTranscription = compose(
     prop(WORD_PAIR_KEYS.TRANSCRIPTION),
+    prop(getCurrentEntityId()),
+  );
+  const getPartOfSpeech = compose(
+    prop(WORD_PAIR_KEYS.PART_OF_SPEECH),
     prop(getCurrentEntityId()),
   );
 
@@ -122,18 +126,11 @@ function TestScreen() {
             {isTestInProgress && (
               <div className="p-5 rounded-md bg-catskill-white">
                 <div className="mb-6">
-                  <QuestionWord>
-                    {getQuestionWord(entitiesDictionary)}
-                    <If condition={!isTestReversed && getTranslation(entitiesDictionary)}>
-                      <span className="flex justify-center mt-2">
-                        <Typography as="span" variant="small">
-                          /
-                          {getTranslation(entitiesDictionary)}
-                          /
-                        </Typography>
-                      </span>
-                    </If>
-                  </QuestionWord>
+                  <QuestionWord
+                    questionWord={getQuestionWord(entitiesDictionary)}
+                    transcription={!isTestReversed && getTranscription(entitiesDictionary)}
+                    partOfSpeech={!isTestReversed && getPartOfSpeech(entitiesDictionary)}
+                  />
                 </div>
 
                 <div className="flex gap-2">

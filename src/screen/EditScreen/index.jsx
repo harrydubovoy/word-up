@@ -46,6 +46,10 @@ function EditScreen() {
     transcription,
     setTranscription,
   ] = useState(prop(WORD_PAIR_KEYS.TRANSCRIPTION)(byIdDictionary));
+  const [
+    partOfSpeech,
+    setPartOfSpeech,
+  ] = useState(prop(WORD_PAIR_KEYS.PART_OF_SPEECH)(byIdDictionary));
 
   const handleOnChangeForeign = (event) => {
     setForeign(getTargetValue(event));
@@ -57,6 +61,10 @@ function EditScreen() {
 
   const handleOnChangeTranscription = (event) => {
     setTranscription(getTargetValue(event));
+  };
+
+  const handleOnChangePartOfSpeech = (event) => {
+    setPartOfSpeech(getTargetValue(event));
   };
 
   const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
@@ -76,6 +84,7 @@ function EditScreen() {
         [WORD_PAIR_KEYS.FOREIGN]: normalizeValue(foreign),
         [WORD_PAIR_KEYS.NATIVE]: normalizeValue(native),
         [WORD_PAIR_KEYS.TRANSCRIPTION]: normalizeValue(transcription),
+        [WORD_PAIR_KEYS.PART_OF_SPEECH]: normalizeValue(partOfSpeech),
       },
     }));
     navigate(-1);
@@ -129,6 +138,15 @@ function EditScreen() {
                 label="Transcription"
                 value={transcription}
                 onChange={handleOnChangeTranscription}
+              />
+              <Input
+                containerProps={{
+                  className: 'min-w-0',
+                }}
+                size="lg"
+                label="Part of speech"
+                value={partOfSpeech}
+                onChange={handleOnChangePartOfSpeech}
               />
             </div>
 

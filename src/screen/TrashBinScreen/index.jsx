@@ -22,7 +22,12 @@ import {
 } from '../../store/reducer/trash-bin.slice';
 import { addOneDictionary } from '../../store/reducer/dictionary.slice';
 
-import { getNativeWordById, getForeignWordById, getTranscriptionWordById } from '../../utils/word';
+import {
+  getNativeWordById,
+  getForeignWordById,
+  getTranscriptionWordById,
+  getPartOfSpeechWordById,
+} from '../../utils/word';
 
 import { EMPTY_SCREEN_TYPE } from '../../constants/screens';
 
@@ -56,6 +61,7 @@ function TrashBinScreen() {
                         native={getNativeWordById(wordPairId)(entitiesTrashBin)}
                         foreign={getForeignWordById(wordPairId)(entitiesTrashBin)}
                         transcription={getTranscriptionWordById(wordPairId)(entitiesTrashBin)}
+                        partOfSpeech={getPartOfSpeechWordById(wordPairId)(entitiesTrashBin)}
                       />
                     </WordPairCard.Body>
                     <WordPairCard.Footer>

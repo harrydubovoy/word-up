@@ -40,7 +40,12 @@ import {
 } from '../../store/reducer/test-plan.slice';
 import { addOneTrashBin } from '../../store/reducer/trash-bin.slice';
 
-import { getNativeWordById, getForeignWordById, getTranscriptionWordById } from '../../utils/word';
+import {
+  getNativeWordById,
+  getForeignWordById,
+  getTranscriptionWordById,
+  getPartOfSpeechWordById,
+} from '../../utils/word';
 import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
 import { filterByType, filterBySearchString } from '../../utils/filter';
 
@@ -127,6 +132,7 @@ function ListScreen() {
                         foreign={getForeignWordById(wordPairId)(entitiesDictionary)}
                         native={getNativeWordById(wordPairId)(entitiesDictionary)}
                         transcription={getTranscriptionWordById(wordPairId)(entitiesDictionary)}
+                        partOfSpeech={getPartOfSpeechWordById(wordPairId)(entitiesDictionary)}
                       />
                     </WordPairCard.Body>
                     <WordPairCard.Footer>
