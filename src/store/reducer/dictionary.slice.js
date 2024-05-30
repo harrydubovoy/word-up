@@ -27,9 +27,7 @@ export const {
   updateOne: updateOneDictionary,
 } = dictionarySlice.actions;
 
-export const dictionaryPayload = ({ foreign, native, transcription }) => ({
+export const dictionaryPayload = (payload) => ({
   id: generateId(),
-  foreign,
-  native,
-  transcription,
+  ...payload,
 });
