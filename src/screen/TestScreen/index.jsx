@@ -2,7 +2,6 @@ import { useState, useRef } from 'react';
 import {
   compose,
   append,
-  nth,
   slice,
   lt,
   prop,
@@ -36,10 +35,7 @@ import { useAppSelector } from '../../store/hooks';
 import { selectIdsTestPlan, selectTotalTestPlan } from '../../store/reducer/test-plan.slice';
 import { selectEntitiesDictionary } from '../../store/reducer/dictionary.slice';
 
-import {
-  getWordPairKeyByReverse,
-  getProgress,
-} from './utils';
+import { getProgress, getCurrentEntityId } from './utils';
 import { getTargetValue, getRefValue, setRefValue, isEnterKey } from '../../utils/input';
 import { shuffleArray } from '../../utils/list';
 import { normalizeValue } from '../../utils/string';
@@ -98,18 +94,22 @@ function TestScreen() {
   };
 
   const isTestInProgress = lt(cursor, totalTestPlan);
-  const getCurrentEntityId = () => nth(cursor)(data);
-  const getQuestionWord = compose(
-    prop(getWordPairKeyByReverse(isTestReversed)),
-    prop(getCurrentEntityId()),
+
+  const getQuestionWordForeign = compose(
+    prop(WORD_PAIR_KEYS.FOREIGN),
+    prop(getCurrentEntityId(cursor)(data)),
+  );
+  const getQuestionWordNative = compose(
+    prop(WORD_PAIR_KEYS.NATIVE),
+    prop(getCurrentEntityId(cursor)(data)),
   );
   const getTranscription = compose(
     prop(WORD_PAIR_KEYS.TRANSCRIPTION),
-    prop(getCurrentEntityId()),
+    prop(getCurrentEntityId(cursor)(data)),
   );
   const getPartOfSpeech = compose(
     prop(WORD_PAIR_KEYS.PART_OF_SPEECH),
-    prop(getCurrentEntityId()),
+    prop(getCurrentEntityId(cursor)(data)),
   );
 
   return (
@@ -127,9 +127,11 @@ function TestScreen() {
               <div className="p-5 rounded-md bg-catskill-white">
                 <div className="mb-6">
                   <QuestionWord
-                    questionWord={getQuestionWord(entitiesDictionary)}
-                    transcription={!isTestReversed && getTranscription(entitiesDictionary)}
-                    partOfSpeech={!isTestReversed && getPartOfSpeech(entitiesDictionary)}
+                    isTestReversed={isTestReversed}
+                    questionWordForeign={getQuestionWordForeign(entitiesDictionary)}
+                    questionWordNative={getQuestionWordNative(entitiesDictionary)}
+                    transcription={getTranscription(entitiesDictionary)}
+                    partOfSpeech={getPartOfSpeech(entitiesDictionary)}
                   />
                 </div>
 
