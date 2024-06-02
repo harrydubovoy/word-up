@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { map, prop, reverse, has, compose, length, equals } from 'ramda';
 
+import classNames from 'classnames';
 import IconButton from '../../ui/IconButton';
 import Input from '../../ui/Input';
 import { Typography } from '../../ui/Typography';
@@ -142,8 +143,12 @@ function ListScreen() {
               <div className="grid grid-cols-1 gap-4">
                 {map((wordPairId) => (
                   <FlipCard
-                    className="h-36 cursor-pointer"
-                    isToggled={equals(isActiveById, wordPairId)}
+                    className={classNames('h-36', {
+                      'cursor-pointer': getDescriptionWordById(wordPairId)(entitiesDictionary) })}
+                    isToggled={
+                    getDescriptionWordById(wordPairId)(entitiesDictionary)
+                      && equals(isActiveById, wordPairId)
+                    }
                     key={wordPairId}
                     renderFront={({ frontClassName }) => (
                       <WordPairCard
