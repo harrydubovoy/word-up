@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 
 import Button from '../../ui/Button';
 import Input from '../../ui/Input';
+import { Textarea } from '../../ui/Textarea';
 import IconButton from '../../ui/IconButton';
 
 import Header from './Heder';
@@ -38,6 +39,7 @@ function AddScreen() {
   const [native, setNative] = useState('');
   const [transcription, setTranscription] = useState('');
   const [partOfSpeech, setPartOfSpeech] = useState('');
+  const [description, setDescription] = useState('');
 
   const handleOnChangeForeign = (event) => {
     setForeign(getTargetValue(event));
@@ -55,6 +57,10 @@ function AddScreen() {
     setPartOfSpeech(getTargetValue(event));
   };
 
+  const handleOnChangeDescription = (event) => {
+    setDescription(getTargetValue(event));
+  };
+
   const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
 
   const handleAfterSending = () => {
@@ -62,6 +68,7 @@ function AddScreen() {
     setNative('');
     setTranscription('');
     setPartOfSpeech('');
+    setDescription('');
 
     foreignInputRef.current.focus();
   };
@@ -76,6 +83,7 @@ function AddScreen() {
       [WORD_PAIR_KEYS.NATIVE]: normalizeValue(native),
       [WORD_PAIR_KEYS.TRANSCRIPTION]: normalizeValue(transcription),
       [WORD_PAIR_KEYS.PART_OF_SPEECH]: normalizeValue(partOfSpeech),
+      [WORD_PAIR_KEYS.DESCRIPTION]: description,
     })));
     setSuccessAlertData(t(ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS));
     handleAfterSending();
@@ -140,6 +148,15 @@ function AddScreen() {
                 label="Part of speech"
                 value={partOfSpeech}
                 onChange={handleOnChangePartOfSpeech}
+              />
+              <Textarea
+                containerProps={{
+                  className: 'min-w-0',
+                }}
+                size="lg"
+                label="Description / Meaning / Example"
+                value={description}
+                onChange={handleOnChangeDescription}
               />
             </div>
 

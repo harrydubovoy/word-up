@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 import Button from '../../ui/Button';
 import Input from '../../ui/Input';
+import { Textarea } from '../../ui/Textarea';
 import IconButton from '../../ui/IconButton';
 
 import Header from './Heder';
@@ -50,6 +51,10 @@ function EditScreen() {
     partOfSpeech,
     setPartOfSpeech,
   ] = useState(prop(WORD_PAIR_KEYS.PART_OF_SPEECH)(byIdDictionary));
+  const [
+    description,
+    setDescription,
+  ] = useState(prop(WORD_PAIR_KEYS.DESCRIPTION)(byIdDictionary));
 
   const handleOnChangeForeign = (event) => {
     setForeign(getTargetValue(event));
@@ -65,6 +70,10 @@ function EditScreen() {
 
   const handleOnChangePartOfSpeech = (event) => {
     setPartOfSpeech(getTargetValue(event));
+  };
+
+  const handleOnChangeDescription = (event) => {
+    setDescription(getTargetValue(event));
   };
 
   const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
@@ -85,6 +94,7 @@ function EditScreen() {
         [WORD_PAIR_KEYS.NATIVE]: normalizeValue(native),
         [WORD_PAIR_KEYS.TRANSCRIPTION]: normalizeValue(transcription),
         [WORD_PAIR_KEYS.PART_OF_SPEECH]: normalizeValue(partOfSpeech),
+        [WORD_PAIR_KEYS.DESCRIPTION]: description,
       },
     }));
     navigate(-1);
@@ -147,6 +157,15 @@ function EditScreen() {
                 label="Part of speech"
                 value={partOfSpeech}
                 onChange={handleOnChangePartOfSpeech}
+              />
+              <Textarea
+                containerProps={{
+                  className: 'min-w-0',
+                }}
+                size="lg"
+                label="Description / Meaning / Example"
+                value={description}
+                onChange={handleOnChangeDescription}
               />
             </div>
 
