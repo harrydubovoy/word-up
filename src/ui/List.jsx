@@ -1,14 +1,10 @@
 import { List as ListCore, ListItem as ListItemCore } from '@material-tailwind/react';
+import classNames from 'classnames';
 
-function List({ children, ...restProps }) {
-  return <ListCore {...restProps}>{children}</ListCore>;
+export function List({ children, className, ...restProps }) {
+  return <ListCore {...restProps} className={classNames(className)}>{children}</ListCore>;
 }
 
-function ListItem({ children, ...restProps }) {
-  return <ListItemCore {...restProps}>{children}</ListItemCore>;
+export function ListItem({ children, className, ...restProps }) {
+  return <ListItemCore {...restProps} className={classNames('rounded-full', className)}>{children}</ListItemCore>;
 }
-
-export {
-  List,
-  ListItem,
-};

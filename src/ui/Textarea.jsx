@@ -1,6 +1,8 @@
-// eslint-disable jsx-props-no-spreading
+import { forwardRef } from 'react';
 import { Textarea as TextareaCore } from '@material-tailwind/react';
+import classNames from 'classnames';
 
-export function Textarea(props) {
-  return <TextareaCore className="bg-white" {...props} />;
-}
+export const Textarea = forwardRef(({ className, ...restProps }, ref) => (
+  <TextareaCore {...restProps} ref={ref} className={classNames('bg-white', className)} />));
+
+Textarea.displayName = 'Textarea';

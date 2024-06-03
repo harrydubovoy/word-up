@@ -5,10 +5,24 @@ import { useAppSelector } from '../../store/hooks';
 import { selectEntitiesDictionary } from '../../store/reducer/dictionary.slice';
 
 import If from '../../util-components/If';
-import { getWordPairKeyByReverse } from './utils';
 
-function ResultAnswersList({ userAnswers, ids, isTestReversed }) {
+import { getReversedWordKeys } from './utils';
+
+function ResultAnswersList({ userAnswers, ids, wordKeyType }) {
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
+
+  const getQuestionWord = (wordId) => (
+    compose(
+      prop(wordKeyType),
+      prop(wordId),
+    )(entitiesDictionary)
+  );
+  const getRightAnswer = (wordId) => (
+    compose(
+      prop(wordKeyType),
+      prop(wordId),
+    )(entitiesDictionary)
+  );
 
   return (
     <ul className="flex flex-col gap-2">
@@ -16,15 +30,7 @@ function ResultAnswersList({ userAnswers, ids, isTestReversed }) {
         const userAnswerWord = nth(index)(userAnswers);
         const isRightAnswer = compose(
           equals(userAnswerWord),
-          prop(getWordPairKeyByReverse(!isTestReversed)),
-          prop(wordPairId),
-        )(entitiesDictionary);
-        const questionWord = compose(
-          prop(getWordPairKeyByReverse(isTestReversed)),
-          prop(wordPairId),
-        )(entitiesDictionary);
-        const rightAnswerWord = compose(
-          prop(getWordPairKeyByReverse(!isTestReversed)),
+          prop(getReversedWordKeys(wordKeyType)),
           prop(wordPairId),
         )(entitiesDictionary);
 
@@ -32,7 +38,7 @@ function ResultAnswersList({ userAnswers, ids, isTestReversed }) {
           <li key={wordPairId}>
             <div className="flex justify-center">
               <span>
-                {questionWord}
+                {getQuestionWord(wordPairId)}
               </span>
               &nbsp;&ndash;&nbsp;
               <span className={classNames('font-semibold', {
@@ -46,7 +52,7 @@ function ResultAnswersList({ userAnswers, ids, isTestReversed }) {
                 <>
                   &nbsp;&ndash;&nbsp;
                   <span className="text-green-500">
-                    {rightAnswerWord}
+                    {getRightAnswer(wordPairId)}
                   </span>
                 </>
               </If>

@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import EmptySvg from '../../../icons/EmptySvg';
 import { Typography } from '../../../ui/Typography';
-import Button from '../../../ui/Button';
+import { Button } from '../../../ui/Button';
 
 function TestScreenEmpty() {
   const navigate = useNavigate();

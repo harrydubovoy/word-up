@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import { prop } from 'ramda';
 
-import AlertCore from '../ui/Alert';
+import { Alert as AlertCore } from '../ui/Alert';
 
 const DEFAULT_ALERT = { type: '', message: '' };
 

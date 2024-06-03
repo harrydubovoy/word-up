@@ -1,11 +1,10 @@
+import { forwardRef } from 'react';
 import { IconButton as IconButtonCore } from '@material-tailwind/react';
+import classNames from 'classnames';
 
-function IconButton({ children, ...restProps }) {
-  return (
-    <IconButtonCore {...restProps}>
-      {children}
-    </IconButtonCore>
-  );
-}
-
-export default IconButton;
+export const IconButton = forwardRef(({ children, className, ...restProps }, ref) => (
+  <IconButtonCore {...restProps} className={classNames('rounded-full', className)} ref={ref}>
+    {children}
+  </IconButtonCore>
+));
+IconButton.displayName = 'IconButton';

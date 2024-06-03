@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-import Container from '../../ui/Container';
+import { Container } from '../../ui/Container';
 
 function ScreenBody({ children, className }) {
   return (

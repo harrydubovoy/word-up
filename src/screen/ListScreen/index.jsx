@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { map, prop, reverse, has, compose, length, equals } from 'ramda';
 
 import classNames from 'classnames';
-import IconButton from '../../ui/IconButton';
-import Input from '../../ui/Input';
+import { IconButton } from '../../ui/IconButton';
+import { Input } from '../../ui/Input';
 import { Typography } from '../../ui/Typography';
 import { Menu, MenuItem, MenuHandler, MenuList } from '../../ui/Menu';
-import Button from '../../ui/Button';
+import { Button } from '../../ui/Button';
 import { Navbar } from '../../ui/Navbar';
 
 import { FlipCard } from '../../components/FlipCard';
@@ -52,7 +52,7 @@ import {
   getPartOfSpeechWordById,
   getDescriptionWordById,
 } from '../../utils/word';
-import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
+import { openExternalDictionaryPageByWord } from '../../utils/navigation';
 import { filterByType, filterBySearchString } from '../../utils/filter';
 
 import { FILTER_MAP } from '../../constants/filter';
@@ -101,7 +101,7 @@ function ListScreen() {
 
   const handleOnOpenDictionary = (wordPairId) => (event) => {
     event.stopPropagation();
-    openOxfordDictionaryPageByWord(getForeignWordById(wordPairId)(entitiesDictionary));
+    openExternalDictionaryPageByWord(getForeignWordById(wordPairId)(entitiesDictionary));
   };
 
   const filteredIdsDictionary = compose(

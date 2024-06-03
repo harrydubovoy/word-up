@@ -1,9 +1,9 @@
 import { useRef, useState } from 'react';
 
-import Button from '../../ui/Button';
-import Input from '../../ui/Input';
+import { Button } from '../../ui/Button';
+import { Input } from '../../ui/Input';
 import { Textarea } from '../../ui/Textarea';
-import IconButton from '../../ui/IconButton';
+import { IconButton } from '../../ui/IconButton';
 
 import Header from './Heder';
 import ScreenBody from '../../screen-components/ScreenBody';
@@ -25,7 +25,7 @@ import { addOneDictionary, dictionaryPayload } from '../../store/reducer/diction
 
 import { getTargetValue } from '../../utils/input';
 import { normalizeValue } from '../../utils/string';
-import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
+import { openExternalDictionaryPageByWord } from '../../utils/navigation';
 
 import { WORD_PAIR_KEYS } from '../../constants/word';
 
@@ -61,7 +61,7 @@ function AddScreen() {
     setDescription(getTargetValue(event));
   };
 
-  const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
+  const handleOnOpenDictionary = () => openExternalDictionaryPageByWord(foreign);
 
   const handleAfterSending = () => {
     setForeign('');
@@ -104,8 +104,9 @@ function AddScreen() {
                     className: 'min-w-0',
                   }}
                   required
-                  className="pr-20"
+                  className="pr-10"
                   size="lg"
+                  variant="standard"
                   label={t(COMMON__FOREIGN)}
                   inputRef={foreignInputRef}
                   value={foreign}
@@ -126,6 +127,7 @@ function AddScreen() {
                   className: 'min-w-0',
                 }}
                 required
+                variant="standard"
                 size="lg"
                 label={t(COMMON__NATIVE)}
                 value={native}
@@ -136,6 +138,7 @@ function AddScreen() {
                   className: 'min-w-0',
                 }}
                 size="lg"
+                variant="standard"
                 label="Transcription"
                 value={transcription}
                 onChange={handleOnChangeTranscription}
@@ -145,6 +148,7 @@ function AddScreen() {
                   className: 'min-w-0',
                 }}
                 size="lg"
+                variant="standard"
                 label="Part of speech"
                 value={partOfSpeech}
                 onChange={handleOnChangePartOfSpeech}
@@ -154,6 +158,7 @@ function AddScreen() {
                   className: 'min-w-0',
                 }}
                 size="lg"
+                variant="standard"
                 label="Description / Meaning / Example"
                 value={description}
                 onChange={handleOnChangeDescription}
@@ -161,11 +166,7 @@ function AddScreen() {
             </div>
 
             <div className="flex items-center gap-2 mt-4">
-              <Button
-                fullWidth
-                className="flex justify-center items-center gap-2"
-                onClick={handleOnAdd}
-              >
+              <Button fullWidth onClick={handleOnAdd}>
                 {t(ADD_WORD_SCREEN__ACTION_ADD_TO_LIST)}
               </Button>
             </div>

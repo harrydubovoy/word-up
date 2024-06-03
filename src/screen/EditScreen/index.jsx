@@ -2,10 +2,10 @@ import { useRef, useState } from 'react';
 import { prop } from 'ramda';
 import { useParams, useNavigate } from 'react-router-dom';
 
-import Button from '../../ui/Button';
-import Input from '../../ui/Input';
+import { Button } from '../../ui/Button';
+import { Input } from '../../ui/Input';
 import { Textarea } from '../../ui/Textarea';
-import IconButton from '../../ui/IconButton';
+import { IconButton } from '../../ui/IconButton';
 
 import Header from './Heder';
 import ScreenBody from '../../screen-components/ScreenBody';
@@ -26,7 +26,7 @@ import {
 } from '../../store/reducer/dictionary.slice';
 
 import { getTargetValue } from '../../utils/input';
-import { openOxfordDictionaryPageByWord } from '../../utils/navigation';
+import { openExternalDictionaryPageByWord } from '../../utils/navigation';
 import { normalizeValue } from '../../utils/string';
 
 import { WORD_PAIR_KEYS } from '../../constants/word';
@@ -76,7 +76,7 @@ function EditScreen() {
     setDescription(getTargetValue(event));
   };
 
-  const handleOnOpenDictionary = () => openOxfordDictionaryPageByWord(foreign);
+  const handleOnOpenDictionary = () => openExternalDictionaryPageByWord(foreign);
 
   const handleOnCancel = () => {
     navigate(-1);
@@ -113,7 +113,8 @@ function EditScreen() {
                     className: 'min-w-0',
                   }}
                   required
-                  className="pr-20"
+                  variant="standard"
+                  className="pr-10"
                   size="lg"
                   value={foreign}
                   label={t(COMMON__FOREIGN)}
@@ -135,6 +136,7 @@ function EditScreen() {
                   className: 'min-w-0',
                 }}
                 required
+                variant="standard"
                 size="lg"
                 label={t(COMMON__NATIVE)}
                 value={native}
@@ -144,6 +146,7 @@ function EditScreen() {
                 containerProps={{
                   className: 'min-w-0',
                 }}
+                variant="standard"
                 size="lg"
                 label="Transcription"
                 value={transcription}
@@ -154,6 +157,7 @@ function EditScreen() {
                   className: 'min-w-0',
                 }}
                 size="lg"
+                variant="standard"
                 label="Part of speech"
                 value={partOfSpeech}
                 onChange={handleOnChangePartOfSpeech}
@@ -163,6 +167,7 @@ function EditScreen() {
                   className: 'min-w-0',
                 }}
                 size="lg"
+                variant="standard"
                 label="Description / Meaning / Example"
                 value={description}
                 onChange={handleOnChangeDescription}
@@ -170,19 +175,10 @@ function EditScreen() {
             </div>
 
             <div className="flex items-center gap-2 mt-4">
-              <Button
-                fullWidth
-                variant="outlined"
-                className="flex justify-center items-center gap-2"
-                onClick={handleOnCancel}
-              >
+              <Button fullWidth variant="outlined" onClick={handleOnCancel}>
                 Cancel
               </Button>
-              <Button
-                fullWidth
-                className="flex justify-center items-center gap-2"
-                onClick={handleOnUpdate}
-              >
+              <Button fullWidth onClick={handleOnUpdate}>
                 Update
               </Button>
             </div>

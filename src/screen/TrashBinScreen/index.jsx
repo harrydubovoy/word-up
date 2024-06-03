@@ -1,6 +1,6 @@
 import { map, reverse, prop } from 'ramda';
 
-import IconButton from '../../ui/IconButton';
+import { IconButton } from '../../ui/IconButton';
 
 import TrashForeverSvg from '../../icons/TrashForeverSvg';
 import RefreshSvg from '../../icons/RefreshSvg';

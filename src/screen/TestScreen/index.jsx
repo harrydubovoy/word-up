@@ -7,8 +7,8 @@ import {
   prop,
 } from 'ramda';
 
-import Input from '../../ui/Input';
-import IconButton from '../../ui/IconButton';
+import { Input } from '../../ui/Input';
+import { IconButton } from '../../ui/IconButton';
 import { Progress } from '../../ui/Progress';
 import { Typography } from '../../ui/Typography';
 
@@ -35,7 +35,7 @@ import { useAppSelector } from '../../store/hooks';
 import { selectIdsTestPlan, selectTotalTestPlan } from '../../store/reducer/test-plan.slice';
 import { selectEntitiesDictionary } from '../../store/reducer/dictionary.slice';
 
-import { getProgress, getCurrentEntityId } from './utils';
+import { getProgress, getCurrentEntityId, getReversedWordKeys } from './utils';
 import { getTargetValue, getRefValue, setRefValue, isEnterKey } from '../../utils/input';
 import { shuffleArray } from '../../utils/list';
 import { normalizeValue } from '../../utils/string';
@@ -54,7 +54,7 @@ function TestScreen() {
 
   const answerInputRef = useRef(null);
 
-  const [isTestReversed, setIsTestReversed] = useState(false);
+  const [wordKeyType, setWordKeyType] = useState(WORD_PAIR_KEYS.FOREIGN);
   const [cursor, setCursor] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
 
@@ -67,7 +67,7 @@ function TestScreen() {
   };
 
   const handleReverseTest = () => {
-    setIsTestReversed((prev) => !prev);
+    setWordKeyType(getReversedWordKeys);
     answerInputRef.current.focus();
   };
 
@@ -117,7 +117,7 @@ function TestScreen() {
       <Header
         totalTestPlan={totalTestPlan}
         isTestStarted={isTestStarted}
-        isTestReversed={isTestReversed}
+        wordKeyType={wordKeyType}
         onReverseTest={handleReverseTest}
       />
       <EmptyScreen type={!totalTestPlan && EMPTY_SCREEN_TYPE.TEST}>
@@ -127,7 +127,7 @@ function TestScreen() {
               <div className="p-5 rounded-md bg-catskill-white">
                 <div className="mb-6">
                   <QuestionWord
-                    isTestReversed={isTestReversed}
+                    wordKeyType={wordKeyType}
                     questionWordForeign={getQuestionWordForeign(entitiesDictionary)}
                     questionWordNative={getQuestionWordNative(entitiesDictionary)}
                     transcription={getTranscription(entitiesDictionary)}
@@ -135,18 +135,19 @@ function TestScreen() {
                   />
                 </div>
 
-                <div className="flex gap-2">
+                <div className="relative">
                   <Input
                     autoFocus
                     label={t(TEST_SCREEN__ANSWER_INPUT_LABEL)}
-                    size="md"
+                    className="pr-10"
+                    size="lg"
                     inputRef={answerInputRef}
                     onKeyDown={handleOnKeyDown}
                   />
                   <IconButton
                     aria-label="Send answer"
-                    className="shrink-0"
-                    size="md"
+                    className="!absolute right-1.5 top-1.5"
+                    size="sm"
                     onClick={handleSubmitAnswer}
                   >
                     <SendSvg />
@@ -155,7 +156,7 @@ function TestScreen() {
               </div>
             )}
             <If condition={!isTestInProgress}>
-              <Restart isTestReversed={isTestReversed} onRestart={handleRestart} />
+              <Restart onRestart={handleRestart} />
             </If>
             <If condition={isTestStarted}>
               <>
@@ -175,7 +176,7 @@ function TestScreen() {
                 </div>
                 <div className="px-6 my-6">
                   <ResultAnswersList
-                    isTestReversed={isTestReversed}
+                    wordKeyType={wordKeyType}
                     userAnswers={userAnswers}
                     ids={slice(0, cursor)(data)}
                   />

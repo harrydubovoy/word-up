@@ -1,5 +1,5 @@
-import Container from '../../ui/Container';
-import Hr from '../../ui/Hr';
+import { Container } from '../../ui/Container';
+import { Hr } from '../../ui/Hr';
 
 function ScreenHeader({ children }) {
   return (

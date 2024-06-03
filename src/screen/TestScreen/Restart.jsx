@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import Button from '../../ui/Button';
+import { Button } from '../../ui/Button';
 import { Typography } from '../../ui/Typography';
 
 import { setTestDoneDateTime, getDateTime } from '../../utils/dateTime';

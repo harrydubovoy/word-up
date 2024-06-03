@@ -1,3 +1,3 @@
-export const openOxfordDictionaryPageByWord = (word) => {
-  window.open(`https://www.oxfordlearnersdictionaries.com/definition/english/${word}`, '_blank');
+export const openExternalDictionaryPageByWord = (word) => {
+  window.open(`https://dictionary.cambridge.org/dictionary/english/${word}`, '_blank');
 };

@@ -6,17 +6,19 @@ import { PartOfSpeechCheep } from '../../components/PartOfSpeechCheep';
 import { FlipCard } from '../../components/FlipCard';
 import If from '../../util-components/If';
 
+import { isTestReversed } from './utils';
+
 function QuestionWord({
   questionWordForeign,
   questionWordNative,
   partOfSpeech,
   transcription,
-  isTestReversed,
+  wordKeyType,
 }) {
   return (
     <FlipCard
       className="h-32"
-      isToggled={isTestReversed}
+      isToggled={isTestReversed(wordKeyType)}
       renderFront={({ frontClassName }) => (
         <Card className={classNames(frontClassName, 'bg-jet-stream h-full flex justify-center items-center')}>
           <CardBody>
