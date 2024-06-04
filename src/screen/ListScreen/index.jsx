@@ -61,7 +61,7 @@ function ListScreen() {
   const navigate = useNavigate();
 
   const drawerRef = useRef(null);
-  const [drawerDescriptionId, setDrawerDescriptionId] = useState(-1);
+  const [drawerDescriptionId, setDrawerDescriptionId] = useState(0);
 
   const dispatch = useAppDispatch();
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
@@ -74,7 +74,7 @@ function ListScreen() {
   const { filterValue, filterDisplayValue, handleFilterTypeChange } = useFilterType();
 
   const handleOpenDescriptionDrawer = (id) => () => setDrawerDescriptionId(id);
-  const handleCloseDescriptionDrawer = () => setDrawerDescriptionId(-1);
+  const handleCloseDescriptionDrawer = () => setDrawerDescriptionId(0);
 
   const handleOnAddToTestPlan = (wordPairId) => () => {
     dispatch(addOneTestPlan({ id: wordPairId }));
