@@ -118,31 +118,31 @@ function ListScreen() {
           {getDescriptionWordById(drawerDescriptionId)(entitiesDictionary)}
         </Typography>
       </Drawer>
-      <ScrollContainer>
-        <Navbar className="rounded-t-none sticky top-0 z-10 p-4">
-          <div className="flex items-center justify-between gap-3">
-            <Input disabled={!totalDictionary} onChange={handleOnSearchChange} size="md" label="Search" />
-            <div className="shrink-0">
-              <Menu placement="top-end">
-                <MenuHandler>
-                  <Button disabled={!totalDictionary}>{filterDisplayValue}</Button>
-                </MenuHandler>
-                <MenuList>
-                  <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.ALL.value)}>
-                    {FILTER_MAP.ALL.displayValue}
-                  </MenuItem>
-                  <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.INCLUDED.value)}>
-                    {FILTER_MAP.INCLUDED.displayValue}
-                  </MenuItem>
-                  <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.EXCLUDED.value)}>
-                    {FILTER_MAP.EXCLUDED.displayValue}
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-            </div>
+      <Navbar className="rounded-t-none p-4">
+        <div className="flex items-center justify-between gap-3">
+          <Input disabled={!totalDictionary} onChange={handleOnSearchChange} size="md" label="Search" />
+          <div className="shrink-0">
+            <Menu placement="top-end">
+              <MenuHandler>
+                <Button disabled={!totalDictionary}>{filterDisplayValue}</Button>
+              </MenuHandler>
+              <MenuList>
+                <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.ALL.value)}>
+                  {FILTER_MAP.ALL.displayValue}
+                </MenuItem>
+                <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.INCLUDED.value)}>
+                  {FILTER_MAP.INCLUDED.displayValue}
+                </MenuItem>
+                <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.EXCLUDED.value)}>
+                  {FILTER_MAP.EXCLUDED.displayValue}
+                </MenuItem>
+              </MenuList>
+            </Menu>
           </div>
-        </Navbar>
-        <EmptyScreen type={!length(filteredIdsDictionary) && EMPTY_SCREEN_TYPE.DEFAULT}>
+        </div>
+      </Navbar>
+      <EmptyScreen type={!length(filteredIdsDictionary) && EMPTY_SCREEN_TYPE.LIST}>
+        <ScrollContainer>
           <ScreenBody className="bg-catskill-white">
             <div ref={drawerRef} className="w-full">
               <div className="grid grid-cols-1 gap-4">
@@ -190,8 +190,8 @@ function ListScreen() {
               </div>
             </div>
           </ScreenBody>
-        </EmptyScreen>
-      </ScrollContainer>
+        </ScrollContainer>
+      </EmptyScreen>
     </>
   );
 }

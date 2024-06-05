@@ -1,4 +1,6 @@
 export const EMPTY_SCREEN_TYPE = {
   DEFAULT: 'DEFAULT',
   TEST: 'TEST',
+  LIST: 'LIST',
+  TRASH_BIN: 'TRASH_BIN',
 };

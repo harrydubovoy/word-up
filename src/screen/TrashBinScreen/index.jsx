@@ -49,8 +49,8 @@ function TrashBinScreen() {
   return (
     <>
       <Header />
-      <ScrollContainer>
-        <EmptyScreen type={!totalTrashBin && EMPTY_SCREEN_TYPE.DEFAULT}>
+      <EmptyScreen type={!totalTrashBin && EMPTY_SCREEN_TYPE.TRASH_BIN}>
+        <ScrollContainer>
           <ScreenBody className="bg-catskill-white">
             <div className="w-full">
               <div className="grid grid-cols-1 gap-4">
@@ -77,8 +77,8 @@ function TrashBinScreen() {
               </div>
             </div>
           </ScreenBody>
-        </EmptyScreen>
-      </ScrollContainer>
+        </ScrollContainer>
+      </EmptyScreen>
     </>
   );
 }
