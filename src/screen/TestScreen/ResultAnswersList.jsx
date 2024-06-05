@@ -1,12 +1,12 @@
 import classNames from 'classnames';
-import { map, addIndex, nth, equals, prop, compose } from 'ramda';
+import { map, addIndex, nth, equals, prop, compose, reverse } from 'ramda';
 
 import { useAppSelector } from '../../store/hooks';
 import { selectEntitiesDictionary } from '../../store/reducer/dictionary.slice';
 
 import If from '../../util-components/If';
 
-import { getReversedWordKeys } from './utils';
+import { getReversedWordKey } from './utils';
 
 function ResultAnswersList({ userAnswers, ids, wordKeyType }) {
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
@@ -19,7 +19,7 @@ function ResultAnswersList({ userAnswers, ids, wordKeyType }) {
   );
   const getRightAnswer = (wordId) => (
     compose(
-      prop(wordKeyType),
+      prop(getReversedWordKey(wordKeyType)),
       prop(wordId),
     )(entitiesDictionary)
   );
@@ -30,36 +30,49 @@ function ResultAnswersList({ userAnswers, ids, wordKeyType }) {
         const userAnswerWord = nth(index)(userAnswers);
         const isRightAnswer = compose(
           equals(userAnswerWord),
-          prop(getReversedWordKeys(wordKeyType)),
+          prop(getReversedWordKey(wordKeyType)),
           prop(wordPairId),
         )(entitiesDictionary);
 
         return (
-          <li key={wordPairId}>
+          <li
+            key={wordPairId}
+            className={classNames('relative p-2 rounded-xl', {
+              'bg-panache': isRightAnswer,
+              'bg-lavender-blush': !isRightAnswer,
+            })}
+          >
             <div className="flex justify-center">
               <span>
                 {getQuestionWord(wordPairId)}
               </span>
               &nbsp;&ndash;&nbsp;
-              <span className={classNames('font-semibold', {
-                'text-red-500': !isRightAnswer,
-                'text-green-500': isRightAnswer,
-              })}
-              >
+              <span className={classNames('font-semibold')}>
                 {userAnswerWord}
               </span>
               <If condition={!isRightAnswer}>
                 <>
-                  &nbsp;&ndash;&nbsp;
-                  <span className="text-green-500">
+                  &nbsp;
+                  <span>
+                    (
                     {getRightAnswer(wordPairId)}
+                    )
                   </span>
+
                 </>
               </If>
+              <span className="absolute top-1.5 right-2 text-xl">
+                <If condition={!isRightAnswer}>
+                  🙂
+                </If>
+                <If condition={isRightAnswer}>
+                  👍
+                </If>
+              </span>
             </div>
           </li>
         );
-      }, ids)}
+      }, reverse(ids))}
     </ul>
   );
 }

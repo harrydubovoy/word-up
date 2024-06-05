@@ -14,6 +14,8 @@ export default withMT({
       'link-water': '#e6eff8',
       'catskill-white': '#f8fafc',
       'tea-green': '#e1f5d2',
+      'lavender-blush': '#ffebee',
+      panache: '#f3faf3',
     },
     extend: {},
   },

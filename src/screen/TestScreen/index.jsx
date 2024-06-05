@@ -1,10 +1,11 @@
 import { useState, useRef } from 'react';
 import {
   compose,
-  append,
+  prepend,
   slice,
   lt,
   prop,
+  inc,
 } from 'ramda';
 
 import { Input } from '../../ui/Input';
@@ -35,7 +36,7 @@ import { useAppSelector } from '../../store/hooks';
 import { selectIdsTestPlan, selectTotalTestPlan } from '../../store/reducer/test-plan.slice';
 import { selectEntitiesDictionary } from '../../store/reducer/dictionary.slice';
 
-import { getProgress, getCurrentEntityId, getReversedWordKeys } from './utils';
+import { getProgress, getCurrentEntityId, getReversedWordKey } from './utils';
 import { getTargetValue, getRefValue, setRefValue, isEnterKey } from '../../utils/input';
 import { shuffleArray } from '../../utils/list';
 import { normalizeValue } from '../../utils/string';
@@ -67,7 +68,7 @@ function TestScreen() {
   };
 
   const handleReverseTest = () => {
-    setWordKeyType(getReversedWordKeys);
+    setWordKeyType(getReversedWordKey);
     answerInputRef.current.focus();
   };
 
@@ -75,8 +76,8 @@ function TestScreen() {
     const userAnswerWord = normalizeValue(value);
 
     if (userAnswerWord) {
-      setCursor((prev) => prev + 1);
-      setUserAnswers((prev) => append(userAnswerWord, prev));
+      setCursor(inc);
+      setUserAnswers(prepend(userAnswerWord));
 
       setRefValue(answerInputRef, '');
       answerInputRef.current.focus();
