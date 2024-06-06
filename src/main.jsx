@@ -16,6 +16,7 @@ import EditScreen from './screen/EditScreen';
 import ListScreen from './screen/ListScreen';
 import TestScreen from './screen/TestScreen';
 import TrashBinScreen from './screen/TrashBinScreen';
+import NotFoundScreen from './screen/NotFoundScreen';
 
 import './translations/config';
 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: '/trash',
         element: <TrashBinScreen />,
+      },
+      {
+        path: '*',
+        element: <NotFoundScreen />,
       },
     ],
   },
