@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { map, prop, reverse, has, compose, length } from 'ramda';
+import { map, prop, reverse, has, compose } from 'ramda';
 
 import { IconButton } from '../../ui/IconButton';
 import { Drawer } from '../../ui/Drawer';
@@ -53,9 +53,9 @@ import {
 } from '../../utils/word';
 import { openExternalDictionaryPageByWord } from '../../utils/navigation';
 import { filterByType, filterBySearchString } from '../../utils/filter';
+import { getEmptyScreenType } from './utils';
 
 import { FILTER_MAP } from '../../constants/filter';
-import { EMPTY_SCREEN_TYPE } from '../../constants/screens';
 
 function ListScreen() {
   const navigate = useNavigate();
@@ -141,7 +141,7 @@ function ListScreen() {
           </div>
         </div>
       </Navbar>
-      <EmptyScreen type={!length(filteredIdsDictionary) && EMPTY_SCREEN_TYPE.LIST}>
+      <EmptyScreen type={getEmptyScreenType({ idsDictionary, filteredIdsDictionary })}>
         <ScrollContainer>
           <ScreenBody className="bg-catskill-white">
             <div ref={drawerRef} className="w-full">
