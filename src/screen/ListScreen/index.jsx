@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { map, prop, reverse, has, compose } from 'ramda';
+import { map, prop, has, compose } from 'ramda';
 
 import { IconButton } from '../../ui/IconButton';
 import { Drawer } from '../../ui/Drawer';
@@ -9,6 +9,7 @@ import { Typography } from '../../ui/Typography';
 import { Menu, MenuItem, MenuHandler, MenuList } from '../../ui/Menu';
 import { Button } from '../../ui/Button';
 import { Navbar } from '../../ui/Navbar';
+import { Collapse } from '../../ui/Collapse';
 
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
@@ -26,6 +27,7 @@ import DescriptionSvg from '../../icons/DescriptionSvg';
 
 import useSearchQuery from '../../hooks/useSearchQuery';
 import useFilterType from '../../hooks/useFilterType';
+import useFilterSort from '../../hooks/useFilterSort';
 
 import Header from './Header';
 
@@ -52,16 +54,19 @@ import {
   getDescriptionWordById,
 } from '../../utils/word';
 import { openExternalDictionaryPageByWord } from '../../utils/navigation';
-import { filterByType, filterBySearchString } from '../../utils/filter';
+import { filterByType, filterBySearchString, filterBySort } from '../../utils/filter';
+import { reverseValue } from '../../utils/data';
 import { getEmptyScreenType } from './utils';
 
-import { FILTER_MAP } from '../../constants/filter';
+import { FILTER_TYPE_MAP, FILTER_SORT_MAP } from '../../constants/filter';
 
 function ListScreen() {
   const navigate = useNavigate();
 
   const drawerRef = useRef(null);
   const [drawerDescriptionId, setDrawerDescriptionId] = useState(0);
+
+  const [isFilterVisible, setIsFilterVisible] = useState(false);
 
   const dispatch = useAppDispatch();
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
@@ -72,9 +77,14 @@ function ListScreen() {
 
   const { searchString, handleOnSearchChange } = useSearchQuery();
   const { filterValue, filterDisplayValue, handleFilterTypeChange } = useFilterType();
+  const { filterSortValue, filterSortDisplayValue, handleFilterSortChange } = useFilterSort();
 
   const handleOpenDescriptionDrawer = (id) => () => setDrawerDescriptionId(id);
   const handleCloseDescriptionDrawer = () => setDrawerDescriptionId(0);
+
+  const handleOnClickOpenFilter = () => {
+    setIsFilterVisible(reverseValue);
+  };
 
   const handleOnAddToTestPlan = (wordPairId) => () => {
     dispatch(addOneTestPlan({ id: wordPairId }));
@@ -99,14 +109,14 @@ function ListScreen() {
   };
 
   const filteredIdsDictionary = compose(
-    reverse,
+    filterBySort(filterSortValue),
     filterBySearchString(searchString, { entities: entitiesDictionary }),
     filterByType(filterValue, { includedIds: idsTestPlan }),
   )(idsDictionary);
 
   return (
     <>
-      <Header />
+      <Header onClickOpenFilter={handleOnClickOpenFilter} />
       <Drawer
         className="absolute rounded-t-3xl p-6"
         placement="bottom"
@@ -118,29 +128,53 @@ function ListScreen() {
           {getDescriptionWordById(drawerDescriptionId)(entitiesDictionary)}
         </Typography>
       </Drawer>
-      <Navbar className="rounded-t-none p-4">
-        <div className="flex items-center justify-between gap-3">
-          <Input disabled={!totalDictionary} onChange={handleOnSearchChange} size="md" label="Search" />
-          <div className="shrink-0">
-            <Menu placement="top-end">
-              <MenuHandler>
-                <Button disabled={!totalDictionary}>{filterDisplayValue}</Button>
-              </MenuHandler>
-              <MenuList>
-                <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.ALL.value)}>
-                  {FILTER_MAP.ALL.displayValue}
-                </MenuItem>
-                <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.INCLUDED.value)}>
-                  {FILTER_MAP.INCLUDED.displayValue}
-                </MenuItem>
-                <MenuItem onClick={handleFilterTypeChange(FILTER_MAP.EXCLUDED.value)}>
-                  {FILTER_MAP.EXCLUDED.displayValue}
-                </MenuItem>
-              </MenuList>
-            </Menu>
+      <Collapse open={isFilterVisible} className="absolute top-[89px] z-10 pb-2">
+        <Navbar className="rounded-t-none p-4">
+          <div className="flex flex-col items-end justify-between gap-3">
+            <Input disabled={!totalDictionary} onChange={handleOnSearchChange} size="md" label="Search" />
+            <div className="flex gap-2 items-center">
+              <div className="shrink-0">
+                <Menu placement="bottom-end">
+                  <MenuHandler>
+                    <Button disabled={!totalDictionary}>
+                      {filterSortDisplayValue}
+                    </Button>
+                  </MenuHandler>
+                  <MenuList>
+                    <MenuItem onClick={handleFilterSortChange(FILTER_SORT_MAP.LATEST.value)}>
+                      {FILTER_SORT_MAP.LATEST.displayValue}
+                    </MenuItem>
+                    <MenuItem onClick={handleFilterSortChange(FILTER_SORT_MAP.OLDEST.value)}>
+                      {FILTER_SORT_MAP.OLDEST.displayValue}
+                    </MenuItem>
+                  </MenuList>
+                </Menu>
+              </div>
+              <div className="shrink-0">
+                <Menu placement="bottom-end">
+                  <MenuHandler>
+                    <Button disabled={!totalDictionary}>
+                      {filterDisplayValue}
+                    </Button>
+                  </MenuHandler>
+                  <MenuList>
+                    <MenuItem onClick={handleFilterTypeChange(FILTER_TYPE_MAP.ALL.value)}>
+                      {FILTER_TYPE_MAP.ALL.displayValue}
+                    </MenuItem>
+                    <MenuItem onClick={handleFilterTypeChange(FILTER_TYPE_MAP.INCLUDED.value)}>
+                      {FILTER_TYPE_MAP.INCLUDED.displayValue}
+                    </MenuItem>
+                    <MenuItem onClick={handleFilterTypeChange(FILTER_TYPE_MAP.EXCLUDED.value)}>
+                      {FILTER_TYPE_MAP.EXCLUDED.displayValue}
+                    </MenuItem>
+                  </MenuList>
+                </Menu>
+              </div>
+            </div>
           </div>
-        </div>
-      </Navbar>
+        </Navbar>
+      </Collapse>
+
       <EmptyScreen type={getEmptyScreenType({ idsDictionary, filteredIdsDictionary })}>
         <ScrollContainer>
           <ScreenBody className="bg-catskill-white">

@@ -1,6 +1,9 @@
 import ScreenHeader from '../../screen-components/ScreenHeader';
 
 import { Typography } from '../../ui/Typography';
+import { IconButton } from '../../ui/IconButton';
+
+import FilterSvg from '../../icons/FilterSvg';
 
 import {
   LIST_SCREEN__TITLE,
@@ -13,7 +16,7 @@ import { selectTotalDictionary } from '../../store/reducer/dictionary.slice';
 
 import { useTranslation } from '../../translations';
 
-function Header() {
+function Header({ onClickOpenFilter }) {
   const totalTestPlan = useAppSelector(selectTotalTestPlan);
   const totalDictionary = useAppSelector(selectTotalDictionary);
   const { t } = useTranslation();
@@ -27,6 +30,9 @@ function Header() {
             {t(LIST_SCREEN__TEST_PLAN_DESCRIPTION, { totalTestPlan, totalDictionary })}
           </Typography>
         </div>
+        <IconButton variant="outlined" onClick={onClickOpenFilter}>
+          <FilterSvg />
+        </IconButton>
       </div>
     </ScreenHeader>
   );

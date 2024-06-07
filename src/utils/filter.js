@@ -1,14 +1,14 @@
-import { compose, filter, or, equals, identity, ifElse } from 'ramda';
+import { compose, filter, or, equals, identity, ifElse, reverse } from 'ramda';
 
 import { includes } from './string';
 import { getForeignWordById, getNativeWordById } from './word';
 import { wrapByFn } from './function';
 
-import { FILTER_MAP } from '../constants/filter';
+import { FILTER_TYPE_MAP, FILTER_SORT_MAP } from '../constants/filter';
 
-const isAllType = equals(FILTER_MAP.ALL.value);
-const isIncludedType = equals(FILTER_MAP.INCLUDED.value);
-const isExcludedType = equals(FILTER_MAP.EXCLUDED.value);
+const isAllType = equals(FILTER_TYPE_MAP.ALL.value);
+const isIncludedType = equals(FILTER_TYPE_MAP.INCLUDED.value);
+const isExcludedType = equals(FILTER_TYPE_MAP.EXCLUDED.value);
 
 const filterByIncluded = (includedIds) => filter((id) => !includedIds.includes(id));
 
@@ -29,3 +29,9 @@ export const filterBySearchString = (searchString, { entities }) => (
     )),
     identity,
   ));
+
+const isOldest = equals(FILTER_SORT_MAP.OLDEST.value);
+
+export const filterBySort = (type) => compose(
+  ifElse(wrapByFn(isOldest(type)), identity, reverse),
+);
