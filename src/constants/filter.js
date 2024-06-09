@@ -5,7 +5,7 @@ export const FILTER_TYPE_MAP = {
   },
   INCLUDED: {
     value: 'INCLUDED',
-    displayValue: 'Test',
+    displayValue: 'In testing',
   },
   EXCLUDED: {
     value: 'EXCLUDED',
@@ -23,5 +23,12 @@ export const FILTER_SORT_MAP = {
   LATEST: {
     value: 'LATEST',
     displayValue: 'Latest',
+  },
+};
+
+export const FILTER_PART_OF_SPEECH_MAP = {
+  ALL: {
+    value: 'ALL',
+    displayValue: 'All',
   },
 };

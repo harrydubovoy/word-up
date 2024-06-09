@@ -9,7 +9,8 @@ import { Typography } from '../../ui/Typography';
 import { Menu, MenuItem, MenuHandler, MenuList } from '../../ui/Menu';
 import { Button } from '../../ui/Button';
 import { Navbar } from '../../ui/Navbar';
-import { Collapse } from '../../ui/Collapse';
+
+import If from '../../util-components/If';
 
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
@@ -54,7 +55,7 @@ import {
   getDescriptionWordById,
 } from '../../utils/word';
 import { openExternalDictionaryPageByWord } from '../../utils/navigation';
-import { filterByType, filterBySearchString, filterBySort } from '../../utils/filter';
+import { filterByType, filterBySearchString, filterBySort, filterByPartOfSpeech } from '../../utils/filter';
 import { reverseValue } from '../../utils/data';
 import { getEmptyScreenType } from './utils';
 
@@ -128,9 +129,10 @@ function ListScreen() {
           {getDescriptionWordById(drawerDescriptionId)(entitiesDictionary)}
         </Typography>
       </Drawer>
-      <Collapse open={isFilterVisible} className="absolute top-[89px] z-10 pb-2">
-        <Navbar className="rounded-t-none p-4">
-          <div className="flex flex-col items-end justify-between gap-3">
+
+      <If condition={isFilterVisible}>
+        <Navbar className="rounded-t-none p-4 relative z-10">
+          <div className="flex flex-col items-end min-w- justify-between gap-3">
             <Input disabled={!totalDictionary} onChange={handleOnSearchChange} size="md" label="Search" />
             <div className="flex gap-2 items-center">
               <div className="shrink-0">
@@ -173,7 +175,7 @@ function ListScreen() {
             </div>
           </div>
         </Navbar>
-      </Collapse>
+      </If>
 
       <EmptyScreen type={getEmptyScreenType({ idsDictionary, filteredIdsDictionary })}>
         <ScrollContainer>

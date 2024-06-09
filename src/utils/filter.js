@@ -1,10 +1,10 @@
 import { compose, filter, or, equals, identity, ifElse, reverse } from 'ramda';
 
 import { includes } from './string';
-import { getForeignWordById, getNativeWordById } from './word';
+import { getForeignWordById, getNativeWordById, getPartOfSpeechWordById } from './word';
 import { wrapByFn } from './function';
 
-import { FILTER_TYPE_MAP, FILTER_SORT_MAP } from '../constants/filter';
+import { FILTER_TYPE_MAP, FILTER_SORT_MAP, FILTER_PART_OF_SPEECH_MAP } from '../constants/filter';
 
 const isAllType = equals(FILTER_TYPE_MAP.ALL.value);
 const isIncludedType = equals(FILTER_TYPE_MAP.INCLUDED.value);
@@ -35,3 +35,14 @@ const isOldest = equals(FILTER_SORT_MAP.OLDEST.value);
 export const filterBySort = (type) => compose(
   ifElse(wrapByFn(isOldest(type)), identity, reverse),
 );
+
+const isAllTypePartOfSpeech = equals(FILTER_PART_OF_SPEECH_MAP.ALL.value);
+
+export const filterByPartOfSpeech = (partOfSpeech, { entities }) => (
+  ifElse(
+    wrapByFn(isAllTypePartOfSpeech(partOfSpeech)),
+    identity,
+    filter((wordId) => (
+      compose(includes(partOfSpeech), getPartOfSpeechWordById(wordId))(entities)
+    )),
+  ));
