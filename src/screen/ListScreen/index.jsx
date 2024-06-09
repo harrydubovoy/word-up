@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { map, prop, has, compose, equals } from 'ramda';
 
 import { IconButton } from '../../ui/IconButton';
+import { Typography } from '../../ui/Typography';
 import { Input } from '../../ui/Input';
 import { Menu, MenuItem, MenuHandler, MenuList } from '../../ui/Menu';
 import { Button } from '../../ui/Button';
@@ -256,7 +257,9 @@ function ListScreen() {
                     <If condition={equals(descriptionId, wordPairId)}>
                       <div className="pt-4">
                         <Hr className="pb-2" />
-                        {getDescriptionWordById(wordPairId)(entitiesDictionary)}
+                        <Typography variant="small" color="blue-gray">
+                          {getDescriptionWordById(wordPairId)(entitiesDictionary)}
+                        </Typography>
                       </div>
                     </If>
                   </WordPairCard>
