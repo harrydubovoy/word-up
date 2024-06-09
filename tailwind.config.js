@@ -17,9 +17,21 @@ export default withMT({
       'lavender-blush': '#ffebee',
       panache: '#f3faf3',
     },
-    extend: {},
+    extend: {
+      textTransform: ['first-letter'],
+    },
   },
-  plugins: [],
+  plugins: [
+    ({ addUtilities }) => {
+      const newUtilities = {
+        '.first-letter-uppercase::first-letter': {
+          textTransform: 'uppercase',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 });
 
 /*

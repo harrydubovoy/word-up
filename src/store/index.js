@@ -10,7 +10,7 @@ const store = configureStore({
   middleware: (getDefaultMiddleware) => (
     getDefaultMiddleware().concat(logger, localStorageMiddleware)
   ),
-  // devTools: process.env.NODE_ENV !== 'production',
+  devTools: process.env.NODE_ENV !== 'production',
   preloadedState: reHydrateStore(),
 });
 

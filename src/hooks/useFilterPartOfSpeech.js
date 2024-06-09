@@ -13,7 +13,7 @@ const useFilterPartOfSpeech = () => {
     setFilterPartOfSpeechDisplayValue,
   ] = useState(FILTER_PART_OF_SPEECH_MAP.ALL.displayValue);
 
-  const handleFilterPartOfSpeechChange = (value) => {
+  const handleFilterPartOfSpeechChange = (value) => () => {
     setFilterPartOfSpeechValue(value);
     setFilterPartOfSpeechDisplayValue(compose(prop('displayValue'), prop(value))(FILTER_PART_OF_SPEECH_MAP));
   };

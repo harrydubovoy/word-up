@@ -1,14 +1,13 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { map, prop, has, compose } from 'ramda';
+import { map, prop, has, compose, equals } from 'ramda';
 
 import { IconButton } from '../../ui/IconButton';
-import { Drawer } from '../../ui/Drawer';
 import { Input } from '../../ui/Input';
-import { Typography } from '../../ui/Typography';
 import { Menu, MenuItem, MenuHandler, MenuList } from '../../ui/Menu';
 import { Button } from '../../ui/Button';
 import { Navbar } from '../../ui/Navbar';
+import { Hr } from '../../ui/Hr';
 
 import If from '../../util-components/If';
 
@@ -18,6 +17,8 @@ import ScreenBody from '../../screen-components/ScreenBody';
 import EmptyScreen from '../EmptyScreen';
 import WordPairCard from '../../components/WordPairCard';
 import WordPair from '../../components/WordPair';
+
+import Header from './Header';
 
 import TrashSvg from '../../icons/TrashSvg';
 import PublicSvg from '../../icons/PublicSvg';
@@ -29,8 +30,7 @@ import DescriptionSvg from '../../icons/DescriptionSvg';
 import useSearchQuery from '../../hooks/useSearchQuery';
 import useFilterType from '../../hooks/useFilterType';
 import useFilterSort from '../../hooks/useFilterSort';
-
-import Header from './Header';
+import useFilterPartOfSpeech from '../../hooks/useFilterPartOfSpeech';
 
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import {
@@ -56,16 +56,23 @@ import {
 } from '../../utils/word';
 import { openExternalDictionaryPageByWord } from '../../utils/navigation';
 import { filterByType, filterBySearchString, filterBySort, filterByPartOfSpeech } from '../../utils/filter';
-import { reverseValue } from '../../utils/data';
+import { reverseValue, getUniqueValuesByField } from '../../utils/data';
 import { getEmptyScreenType } from './utils';
 
-import { FILTER_TYPE_MAP, FILTER_SORT_MAP } from '../../constants/filter';
+import {
+  FILTER_TYPE_MAP,
+  FILTER_SORT_MAP,
+  FILTER_PART_OF_SPEECH_MAP,
+} from '../../constants/filter';
+import { WORD_PAIR_KEYS } from '../../constants/word';
+
+const getAvailablePartOfSpeech = getUniqueValuesByField(WORD_PAIR_KEYS.PART_OF_SPEECH);
 
 function ListScreen() {
   const navigate = useNavigate();
 
   const drawerRef = useRef(null);
-  const [drawerDescriptionId, setDrawerDescriptionId] = useState(0);
+  const [descriptionId, setDescriptionId] = useState(-1);
 
   const [isFilterVisible, setIsFilterVisible] = useState(false);
 
@@ -79,9 +86,11 @@ function ListScreen() {
   const { searchString, handleOnSearchChange } = useSearchQuery();
   const { filterValue, filterDisplayValue, handleFilterTypeChange } = useFilterType();
   const { filterSortValue, filterSortDisplayValue, handleFilterSortChange } = useFilterSort();
+  const { filterPartOfSpeechValue, handleFilterPartOfSpeechChange } = useFilterPartOfSpeech();
 
-  const handleOpenDescriptionDrawer = (id) => () => setDrawerDescriptionId(id);
-  const handleCloseDescriptionDrawer = () => setDrawerDescriptionId(0);
+  const handleToggleDescription = (id) => () => {
+    setDescriptionId((prev) => (prev === id ? -1 : id));
+  };
 
   const handleOnClickOpenFilter = () => {
     setIsFilterVisible(reverseValue);
@@ -109,8 +118,14 @@ function ListScreen() {
     openExternalDictionaryPageByWord(getForeignWordById(wordPairId)(entitiesDictionary));
   };
 
+  const availablePartOfSpeech = useMemo(
+    () => getAvailablePartOfSpeech(entitiesDictionary),
+    [entitiesDictionary],
+  );
+
   const filteredIdsDictionary = compose(
     filterBySort(filterSortValue),
+    filterByPartOfSpeech(filterPartOfSpeechValue, { entities: entitiesDictionary }),
     filterBySearchString(searchString, { entities: entitiesDictionary }),
     filterByType(filterValue, { includedIds: idsTestPlan }),
   )(idsDictionary);
@@ -118,27 +133,43 @@ function ListScreen() {
   return (
     <>
       <Header onClickOpenFilter={handleOnClickOpenFilter} />
-      <Drawer
-        className="absolute rounded-t-3xl p-6"
-        placement="bottom"
-        overlayRef={drawerRef}
-        open={Boolean(drawerDescriptionId)}
-        onClose={handleCloseDescriptionDrawer}
-      >
-        <Typography variant="paragraph" color="blue-gray" className="text-left">
-          {getDescriptionWordById(drawerDescriptionId)(entitiesDictionary)}
-        </Typography>
-      </Drawer>
 
       <If condition={isFilterVisible}>
         <Navbar className="rounded-t-none p-4 relative z-10">
           <div className="flex flex-col items-end min-w- justify-between gap-3">
             <Input disabled={!totalDictionary} onChange={handleOnSearchChange} size="md" label="Search" />
             <div className="flex gap-2 items-center">
-              <div className="shrink-0">
+              <div className="flex flex-col gap-1 shrink-0">
+                <span className="text-xs text-gray-600 px-4">Part of Speech</span>
                 <Menu placement="bottom-end">
                   <MenuHandler>
-                    <Button disabled={!totalDictionary}>
+                    <Button size="sm" disabled={!totalDictionary}>
+                      {filterPartOfSpeechValue}
+                    </Button>
+                  </MenuHandler>
+                  <MenuList>
+                    <MenuItem
+                      onClick={handleFilterPartOfSpeechChange(FILTER_PART_OF_SPEECH_MAP.ALL.value)}
+                    >
+                      {FILTER_PART_OF_SPEECH_MAP.ALL.displayValue}
+                    </MenuItem>
+                    {map((partOfSpeech) => (
+                      <MenuItem
+                        className="first-letter-uppercase"
+                        key={partOfSpeech}
+                        onClick={handleFilterPartOfSpeechChange(partOfSpeech)}
+                      >
+                        {partOfSpeech}
+                      </MenuItem>
+                    ))(availablePartOfSpeech)}
+                  </MenuList>
+                </Menu>
+              </div>
+              <div className="flex flex-col gap-1 shrink-0">
+                <span className="text-xs text-gray-600 px-4">Sort</span>
+                <Menu placement="bottom-end">
+                  <MenuHandler>
+                    <Button size="sm" disabled={!totalDictionary}>
                       {filterSortDisplayValue}
                     </Button>
                   </MenuHandler>
@@ -152,10 +183,11 @@ function ListScreen() {
                   </MenuList>
                 </Menu>
               </div>
-              <div className="shrink-0">
+              <div className="flex flex-col gap-1 shrink-0">
+                <span className="text-xs text-gray-600 px-4">Status</span>
                 <Menu placement="bottom-end">
                   <MenuHandler>
-                    <Button disabled={!totalDictionary}>
+                    <Button size="sm" disabled={!totalDictionary}>
                       {filterDisplayValue}
                     </Button>
                   </MenuHandler>
@@ -207,7 +239,7 @@ function ListScreen() {
                         disabled={!getDescriptionWordById(wordPairId)(entitiesDictionary)}
                         variant="outlined"
                         size="sm"
-                        onClick={handleOpenDescriptionDrawer(wordPairId)}
+                        onClick={handleToggleDescription(wordPairId)}
                       >
                         <DescriptionSvg />
                       </IconButton>
@@ -221,6 +253,12 @@ function ListScreen() {
                         </IconButton>
                       )}
                     </WordPairCard.Footer>
+                    <If condition={equals(descriptionId, wordPairId)}>
+                      <div className="pt-4">
+                        <Hr className="pb-2" />
+                        {getDescriptionWordById(wordPairId)(entitiesDictionary)}
+                      </div>
+                    </If>
                   </WordPairCard>
                 ), filteredIdsDictionary)}
               </div>
