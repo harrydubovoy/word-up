@@ -1,10 +1,11 @@
-import classNames from 'classnames';
+import { cn } from '../../lib/utils';
 
-import { Card, CardBody } from '../../ui/Card';
+import { Card, CardContent } from '../../ui/Card';
 import { Typography } from '../../ui/Typography';
-import { PartOfSpeechCheep } from '../../components/PartOfSpeechCheep';
+import { Box } from '../../ui/Box';
+import { PartOfSpeechBadge } from '../../components/PartOfSpeechBadge';
 import { FlipCard } from '../../components/FlipCard';
-import If from '../../util-components/If';
+import { If } from '../../util-components/If';
 
 import { isTestReversed } from './utils';
 
@@ -20,33 +21,33 @@ function QuestionWord({
       className="h-32"
       isToggled={isTestReversed(wordKeyType)}
       renderFront={({ frontClassName }) => (
-        <Card className={classNames(frontClassName, 'bg-jet-stream h-full flex justify-center items-center')}>
-          <CardBody>
+        <Card className={cn(frontClassName, 'bg-jet-stream h-full flex justify-center items-center')}>
+          <CardContent className="p-0">
             <If condition={partOfSpeech}>
-              <PartOfSpeechCheep className="absolute right-2 top-2">{partOfSpeech}</PartOfSpeechCheep>
+              <PartOfSpeechBadge className="absolute right-2 top-2">{partOfSpeech}</PartOfSpeechBadge>
             </If>
             <Typography className="text-xl font-bold text-lunar-green text-center">
               {questionWordForeign}
             </Typography>
             <If condition={transcription}>
-              <span className="flex justify-center mt-2">
+              <Box htmltag="span" className="flex justify-center mt-2">
                 <Typography as="span" variant="small">
                   /
                   {transcription}
                   /
                 </Typography>
-              </span>
+              </Box>
             </If>
-          </CardBody>
+          </CardContent>
         </Card>
       )}
       renderBack={({ backClassName }) => (
-        <Card className={classNames(backClassName, 'bg-jet-stream h-full flex justify-center items-center')}>
-          <CardBody>
+        <Card className={cn(backClassName, 'bg-jet-stream h-full flex justify-center items-center')}>
+          <CardContent className="p-0">
             <Typography className="text-xl font-bold text-lunar-green text-center">
               {questionWordNative}
             </Typography>
-          </CardBody>
+          </CardContent>
         </Card>
       )}
     />

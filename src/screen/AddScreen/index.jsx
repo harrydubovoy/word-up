@@ -1,23 +1,20 @@
 import { useRef, useState } from 'react';
+import { Globe } from 'lucide-react';
 
 import { Button } from '../../ui/Button';
 import { Input } from '../../ui/Input';
 import { Textarea } from '../../ui/Textarea';
-import { IconButton } from '../../ui/IconButton';
+import { Label } from '../../ui/Label';
 
 import Header from './Heder';
 import ScreenBody from '../../screen-components/ScreenBody';
 import ScrollContainer from '../../screen-components/ScrollContainer';
-import { useAlertContext } from '../../components/Alert';
-
-import PublicSvg from '../../icons/PublicSvg';
 
 import { useTranslation } from '../../translations';
 import {
   COMMON__FOREIGN,
   COMMON__NATIVE,
   ADD_WORD_SCREEN__ACTION_ADD_TO_LIST,
-  ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS,
 } from '../../translations/resources/constants';
 
 import { useAppDispatch } from '../../store/hooks';
@@ -32,7 +29,6 @@ import { WORD_PAIR_KEYS } from '../../constants/word';
 function AddScreen() {
   const dispatch = useAppDispatch();
   const { t } = useTranslation();
-  const { setSuccessAlertData } = useAlertContext();
 
   const foreignInputRef = useRef(null);
   const [foreign, setForeign] = useState('');
@@ -85,7 +81,6 @@ function AddScreen() {
       [WORD_PAIR_KEYS.PART_OF_SPEECH]: normalizeValue(partOfSpeech),
       [WORD_PAIR_KEYS.DESCRIPTION]: description,
     })));
-    setSuccessAlertData(t(ADD_WORD_SCREEN__WORD_ADDED_TO_DICTIONARY_NOTIFICATION_SUCCESS));
     handleAfterSending();
 
     return null;
@@ -98,75 +93,64 @@ function AddScreen() {
         <ScreenBody>
           <form>
             <div className="flex flex-col gap-4">
-              <div className="relative flex w-full">
-                <Input
-                  containerProps={{
-                    className: 'min-w-0',
-                  }}
-                  required
-                  className="pr-10"
-                  size="lg"
-                  variant="standard"
-                  label={t(COMMON__FOREIGN)}
-                  inputRef={foreignInputRef}
-                  value={foreign}
-                  onChange={handleOnChangeForeign}
-                />
-                <IconButton
-                  size="sm"
-                  className="!absolute right-1.5 top-1.5"
-                  variant="filled"
-                  disabled={!foreign}
-                  onClick={handleOnOpenDictionary}
-                >
-                  <PublicSvg />
-                </IconButton>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="add-foreign-word">{t(COMMON__FOREIGN)}</Label>
+                <div className="relative flex w-full">
+                  <Input
+                    id="add-foreign-word"
+                    className="pr-10"
+                    ref={foreignInputRef}
+                    value={foreign}
+                    onChange={handleOnChangeForeign}
+                  />
+                  <div className="!absolute right-0 top-0">
+                    <Button
+                      type="button"
+                      size="icon"
+                      disabled={!foreign}
+                      onClick={handleOnOpenDictionary}
+                    >
+                      <Globe />
+                    </Button>
+                  </div>
+                </div>
               </div>
-              <Input
-                containerProps={{
-                  className: 'min-w-0',
-                }}
-                required
-                variant="standard"
-                size="lg"
-                label={t(COMMON__NATIVE)}
-                value={native}
-                onChange={handleOnChangeNative}
-              />
-              <Input
-                containerProps={{
-                  className: 'min-w-0',
-                }}
-                size="lg"
-                variant="standard"
-                label="Transcription"
-                value={transcription}
-                onChange={handleOnChangeTranscription}
-              />
-              <Input
-                containerProps={{
-                  className: 'min-w-0',
-                }}
-                size="lg"
-                variant="standard"
-                label="Part of speech"
-                value={partOfSpeech}
-                onChange={handleOnChangePartOfSpeech}
-              />
-              <Textarea
-                containerProps={{
-                  className: 'min-w-0',
-                }}
-                size="lg"
-                variant="standard"
-                label="Description / Meaning / Example"
-                value={description}
-                onChange={handleOnChangeDescription}
-              />
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="add-native-word">{t(COMMON__NATIVE)}</Label>
+                <Input
+                  id="add-native-word"
+                  value={native}
+                  onChange={handleOnChangeNative}
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="add-transcription">Transcription</Label>
+                <Input
+                  id="add-transcription"
+                  value={transcription}
+                  onChange={handleOnChangeTranscription}
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="add-part-of-speech">Part of speech</Label>
+                <Input
+                  id="add-part-of-speech"
+                  value={partOfSpeech}
+                  onChange={handleOnChangePartOfSpeech}
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="add-description">Description / Meaning / Example</Label>
+                <Textarea
+                  id="add-description"
+                  value={description}
+                  onChange={handleOnChangeDescription}
+                />
+              </div>
             </div>
 
-            <div className="flex items-center gap-2 mt-4">
-              <Button fullWidth onClick={handleOnAdd}>
+            <div className="mt-6">
+              <Button type="button" onClick={handleOnAdd} className="w-full">
                 {t(ADD_WORD_SCREEN__ACTION_ADD_TO_LIST)}
               </Button>
             </div>

@@ -1,10 +1,11 @@
-import { CardBody } from '../../ui/Card';
+import { CardContent } from '../../ui/Card';
+import { cn } from '../../lib/utils';
 
-function WordPairCardBody({ children }) {
+function WordPairCardBody({ children, className, ...props }) {
   return (
-    <CardBody className="p-0">
+    <CardContent {...props} className={cn('p-0', className)}>
       {children}
-    </CardBody>
+    </CardContent>
   );
 }
 

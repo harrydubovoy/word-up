@@ -4,11 +4,7 @@ import ScreenHeader from '../../screen-components/ScreenHeader';
 function Header() {
   return (
     <ScreenHeader>
-      <div className="flex justify-between gap-2">
-        <div>
-          <Typography variant="h5">Edit word</Typography>
-        </div>
-      </div>
+      <Typography htmltag="h1" variant="h4">Edit word</Typography>
     </ScreenHeader>
   );
 }

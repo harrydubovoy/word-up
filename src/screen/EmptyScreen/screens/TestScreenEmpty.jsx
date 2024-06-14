@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { Typography } from '../../../ui/Typography';
 import { Button } from '../../../ui/Button';
+import { Box } from '../../../ui/Box';
 import EmptySvg from '../../../icons/EmptySvg';
 
 import { useAppSelector } from '../../../store/hooks';
@@ -23,22 +24,26 @@ function TestScreenEmpty() {
   const navigate = useNavigate();
   const totalDictionary = useAppSelector(selectTotalDictionary);
 
+  const handleNavigate = () => {
+    navigate(getRouteByDictionaryTotal(totalDictionary));
+  };
+
   return (
     <>
-      <div className="flex justify-center">
+      <Box className="flex justify-center">
         <EmptySvg />
-      </div>
+      </Box>
       <Typography variant="h4" className="text-center">
         No words for testing
       </Typography>
       <Typography>
         {getDescriptionByDictionaryTotal(totalDictionary)}
       </Typography>
-      <div className="mt-4">
-        <Button onClick={() => navigate(getRouteByDictionaryTotal(totalDictionary))}>
+      <Box className="mt-4">
+        <Button onClick={handleNavigate}>
           {getButtonTextByDictionaryTotal(totalDictionary)}
         </Button>
-      </div>
+      </Box>
     </>
   );
 }

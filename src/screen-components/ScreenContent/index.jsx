@@ -1,8 +1,12 @@
-function ScreenContent({ children }) {
+import { cn } from '../../lib/utils';
+
+import { Box } from '../../ui/Box';
+
+function ScreenContent({ children, className }) {
   return (
-    <div className="flex flex-col relative h-full max-h-full">
+    <Box className={cn('flex flex-col relative h-full max-h-full', className)}>
       {children}
-    </div>
+    </Box>
   );
 }
 

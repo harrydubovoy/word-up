@@ -1,10 +1,12 @@
-import classNames from 'classnames';
+import { cn } from '../../lib/utils';
+
+import { Box } from '../../ui/Box';
 
 function ScrollContainer({ children, className }) {
   return (
-    <div className={classNames('overflow-y-auto h-full', className)}>
+    <Box className={cn('overflow-y-auto h-full', className)}>
       {children}
-    </div>
+    </Box>
   );
 }
 

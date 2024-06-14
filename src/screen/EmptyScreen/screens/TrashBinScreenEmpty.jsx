@@ -1,12 +1,13 @@
 import { Typography } from '../../../ui/Typography';
+import { Box } from '../../../ui/Box';
 import EmptySvg from '../../../icons/EmptySvg';
 
 function TrashBinScreenEmpty() {
   return (
     <>
-      <div className="flex justify-center">
+      <Box className="flex justify-center">
         <EmptySvg />
-      </div>
+      </Box>
       <Typography variant="h4" className="text-center">
         No trashed words
       </Typography>

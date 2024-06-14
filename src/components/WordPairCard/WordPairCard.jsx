@@ -1,9 +1,9 @@
-import classNames from 'classnames';
 import { Card } from '../../ui/Card';
+import { cn } from '../../lib/utils';
 
-function WordPairCard({ children, className, ...restProps }) {
+function WordPairCard({ children, className, ...props }) {
   return (
-    <Card className={classNames('w-full p-3.5', className)} {...restProps}>
+    <Card {...props} className={cn('w-full p-3.5', className)}>
       {children}
     </Card>
   );
