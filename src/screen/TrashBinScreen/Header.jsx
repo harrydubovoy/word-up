@@ -18,7 +18,7 @@ function Header() {
   return (
     <ScreenHeader>
       <Typography htmltag="h1" variant="h4">{t(TRASH_BIN_SCREEN__TITLE)}</Typography>
-      <Typography variant="small">
+      <Typography variant="small" className="text-slate-500">
         {t(TRASH_BIN_SCREEN__DESCRIPTION, { totalTrashBin })}
       </Typography>
     </ScreenHeader>

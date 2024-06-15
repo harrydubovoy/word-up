@@ -27,7 +27,7 @@ function Header({ onClickOpenFilter }) {
       <Box className="flex justify-between gap-2">
         <Box>
           <Typography htmltag="h1" variant="h4">{t(LIST_SCREEN__TITLE)}</Typography>
-          <Typography variant="small">
+          <Typography variant="small" className="text-slate-500">
             {t(LIST_SCREEN__TEST_PLAN_DESCRIPTION, { totalTestPlan, totalDictionary })}
           </Typography>
         </Box>

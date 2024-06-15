@@ -31,7 +31,7 @@ function QuestionWord({
             </Typography>
             <If condition={transcription}>
               <Box htmltag="span" className="flex justify-center mt-2">
-                <Typography as="span" variant="small">
+                <Typography as="span" variant="small" className="text-slate-600">
                   /
                   {transcription}
                   /

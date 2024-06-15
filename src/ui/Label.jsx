@@ -1,13 +1,17 @@
 import { forwardRef } from 'react';
 
-import { cn, cva } from '../lib/utils';
-
-const labelVariants = cva(
-  'text-xs font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
-);
+import { cn } from '../lib/utils';
 
 const Label = forwardRef(({ children, htmlFor, className, ...props }, ref) => (
-  <label ref={ref} htmlFor={htmlFor} className={cn(labelVariants(), className)} {...props}>
+  <label
+    {...props}
+    ref={ref}
+    htmlFor={htmlFor}
+    className={cn(
+      'text-sm font-medium text-slate-600 dark:text-slate-400 peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+      className,
+    )}
+  >
     {children}
   </label>
 ));

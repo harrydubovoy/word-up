@@ -26,7 +26,6 @@ const typographyVariants = cva(
 
 const Typography = forwardRef(({ children, htmltag, variant, className, ...props }, ref) => {
   const Component = htmltag ?? 'span';
-
   return (
     <Component {...props} ref={ref} className={cn(typographyVariants({ variant, className }))}>
       {children}
