@@ -7,11 +7,13 @@ import {
   prop,
   inc,
 } from 'ramda';
+import { SendHorizontal } from 'lucide-react';
 
 import { Input } from '../../ui/Input';
-import { IconButton } from '../../ui/IconButton';
+import { Button } from '../../ui/Button';
 import { Progress } from '../../ui/Progress';
 import { Typography } from '../../ui/Typography';
+import { Box } from '../../ui/Box';
 
 import Header from './Header';
 
@@ -21,16 +23,11 @@ import QuestionWord from './QuestionWord';
 
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
-import If from '../../util-components/If';
+import { If } from '../../util-components/If';
 import EmptyScreen from '../EmptyScreen';
 
-import SendSvg from '../../icons/SendSvg';
-
 import { useTranslation } from '../../translations';
-import {
-  TEST_SCREEN__ANSWER_INPUT_LABEL,
-  TEST_SCREEN__PROGRESS_LABEL,
-} from '../../translations/resources/constants';
+import { TEST_SCREEN__PROGRESS_LABEL } from '../../translations/resources/constants';
 
 import { useAppSelector } from '../../store/hooks';
 import { selectIdsTestPlan, selectTotalTestPlan } from '../../store/reducer/test-plan.slice';
@@ -125,8 +122,8 @@ function TestScreen() {
         <ScrollContainer>
           <ScreenBody>
             {isTestInProgress && (
-              <div className="p-5 rounded-md bg-catskill-white">
-                <div className="mb-6">
+              <Box className="p-5 rounded-md bg-catskill-white">
+                <Box className="mb-6">
                   <QuestionWord
                     wordKeyType={wordKeyType}
                     questionWordForeign={getQuestionWordForeign(entitiesDictionary)}
@@ -134,54 +131,53 @@ function TestScreen() {
                     transcription={getTranscription(entitiesDictionary)}
                     partOfSpeech={getPartOfSpeech(entitiesDictionary)}
                   />
-                </div>
-
-                <div className="relative">
+                </Box>
+                <Box className="relative">
                   <Input
                     autoFocus
-                    label={t(TEST_SCREEN__ANSWER_INPUT_LABEL)}
                     className="pr-10"
-                    size="lg"
-                    inputRef={answerInputRef}
+                    ref={answerInputRef}
                     onKeyDown={handleOnKeyDown}
                   />
-                  <IconButton
-                    aria-label="Send answer"
-                    className="!absolute right-1.5 top-1.5"
-                    size="sm"
-                    onClick={handleSubmitAnswer}
-                  >
-                    <SendSvg />
-                  </IconButton>
-                </div>
-              </div>
+                  <Box className="!absolute right-0 top-0">
+                    <Button
+                      type="button"
+                      aria-label="Send answer"
+                      size="icon"
+                      onClick={handleSubmitAnswer}
+                    >
+                      <SendHorizontal />
+                    </Button>
+                  </Box>
+                </Box>
+              </Box>
             )}
             <If condition={!isTestInProgress}>
               <Restart onRestart={handleRestart} />
             </If>
             <If condition={isTestStarted}>
               <>
-                <div className="mt-6 mb-3">
+                <Box className="mt-4 mb-3">
                   <Progress value={getProgress(totalTestPlan, cursor)} />
-                  <div className="mt-2 flex items-center justify-between px-2">
-                    <Typography color="blue-gray" className="block antialiased text-gray-700 text-center text-xs">
+                  <Box className="mt-2 flex items-center justify-between px-2">
+                    <Typography className="block antialiased text-gray-700 text-center text-xs">
                       {t(TEST_SCREEN__PROGRESS_LABEL)}
                     </Typography>
-                    <Typography color="blue-gray" className="block antialiased text-gray-700 text-center text-xs">
+                    <Typography className="block antialiased text-gray-700 text-center text-xs">
                       {cursor}
                       {' '}
                       /
                       {totalTestPlan}
                     </Typography>
-                  </div>
-                </div>
-                <div className="px-6 my-6">
+                  </Box>
+                </Box>
+                <Box className="px-6 my-6">
                   <ResultAnswersList
                     wordKeyType={wordKeyType}
                     userAnswers={userAnswers}
                     ids={slice(0, cursor)(data)}
                   />
-                </div>
+                </Box>
               </>
             </If>
           </ScreenBody>

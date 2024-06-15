@@ -21,7 +21,7 @@ const useFilterType = () => {
     compose(prop('displayValue'), prop(getFilterTypeFromStorage()))(FILTER_TYPE_MAP)
   ));
 
-  const handleFilterTypeChange = (type) => () => {
+  const handleFilterTypeChange = (type) => {
     setFilterValue(type);
     setFilterDisplayValue(compose(prop('displayValue'), prop(type))(FILTER_TYPE_MAP));
     setFilterTypeToStorage(type);

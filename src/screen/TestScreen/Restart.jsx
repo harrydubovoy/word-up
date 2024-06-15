@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 
 import { Button } from '../../ui/Button';
 import { Typography } from '../../ui/Typography';
+import { Box } from '../../ui/Box';
 
 import { setTestDoneDateTime, getDateTime } from '../../utils/dateTime';
 
@@ -19,14 +20,14 @@ function Restart({ onRestart }) {
   }, []);
 
   return (
-    <div className="text-center">
-      <Typography>
+    <Box className="text-center">
+      <Typography htmltag="h2" variant="h4">
         {t(TEST_SCREEN__COMPLETED_TITLE)}
       </Typography>
-      <div className="mt-6">
-        <Button fullWidth onClick={onRestart}>{t(TEST_SCREEN__COMPLETED_ACTION)}</Button>
-      </div>
-    </div>
+      <Box className="mt-6">
+        <Button className="w-full" onClick={onRestart}>{t(TEST_SCREEN__COMPLETED_ACTION)}</Button>
+      </Box>
+    </Box>
   );
 }
 

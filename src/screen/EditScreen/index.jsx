@@ -1,17 +1,16 @@
 import { useRef, useState } from 'react';
 import { prop } from 'ramda';
 import { useParams, useNavigate } from 'react-router-dom';
+import { Globe } from 'lucide-react';
 
 import { Button } from '../../ui/Button';
 import { Input } from '../../ui/Input';
 import { Textarea } from '../../ui/Textarea';
-import { IconButton } from '../../ui/IconButton';
+import { Label } from '../../ui/Label';
 
 import Header from './Heder';
 import ScreenBody from '../../screen-components/ScreenBody';
 import ScrollContainer from '../../screen-components/ScrollContainer';
-
-import PublicSvg from '../../icons/PublicSvg';
 
 import { useTranslation } from '../../translations';
 import {
@@ -107,78 +106,75 @@ function EditScreen() {
         <ScreenBody>
           <form>
             <div className="flex flex-col gap-4">
-              <div className="relative flex w-full">
-                <Input
-                  containerProps={{
-                    className: 'min-w-0',
-                  }}
-                  required
-                  variant="standard"
-                  className="pr-10"
-                  size="lg"
-                  value={foreign}
-                  label={t(COMMON__FOREIGN)}
-                  inputRef={foreignInputRef}
-                  onChange={handleOnChangeForeign}
-                />
-                <IconButton
-                  size="sm"
-                  className="!absolute right-1.5 top-1.5"
-                  variant="filled"
-                  disabled={!foreign}
-                  onClick={handleOnOpenDictionary}
-                >
-                  <PublicSvg />
-                </IconButton>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="edit-foreign-word">{t(COMMON__FOREIGN)}</Label>
+                <div className="relative flex w-full">
+                  <Input
+                    id="edit-foreign-word"
+                    className="pr-10"
+                    ref={foreignInputRef}
+                    value={foreign}
+                    onChange={handleOnChangeForeign}
+                  />
+                  <div className="!absolute right-0 top-0">
+                    <Button
+                      type="button"
+                      size="icon"
+                      disabled={!foreign}
+                      onClick={handleOnOpenDictionary}
+                    >
+                      <Globe />
+                    </Button>
+                  </div>
+                </div>
               </div>
-              <Input
-                containerProps={{
-                  className: 'min-w-0',
-                }}
-                required
-                variant="standard"
-                size="lg"
-                label={t(COMMON__NATIVE)}
-                value={native}
-                onChange={handleOnChangeNative}
-              />
-              <Input
-                containerProps={{
-                  className: 'min-w-0',
-                }}
-                variant="standard"
-                size="lg"
-                label="Transcription"
-                value={transcription}
-                onChange={handleOnChangeTranscription}
-              />
-              <Input
-                containerProps={{
-                  className: 'min-w-0',
-                }}
-                size="lg"
-                variant="standard"
-                label="Part of speech"
-                value={partOfSpeech}
-                onChange={handleOnChangePartOfSpeech}
-              />
-              <Textarea
-                containerProps={{
-                  className: 'min-w-0',
-                }}
-                size="lg"
-                variant="standard"
-                label="Description / Meaning / Example"
-                value={description}
-                onChange={handleOnChangeDescription}
-              />
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="edit-native-word">{t(COMMON__NATIVE)}</Label>
+                <Input
+                  id="edit-native-word"
+                  value={native}
+                  onChange={handleOnChangeNative}
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="edit-transcription">Transcription</Label>
+                <Input
+                  id="edit-transcription"
+                  value={transcription}
+                  onChange={handleOnChangePartOfSpeech}
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="edit-part-of-speech">Part of speech</Label>
+                <Input
+                  id="edit-part-of-speech"
+                  value={partOfSpeech}
+                  onChange={handleOnChangePartOfSpeech}
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="add-transcription">Transcription</Label>
+                <Input
+                  id="add-transcription"
+                  value={transcription}
+                  onChange={handleOnChangeTranscription}
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="edit-description">Description / Meaning / Example</Label>
+                <Textarea
+                  id="edit-description"
+                  value={description}
+                  onChange={handleOnChangeDescription}
+                />
+              </div>
             </div>
 
-            <div className="flex items-center gap-2 mt-4">
-              <Button fullWidth variant="outlined" onClick={handleOnCancel}>
+            <div className="flex items-center gap-2 mt-6">
+              <Button type="button" variant="outline" className="w-full" onClick={handleOnCancel}>
                 Cancel
               </Button>
-              <Button fullWidth onClick={handleOnUpdate}>
+              <Button type="button" className="w-full" onClick={handleOnUpdate}>
                 Update
               </Button>
             </div>

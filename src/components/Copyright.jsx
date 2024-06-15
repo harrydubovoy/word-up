@@ -5,23 +5,13 @@ import { getYear } from '../utils/dateTime';
 function Copyright() {
   return (
     <Typography
-      color="blue-gray"
-      className="!text-sm !font-normal text-gray-500 text-center"
+      variant="small"
+      className="text-center block text-slate-400"
     >
-      &copy; 2023 -
-      {' '}
+      &copy;&nbsp;2023&nbsp;&mdash;&nbsp;
       {getYear()}
-      {' '}
-      WordUp by
-      <Typography
-        as="a"
-        href="https://github.com/harrydubovoy"
-        target="_blank"
-        color="white"
-        className="font-medium !text-sm inline-block !text-gray-500 transition-colors hover:!text-gray-900"
-      >
-      &nbsp;@harrydubovyi
-      </Typography>
+      &nbsp;WordUp by&nbsp;
+      <a className="hover:text-slate-600" href="https://github.com/harrydubovoy" target="_blank">@harrydubovyi</a>
     </Typography>
   );
 }

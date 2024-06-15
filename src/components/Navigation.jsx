@@ -1,42 +1,45 @@
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation, useNavigate, matchPath } from 'react-router-dom';
+import { Home, List, Plus, Trash2 } from 'lucide-react';
 
 import { Container } from '../ui/Container';
-import { List, ListItem } from '../ui/List';
 import { Card } from '../ui/Card';
+import { Button } from '../ui/Button';
+import { Box } from '../ui/Box';
 
-import HomeSvg from '../icons/HomeSvg';
-import ListSvg from '../icons/ListSvg';
-import AddSvg from '../icons/AddSvg';
-import TrashSvg from '../icons/TrashSvg';
+function Link({ to, children, className, ...props }) {
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+  const variant = matchPath(pathname, to) ? 'secondary' : 'ghost';
 
-function Navigation() {
-  const location = useLocation();
+  const handleOnNavigate = () => {
+    navigate(to);
+  };
 
   return (
-    <Card shadow={false}>
+    <Button {...props} size="icon" onClick={handleOnNavigate} variant={variant} className={className}>
+      {children}
+    </Button>
+  );
+}
+
+function Navigation() {
+  return (
+    <Card className="py-4 overflow-hidden">
       <Container>
-        <List className="flex flex-row justify-between px-0 py-2">
+        <Box className="flex justify-between">
           <Link to="/">
-            <ListItem selected={location.pathname === '/'}>
-              <HomeSvg />
-            </ListItem>
+            <Home />
           </Link>
-          <Link to="list">
-            <ListItem selected={location.pathname === '/list'}>
-              <ListSvg />
-            </ListItem>
+          <Link to="/list">
+            <List />
           </Link>
-          <Link to="add">
-            <ListItem selected={location.pathname === '/add'}>
-              <AddSvg />
-            </ListItem>
+          <Link to="/add">
+            <Plus />
           </Link>
-          <Link to="trash">
-            <ListItem selected={location.pathname === '/trash'}>
-              <TrashSvg />
-            </ListItem>
+          <Link to="/trash">
+            <Trash2 />
           </Link>
-        </List>
+        </Box>
       </Container>
     </Card>
   );

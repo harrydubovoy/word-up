@@ -1,5 +1,7 @@
-import classNames from 'classnames';
+import { cn } from '../lib/utils';
 
-export function Hr({ className }) {
-  return <hr className={classNames('border-blue-gray-50', className)} />;
+function Hr({ className }) {
+  return <hr className={cn('bg-slate-900 dark:bg-slate-100', className)} />;
 }
+
+export { Hr };

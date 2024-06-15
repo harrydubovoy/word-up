@@ -17,14 +17,10 @@ function Header() {
 
   return (
     <ScreenHeader>
-      <div className="flex justify-between gap-2">
-        <div>
-          <Typography variant="h5">{t(TRASH_BIN_SCREEN__TITLE)}</Typography>
-          <Typography variant="small">
-            {t(TRASH_BIN_SCREEN__DESCRIPTION, { totalTrashBin })}
-          </Typography>
-        </div>
-      </div>
+      <Typography htmltag="h1" variant="h4">{t(TRASH_BIN_SCREEN__TITLE)}</Typography>
+      <Typography variant="small" className="text-slate-500">
+        {t(TRASH_BIN_SCREEN__DESCRIPTION, { totalTrashBin })}
+      </Typography>
     </ScreenHeader>
   );
 }

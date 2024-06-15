@@ -3,26 +3,27 @@ import { useNavigate } from 'react-router-dom';
 import EmptySvg from '../../../icons/EmptySvg';
 import { Typography } from '../../../ui/Typography';
 import { Button } from '../../../ui/Button';
+import { Box } from '../../../ui/Box';
 
 function ListScreenEmpty() {
   const navigate = useNavigate();
 
   return (
     <>
-      <div className="flex justify-center">
+      <Box className="flex justify-center">
         <EmptySvg />
-      </div>
+      </Box>
       <Typography variant="h4" className="text-center">
         No words at your dictionary
       </Typography>
       <Typography>
         Go to add page for adding one
       </Typography>
-      <div className="mt-4">
+      <Box className="mt-4">
         <Button onClick={() => navigate('/add')}>
           Add new word
         </Button>
-      </div>
+      </Box>
     </>
   );
 }

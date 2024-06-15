@@ -1,11 +1,10 @@
 import { CardFooter } from '../../ui/Card';
+import { cn } from '../../lib/utils';
 
-function WordPairCardFooter({ children }) {
+function WordPairCardFooter({ children, className, ...props }) {
   return (
-    <CardFooter className="p-0">
-      <div className="flex justify-end gap-2">
-        {children}
-      </div>
+    <CardFooter {...props} className={cn('p-0', className)}>
+      {children}
     </CardFooter>
   );
 }

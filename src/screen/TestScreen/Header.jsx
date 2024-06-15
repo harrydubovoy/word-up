@@ -1,5 +1,6 @@
 import { Typography } from '../../ui/Typography';
-import { IconButton } from '../../ui/IconButton';
+import { Button } from '../../ui/Button';
+import { Box } from '../../ui/Box';
 import ScreenHeader from '../../screen-components/ScreenHeader';
 import FlagIcon from '../../components/FlagIcon';
 
@@ -14,20 +15,22 @@ function Header({ isTestStarted, wordKeyType, onReverseTest, totalTestPlan }) {
 
   return (
     <ScreenHeader>
-      <div className="flex items-center justify-between gap-2">
-        <div>
-          <Typography variant="h5">{t(TEST_SCREEN__TITLE)}</Typography>
-        </div>
-        <div>
-          <IconButton
-            variant="outlined"
+      <Box className="flex items-center justify-between gap-2">
+        <Box>
+          <Typography htmltag="h1" variant="h4">{t(TEST_SCREEN__TITLE)}</Typography>
+        </Box>
+        <Box>
+          <Button
+            type="button"
+            size="icon"
+            variant="outline"
             disabled={isTestStarted || !totalTestPlan}
             onClick={onReverseTest}
           >
             <FlagIcon type={mapWordKeyToFlagIcon(wordKeyType)} />
-          </IconButton>
-        </div>
-      </div>
+          </Button>
+        </Box>
+      </Box>
     </ScreenHeader>
   );
 }

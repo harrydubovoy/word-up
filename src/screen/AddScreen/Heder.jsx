@@ -10,11 +10,7 @@ function Header() {
 
   return (
     <ScreenHeader>
-      <div className="flex justify-between gap-2">
-        <div>
-          <Typography variant="h5">{t(ADD_WORD_SCREEN__TITLE)}</Typography>
-        </div>
-      </div>
+      <Typography htmltag="h1" variant="h4">{t(ADD_WORD_SCREEN__TITLE)}</Typography>
     </ScreenHeader>
   );
 }

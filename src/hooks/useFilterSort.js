@@ -10,7 +10,7 @@ const useFilterSort = () => {
     setFilterSortDisplayValue,
   ] = useState(FILTER_SORT_MAP.LATEST.displayValue);
 
-  const handleFilterSortChange = (type) => () => {
+  const handleFilterSortChange = (type) => {
     setFilterSortValue(type);
     setFilterSortDisplayValue(compose(prop('displayValue'), prop(type))(FILTER_SORT_MAP));
   };

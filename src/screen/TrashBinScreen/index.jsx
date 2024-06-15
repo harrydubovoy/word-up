@@ -1,9 +1,10 @@
-import { map, reverse, prop } from 'ramda';
+import { reverse, prop } from 'ramda';
+import { Trash, ArchiveRestore } from 'lucide-react';
 
-import { IconButton } from '../../ui/IconButton';
+import { Button } from '../../ui/Button';
+import { Box } from '../../ui/Box';
 
-import TrashForeverSvg from '../../icons/TrashForeverSvg';
-import RefreshSvg from '../../icons/RefreshSvg';
+import { List } from '../../util-components/List';
 
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
@@ -52,30 +53,32 @@ function TrashBinScreen() {
       <EmptyScreen type={!totalTrashBin && EMPTY_SCREEN_TYPE.TRASH_BIN}>
         <ScrollContainer>
           <ScreenBody className="bg-catskill-white">
-            <div className="w-full">
-              <div className="grid grid-cols-1 gap-4">
-                {map((wordPairId) => (
-                  <WordPairCard key={wordPairId}>
-                    <WordPairCard.Body>
-                      <WordPair
-                        native={getNativeWordById(wordPairId)(entitiesTrashBin)}
-                        foreign={getForeignWordById(wordPairId)(entitiesTrashBin)}
-                        transcription={getTranscriptionWordById(wordPairId)(entitiesTrashBin)}
-                        partOfSpeech={getPartOfSpeechWordById(wordPairId)(entitiesTrashBin)}
-                      />
-                    </WordPairCard.Body>
-                    <WordPairCard.Footer>
-                      <IconButton variant="outlined" size="sm" onClick={handleRestore(wordPairId)}>
-                        <RefreshSvg />
-                      </IconButton>
-                      <IconButton size="sm" onClick={handleOnRemove(wordPairId)}>
-                        <TrashForeverSvg />
-                      </IconButton>
-                    </WordPairCard.Footer>
-                  </WordPairCard>
-                ), reverse(idsTrashBin))}
-              </div>
-            </div>
+            <Box className="w-full">
+              <Box className="grid grid-cols-1 gap-4">
+                <List.Map array={reverse(idsTrashBin)}>
+                  {(wordPairId) => (
+                    <WordPairCard key={wordPairId}>
+                      <WordPairCard.Body>
+                        <WordPair
+                          native={getNativeWordById(wordPairId)(entitiesTrashBin)}
+                          foreign={getForeignWordById(wordPairId)(entitiesTrashBin)}
+                          transcription={getTranscriptionWordById(wordPairId)(entitiesTrashBin)}
+                          partOfSpeech={getPartOfSpeechWordById(wordPairId)(entitiesTrashBin)}
+                        />
+                      </WordPairCard.Body>
+                      <WordPairCard.Footer className="justify-end gap-2">
+                        <Button variant="outline" size="icon" onClick={handleRestore(wordPairId)}>
+                          <ArchiveRestore />
+                        </Button>
+                        <Button size="icon" onClick={handleOnRemove(wordPairId)}>
+                          <Trash />
+                        </Button>
+                      </WordPairCard.Footer>
+                    </WordPairCard>
+                  )}
+                </List.Map>
+              </Box>
+            </Box>
           </ScreenBody>
         </ScrollContainer>
       </EmptyScreen>

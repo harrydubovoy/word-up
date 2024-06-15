@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { ThemeProvider } from '@material-tailwind/react';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -56,10 +55,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <Provider store={store}>
-        <RouterProvider router={router} />
-      </Provider>
-    </ThemeProvider>
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>,
 );

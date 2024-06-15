@@ -1,3 +1,5 @@
+import { Box } from '../ui/Box';
+
 import BritishFlagSvg from '../icons/BritishFlagSvg';
 import UkrainianFlagSvg from '../icons/UkrainianFlagSvg';
 
@@ -17,9 +19,9 @@ function FlagIconByType({ type }) {
 
 function FlagIcon({ type }) {
   return (
-    <span className="inline-flex items-center justify-center w-[24px] h-[24px]">
+    <Box htmltag="span" className="inline-flex items-center justify-center w-[24px] h-[24px]">
       <FlagIconByType type={type} />
-    </span>
+    </Box>
   );
 }
 

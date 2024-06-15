@@ -1,12 +1,13 @@
 import EmptySvg from '../../../icons/EmptySvg';
+import { Box } from '../../../ui/Box';
 import { Typography } from '../../../ui/Typography';
 
 function DefaultScreenEmpty() {
   return (
     <>
-      <div className="flex justify-center">
+      <Box className="flex justify-center">
         <EmptySvg />
-      </div>
+      </Box>
       <Typography className="text-center">
         No Data
       </Typography>
