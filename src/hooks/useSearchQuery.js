@@ -1,18 +1,15 @@
-import { useState } from 'react';
-
-import useDebounce from './useDebounce';
+import useDebouncedState from './useDebouncedState';
 import { getTargetValue } from '../utils/input';
 
 const useSearchQuery = () => {
-  const [searchString, setSearchString] = useState('');
-  const debouncedSearchString = useDebounce(searchString);
+  const [searchString, setSearchString] = useDebouncedState('');
 
   const handleOnSearchChange = (event) => {
     setSearchString(getTargetValue(event));
   };
 
   return {
-    searchString: debouncedSearchString,
+    searchString,
     handleOnSearchChange,
   };
 };
