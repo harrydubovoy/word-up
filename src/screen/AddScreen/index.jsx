@@ -1,88 +1,38 @@
-import { useRef, useState } from 'react';
-import { Globe } from 'lucide-react';
+import { useRef } from 'react';
 
 import { Button } from '../../ui/Button';
-import { Input } from '../../ui/Input';
-import { Textarea } from '../../ui/Textarea';
-import { Label } from '../../ui/Label';
 import { Box } from '../../ui/Box';
 
 import Header from './Heder';
+import WordPairFormFields from '../../components/WordPairFormFields';
 import ScreenBody from '../../screen-components/ScreenBody';
 import ScrollContainer from '../../screen-components/ScrollContainer';
 
 import { useTranslation } from '../../translations';
-import {
-  COMMON__FOREIGN,
-  COMMON__NATIVE,
-  ADD_WORD_SCREEN__ACTION_ADD_TO_LIST,
-} from '../../translations/resources/constants';
+import { ADD_WORD_SCREEN__ACTION_ADD_TO_LIST } from '../../translations/resources/constants';
 
 import { useAppDispatch } from '../../store/hooks';
 import { addOneDictionary, dictionaryPayload } from '../../store/reducer/dictionary.slice';
 
-import { getTargetValue } from '../../utils/input';
-import { normalizeValue } from '../../utils/string';
-import { openExternalDictionaryPageByWord } from '../../utils/navigation';
-
-import { WORD_PAIR_KEYS } from '../../constants/word';
+import { getFields, isRequiredFieldsIsNotEmpty } from '../../utils/form';
 
 function AddScreen() {
   const dispatch = useAppDispatch();
   const { t } = useTranslation();
 
-  const foreignInputRef = useRef(null);
-  const [foreign, setForeign] = useState('');
-  const [native, setNative] = useState('');
-  const [transcription, setTranscription] = useState('');
-  const [partOfSpeech, setPartOfSpeech] = useState('');
-  const [description, setDescription] = useState('');
+  const formRef = useRef(null);
 
-  const handleOnChangeForeign = (event) => {
-    setForeign(getTargetValue(event));
-  };
+  const handleOnSubmitAdd = (event) => {
+    event.preventDefault();
 
-  const handleOnChangeNative = (event) => {
-    setNative(getTargetValue(event));
-  };
+    const fields = getFields(event.target);
 
-  const handleOnChangeTranscription = (event) => {
-    setTranscription(getTargetValue(event));
-  };
-
-  const handleOnChangePartOfSpeech = (event) => {
-    setPartOfSpeech(getTargetValue(event));
-  };
-
-  const handleOnChangeDescription = (event) => {
-    setDescription(getTargetValue(event));
-  };
-
-  const handleOnOpenDictionary = () => openExternalDictionaryPageByWord(foreign);
-
-  const handleAfterSending = () => {
-    setForeign('');
-    setNative('');
-    setTranscription('');
-    setPartOfSpeech('');
-    setDescription('');
-
-    foreignInputRef.current.focus();
-  };
-
-  const handleOnAdd = () => {
-    if (!(foreign && native)) {
+    if (!isRequiredFieldsIsNotEmpty(fields)) {
       return null;
     }
 
-    dispatch(addOneDictionary(dictionaryPayload({
-      [WORD_PAIR_KEYS.FOREIGN]: normalizeValue(foreign),
-      [WORD_PAIR_KEYS.NATIVE]: normalizeValue(native),
-      [WORD_PAIR_KEYS.TRANSCRIPTION]: normalizeValue(transcription),
-      [WORD_PAIR_KEYS.PART_OF_SPEECH]: normalizeValue(partOfSpeech),
-      [WORD_PAIR_KEYS.DESCRIPTION]: description,
-    })));
-    handleAfterSending();
+    dispatch(addOneDictionary(dictionaryPayload(fields)));
+    formRef.current.reset();
 
     return null;
   };
@@ -92,66 +42,10 @@ function AddScreen() {
       <Header />
       <ScrollContainer>
         <ScreenBody>
-          <form>
-            <Box className="flex flex-col gap-4">
-              <Box className="flex flex-col gap-2">
-                <Label htmlFor="add-foreign-word">{t(COMMON__FOREIGN)}</Label>
-                <Box className="relative flex w-full">
-                  <Input
-                    id="add-foreign-word"
-                    className="pr-10"
-                    ref={foreignInputRef}
-                    value={foreign}
-                    onChange={handleOnChangeForeign}
-                  />
-                  <Box className="!absolute right-0 top-0">
-                    <Button
-                      type="button"
-                      size="icon"
-                      disabled={!foreign}
-                      onClick={handleOnOpenDictionary}
-                    >
-                      <Globe />
-                    </Button>
-                  </Box>
-                </Box>
-              </Box>
-              <Box className="flex flex-col gap-2">
-                <Label htmlFor="add-native-word">{t(COMMON__NATIVE)}</Label>
-                <Input
-                  id="add-native-word"
-                  value={native}
-                  onChange={handleOnChangeNative}
-                />
-              </Box>
-              <Box className="flex flex-col gap-2">
-                <Label htmlFor="add-transcription">Transcription</Label>
-                <Input
-                  id="add-transcription"
-                  value={transcription}
-                  onChange={handleOnChangeTranscription}
-                />
-              </Box>
-              <Box className="flex flex-col gap-2">
-                <Label htmlFor="add-part-of-speech">Part of speech</Label>
-                <Input
-                  id="add-part-of-speech"
-                  value={partOfSpeech}
-                  onChange={handleOnChangePartOfSpeech}
-                />
-              </Box>
-              <Box className="flex flex-col gap-2">
-                <Label htmlFor="add-description">Description / Meaning / Example</Label>
-                <Textarea
-                  id="add-description"
-                  value={description}
-                  onChange={handleOnChangeDescription}
-                />
-              </Box>
-            </Box>
-
+          <form ref={formRef} onSubmit={handleOnSubmitAdd}>
+            <WordPairFormFields />
             <Box className="mt-6">
-              <Button type="button" onClick={handleOnAdd} className="w-full">
+              <Button type="submit" className="w-full">
                 {t(ADD_WORD_SCREEN__ACTION_ADD_TO_LIST)}
               </Button>
             </Box>
