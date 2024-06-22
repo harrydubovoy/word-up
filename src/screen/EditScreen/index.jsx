@@ -7,6 +7,7 @@ import { Button } from '../../ui/Button';
 import { Input } from '../../ui/Input';
 import { Textarea } from '../../ui/Textarea';
 import { Label } from '../../ui/Label';
+import { Box } from '../../ui/Box';
 
 import Header from './Heder';
 import ScreenBody from '../../screen-components/ScreenBody';
@@ -105,10 +106,10 @@ function EditScreen() {
       <ScrollContainer>
         <ScreenBody>
           <form>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
+            <Box className="flex flex-col gap-4">
+              <Box className="flex flex-col gap-2">
                 <Label htmlFor="edit-foreign-word">{t(COMMON__FOREIGN)}</Label>
-                <div className="relative flex w-full">
+                <Box className="relative flex w-full">
                   <Input
                     id="edit-foreign-word"
                     className="pr-10"
@@ -116,7 +117,7 @@ function EditScreen() {
                     value={foreign}
                     onChange={handleOnChangeForeign}
                   />
-                  <div className="!absolute right-0 top-0">
+                  <Box className="!absolute right-0 top-0">
                     <Button
                       type="button"
                       size="icon"
@@ -125,59 +126,51 @@ function EditScreen() {
                     >
                       <Globe />
                     </Button>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col gap-2">
+                  </Box>
+                </Box>
+              </Box>
+              <Box className="flex flex-col gap-2">
                 <Label htmlFor="edit-native-word">{t(COMMON__NATIVE)}</Label>
                 <Input
                   id="edit-native-word"
                   value={native}
                   onChange={handleOnChangeNative}
                 />
-              </div>
-              <div className="flex flex-col gap-2">
+              </Box>
+              <Box className="flex flex-col gap-2">
                 <Label htmlFor="edit-transcription">Transcription</Label>
                 <Input
                   id="edit-transcription"
                   value={transcription}
-                  onChange={handleOnChangePartOfSpeech}
+                  onChange={handleOnChangeTranscription}
                 />
-              </div>
-              <div className="flex flex-col gap-2">
+              </Box>
+              <Box className="flex flex-col gap-2">
                 <Label htmlFor="edit-part-of-speech">Part of speech</Label>
                 <Input
                   id="edit-part-of-speech"
                   value={partOfSpeech}
                   onChange={handleOnChangePartOfSpeech}
                 />
-              </div>
-              <div className="flex flex-col gap-2">
-                <Label htmlFor="add-transcription">Transcription</Label>
-                <Input
-                  id="add-transcription"
-                  value={transcription}
-                  onChange={handleOnChangeTranscription}
-                />
-              </div>
-              <div className="flex flex-col gap-2">
+              </Box>
+              <Box className="flex flex-col gap-2">
                 <Label htmlFor="edit-description">Description / Meaning / Example</Label>
                 <Textarea
                   id="edit-description"
                   value={description}
                   onChange={handleOnChangeDescription}
                 />
-              </div>
-            </div>
+              </Box>
+            </Box>
 
-            <div className="flex items-center gap-2 mt-6">
+            <Box className="flex items-center gap-2 mt-6">
               <Button type="button" variant="outline" className="w-full" onClick={handleOnCancel}>
                 Cancel
               </Button>
               <Button type="button" className="w-full" onClick={handleOnUpdate}>
                 Update
               </Button>
-            </div>
+            </Box>
           </form>
         </ScreenBody>
       </ScrollContainer>
