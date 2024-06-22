@@ -2,7 +2,7 @@ import { Typography } from '../../ui/Typography';
 import { Button } from '../../ui/Button';
 import { Box } from '../../ui/Box';
 import ScreenHeader from '../../screen-components/ScreenHeader';
-import FlagIcon from '../../components/FlagIcon';
+import { FlagIcon } from '../../components/FlagIcon';
 
 import { TEST_SCREEN__TITLE } from '../../translations/resources/constants';
 

@@ -3,7 +3,7 @@ import { If } from '../util-components/If';
 import { Typography } from '../ui/Typography';
 import { Box } from '../ui/Box';
 import { PartOfSpeechBadge } from './PartOfSpeechBadge';
-import FlagIcon from './FlagIcon';
+import { FlagIcon } from './FlagIcon';
 
 import { cn } from '../lib/utils';
 
