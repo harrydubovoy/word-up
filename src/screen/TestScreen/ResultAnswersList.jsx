@@ -42,12 +42,12 @@ function ResultAnswersList({ userAnswers, ids, wordKeyType }) {
             <Box
               htmltag="li"
               key={wordPairId}
-              className={cn('relative p-2 rounded-xl text-slate-600', {
+              className={cn('relative py-2 px-8 rounded-xl text-slate-600', {
                 'bg-panache': isRightAnswer,
                 'bg-lavender-blush': !isRightAnswer,
               })}
             >
-              <Box className="flex justify-center">
+              <Box className="flex justify-center flex-wrap">
                 <Box htmltag="span">
                   {getQuestionWord(wordPairId)}
                 </Box>
