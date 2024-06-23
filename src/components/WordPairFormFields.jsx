@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useState } from 'react';
 import { Globe } from 'lucide-react';
 
 import { Box } from '../ui/Box';
@@ -12,16 +12,20 @@ import { COMMON__FOREIGN, COMMON__NATIVE } from '../translations/resources/const
 
 import { WORD_PAIR_KEYS } from '../constants/word';
 import { openExternalDictionaryPageByWord } from '../utils/navigation';
+import { getTargetValue } from '../utils/input';
+import { normalizeValue } from '../utils/string';
 
 function WordPairFormFields({ foreign, native, transcription, partOfSpeech, description }) {
-  const foreignInputRef = useRef(null);
+  const [foreignInputValue, setForeignInputValue] = useState(() => foreign ?? '');
 
   const { t } = useTranslation();
 
+  const handleOnChangeForeign = (event) => {
+    setForeignInputValue(normalizeValue(getTargetValue(event)));
+  };
+
   const handleOnOpenDictionary = () => {
-    if (foreignInputRef.current?.value) {
-      openExternalDictionaryPageByWord(foreignInputRef.current?.value);
-    }
+    openExternalDictionaryPageByWord(foreignInputValue);
   };
 
   return (
@@ -33,13 +37,14 @@ function WordPairFormFields({ foreign, native, transcription, partOfSpeech, desc
             autoFocus
             id={WORD_PAIR_KEYS.FOREIGN}
             className="pr-10"
-            ref={foreignInputRef}
             defaultValue={foreign}
+            onChange={handleOnChangeForeign}
           />
           <Box className="!absolute right-0 top-0">
             <Button
               type="button"
               size="icon"
+              disabled={!foreignInputValue}
               onClick={handleOnOpenDictionary}
             >
               <Globe />
