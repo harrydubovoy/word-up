@@ -35,6 +35,7 @@ function WordPairFormFields({ foreign, native, transcription, partOfSpeech, desc
         <Box className="relative flex w-full">
           <Input
             autoFocus
+            required
             id={WORD_PAIR_KEYS.FOREIGN}
             className="pr-10"
             defaultValue={foreign}
@@ -54,7 +55,7 @@ function WordPairFormFields({ foreign, native, transcription, partOfSpeech, desc
       </Box>
       <Box className="flex flex-col gap-2">
         <Label htmlFor={WORD_PAIR_KEYS.NATIVE}>{t(COMMON__NATIVE)}</Label>
-        <Input id={WORD_PAIR_KEYS.NATIVE} defaultValue={native} />
+        <Input required id={WORD_PAIR_KEYS.NATIVE} defaultValue={native} />
       </Box>
       <Box className="flex flex-col gap-2">
         <Label htmlFor={WORD_PAIR_KEYS.TRANSCRIPTION}>Transcription</Label>

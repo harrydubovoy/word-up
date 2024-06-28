@@ -1,27 +1,48 @@
-import { compose, equals, filter, or, prop, reduce, and } from 'ramda';
+import { compose, equals, filter, or, prop, reduce, values } from 'ramda';
 
 import { normalizeValue } from './string';
-import { WORD_PAIR_KEYS } from '../constants/word';
+import { every } from './list';
 import { NODE_NAMES } from '../constants/nodes';
 
-export const isInputNode = (node) => equals(node.nodeName, NODE_NAMES.INPUT);
-export const isTextareaNode = (node) => equals(node.nodeName, NODE_NAMES.TEXTAREA);
+const getNodeName = (node) => prop('nodeName', node);
+
+export const isInputNode = (node) => equals(getNodeName(node), NODE_NAMES.INPUT);
+
+export const isTextareaNode = (node) => equals(getNodeName(node), NODE_NAMES.TEXTAREA);
+
 export const isTextboxElement = (field) => or(isInputNode(field), isTextareaNode(field));
 
-export const isRequiredFieldsIsNotEmpty = (fields) => (
-  and(prop(WORD_PAIR_KEYS.FOREIGN, fields), prop(WORD_PAIR_KEYS.NATIVE, fields))
+const hasRequiredAttribute = (field) => field.hasAttribute('required');
+
+export const getFields = filter(isTextboxElement);
+
+export const getRequiredFields = compose(
+  filter(hasRequiredAttribute),
+  filter(isTextboxElement),
 );
 
-export const mapFieldsToValue = (acc, field) => {
-  const fieldId = prop('id', field);
-  const fieldValue = prop('value', field);
+const getFieldId = (field) => prop('id', field);
 
-  acc[fieldId] = isTextareaNode(field) ? fieldValue : normalizeValue(prop('value', field));
+const getFieldValue = (field) => prop('value', field);
+
+export const mapFieldsToValue = (acc, field) => {
+  const fieldValue = getFieldValue(field);
+
+  acc[getFieldId(field)] = isTextareaNode(field) ? fieldValue : normalizeValue(fieldValue);
 
   return acc;
 };
 
-export const getFields = compose(
-  reduce(mapFieldsToValue, {}),
-  filter(isTextboxElement),
+export const getFieldValuesAsMap = (initial) => reduce(mapFieldsToValue, initial);
+
+export const getFieldsData = compose(
+  getFieldValuesAsMap({}),
+  getFields,
+);
+
+export const isRequiredFieldsFilled = compose(
+  every(Boolean),
+  values,
+  getFieldValuesAsMap({}),
+  getRequiredFields,
 );

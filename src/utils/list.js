@@ -13,3 +13,5 @@ export const shuffleArray = (array) => {
 
   return list;
 };
+
+export const every = (fn) => (array) => array.every(fn);

@@ -2,6 +2,7 @@ import { useRef } from 'react';
 
 import { Button } from '../../ui/Button';
 import { Box } from '../../ui/Box';
+import { Form } from '../../ui/Form';
 
 import Header from './Heder';
 import WordPairFormFields from '../../components/WordPairFormFields';
@@ -14,7 +15,7 @@ import { ADD_WORD_SCREEN__ACTION_ADD_TO_LIST } from '../../translations/resource
 import { useAppDispatch } from '../../store/hooks';
 import { addOneDictionary, dictionaryPayload } from '../../store/reducer/dictionary.slice';
 
-import { getFields, isRequiredFieldsIsNotEmpty } from '../../utils/form';
+import { getFieldsData, isRequiredFieldsFilled } from '../../utils/form';
 
 function AddScreen() {
   const dispatch = useAppDispatch();
@@ -24,14 +25,13 @@ function AddScreen() {
 
   const handleOnSubmitAdd = (event) => {
     event.preventDefault();
+    const formEventTarget = event.target;
 
-    const fields = getFields(event.target);
-
-    if (!isRequiredFieldsIsNotEmpty(fields)) {
+    if (!isRequiredFieldsFilled(formEventTarget)) {
       return null;
     }
 
-    dispatch(addOneDictionary(dictionaryPayload(fields)));
+    dispatch(addOneDictionary(dictionaryPayload(getFieldsData(formEventTarget))));
     formRef.current.reset();
 
     return null;
@@ -42,14 +42,14 @@ function AddScreen() {
       <Header />
       <ScrollContainer>
         <ScreenBody>
-          <form ref={formRef} onSubmit={handleOnSubmitAdd}>
+          <Form ref={formRef} onSubmit={handleOnSubmitAdd}>
             <WordPairFormFields />
             <Box className="mt-6">
               <Button type="submit" className="w-full">
                 {t(ADD_WORD_SCREEN__ACTION_ADD_TO_LIST)}
               </Button>
             </Box>
-          </form>
+          </Form>
         </ScreenBody>
       </ScrollContainer>
     </>

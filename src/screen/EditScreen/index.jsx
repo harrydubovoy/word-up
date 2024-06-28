@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 import { Button } from '../../ui/Button';
 import { Box } from '../../ui/Box';
+import { Form } from '../../ui/Form';
 
 import Header from './Heder';
 import WordPairFormFields from '../../components/WordPairFormFields';
@@ -15,7 +16,7 @@ import {
   selectByIdDictionary,
 } from '../../store/reducer/dictionary.slice';
 
-import { getFields, isRequiredFieldsIsNotEmpty } from '../../utils/form';
+import { getFieldsData, isRequiredFieldsFilled } from '../../utils/form';
 
 import { WORD_PAIR_KEYS } from '../../constants/word';
 
@@ -30,14 +31,13 @@ function EditScreen() {
 
   const handleOnSubmitUpdate = (event) => {
     event.preventDefault();
+    const formEventTarget = event.target;
 
-    const fields = getFields(event.target);
-
-    if (!isRequiredFieldsIsNotEmpty(fields)) {
+    if (!isRequiredFieldsFilled(formEventTarget)) {
       return null;
     }
 
-    dispatch(updateOneDictionary({ id, changes: fields }));
+    dispatch(updateOneDictionary({ id, changes: getFieldsData(formEventTarget) }));
     handleOnBack();
 
     return null;
@@ -48,7 +48,7 @@ function EditScreen() {
       <Header />
       <ScrollContainer>
         <ScreenBody>
-          <form onSubmit={handleOnSubmitUpdate}>
+          <Form onSubmit={handleOnSubmitUpdate}>
             <WordPairFormFields
               foreign={prop(WORD_PAIR_KEYS.FOREIGN)(byIdDictionary)}
               native={prop(WORD_PAIR_KEYS.NATIVE)(byIdDictionary)}
@@ -64,7 +64,7 @@ function EditScreen() {
                 Update
               </Button>
             </Box>
-          </form>
+          </Form>
         </ScreenBody>
       </ScrollContainer>
     </>
