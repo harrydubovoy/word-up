@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import { cn, cva } from '../lib/utils';
 
 const typographyVariants = cva(
-  'text-slate-800 dark:text-slate-200',
+  '',
   {
     variants: {
       variant: {
@@ -14,7 +14,7 @@ const typographyVariants = cva(
         h6: 'text-sm font-semibold',
         paragraph: '',
         blockquote: 'border-l-2 pl-6 italic',
-        'inline-code': 'relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold',
+        'inline-code': 'relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold',
         large: 'text-lg',
         medium: 'text-md',
         small: 'text-sm',

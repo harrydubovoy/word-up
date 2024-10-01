@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import {
   createBrowserRouter,
+  createRoutesFromElements,
   RouterProvider,
+  Route,
 } from 'react-router-dom';
 
 import store from './store';
@@ -14,43 +16,21 @@ import AddScreen from './screen/AddScreen';
 import EditScreen from './screen/EditScreen';
 import ListScreen from './screen/ListScreen';
 import TestScreen from './screen/TestScreen';
-import TrashBinScreen from './screen/TrashBinScreen';
+import ArchiveScreen from './screen/ArchiveScreen';
 import NotFoundScreen from './screen/NotFoundScreen';
 
 import './translations/config';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    children: [
-      {
-        path: '/',
-        element: <TestScreen />,
-      },
-      {
-        path: '/add',
-        element: <AddScreen />,
-      },
-      {
-        path: '/edit/:id',
-        element: <EditScreen />,
-      },
-      {
-        path: '/list',
-        element: <ListScreen />,
-      },
-      {
-        path: '/trash',
-        element: <TrashBinScreen />,
-      },
-      {
-        path: '*',
-        element: <NotFoundScreen />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path="/" element={<App />}>
+    <Route index element={<TestScreen />} />
+    <Route path="add" element={<AddScreen />} />
+    <Route path="edit/:id" element={<EditScreen />} />
+    <Route path="list" element={<ListScreen />} />
+    <Route path="archive" element={<ArchiveScreen />} />
+    <Route path="*" element={<NotFoundScreen />} />
+  </Route>,
+));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -115,14 +115,13 @@ function TestScreen() {
       <Header
         totalTestPlan={totalTestPlan}
         isTestStarted={isTestStarted}
-        wordKeyType={wordKeyType}
         onReverseTest={handleReverseTest}
       />
-      <EmptyScreen type={!totalTestPlan && EMPTY_SCREEN_TYPE.TEST}>
+      <EmptyScreen type={!totalTestPlan && EMPTY_SCREEN_TYPE.DEFAULT}>
         <ScrollContainer>
           <ScreenBody>
             {isTestInProgress && (
-              <Box className="p-5 rounded-md bg-catskill-white">
+              <Box className="p-5 rounded-md">
                 <Box className="mb-6">
                   <QuestionWord
                     wordKeyType={wordKeyType}
@@ -159,11 +158,11 @@ function TestScreen() {
               <>
                 <Box className="mt-4 mb-3">
                   <Progress value={getProgress(totalTestPlan, cursor)} />
-                  <Box className="mt-2 flex items-center justify-between px-2">
-                    <Typography className="block antialiased text-gray-700 text-center text-xs">
+                  <Box className="mt-2 flex items-center text-center text-xs justify-between opacity-75 px-2">
+                    <Typography className="block">
                       {t(TEST_SCREEN__PROGRESS_LABEL)}
                     </Typography>
-                    <Typography className="block antialiased text-gray-700 text-center text-xs">
+                    <Typography className="block">
                       {cursor}
                       {' '}
                       /

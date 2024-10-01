@@ -1,5 +1,5 @@
 import { Box } from '../../ui/Box';
-import EmptyScreenFactory from './EmptyScreenFactory';
+import { EmptyScreenFactory } from './EmptyScreenFactory';
 
 function EmptyScreen({ children, type }) {
   if (type) {

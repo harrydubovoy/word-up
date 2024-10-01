@@ -1,21 +1,21 @@
 import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { prop, has, compose, equals } from 'ramda';
-import { Globe, Trash, Pencil, FileText, ListPlus, ListMinus } from 'lucide-react';
+import { Globe, Archive, Pencil, FileText, ListPlus, ListMinus } from 'lucide-react';
 
 import { Typography } from '../../ui/Typography';
 import { Input } from '../../ui/Input';
 import { Box } from '../../ui/Box';
 import { Button } from '../../ui/Button';
 import { Hr } from '../../ui/Hr';
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '../../ui/Select';
+// import {
+//   Select,
+//   SelectContent,
+//   SelectGroup,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from '../../ui/Select';
 
 import { If } from '../../util-components/If';
 import { List } from '../../util-components/List';
@@ -47,7 +47,7 @@ import {
   selectEntitiesTestPlan,
   selectIdsTestPlan,
 } from '../../store/reducer/test-plan.slice';
-import { addOneTrashBin } from '../../store/reducer/trash-bin.slice';
+import { addOneArchive } from '../../store/reducer/archive.slice';
 
 import {
   getNativeWordById,
@@ -106,7 +106,7 @@ function ListScreen() {
   };
 
   const handleOnRemove = (wordPairId) => () => {
-    dispatch(addOneTrashBin(prop(wordPairId)(entitiesDictionary)));
+    dispatch(addOneArchive(prop(wordPairId)(entitiesDictionary)));
     dispatch(removeOneDictionary(wordPairId));
     dispatch(removeOneTestPlan(wordPairId));
   };
@@ -139,84 +139,84 @@ function ListScreen() {
         <Box className="rounded-t-none p-4 relative z-10">
           <Box className="flex flex-col items-end min-w- justify-between gap-3">
             <Input disabled={!totalDictionary} onChange={handleOnSearchChange} size="md" placeholder="Search" />
-            <Box className="flex gap-2 items-center">
-              <Box className="flex flex-col gap-1 shrink-0">
-                <Select
-                  disabled={!totalDictionary}
-                  value={filterPartOfSpeechValue}
-                  onValueChange={handleFilterPartOfSpeechChange}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Part of Speech" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectGroup>
-                      <SelectItem
-                        value={FILTER_PART_OF_SPEECH_MAP.ALL.value}
-                        onClick={handleFilterPartOfSpeechChange}
-                      >
-                        {FILTER_PART_OF_SPEECH_MAP.ALL.displayValue}
-                      </SelectItem>
-                      <List.Map array={availablePartOfSpeech}>
-                        {(partOfSpeech) => (
-                          <SelectItem
-                            key={partOfSpeech}
-                            value={partOfSpeech}
-                          >
-                            {partOfSpeech}
-                          </SelectItem>
-                        )}
-                      </List.Map>
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
-              </Box>
-              <Box className="flex flex-col gap-1 shrink-0">
-                <Select
-                  disabled={!totalDictionary}
-                  value={filterSortValue}
-                  onValueChange={handleFilterSortChange}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Sort" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectGroup>
-                      <SelectItem value={FILTER_SORT_MAP.LATEST.value}>
-                        {FILTER_SORT_MAP.LATEST.displayValue}
-                      </SelectItem>
-                      <SelectItem value={FILTER_SORT_MAP.OLDEST.value}>
-                        {FILTER_SORT_MAP.OLDEST.displayValue}
-                      </SelectItem>
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
-              </Box>
-              <Box className="flex flex-col gap-1 shrink-0">
-                <Select
-                  disabled={!totalDictionary}
-                  value={filterValue}
-                  onValueChange={handleFilterTypeChange}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Status" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectGroup>
-                      <SelectItem value={FILTER_TYPE_MAP.ALL.value}>
-                        {FILTER_TYPE_MAP.ALL.displayValue}
-                      </SelectItem>
-                      <SelectItem value={FILTER_TYPE_MAP.INCLUDED.value}>
-                        {FILTER_TYPE_MAP.INCLUDED.displayValue}
-                      </SelectItem>
-                      <SelectItem value={FILTER_TYPE_MAP.EXCLUDED.value}>
-                        {FILTER_TYPE_MAP.EXCLUDED.displayValue}
-                      </SelectItem>
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
-              </Box>
-            </Box>
+            {/*      <Box className="flex gap-2 items-center"> */}
+            {/*        <Box className="flex flex-col gap-1 shrink-0"> */}
+            {/*          <Select */}
+            {/*            disabled={!totalDictionary} */}
+            {/*            value={filterPartOfSpeechValue} */}
+            {/*            onValueChange={handleFilterPartOfSpeechChange} */}
+            {/*          > */}
+            {/*            <SelectTrigger> */}
+            {/*              <SelectValue placeholder="Part of Speech" /> */}
+            {/*            </SelectTrigger> */}
+            {/*            <SelectContent> */}
+            {/*              <SelectGroup> */}
+            {/*                <SelectItem */}
+            {/*                  value={FILTER_PART_OF_SPEECH_MAP.ALL.value} */}
+            {/*                  onClick={handleFilterPartOfSpeechChange} */}
+            {/*                > */}
+            {/*                  {FILTER_PART_OF_SPEECH_MAP.ALL.displayValue} */}
+            {/*                </SelectItem> */}
+            {/*                <List.Map array={availablePartOfSpeech}> */}
+            {/*                  {(partOfSpeech) => ( */}
+            {/*                    <SelectItem */}
+            {/*                      key={partOfSpeech} */}
+            {/*                      value={partOfSpeech} */}
+            {/*                    > */}
+            {/*                      {partOfSpeech} */}
+            {/*                    </SelectItem> */}
+            {/*                  )} */}
+            {/*                </List.Map> */}
+            {/*              </SelectGroup> */}
+            {/*            </SelectContent> */}
+            {/*          </Select> */}
+            {/*        </Box> */}
+            {/*        <Box className="flex flex-col gap-1 shrink-0"> */}
+            {/*          <Select */}
+            {/*            disabled={!totalDictionary} */}
+            {/*            value={filterSortValue} */}
+            {/*            onValueChange={handleFilterSortChange} */}
+            {/*          > */}
+            {/*            <SelectTrigger> */}
+            {/*              <SelectValue placeholder="Sort" /> */}
+            {/*            </SelectTrigger> */}
+            {/*            <SelectContent> */}
+            {/*              <SelectGroup> */}
+            {/*                <SelectItem value={FILTER_SORT_MAP.LATEST.value}> */}
+            {/*                  {FILTER_SORT_MAP.LATEST.displayValue} */}
+            {/*                </SelectItem> */}
+            {/*                <SelectItem value={FILTER_SORT_MAP.OLDEST.value}> */}
+            {/*                  {FILTER_SORT_MAP.OLDEST.displayValue} */}
+            {/*                </SelectItem> */}
+            {/*              </SelectGroup> */}
+            {/*            </SelectContent> */}
+            {/*          </Select> */}
+            {/*        </Box> */}
+            {/*        <Box className="flex flex-col gap-1 shrink-0"> */}
+            {/*          <Select */}
+            {/*            disabled={!totalDictionary} */}
+            {/*            value={filterValue} */}
+            {/*            onValueChange={handleFilterTypeChange} */}
+            {/*          > */}
+            {/*            <SelectTrigger> */}
+            {/*              <SelectValue placeholder="Status" /> */}
+            {/*            </SelectTrigger> */}
+            {/*            <SelectContent> */}
+            {/*              <SelectGroup> */}
+            {/*                <SelectItem value={FILTER_TYPE_MAP.ALL.value}> */}
+            {/*                  {FILTER_TYPE_MAP.ALL.displayValue} */}
+            {/*                </SelectItem> */}
+            {/*                <SelectItem value={FILTER_TYPE_MAP.INCLUDED.value}> */}
+            {/*                  {FILTER_TYPE_MAP.INCLUDED.displayValue} */}
+            {/*                </SelectItem> */}
+            {/*                <SelectItem value={FILTER_TYPE_MAP.EXCLUDED.value}> */}
+            {/*                  {FILTER_TYPE_MAP.EXCLUDED.displayValue} */}
+            {/*                </SelectItem> */}
+            {/*              </SelectGroup> */}
+            {/*            </SelectContent> */}
+            {/*          </Select> */}
+            {/*        </Box> */}
+            {/*      </Box> */}
           </Box>
         </Box>
         <Hr />
@@ -224,7 +224,7 @@ function ListScreen() {
 
       <EmptyScreen type={getEmptyScreenType({ idsDictionary, filteredIdsDictionary })}>
         <ScrollContainer>
-          <ScreenBody className="bg-catskill-white">
+          <ScreenBody>
             <Box className="w-full">
               <Box className="grid grid-cols-1 gap-4">
                 <List.Map array={filteredIdsDictionary}>
@@ -241,7 +241,7 @@ function ListScreen() {
                       </WordPairCard.Body>
                       <WordPairCard.Footer className="justify-end gap-2">
                         <Button type="button" variant="outline" size="icon" onClick={handleOnRemove(wordPairId)}>
-                          <Trash />
+                          <Archive />
                         </Button>
                         <Button type="button" variant="outline" size="icon" onClick={handleOnOpenDictionary(wordPairId)}>
                           <Globe />

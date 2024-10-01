@@ -7,7 +7,7 @@ import { Hr } from '../../ui/Hr';
 function ScreenHeader({ children, className }) {
   return (
     <>
-      <Box className={cn('py-5', className)}>
+      <Box className={cn('py-5 min-h-[92px] flex flex-col justify-center', className)}>
         <Container>
           {children}
         </Container>

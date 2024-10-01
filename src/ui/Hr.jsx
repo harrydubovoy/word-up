@@ -1,7 +1,5 @@
 import { cn } from '../lib/utils';
 
-function Hr({ className }) {
-  return <hr className={cn('bg-slate-900 dark:bg-slate-100', className)} />;
+export function Hr({ className }) {
+  return <div className={cn('bg-primary/20 w-full h-[1px]', className)} />;
 }
-
-export { Hr };

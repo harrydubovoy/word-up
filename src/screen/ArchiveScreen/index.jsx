@@ -16,11 +16,11 @@ import Header from './Header';
 
 import { useAppSelector, useAppDispatch } from '../../store/hooks';
 import {
-  selectEntitiesTrashBin,
-  selectIdsTrashBin,
-  selectTotalTrashBin,
-  removeOneTrashBin,
-} from '../../store/reducer/trash-bin.slice';
+  selectEntitiesArchive,
+  selectIdsArchive,
+  selectTotalArchive,
+  removeOneArchive,
+} from '../../store/reducer/archive.slice';
 import { addOneDictionary } from '../../store/reducer/dictionary.slice';
 
 import {
@@ -32,27 +32,27 @@ import {
 
 import { EMPTY_SCREEN_TYPE } from '../../constants/screens';
 
-function TrashBinScreen() {
+function ArchiveScreen() {
   const dispatch = useAppDispatch();
-  const entitiesTrashBin = useAppSelector(selectEntitiesTrashBin);
-  const idsTrashBin = useAppSelector(selectIdsTrashBin);
-  const totalTrashBin = useAppSelector(selectTotalTrashBin);
+  const entitiesTrashBin = useAppSelector(selectEntitiesArchive);
+  const idsTrashBin = useAppSelector(selectIdsArchive);
+  const totalTrashBin = useAppSelector(selectTotalArchive);
 
   const handleOnRemove = (wordPairId) => () => {
-    dispatch(removeOneTrashBin(wordPairId));
+    dispatch(removeOneArchive(wordPairId));
   };
 
   const handleRestore = (wordPairId) => () => {
     dispatch(addOneDictionary(prop(wordPairId)(entitiesTrashBin)));
-    dispatch(removeOneTrashBin(wordPairId));
+    dispatch(removeOneArchive(wordPairId));
   };
 
   return (
     <>
       <Header />
-      <EmptyScreen type={!totalTrashBin && EMPTY_SCREEN_TYPE.TRASH_BIN}>
+      <EmptyScreen type={!totalTrashBin && EMPTY_SCREEN_TYPE.ARCHIVE}>
         <ScrollContainer>
-          <ScreenBody className="bg-catskill-white">
+          <ScreenBody>
             <Box className="w-full">
               <Box className="grid grid-cols-1 gap-4">
                 <List.Map array={reverse(idsTrashBin)}>
@@ -86,4 +86,4 @@ function TrashBinScreen() {
   );
 }
 
-export default TrashBinScreen;
+export default ArchiveScreen;
