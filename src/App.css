@@ -4,52 +4,39 @@
 
 @layer base {
   :root {
+    font-size: 16px;
+
     --primary: 223 11% 12%;
     --secondary: 0 0% 96%;
-    --body: 0 0% 96%;
-
-    --radius: 0.5rem;
-
-    ::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: hsl(var(--secondary));
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: hsl(var(--primary));
-      border-radius: 4px;
-    }
   }
 
   .dark {
     --primary: 0 0% 96%;
     --secondary: 223 11% 12%;
-    --body: 330 4% 10%;
+  }
 
-    ::-webkit-scrollbar-track {
-      background: hsl(var(--secondary));
-    }
+  ::-webkit-scrollbar {
+    @apply w-1;
+  }
 
-    ::-webkit-scrollbar-thumb {
-      background: hsl(var(--primary));
-      border-radius: 4px;
-    }
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply w-1 bg-primary/30 rounded-lg;
   }
 
   html, body, #root {
-    @apply h-full m-0;
+    @apply h-full;
   }
 
   body {
-    font-family: Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: hsl(var(--secondary));
-    color: hsl(var(--primary));
+    background-color: theme(colors.secondary);
+    color: theme(colors.primary);
   }
 }
 

@@ -7,6 +7,10 @@ module.exports = {
   ],
   prefix: '',
   theme: {
+    fontFamily: {
+      sans: ['Helvetica', 'sans-serif'],
+    },
+
     container: {
       center: true,
       padding: '2rem',
@@ -25,10 +29,9 @@ module.exports = {
         primary: 'hsl(var(--primary))',
         secondary: 'hsl(var(--secondary))',
       },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+      // generate by js
+      opacity: {
+        3: '0.03',
       },
     },
   },
