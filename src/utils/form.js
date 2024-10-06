@@ -1,4 +1,4 @@
-import { compose, equals, filter, or, prop, reduce, values } from 'ramda';
+import { assoc, compose, equals, filter, or, prop, reduce, values } from 'ramda';
 
 import { normalizeValue } from './string';
 import { every } from './list';
@@ -27,10 +27,9 @@ const getFieldValue = (field) => prop('value', field);
 
 export const mapFieldsToValue = (acc, field) => {
   const fieldValue = getFieldValue(field);
+  const normalizedValue = isTextareaNode(field) ? fieldValue : normalizeValue(fieldValue);
 
-  acc[getFieldId(field)] = isTextareaNode(field) ? fieldValue : normalizeValue(fieldValue);
-
-  return acc;
+  return assoc(getFieldId(field), normalizedValue, acc);
 };
 
 export const getFieldValuesAsMap = (initial) => reduce(mapFieldsToValue, initial);

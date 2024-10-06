@@ -43,8 +43,8 @@ function ResultAnswersList({ userAnswers, ids, wordKeyType }) {
               htmltag="li"
               key={wordPairId}
               className={cn('relative py-2 px-8 rounded-xl text-slate-600', {
-                'bg-panache': isRightAnswer,
-                'bg-lavender-blush': !isRightAnswer,
+                'bg-light-green-200': isRightAnswer,
+                'bg-red-200': !isRightAnswer,
               })}
             >
               <Box className="flex justify-center flex-wrap">

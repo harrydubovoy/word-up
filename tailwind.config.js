@@ -20,10 +20,8 @@ module.exports = {
         'jet-stream': '#afd0c9',
         'lunar-green': '#384135',
 
-        'lavender-blush': '#ffebee',
-        panache: '#f3faf3',
-
         'light-green': {
+          200: '#c5e1a5',
           300: '#aed581',
         },
 
