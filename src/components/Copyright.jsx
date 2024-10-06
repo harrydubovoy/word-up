@@ -6,7 +6,7 @@ function Copyright() {
   return (
     <Typography
       variant="small"
-      className="text-center block opacity-50"
+      className="text-center hidden md:block opacity-50"
     >
       &copy;&nbsp;2023&nbsp;&mdash;&nbsp;
       {getYear()}

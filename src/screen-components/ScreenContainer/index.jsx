@@ -6,7 +6,7 @@ import ScreenContent from '../ScreenContent';
 
 function ScreenContainer({ children, className }) {
   return (
-    <Box className={cn('h-full rounded-lg border border-primary/20 overflow-hidden', className)}>
+    <Box className={cn('h-full md:rounded-lg md:border border-primary/20 overflow-hidden', className)}>
       <ScreenContent>
         {children}
       </ScreenContent>

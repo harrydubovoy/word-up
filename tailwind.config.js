@@ -20,11 +20,12 @@ module.exports = {
         'jet-stream': '#afd0c9',
         'lunar-green': '#384135',
 
-        'link-water': '#e6eff8',
-        'tea-green': '#e1f5d2',
-
         'lavender-blush': '#ffebee',
         panache: '#f3faf3',
+
+        'light-green': {
+          300: '#aed581',
+        },
 
         primary: 'hsl(var(--primary))',
         secondary: 'hsl(var(--secondary))',

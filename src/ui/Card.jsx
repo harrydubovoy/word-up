@@ -5,7 +5,7 @@ import { cn } from '../lib/utils';
 const Card = forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('bg-secondary', 'rounded-lg border border-primary/10', className)}
+    className={cn('bg-secondary', 'rounded-2xl', 'shadow dark:shadow-white/10', className)}
     {...props}
   />
 ));
