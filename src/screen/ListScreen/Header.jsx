@@ -18,7 +18,7 @@ import { selectTotalDictionary } from '../../store/reducer/dictionary.slice';
 
 import { useTranslation } from '../../translations';
 
-function Header({ onClickOpenFilter }) {
+export function Header({ onClickOpenFilter }) {
   const totalTestPlan = useAppSelector(selectTotalTestPlan);
   const totalDictionary = useAppSelector(selectTotalDictionary);
   const { t } = useTranslation();
@@ -39,5 +39,3 @@ function Header({ onClickOpenFilter }) {
     </ScreenHeader>
   );
 }
-
-export default Header;

@@ -4,7 +4,6 @@ import { prop, has, compose, equals } from 'ramda';
 import { AnimatePresence } from 'framer-motion';
 import { Globe, Archive, Pencil, FileText, Plus, Minus } from 'lucide-react';
 
-import { Typography } from '../../ui/Typography';
 import { Input } from '../../ui/Input';
 import { Box, MotionBox } from '../../ui/Box';
 import { Button } from '../../ui/Button';
@@ -26,8 +25,10 @@ import ScreenBody from '../../screen-components/ScreenBody';
 import EmptyScreen from '../EmptyScreen';
 import WordPairCard from '../../components/WordPairCard';
 import WordPair from '../../components/WordPair';
+import { WordPairCardMotion } from '../../components/WordPairCard/WordPairCardMotion';
 
-import Header from './Header';
+import { Header } from './Header';
+import { Description } from './Description';
 
 import useSearchQuery from '../../hooks/useSearchQuery';
 import useFilterType from '../../hooks/useFilterType';
@@ -69,62 +70,6 @@ import {
 import { WORD_PAIR_KEYS } from '../../constants/word';
 
 const getAvailablePartOfSpeech = getUniqueValuesByField(WORD_PAIR_KEYS.PART_OF_SPEECH);
-
-const wordPairCardVariants = {
-  offscreen: {
-    opacity: 0,
-    transform: 'translateY(-20%) scale(0.9)',
-  },
-  onscreen: {
-    opacity: 1,
-    transform: 'translateY(0) scale(1)',
-  },
-};
-
-const wordPairDescription = {
-  visible: {
-    height: 'auto',
-    transition: {
-      when: 'beforeChildren',
-      staggerChildren: 0.5,
-    },
-  },
-  hidden: {
-    height: 0,
-    transition: {
-      when: 'afterChildren',
-      delay: 0.2,
-    },
-  },
-};
-
-function Description({ children, isVisible }) {
-  return (
-    <AnimatePresence>
-      {isVisible && (
-      <MotionBox
-        variants={wordPairDescription}
-        initial="hidden"
-        animate="visible"
-        exit="hidden"
-      >
-        <MotionBox
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: 0.2 } }}
-          exit={{ opacity: 0 }}
-        >
-          <Box className="pt-4">
-            <Hr className="mb-2" />
-            <Typography variant="small">
-              {children}
-            </Typography>
-          </Box>
-        </MotionBox>
-      </MotionBox>
-      )}
-    </AnimatePresence>
-  );
-}
 
 function ListScreen() {
   const navigate = useNavigate();
@@ -215,13 +160,7 @@ function ListScreen() {
               <Box className="grid grid-cols-1 gap-4">
                 <List.Map array={filteredIdsDictionary}>
                   {(wordPairId) => (
-                    <MotionBox
-                      variants={wordPairCardVariants}
-                      initial="offscreen"
-                      whileInView="onscreen"
-                      viewport={{ once: false, amount: 0.3, root: scrollRef }}
-                      key={wordPairId}
-                    >
+                    <WordPairCardMotion key={wordPairId} scrollRef={scrollRef}>
                       <WordPairCard>
                         <WordPairCard.Body>
                           <WordPair
@@ -265,7 +204,7 @@ function ListScreen() {
                           {getDescriptionWordById(wordPairId)(entitiesDictionary)}
                         </Description>
                       </WordPairCard>
-                    </MotionBox>
+                    </WordPairCardMotion>
                   )}
                 </List.Map>
               </Box>
