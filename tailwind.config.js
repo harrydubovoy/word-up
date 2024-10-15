@@ -8,7 +8,7 @@ module.exports = {
   prefix: '',
   theme: {
     fontFamily: {
-      sans: ['Helvetica', 'sans-serif'],
+      sans: ['Inter', 'sans-serif'],
     },
 
     container: {
