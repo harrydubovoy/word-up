@@ -1,6 +1,7 @@
 import { Filter } from 'lucide-react';
 
 import ScreenHeader from '../../screen-components/ScreenHeader';
+import { Description } from '../../components/Description';
 
 import { Typography } from '../../ui/Typography';
 import { Button } from '../../ui/Button';
@@ -17,7 +18,7 @@ import { selectTotalDictionary } from '../../store/reducer/dictionary.slice';
 
 import { useTranslation } from '../../translations';
 
-function Header({ onClickOpenFilter }) {
+export function Header({ onClickOpenFilter }) {
   const totalTestPlan = useAppSelector(selectTotalTestPlan);
   const totalDictionary = useAppSelector(selectTotalDictionary);
   const { t } = useTranslation();
@@ -27,9 +28,9 @@ function Header({ onClickOpenFilter }) {
       <Box className="flex justify-between gap-2">
         <Box>
           <Typography htmltag="h1" variant="h4">{t(LIST_SCREEN__TITLE)}</Typography>
-          <Typography variant="small" className="text-slate-500">
+          <Description>
             {t(LIST_SCREEN__TEST_PLAN_DESCRIPTION, { totalTestPlan, totalDictionary })}
-          </Typography>
+          </Description>
         </Box>
         <Button size="icon" variant="outline" onClick={onClickOpenFilter}>
           <Filter />
@@ -38,5 +39,3 @@ function Header({ onClickOpenFilter }) {
     </ScreenHeader>
   );
 }
-
-export default Header;

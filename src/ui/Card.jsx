@@ -5,7 +5,7 @@ import { cn } from '../lib/utils';
 const Card = forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('rounded-lg border bg-card text-card-foreground', className)}
+    className={cn('bg-secondary', 'rounded-2xl', 'shadow dark:shadow-white/10', className)}
     {...props}
   />
 ));
@@ -32,7 +32,7 @@ CardTitle.displayName = 'CardTitle';
 const CardDescription = forwardRef(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn('text-sm text-muted-foreground', className)}
+    className={cn('text-sm', className)}
     {...props}
   />
 ));
