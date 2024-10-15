@@ -11,7 +11,7 @@ const Input = forwardRef(({ className, type, ...props }, ref) => ((
       'py-2 px-3',
       'h-10 w-full',
       'rounded-md border border-primary/20',
-      'bg-secondary/70',
+      'bg-secondary/90',
       'placeholder:text-primary/50',
       'ring-offset-secondary',
       'disabled:cursor-not-allowed disabled:opacity-50',

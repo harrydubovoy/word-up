@@ -155,8 +155,8 @@ function ListScreen() {
 
       <EmptyScreen type={getEmptyScreenType({ idsDictionary, filteredIdsDictionary })}>
         <ScrollContainer ref={scrollRef}>
-          <Box className="w-full">
-            <ScreenBody>
+          <ScreenBody>
+            <Box className="w-full">
               <Box className="grid grid-cols-1 gap-4">
                 <List.Map array={filteredIdsDictionary}>
                   {(wordPairId) => (
@@ -208,8 +208,8 @@ function ListScreen() {
                   )}
                 </List.Map>
               </Box>
-            </ScreenBody>
-          </Box>
+            </Box>
+          </ScreenBody>
         </ScrollContainer>
       </EmptyScreen>
     </>
