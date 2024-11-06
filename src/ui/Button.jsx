@@ -34,7 +34,7 @@ const variants = {
   },
 };
 
-const buttonVariants = cva(
+const button = cva(
   join(' ', [
     'relative',
     'inline-flex items-center justify-center center gap-2',
@@ -50,7 +50,7 @@ const buttonVariants = cva(
   { variants },
 );
 
-const buttonIconVariants = cva(
+const buttonIcon = cva(
   join(' ', [
     'relative',
     'outline-0',
@@ -70,7 +70,7 @@ const Button = forwardRef(({ children, className, variant, type = 'button', ...p
     <button
       {...props}
       type={type}
-      className={cn(buttonVariants({ variant, className }))}
+      className={cn(button({ variant, className }))}
       ref={ref}
     >
       {children}
@@ -84,7 +84,7 @@ const ButtonIcon = forwardRef(({ children, className, variant, type = 'button', 
     <button
       {...props}
       type={type}
-      className={cn(buttonIconVariants({ variant, className }))}
+      className={cn(buttonIcon({ variant, className }))}
       ref={ref}
     >
       {children}

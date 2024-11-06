@@ -10,7 +10,6 @@ const sheetRoot = join(' ', [
 ]);
 
 const sheetBackdrop = join(' ', [
-  'content[""]',
   'absolute',
   'bg-primary/30',
   'top-0',

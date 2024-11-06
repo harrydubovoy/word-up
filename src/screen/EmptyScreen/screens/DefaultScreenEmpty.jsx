@@ -7,7 +7,7 @@ export function DefaultScreenEmpty() {
   return (
     <>
       <Box className="flex justify-center">
-        <LightbulbSvg width="84" height="84" />
+        <LightbulbSvg className="fill-brand" width="84" height="84" />
       </Box>
       <Typography variant="h4" className="text-center">
         No words yet

@@ -142,23 +142,24 @@ function ListScreen() {
     <>
       <Header onClickOpenFilter={handleOnClickOpenFilter} />
 
+      {isFilterVisible && (
+        <Sheet onClose={handleOnClickOpenFilter}>
+          <Container>
+            <Box className="flex flex-col items-end rjustify-between gap-3">
+              <TextField
+                type="search"
+                label="Search"
+                variant="outlined"
+                disabled={!totalDictionary}
+                onChange={handleOnSearchChange}
+                placeholder="Search"
+              />
+            </Box>
+          </Container>
+        </Sheet>
+      )}
+
       <ScrollContainer ref={scrollRef}>
-        {isFilterVisible && (
-          <Sheet onClose={handleOnClickOpenFilter}>
-            <Container>
-              <Box className="flex flex-col items-end rjustify-between gap-3">
-                <TextField
-                  type="search"
-                  label="Search"
-                  variant="outlined"
-                  disabled={!totalDictionary}
-                  onChange={handleOnSearchChange}
-                  placeholder="Search"
-                />
-              </Box>
-            </Container>
-          </Sheet>
-        )}
         <EmptyScreen type={getEmptyScreenType({ idsDictionary, filteredIdsDictionary })}>
           <ScreenBody>
             <Box className="w-full">
