@@ -17,6 +17,7 @@ import EditScreen from './screen/EditScreen';
 import ListScreen from './screen/ListScreen';
 import TestScreen from './screen/TestScreen';
 import ArchiveScreen from './screen/ArchiveScreen';
+// import { UIKit } from './screen/UIKit';
 import NotFoundScreen from './screen/NotFoundScreen';
 
 import './translations/config';
@@ -28,6 +29,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path="edit/:id" element={<EditScreen />} />
     <Route path="list" element={<ListScreen />} />
     <Route path="archive" element={<ArchiveScreen />} />
+    {/*<Route path="ui-kit" element={<UIKit />} />*/}
     <Route path="*" element={<NotFoundScreen />} />
   </Route>,
 ));

@@ -45,7 +45,7 @@ function AddScreen() {
           <Form ref={formRef} onSubmit={handleOnSubmitAdd}>
             <WordPairFormFields />
             <Box className="mt-6">
-              <Button type="submit" className="w-full">
+              <Button variant="filled" className="w-full">
                 {t(ADD_WORD_SCREEN__ACTION_ADD_TO_LIST)}
               </Button>
             </Box>

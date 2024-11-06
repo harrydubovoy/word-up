@@ -1,17 +1,18 @@
 import { useState } from 'react';
-import { Sun, Moon } from 'lucide-react';
+import LightModeSvg from '@material-design-icons/svg/outlined/light_mode.svg';
+import DarkModeSvg from '@material-design-icons/svg/outlined/dark_mode.svg';
 
-import { Button } from '../ui/Button';
+import { ButtonIcon } from '../ui/Button';
 
 import { storage } from '../storage';
 import { theme } from '../constants/theme';
 
 function ThemeIcon({ themeKey }) {
   if (themeKey === theme.dark) {
-    return <Moon />;
+    return <DarkModeSvg />;
   }
 
-  return <Sun />;
+  return <LightModeSvg />;
 }
 
 export function ThemeButton() {
@@ -32,8 +33,8 @@ export function ThemeButton() {
   };
 
   return (
-    <Button size="icon" onClick={handleOnClick}>
+    <ButtonIcon variant="filled" onClick={handleOnClick}>
       <ThemeIcon themeKey={themVariant} />
-    </Button>
+    </ButtonIcon>
   );
 }

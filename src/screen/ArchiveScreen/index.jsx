@@ -1,8 +1,9 @@
 import { useRef } from 'react';
 import { reverse, prop } from 'ramda';
-import { Trash, ArchiveRestore } from 'lucide-react';
+import DeleteSvg from '@material-design-icons/svg/outlined/delete.svg';
+import RestoreSvg from '@material-design-icons/svg/outlined/restore.svg';
 
-import { Button } from '../../ui/Button';
+import { ButtonIcon } from '../../ui/Button';
 import { Box } from '../../ui/Box';
 
 import { List } from '../../util-components/List';
@@ -71,12 +72,12 @@ function ArchiveScreen() {
                           />
                         </WordPairCard.Body>
                         <WordPairCard.Footer className="justify-end gap-2">
-                          <Button variant="outline" size="icon" onClick={handleRestore(wordPairId)}>
-                            <ArchiveRestore />
-                          </Button>
-                          <Button size="icon" onClick={handleOnRemove(wordPairId)}>
-                            <Trash />
-                          </Button>
+                          <ButtonIcon variant="outlined" onClick={handleRestore(wordPairId)}>
+                            <RestoreSvg />
+                          </ButtonIcon>
+                          <ButtonIcon variant="filled" onClick={handleOnRemove(wordPairId)}>
+                            <DeleteSvg />
+                          </ButtonIcon>
                         </WordPairCard.Footer>
                       </WordPairCard>
                     </WordPairCardMotion>

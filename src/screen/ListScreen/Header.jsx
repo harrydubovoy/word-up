@@ -1,10 +1,10 @@
-import { Filter } from 'lucide-react';
+import Filter from '@material-design-icons/svg/outlined/filter_alt.svg';
 
 import ScreenHeader from '../../screen-components/ScreenHeader';
 import { Description } from '../../components/Description';
 
 import { Typography } from '../../ui/Typography';
-import { Button } from '../../ui/Button';
+import { ButtonIcon } from '../../ui/Button';
 import { Box } from '../../ui/Box';
 
 import {
@@ -32,9 +32,12 @@ export function Header({ onClickOpenFilter }) {
             {t(LIST_SCREEN__TEST_PLAN_DESCRIPTION, { totalTestPlan, totalDictionary })}
           </Description>
         </Box>
-        <Button size="icon" variant="outline" onClick={onClickOpenFilter}>
-          <Filter />
-        </Button>
+        <Box className="shrink-0">
+          <ButtonIcon variant="text" onClick={onClickOpenFilter}>
+            <Filter />
+          </ButtonIcon>
+        </Box>
+
       </Box>
     </ScreenHeader>
   );

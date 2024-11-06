@@ -1,22 +1,25 @@
 import { useNavigate, useMatch } from 'react-router-dom';
-import { Home, List, Plus, Archive } from 'lucide-react';
+import Home from '@material-design-icons/svg/outlined/home.svg';
+import List from '@material-design-icons/svg/outlined/list.svg';
+import Add from '@material-design-icons/svg/outlined/add.svg';
+import Archive from '@material-design-icons/svg/outlined/archive.svg';
 
-import { Button } from '../ui/Button';
+import { ButtonIcon } from '../ui/Button';
 import { Box } from '../ui/Box';
 
 function Link({ to, children, className, ...props }) {
   const navigate = useNavigate();
   const isMatch = useMatch(to);
-  const variant = isMatch ? 'secondary' : 'ghost';
+  const variant = isMatch ? 'tonal' : 'text';
 
   const handleOnNavigate = () => {
     navigate(to);
   };
 
   return (
-    <Button {...props} size="icon" onClick={handleOnNavigate} variant={variant} className={className}>
+    <ButtonIcon {...props} onClick={handleOnNavigate} variant={variant} className={className}>
       {children}
-    </Button>
+    </ButtonIcon>
   );
 }
 
@@ -30,7 +33,7 @@ function Navigation() {
         <List />
       </Link>
       <Link to="/add">
-        <Plus />
+        <Add />
       </Link>
       <Link to="/archive">
         <Archive />

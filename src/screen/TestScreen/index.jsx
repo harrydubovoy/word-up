@@ -7,10 +7,10 @@ import {
   prop,
   inc,
 } from 'ramda';
-import { SendHorizontal } from 'lucide-react';
+import SendSvg from '@material-design-icons/svg/outlined/send.svg';
 
-import { Input } from '../../ui/Input';
-import { Button } from '../../ui/Button';
+import { TextField } from '../../ui/TextField';
+import { ButtonIcon } from '../../ui/Button';
 import { Progress } from '../../ui/Progress';
 import { Typography } from '../../ui/Typography';
 import { Box } from '../../ui/Box';
@@ -132,21 +132,22 @@ function TestScreen() {
                   />
                 </Box>
                 <Box className="relative">
-                  <Input
+                  <TextField
+                    variant="outlined"
                     autoFocus
                     className="pr-10"
                     ref={answerInputRef}
                     onKeyDown={handleOnKeyDown}
                   />
-                  <Box className="!absolute right-0 top-0">
-                    <Button
-                      type="button"
+                  <Box className="!absolute right-2 top-1/2 -translate-y-1/2">
+                    <ButtonIcon
+                      variant="filled"
                       aria-label="Send answer"
                       size="icon"
                       onClick={handleSubmitAnswer}
                     >
-                      <SendHorizontal />
-                    </Button>
+                      <SendSvg />
+                    </ButtonIcon>
                   </Box>
                 </Box>
               </Box>

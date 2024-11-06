@@ -25,8 +25,10 @@ module.exports = {
           300: '#aed581',
         },
 
+        brand: 'hsl(var(--brand))',
         primary: 'hsl(var(--primary))',
         secondary: 'hsl(var(--secondary))',
+        neutral: 'hsl(var(--neutral))',
       },
       // generate by js
       opacity: {

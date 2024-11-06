@@ -25,7 +25,7 @@ function Restart({ onRestart }) {
         {t(TEST_SCREEN__COMPLETED_TITLE)}
       </Typography>
       <Box className="mt-6">
-        <Button className="w-full" onClick={onRestart}>{t(TEST_SCREEN__COMPLETED_ACTION)}</Button>
+        <Button variant="filled" className="w-full" onClick={onRestart}>{t(TEST_SCREEN__COMPLETED_ACTION)}</Button>
       </Box>
     </Box>
   );

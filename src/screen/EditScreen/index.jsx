@@ -57,10 +57,10 @@ function EditScreen() {
               description={prop(WORD_PAIR_KEYS.DESCRIPTION)(byIdDictionary)}
             />
             <Box className="flex items-center gap-2 mt-6">
-              <Button type="button" variant="outline" className="w-full" onClick={handleOnBack}>
+              <Button variant="outlined" className="w-full" onClick={handleOnBack}>
                 Cancel
               </Button>
-              <Button type="submit" className="w-full">
+              <Button variant="filled" className="w-full">
                 Update
               </Button>
             </Box>

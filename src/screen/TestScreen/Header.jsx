@@ -1,7 +1,7 @@
-import { Repeat2 } from 'lucide-react';
+import SyncSvg from '@material-design-icons/svg/outlined/sync.svg';
 
 import { Typography } from '../../ui/Typography';
-import { Button } from '../../ui/Button';
+import { ButtonIcon } from '../../ui/Button';
 import { Box } from '../../ui/Box';
 import ScreenHeader from '../../screen-components/ScreenHeader';
 
@@ -19,15 +19,13 @@ function Header({ isTestStarted, onReverseTest, totalTestPlan }) {
           <Typography htmltag="h1" variant="h4">{t(TEST_SCREEN__TITLE)}</Typography>
         </Box>
         <Box>
-          <Button
-            type="button"
-            size="icon"
-            variant="outline"
+          <ButtonIcon
+            variant="outlined"
             disabled={isTestStarted || !totalTestPlan}
             onClick={onReverseTest}
           >
-            <Repeat2 />
-          </Button>
+            <SyncSvg />
+          </ButtonIcon>
         </Box>
       </Box>
     </ScreenHeader>

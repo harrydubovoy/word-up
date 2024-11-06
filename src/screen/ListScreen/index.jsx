@@ -1,13 +1,18 @@
 import { useState, useMemo, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { prop, has, compose, equals } from 'ramda';
-import { AnimatePresence } from 'framer-motion';
-import { Globe, Archive, Pencil, FileText, Plus, Minus } from 'lucide-react';
+import AddSvg from '@material-design-icons/svg/outlined/add.svg';
+import RemoveSvg from '@material-design-icons/svg/outlined/remove.svg';
+import InventorySvg from '@material-design-icons/svg/outlined/inventory_2.svg';
+import EditSvg from '@material-design-icons/svg/outlined/edit.svg';
+import DescriptionSvg from '@material-design-icons/svg/outlined/description.svg';
+import PublicSvg from '@material-design-icons/svg/outlined/public.svg';
 
-import { Input } from '../../ui/Input';
-import { Box, MotionBox } from '../../ui/Box';
-import { Button } from '../../ui/Button';
-import { Hr } from '../../ui/Hr';
+import { TextField } from '../../ui/TextField';
+import { Box } from '../../ui/Box';
+import { ButtonIcon } from '../../ui/Button';
+import { Sheet } from '../../ui/Sheet';
+import { Container } from '../../ui/Container';
 // import {
 //   Select,
 //   SelectContent,
@@ -136,25 +141,25 @@ function ListScreen() {
   return (
     <>
       <Header onClickOpenFilter={handleOnClickOpenFilter} />
-      <AnimatePresence initial={false}>
-        {isFilterVisible && (
-          <MotionBox
-            initial={{ opacity: 0.5, transform: 'translateX(100%) scale(0.75)' }}
-            animate={{ opacity: 1, transform: 'translateX(0) scale(1)' }}
-            exit={{ opacity: 0.5, transform: 'translateX(100%) scale(0.75)' }}
-            transition={{ duration: 0.2, ease: 'linear' }}
-            className="absolute z-10 top-[93px] left-0 right-0 w-full bg-secondary"
-          >
-            <Box key="search" className="p-4 flex flex-col items-end rjustify-between gap-3">
-              <Input disabled={!totalDictionary} onChange={handleOnSearchChange} size="md" placeholder="Search" />
-            </Box>
-            <Hr />
-          </MotionBox>
-        )}
-      </AnimatePresence>
 
-      <EmptyScreen type={getEmptyScreenType({ idsDictionary, filteredIdsDictionary })}>
-        <ScrollContainer ref={scrollRef}>
+      <ScrollContainer ref={scrollRef}>
+        {isFilterVisible && (
+          <Sheet onClose={handleOnClickOpenFilter}>
+            <Container>
+              <Box className="flex flex-col items-end rjustify-between gap-3">
+                <TextField
+                  type="search"
+                  label="Search"
+                  variant="outlined"
+                  disabled={!totalDictionary}
+                  onChange={handleOnSearchChange}
+                  placeholder="Search"
+                />
+              </Box>
+            </Container>
+          </Sheet>
+        )}
+        <EmptyScreen type={getEmptyScreenType({ idsDictionary, filteredIdsDictionary })}>
           <ScreenBody>
             <Box className="w-full">
               <Box className="grid grid-cols-1 gap-4">
@@ -172,32 +177,30 @@ function ListScreen() {
                           />
                         </WordPairCard.Body>
                         <WordPairCard.Footer className="justify-end gap-2">
-                          <Button type="button" variant="outline" size="icon" onClick={handleOnRemove(wordPairId)}>
-                            <Archive />
-                          </Button>
-                          <Button type="button" variant="outline" size="icon" onClick={handleOnOpenDictionary(wordPairId)}>
-                            <Globe />
-                          </Button>
-                          <Button type="button" variant="outline" size="icon" onClick={handleOnEdit(wordPairId)}>
-                            <Pencil />
-                          </Button>
-                          <Button
-                            type="button"
+                          <ButtonIcon variant="outlined" onClick={handleOnRemove(wordPairId)}>
+                            <InventorySvg />
+                          </ButtonIcon>
+                          <ButtonIcon variant="outlined" onClick={handleOnOpenDictionary(wordPairId)}>
+                            <PublicSvg />
+                          </ButtonIcon>
+                          <ButtonIcon variant="outlined" onClick={handleOnEdit(wordPairId)}>
+                            <EditSvg />
+                          </ButtonIcon>
+                          <ButtonIcon
                             disabled={!getDescriptionWordById(wordPairId)(entitiesDictionary)}
-                            variant="outline"
-                            size="icon"
+                            variant="outlined"
                             onClick={handleToggleDescription(wordPairId)}
                           >
-                            <FileText />
-                          </Button>
+                            <DescriptionSvg />
+                          </ButtonIcon>
                           {has(wordPairId, entitiesTestPlan) ? (
-                            <Button type="button" size="icon" onClick={handleOnRemoveFromTestPlan(wordPairId)}>
-                              <Minus />
-                            </Button>
+                            <ButtonIcon variant="filled" onClick={handleOnRemoveFromTestPlan(wordPairId)}>
+                              <RemoveSvg />
+                            </ButtonIcon>
                           ) : (
-                            <Button type="button" size="icon" onClick={handleOnAddToTestPlan(wordPairId)}>
-                              <Plus />
-                            </Button>
+                            <ButtonIcon variant="filled" onClick={handleOnAddToTestPlan(wordPairId)}>
+                              <AddSvg />
+                            </ButtonIcon>
                           )}
                         </WordPairCard.Footer>
                         <Description isVisible={equals(descriptionId, wordPairId)}>
@@ -210,8 +213,8 @@ function ListScreen() {
               </Box>
             </Box>
           </ScreenBody>
-        </ScrollContainer>
-      </EmptyScreen>
+        </EmptyScreen>
+      </ScrollContainer>
     </>
   );
 }

@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import { Globe } from 'lucide-react';
+import PublicSvg from '@material-design-icons/svg/outlined/public.svg';
 
 import { Box } from '../ui/Box';
-import { Label } from '../ui/Label';
-import { Input } from '../ui/Input';
-import { Button } from '../ui/Button';
-import { Textarea } from '../ui/Textarea';
+import { TextField } from '../ui/TextField';
+import { ButtonIcon } from '../ui/Button';
 
 import { useTranslation } from '../translations';
 import { COMMON__FOREIGN, COMMON__NATIVE } from '../translations/resources/constants';
@@ -31,43 +29,61 @@ function WordPairFormFields({ foreign, native, transcription, partOfSpeech, desc
   return (
     <Box className="flex flex-col gap-4">
       <Box className="flex flex-col gap-2">
-        <Label htmlFor={WORD_PAIR_KEYS.FOREIGN}>{t(COMMON__FOREIGN)}</Label>
         <Box className="relative flex w-full">
-          <Input
+          <TextField
             autoFocus
             required
+            label={t(COMMON__FOREIGN)}
             id={WORD_PAIR_KEYS.FOREIGN}
             className="pr-10"
+            variant="filled"
             defaultValue={foreign}
             onChange={handleOnChangeForeign}
           />
-          <Box className="!absolute right-0 top-0">
-            <Button
-              type="button"
-              size="icon"
+          <Box className="!absolute right-2 top-1/2 -translate-y-1/2">
+            <ButtonIcon
+              variant="filled"
               disabled={!foreignInputValue}
               onClick={handleOnOpenDictionary}
             >
-              <Globe />
-            </Button>
+              <PublicSvg />
+            </ButtonIcon>
           </Box>
         </Box>
       </Box>
       <Box className="flex flex-col gap-2">
-        <Label htmlFor={WORD_PAIR_KEYS.NATIVE}>{t(COMMON__NATIVE)}</Label>
-        <Input required id={WORD_PAIR_KEYS.NATIVE} defaultValue={native} />
+        <TextField
+          variant="filled"
+          label={t(COMMON__NATIVE)}
+          required
+          id={WORD_PAIR_KEYS.NATIVE}
+          defaultValue={native}
+        />
       </Box>
       <Box className="flex flex-col gap-2">
-        <Label htmlFor={WORD_PAIR_KEYS.TRANSCRIPTION}>Transcription</Label>
-        <Input id={WORD_PAIR_KEYS.TRANSCRIPTION} defaultValue={transcription} />
+        <TextField
+          variant="filled"
+          label="Transcription"
+          id={WORD_PAIR_KEYS.TRANSCRIPTION}
+          defaultValue={transcription}
+        />
       </Box>
       <Box className="flex flex-col gap-2">
-        <Label htmlFor={WORD_PAIR_KEYS.PART_OF_SPEECH}>Part of speech</Label>
-        <Input id={WORD_PAIR_KEYS.PART_OF_SPEECH} defaultValue={partOfSpeech} />
+        <TextField
+          id={WORD_PAIR_KEYS.PART_OF_SPEECH}
+          variant="filled"
+          label="Part of speech"
+          defaultValue={partOfSpeech}
+        />
       </Box>
       <Box className="flex flex-col gap-2">
-        <Label htmlFor={WORD_PAIR_KEYS.DESCRIPTION}>Description / Meaning / Example</Label>
-        <Textarea id={WORD_PAIR_KEYS.DESCRIPTION} defaultValue={description} />
+        <TextField
+          id={WORD_PAIR_KEYS.DESCRIPTION}
+          variant="filled"
+          type="textarea"
+          label="Description / Meaning / Example"
+          defaultValue={description}
+        />
       </Box>
     </Box>
   );

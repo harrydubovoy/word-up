@@ -10,7 +10,7 @@ import { useTheme } from './hooks/useTheme';
 import './App.css';
 
 import Navigation from './components/Navigation';
-import ScreenContainer from './screen-components/ScreenContainer';
+import { ScreenContainer } from './screen-components/ScreenContainer';
 import Copyright from './components/Copyright';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       <Box className="absolute top-2 right-2">
         <ThemeButton />
       </Box>
-      <Box className="flex flex-col h-full w-full max-w-md md:p-2 gap-3">
+      <Box className="flex flex-col h-full w-full max-w-lg md:p-2 gap-3">
         <ScreenContainer className="bg-secondary">
           <Outlet />
           <Hr />
