@@ -10,17 +10,10 @@ import PublicSvg from '@material-design-icons/svg/outlined/public.svg';
 
 import { TextField } from '../../ui/TextField';
 import { Box } from '../../ui/Box';
-import { ButtonIcon } from '../../ui/Button';
+import { ButtonIcon, Button } from '../../ui/Button';
 import { Sheet } from '../../ui/Sheet';
 import { Container } from '../../ui/Container';
-// import {
-//   Select,
-//   SelectContent,
-//   SelectGroup,
-//   SelectItem,
-//   SelectTrigger,
-//   SelectValue,
-// } from '../../ui/Select';
+import { Typography } from '../../ui/Typography';
 
 import { List } from '../../util-components/List';
 
@@ -70,7 +63,7 @@ import { getEmptyScreenType } from './utils';
 import {
   FILTER_TYPE_MAP,
   FILTER_SORT_MAP,
-  FILTER_PART_OF_SPEECH_MAP,
+  // FILTER_PART_OF_SPEECH_MAP,
 } from '../../constants/filter';
 import { WORD_PAIR_KEYS } from '../../constants/word';
 
@@ -88,13 +81,12 @@ function ListScreen() {
   const entitiesDictionary = useAppSelector(selectEntitiesDictionary);
   const entitiesTestPlan = useAppSelector(selectEntitiesTestPlan);
   const idsDictionary = useAppSelector(selectIdsDictionary);
-  const totalDictionary = useAppSelector(selectTotalDictionary);
   const idsTestPlan = useAppSelector(selectIdsTestPlan);
 
   const { searchString, handleOnSearchChange } = useSearchQuery();
   const { filterValue, handleFilterTypeChange } = useFilterType();
   const { filterSortValue, handleFilterSortChange } = useFilterSort();
-  const { filterPartOfSpeechValue, handleFilterPartOfSpeechChange } = useFilterPartOfSpeech();
+  const { filterPartOfSpeechValue } = useFilterPartOfSpeech();
 
   const handleToggleDescription = (id) => () => {
     setDescriptionId((prev) => (prev === id ? -1 : id));
@@ -145,15 +137,52 @@ function ListScreen() {
       {isFilterVisible && (
         <Sheet onClose={handleOnClickOpenFilter}>
           <Container>
-            <Box className="flex flex-col items-end rjustify-between gap-3">
-              <TextField
-                type="search"
-                label="Search"
-                variant="outlined"
-                disabled={!totalDictionary}
-                onChange={handleOnSearchChange}
-                placeholder="Search"
-              />
+            <Box className="flex flex-col items-end rjustify-between gap-4">
+              <Box className="w-full">
+                <TextField
+                  type="search"
+                  label="Search"
+                  variant="outlined"
+                  onChange={handleOnSearchChange}
+                  placeholder="Search"
+                />
+              </Box>
+              <Box>
+                <Typography variant="h6">Show:&nbsp;&nbsp;</Typography>
+                <Button
+                  onClick={() => handleFilterTypeChange(FILTER_TYPE_MAP.ALL.value)}
+                  variant={filterValue === FILTER_TYPE_MAP.ALL.value ? 'tonal' : 'text'}
+                >
+                  {FILTER_TYPE_MAP.ALL.displayValue}
+                </Button>
+                <Button
+                  onClick={() => handleFilterTypeChange(FILTER_TYPE_MAP.INCLUDED.value)}
+                  variant={filterValue === FILTER_TYPE_MAP.INCLUDED.value ? 'tonal' : 'text'}
+                >
+                  {FILTER_TYPE_MAP.INCLUDED.displayValue}
+                </Button>
+                <Button
+                  onClick={() => handleFilterTypeChange(FILTER_TYPE_MAP.EXCLUDED.value)}
+                  variant={filterValue === FILTER_TYPE_MAP.EXCLUDED.value ? 'tonal' : 'text'}
+                >
+                  {FILTER_TYPE_MAP.EXCLUDED.displayValue}
+                </Button>
+              </Box>
+              <Box>
+                <Typography variant="h6">Sort by:&nbsp;&nbsp;</Typography>
+                <Button
+                  onClick={() => handleFilterSortChange(FILTER_SORT_MAP.LATEST.value)}
+                  variant={filterSortValue === FILTER_SORT_MAP.LATEST.value ? 'tonal' : 'text'}
+                >
+                  {FILTER_SORT_MAP.LATEST.displayValue}
+                </Button>
+                <Button
+                  onClick={() => handleFilterSortChange(FILTER_SORT_MAP.OLDEST.value)}
+                  variant={filterSortValue === FILTER_SORT_MAP.OLDEST.value ? 'tonal' : 'text'}
+                >
+                  {FILTER_SORT_MAP.OLDEST.displayValue}
+                </Button>
+              </Box>
             </Box>
           </Container>
         </Sheet>
@@ -248,51 +277,6 @@ function ListScreen() {
 //               </SelectItem>
 //             )}
 //           </List.Map>
-//         </SelectGroup>
-//       </SelectContent>
-//     </Select>
-//   </Box>
-//   <Box className="flex flex-col gap-1 shrink-0">
-//     <Select
-//       disabled={!totalDictionary}
-//       value={filterSortValue}
-//       onValueChange={handleFilterSortChange}
-//     >
-//       <SelectTrigger>
-//         <SelectValue placeholder="Sort" />
-//       </SelectTrigger>
-//       <SelectContent>
-//         <SelectGroup>
-//           <SelectItem value={FILTER_SORT_MAP.LATEST.value}>
-//             {FILTER_SORT_MAP.LATEST.displayValue}
-//           </SelectItem>
-//           <SelectItem value={FILTER_SORT_MAP.OLDEST.value}>
-//             {FILTER_SORT_MAP.OLDEST.displayValue}
-//           </SelectItem>
-//         </SelectGroup>
-//       </SelectContent>
-//     </Select>
-//   </Box>
-//   <Box className="flex flex-col gap-1 shrink-0">
-//     <Select
-//       disabled={!totalDictionary}
-//       value={filterValue}
-//       onValueChange={handleFilterTypeChange}
-//     >
-//       <SelectTrigger>
-//         <SelectValue placeholder="Status" />
-//       </SelectTrigger>
-//       <SelectContent>
-//         <SelectGroup>
-//           <SelectItem value={FILTER_TYPE_MAP.ALL.value}>
-//             {FILTER_TYPE_MAP.ALL.displayValue}
-//           </SelectItem>
-//           <SelectItem value={FILTER_TYPE_MAP.INCLUDED.value}>
-//             {FILTER_TYPE_MAP.INCLUDED.displayValue}
-//           </SelectItem>
-//           <SelectItem value={FILTER_TYPE_MAP.EXCLUDED.value}>
-//             {FILTER_TYPE_MAP.EXCLUDED.displayValue}
-//           </SelectItem>
 //         </SelectGroup>
 //       </SelectContent>
 //     </Select>

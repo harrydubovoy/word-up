@@ -16,6 +16,7 @@ const sheetBackdrop = join(' ', [
   'bottom-0',
   'left-0',
   'right-0',
+  'cursor-pointer',
 ]);
 
 const sheetBody = join(' ', [

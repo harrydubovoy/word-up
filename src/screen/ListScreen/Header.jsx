@@ -33,7 +33,7 @@ export function Header({ onClickOpenFilter }) {
           </Description>
         </Box>
         <Box className="shrink-0">
-          <ButtonIcon variant="text" onClick={onClickOpenFilter}>
+          <ButtonIcon disabled={!totalDictionary} variant="text" onClick={onClickOpenFilter}>
             <Filter />
           </ButtonIcon>
         </Box>
