@@ -25,7 +25,7 @@ export function Header({ onClickOpenFilter }) {
 
   return (
     <ScreenHeader>
-      <Box className="flex justify-between gap-2">
+      <Box className="flex justify-between items-center gap-2">
         <Box>
           <Typography htmltag="h1" variant="h4">{t(LIST_SCREEN__TITLE)}</Typography>
           <Description>
@@ -33,7 +33,7 @@ export function Header({ onClickOpenFilter }) {
           </Description>
         </Box>
         <Box className="shrink-0">
-          <ButtonIcon disabled={!totalDictionary} variant="text" onClick={onClickOpenFilter}>
+          <ButtonIcon disabled={!totalDictionary} variant="outlined" onClick={onClickOpenFilter}>
             <Filter />
           </ButtonIcon>
         </Box>
