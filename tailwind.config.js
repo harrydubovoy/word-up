@@ -16,6 +16,38 @@ module.exports = {
       padding: '2rem',
     },
     extend: {
+      animation: {
+        'fade-in': 'fade-in .4s ease-in-out',
+        'fade-in-up': 'fade-in-up .4s ease-in-out',
+        'fade-in-down': 'fade-in-down .4s ease-in-out',
+      },
+      keyframes: {
+        'fade-in': {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        'fade-in-up': {
+          '0%': {
+            opacity: 0,
+            transform: 'translate3d(0, 100%, 0)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
+        'fade-in-down': {
+          '0%': {
+            opacity: 0,
+            transform: 'translate3d(0, -100%, 0)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
+      },
+
       colors: {
         'jet-stream': '#afd0c9',
         'lunar-green': '#384135',

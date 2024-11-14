@@ -7,6 +7,7 @@ import { useAppSelector } from '../../store/hooks';
 import { selectEntitiesDictionary } from '../../store/reducer/dictionary.slice';
 
 import { If } from '../../util-components/If';
+import { Branch } from '../../util-components/Branch';
 import { List } from '../../util-components/List';
 
 import { getReversedWordKey } from './utils';
@@ -42,7 +43,7 @@ function ResultAnswersList({ userAnswers, ids, wordKeyType }) {
             <Box
               htmltag="li"
               key={wordPairId}
-              className={cn('relative py-2 px-8 rounded-xl text-slate-600', {
+              className={cn('relative py-2 px-8 rounded-xl text-slate-600 animate-fade-in-down', {
                 'bg-light-green-200': isRightAnswer,
                 'bg-red-200': !isRightAnswer,
               })}
@@ -66,12 +67,11 @@ function ResultAnswersList({ userAnswers, ids, wordKeyType }) {
                   </>
                 </If>
                 <Box htmltag="span" className="absolute top-1.5 right-2 text-xl">
-                  <If condition={!isRightAnswer}>
-                    🙂
-                  </If>
-                  <If condition={isRightAnswer}>
-                    👍
-                  </If>
+                  <Branch
+                    condition={isRightAnswer}
+                    slotIf={<>👍</>}
+                    slotElse={<>🙂</>}
+                  />
                 </Box>
               </Box>
             </Box>

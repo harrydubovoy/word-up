@@ -14,17 +14,16 @@ import { ButtonIcon } from '../../ui/Button';
 import { Progress } from '../../ui/Progress';
 import { Typography } from '../../ui/Typography';
 import { Box } from '../../ui/Box';
-
-import Header from './Header';
-
-import ResultAnswersList from './ResultAnswersList';
-import Restart from './Restart';
-import QuestionWord from './QuestionWord';
+import { If } from '../../util-components/If';
 
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
-import { If } from '../../util-components/If';
 import EmptyScreen from '../EmptyScreen';
+
+import Header from './Header';
+import ResultAnswersList from './ResultAnswersList';
+import Restart from './Restart';
+import QuestionWord from './QuestionWord';
 
 import { useTranslation } from '../../translations';
 import { TEST_SCREEN__PROGRESS_LABEL } from '../../translations/resources/constants';
@@ -33,10 +32,10 @@ import { useAppSelector } from '../../store/hooks';
 import { selectIdsTestPlan, selectTotalTestPlan } from '../../store/reducer/test-plan.slice';
 import { selectEntitiesDictionary } from '../../store/reducer/dictionary.slice';
 
-import { getProgress, getCurrentEntityId, getReversedWordKey } from './utils';
 import { getTargetValue, getRefValue, setRefValue, isEnterKey } from '../../utils/input';
 import { shuffleArray } from '../../utils/list';
 import { normalizeValue } from '../../utils/string';
+import { getProgress, getCurrentEntityId, getReversedWordKey } from './utils';
 
 import { WORD_PAIR_KEYS } from '../../constants/word';
 import { EMPTY_SCREEN_TYPE } from '../../constants/screens';

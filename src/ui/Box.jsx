@@ -1,11 +1,12 @@
 import { forwardRef } from 'react';
-import { motion } from 'framer-motion';
 
-const Box = forwardRef(({ children, className, ...props }, ref) => (
-  <div {...props} className={className} ref={ref}>{children}</div>
-));
+const Box = forwardRef(({ children, className, htmltag, ...props }, ref) => {
+  const Component = htmltag ?? 'div';
+
+  return (
+    <Component {...props} className={className} ref={ref}>{children}</Component>
+  );
+});
 Box.displayName = 'Box';
 
-const MotionBox = motion.create(Box);
-
-export { Box, MotionBox };
+export { Box };

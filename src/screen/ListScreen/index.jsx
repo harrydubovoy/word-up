@@ -1,6 +1,7 @@
 import { useState, useMemo, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { prop, has, compose, equals } from 'ramda';
+
 import AddSvg from '@material-design-icons/svg/outlined/add.svg';
 import RemoveSvg from '@material-design-icons/svg/outlined/remove.svg';
 import InventorySvg from '@material-design-icons/svg/outlined/inventory_2.svg';
@@ -16,14 +17,15 @@ import { Container } from '../../ui/Container';
 import { Typography } from '../../ui/Typography';
 
 import { List } from '../../util-components/List';
+import { If } from '../../util-components/If';
+import { Branch } from '../../util-components/Branch';
 
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
 
-import EmptyScreen from '../EmptyScreen';
 import WordPairCard from '../../components/WordPairCard';
 import WordPair from '../../components/WordPair';
-import { WordPairCardMotion } from '../../components/WordPairCard/WordPairCardMotion';
+import EmptyScreen from '../EmptyScreen';
 
 import { Header } from './Header';
 import { Description } from './Description';
@@ -88,11 +90,11 @@ function ListScreen() {
   const { filterSortValue, handleFilterSortChange } = useFilterSort();
   const { filterPartOfSpeechValue } = useFilterPartOfSpeech();
 
-  const handleToggleDescription = (id) => () => {
+  const handleToggleDescriptionVisibility = (id) => () => {
     setDescriptionId((prev) => (prev === id ? -1 : id));
   };
 
-  const handleOnClickOpenFilter = () => {
+  const handleOpenFilter = () => {
     setIsFilterVisible(reverseValue);
   };
 
@@ -132,10 +134,10 @@ function ListScreen() {
 
   return (
     <>
-      <Header onClickOpenFilter={handleOnClickOpenFilter} />
+      <Header onClickOpenFilter={handleOpenFilter} />
 
-      {isFilterVisible && (
-        <Sheet onClose={handleOnClickOpenFilter}>
+      <If condition={isFilterVisible}>
+        <Sheet onClose={handleOpenFilter}>
           <Container>
             <Box className="flex flex-col items-end rjustify-between gap-4">
               <Box className="w-full">
@@ -186,7 +188,7 @@ function ListScreen() {
             </Box>
           </Container>
         </Sheet>
-      )}
+      </If>
 
       <ScrollContainer ref={scrollRef}>
         <EmptyScreen type={getEmptyScreenType({ idsDictionary, filteredIdsDictionary })}>
@@ -195,49 +197,51 @@ function ListScreen() {
               <Box className="grid grid-cols-1 gap-4">
                 <List.Map array={filteredIdsDictionary}>
                   {(wordPairId) => (
-                    <WordPairCardMotion key={wordPairId} scrollRef={scrollRef}>
-                      <WordPairCard>
-                        <WordPairCard.Body>
-                          <WordPair
-                            isSelected={has(wordPairId)(entitiesTestPlan)}
-                            foreign={getForeignWordById(wordPairId)(entitiesDictionary)}
-                            native={getNativeWordById(wordPairId)(entitiesDictionary)}
-                            transcription={getTranscriptionWordById(wordPairId)(entitiesDictionary)}
-                            partOfSpeech={getPartOfSpeechWordById(wordPairId)(entitiesDictionary)}
-                          />
-                        </WordPairCard.Body>
-                        <WordPairCard.Footer className="justify-end gap-2">
-                          <ButtonIcon variant="outlined" onClick={handleOnRemove(wordPairId)}>
-                            <InventorySvg />
-                          </ButtonIcon>
-                          <ButtonIcon variant="outlined" onClick={handleOnOpenDictionary(wordPairId)}>
-                            <PublicSvg />
-                          </ButtonIcon>
-                          <ButtonIcon variant="outlined" onClick={handleOnEdit(wordPairId)}>
-                            <EditSvg />
-                          </ButtonIcon>
-                          <ButtonIcon
-                            disabled={!getDescriptionWordById(wordPairId)(entitiesDictionary)}
-                            variant="outlined"
-                            onClick={handleToggleDescription(wordPairId)}
-                          >
-                            <DescriptionSvg />
-                          </ButtonIcon>
-                          {has(wordPairId, entitiesTestPlan) ? (
+                    <WordPairCard key={wordPairId}>
+                      <WordPairCard.Body>
+                        <WordPair
+                          isSelected={has(wordPairId)(entitiesTestPlan)}
+                          foreign={getForeignWordById(wordPairId)(entitiesDictionary)}
+                          native={getNativeWordById(wordPairId)(entitiesDictionary)}
+                          transcription={getTranscriptionWordById(wordPairId)(entitiesDictionary)}
+                          partOfSpeech={getPartOfSpeechWordById(wordPairId)(entitiesDictionary)}
+                        />
+                      </WordPairCard.Body>
+                      <WordPairCard.Footer className="justify-end gap-2">
+                        <ButtonIcon variant="outlined" onClick={handleOnRemove(wordPairId)}>
+                          <InventorySvg />
+                        </ButtonIcon>
+                        <ButtonIcon variant="outlined" onClick={handleOnOpenDictionary(wordPairId)}>
+                          <PublicSvg />
+                        </ButtonIcon>
+                        <ButtonIcon variant="outlined" onClick={handleOnEdit(wordPairId)}>
+                          <EditSvg />
+                        </ButtonIcon>
+                        <ButtonIcon
+                          disabled={!getDescriptionWordById(wordPairId)(entitiesDictionary)}
+                          variant="outlined"
+                          onClick={handleToggleDescriptionVisibility(wordPairId)}
+                        >
+                          <DescriptionSvg />
+                        </ButtonIcon>
+                        <Branch
+                          condition={has(wordPairId, entitiesTestPlan)}
+                          slotIf={(
                             <ButtonIcon variant="filled" onClick={handleOnRemoveFromTestPlan(wordPairId)}>
                               <RemoveSvg />
                             </ButtonIcon>
-                          ) : (
+                          )}
+                          slotElse={(
                             <ButtonIcon variant="filled" onClick={handleOnAddToTestPlan(wordPairId)}>
                               <AddSvg />
                             </ButtonIcon>
                           )}
-                        </WordPairCard.Footer>
-                        <Description isVisible={equals(descriptionId, wordPairId)}>
-                          {getDescriptionWordById(wordPairId)(entitiesDictionary)}
-                        </Description>
-                      </WordPairCard>
-                    </WordPairCardMotion>
+                        />
+                      </WordPairCard.Footer>
+                      <Description isVisible={equals(descriptionId, wordPairId)}>
+                        {getDescriptionWordById(wordPairId)(entitiesDictionary)}
+                      </Description>
+                    </WordPairCard>
                   )}
                 </List.Map>
               </Box>

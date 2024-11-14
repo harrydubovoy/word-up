@@ -17,6 +17,7 @@ const sheetBackdrop = join(' ', [
   'left-0',
   'right-0',
   'cursor-pointer',
+  'animate-fade-in',
 ]);
 
 const sheetBody = join(' ', [
@@ -24,6 +25,7 @@ const sheetBody = join(' ', [
   'py-8',
   'bg-secondary',
   'z-20',
+  'animate-fade-in-up',
 ]);
 
 export function Sheet({ children, onClose }) {

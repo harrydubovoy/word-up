@@ -11,7 +11,6 @@ import { List } from '../../util-components/List';
 import ScrollContainer from '../../screen-components/ScrollContainer';
 import ScreenBody from '../../screen-components/ScreenBody';
 import WordPairCard from '../../components/WordPairCard';
-import { WordPairCardMotion } from '../../components/WordPairCard/WordPairCardMotion';
 import WordPair from '../../components/WordPair';
 import EmptyScreen from '../EmptyScreen';
 
@@ -61,26 +60,24 @@ function ArchiveScreen() {
               <Box className="grid grid-cols-1 gap-4">
                 <List.Map array={reverse(idsTrashBin)}>
                   {(wordPairId) => (
-                    <WordPairCardMotion key={wordPairId} scrollRef={scrollRef}>
-                      <WordPairCard key={wordPairId}>
-                        <WordPairCard.Body>
-                          <WordPair
-                            native={getNativeWordById(wordPairId)(entitiesTrashBin)}
-                            foreign={getForeignWordById(wordPairId)(entitiesTrashBin)}
-                            transcription={getTranscriptionWordById(wordPairId)(entitiesTrashBin)}
-                            partOfSpeech={getPartOfSpeechWordById(wordPairId)(entitiesTrashBin)}
-                          />
-                        </WordPairCard.Body>
-                        <WordPairCard.Footer className="justify-end gap-2">
-                          <ButtonIcon variant="outlined" onClick={handleRestore(wordPairId)}>
-                            <RestoreSvg />
-                          </ButtonIcon>
-                          <ButtonIcon variant="filled" onClick={handleOnRemove(wordPairId)}>
-                            <DeleteSvg />
-                          </ButtonIcon>
-                        </WordPairCard.Footer>
-                      </WordPairCard>
-                    </WordPairCardMotion>
+                    <WordPairCard key={wordPairId}>
+                      <WordPairCard.Body>
+                        <WordPair
+                          native={getNativeWordById(wordPairId)(entitiesTrashBin)}
+                          foreign={getForeignWordById(wordPairId)(entitiesTrashBin)}
+                          transcription={getTranscriptionWordById(wordPairId)(entitiesTrashBin)}
+                          partOfSpeech={getPartOfSpeechWordById(wordPairId)(entitiesTrashBin)}
+                        />
+                      </WordPairCard.Body>
+                      <WordPairCard.Footer className="justify-end gap-2">
+                        <ButtonIcon variant="outlined" onClick={handleRestore(wordPairId)}>
+                          <RestoreSvg />
+                        </ButtonIcon>
+                        <ButtonIcon variant="filled" onClick={handleOnRemove(wordPairId)}>
+                          <DeleteSvg />
+                        </ButtonIcon>
+                      </WordPairCard.Footer>
+                    </WordPairCard>
                   )}
                 </List.Map>
               </Box>
