@@ -1,0 +1,1 @@
+export { ArchiveWordCard } from './ui'
