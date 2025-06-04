@@ -2,7 +2,8 @@ import { create } from 'zustand/react';
 import { persist } from 'zustand/middleware';
 import { compose } from 'ramda';
 
-import { generateId } from '../../shared/utils/data';
+import { DICTIONARY_ENTITY_ID_POSTFIX } from '../../shared/constants/ids';
+import { generateId } from '../../shared/utils/generateId';
 
 import {
   createEntity,
@@ -21,7 +22,7 @@ export const useDictionaryStore = compose(createSelectors, create, persist)(
     entities: {},
     ids: [],
     createOne: ({ data }) => storeSet((state) => {
-      const id = data?.id ?? generateId();
+      const id = data?.id ?? generateId(DICTIONARY_ENTITY_ID_POSTFIX);
 
       return {
         entities: createEntity(id, data)(state.entities),
