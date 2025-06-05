@@ -89,7 +89,7 @@ export function TestPage() {
   };
 
   return (
-    <Box sx={{ maxWidth: '75%', margin: '0 auto', padding: '8px 0' }}>
+    <Box sx={{ maxWidth: '70%', margin: '0 auto', padding: '8px 0' }}>
       <Box sx={{ padding: '0 0 16px' }}>
         <Branch
           condition={isTestFinished}

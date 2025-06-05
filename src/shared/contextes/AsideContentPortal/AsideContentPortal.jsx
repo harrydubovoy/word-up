@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 
 const AsideContentPortalContext = createContext(undefined);
 
-export const ADDITIONAL_ASIDE_ID = 'additional-aside';
+export const ADDITIONAL_ASIDE_ID = 'extra-aside-area';
 
 export function AsideContentPortalProvider({ children, id }) {
   const [component, setComponent] = useState(null);

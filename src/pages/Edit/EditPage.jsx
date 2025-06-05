@@ -26,7 +26,7 @@ export function EditPage() {
   });
 
   return (
-    <Box sx={{ maxWidth: '85%', margin: '0 auto', padding: '8px 0' }}>
+    <Box sx={{ maxWidth: '80%', margin: '0 auto', padding: '8px 0' }}>
       <FormHandlerProvider initialState={initialState.current}>
         <EditFormWord />
       </FormHandlerProvider>

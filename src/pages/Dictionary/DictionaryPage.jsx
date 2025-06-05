@@ -1,7 +1,6 @@
-import Box from '@mui/material/Box';
-
-import { List } from '../../shared/utils/List.jsx';
 import { styled } from '../../ui-kit/theme';
+import { Box } from '../../ui-kit/Box';
+import { List } from '../../shared/utils/List';
 
 import { useDictionary } from '../../entities';
 

@@ -6,7 +6,7 @@ import { getYear } from '../../shared/utils/dateTime';
 
 export function Copyright() {
   return (
-    <Box sx={{ padding: '12px 0' }}>
+    <Box sx={{ padding: '12px 0 0' }}>
       <Typography
         variant="subtitle2"
         fontWeight="400"
