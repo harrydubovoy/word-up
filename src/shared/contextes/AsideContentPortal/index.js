@@ -1,5 +1,5 @@
 export {
   AsideContentPortalProvider,
   useAsideContentPortalContext,
-  ADDITIONAL_ASIDE_ID,
+  EXTRA_ASIDE_AREA,
 } from './AsideContentPortal';
