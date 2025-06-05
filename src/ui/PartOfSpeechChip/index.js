@@ -1,0 +1,1 @@
+export { PartOfSpeechChip } from './PartOfSpeechChip';
