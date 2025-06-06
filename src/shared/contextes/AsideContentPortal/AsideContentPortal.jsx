@@ -22,7 +22,7 @@ export function AsideContentPortalProvider({ children, id }) {
         createPortal(
           component,
           document.getElementById(id),
-          ADDITIONAL_ASIDE_ID,
+          EXTRA_ASIDE_AREA,
         )
       )}
       {children}
