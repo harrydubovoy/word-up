@@ -1,7 +1,7 @@
-import { DefaultScreenEmpty } from './screens/DefaultScreenEmpty.jsx';
-import { ArchiveScreenEmpty } from './screens/ArchiveScreenEmpty.jsx';
+import { DefaultScreenEmpty } from './screens/DefaultScreenEmpty';
+import { ArchiveScreenEmpty } from './screens/ArchiveScreenEmpty';
 
-import { EMPTY_SCREEN_TYPE } from '../../shared/constants/screens.js';
+import { EMPTY_SCREEN_TYPE } from './constants/types';
 
 export function EmptyScreenFactory({ type }) {
   switch (type) {

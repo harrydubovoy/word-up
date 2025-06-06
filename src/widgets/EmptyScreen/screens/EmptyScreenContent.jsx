@@ -1,4 +1,4 @@
-import { Box } from '../../../ui-kit/Box.jsx';
+import { Box } from '../../../ui-kit/Box';
 
 function EmptyScreenContent({ children }) {
   return (

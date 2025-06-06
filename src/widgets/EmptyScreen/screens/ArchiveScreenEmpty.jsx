@@ -1,7 +1,7 @@
 import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
 
-import { Typography } from '../../../ui-kit/Typography.jsx';
-import { EmptyScreenContent } from './EmptyScreenContent.jsx';
+import { Typography } from '../../../ui-kit/Typography';
+import { EmptyScreenContent } from './EmptyScreenContent';
 
 export function ArchiveScreenEmpty() {
   return (

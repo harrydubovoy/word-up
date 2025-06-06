@@ -1,11 +1,13 @@
+import { length } from 'ramda';
 import Box from '@mui/material/Box';
 
-import { List } from '../../shared/utils/List.jsx';
+import { List } from '../../shared/utils/List';
 import { styled } from '../../ui-kit/theme';
 
 import { useArchive } from '../../entities';
 
 import { ArchiveWordCard } from '../../widgets/ArchiveWordCard';
+import { EmptyScreen, isArchiveEmptyScreenVisible } from '../../widgets/EmptyScreen';
 
 const Grid = styled(Box)({
   display: 'grid',
@@ -20,12 +22,14 @@ export function ArchivePage() {
   const { archiveIds } = useArchive();
 
   return (
-    <Grid>
-      <List.Map array={archiveIds}>
-        {(id) => (
-          <ArchiveWordCard key={id} id={id} />
-        )}
-      </List.Map>
-    </Grid>
+    <EmptyScreen type={isArchiveEmptyScreenVisible(length(archiveIds))}>
+      <Grid>
+        <List.Map array={archiveIds}>
+          {(id) => (
+            <ArchiveWordCard key={id} id={id} />
+          )}
+        </List.Map>
+      </Grid>
+    </EmptyScreen>
   );
 }
