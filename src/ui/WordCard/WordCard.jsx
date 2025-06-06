@@ -7,12 +7,25 @@ import { Box } from '../../ui-kit/Box';
 import { PartOfSpeechChip } from '../PartOfSpeechChip';
 import { Transcription } from './Transcription';
 
-import { styled } from '../../ui-kit/theme';
+import { styled, theme } from '../../ui-kit/theme';
 
-const Card = styled(MuiCard)({
-  position: 'relative',
-  borderRadius: '12px',
-});
+const Card = styled(MuiCard)`
+  position: relative;
+  border-radius: 12px;
+
+  ${(props) => props.isSelected && `
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background-color: ${theme.palette.primary.main};
+    }
+  `}
+`;
 
 const CardFooter = styled(Box)({
   display: 'flex',
@@ -21,9 +34,16 @@ const CardFooter = styled(Box)({
   padding: '0 16px 16px',
 });
 
-export function WordCard({ native, foreign, transcription, partOfSpeech, renderActions }) {
+export function WordCard({
+  isSelected,
+  native,
+  foreign,
+  transcription,
+  partOfSpeech,
+  renderActions,
+}) {
   return (
-    <Card sx={{ width: '100%', display: 'grid', gridTemplateRows: '1fr auto' }}>
+    <Card isSelected={isSelected} sx={{ width: '100%', display: 'grid', gridTemplateRows: '1fr auto' }}>
       <PartOfSpeechChip label={partOfSpeech} />
       <CardContent>
         <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 16 }}>

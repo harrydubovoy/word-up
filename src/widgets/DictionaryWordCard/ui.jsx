@@ -37,6 +37,7 @@ export function DictionaryWordCard({ id }) {
 
   return (
     <WordCard
+      isSelected={isExistAtTestPlan}
       foreign={selectForeignById(id)}
       native={selectNativeById(id)}
       transcription={selectTranscription(id)}
