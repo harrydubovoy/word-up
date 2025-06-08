@@ -1,0 +1,560 @@
+{
+  "entities": {
+    "ids": [
+      "1849dba2-9abc-46aa-9133-cbe46967585b",
+      "01986875-4fb7-4d9b-9db2-b1e8fc1cabaa",
+      "4127fe97-ac9b-4556-a39b-21561a5b9d43",
+      "f78c80a8-bc4d-48dc-bd16-b578dc28a230",
+      "b7de6380-b434-4696-82a8-b9d96e01dce5",
+      "b1378fee-2703-4c0b-8751-fdfd118923ec",
+      "e3a9b86d-9b21-41e8-9bcd-ed8c32758b8f",
+      "ef85cb28-dce4-4d72-881d-ab299cf0a1cf",
+      "6c21ea04-b7a8-4d4d-a8f8-07138aa08c4c",
+      "2db3a65b-b2c2-43d8-869a-4ce5560efb75",
+      "c6276fcd-432a-4616-9315-17428b6a030e",
+      "4aeecb4c-5e50-4cba-983f-cbffffeb1f43",
+      "a20344a8-776e-4e95-a9ae-9614d8b64a29",
+      "2a147c8f-6fd4-4da9-bebb-beba9f6b45e8",
+      "078ba5b2-98fa-4b06-9719-e38fee2c21b9",
+      "4cba2c4f-02ed-4a7a-8015-29d8457fb363",
+      "f0c501e6-8feb-4863-82ec-eece6bb562e1",
+      "f3bdd31f-c40f-42a5-8873-61c9a7f2cc7b",
+      "b7bec80e-e6b5-466a-9948-c380bd2630e5",
+      "ceba5bd2-23d7-42b8-8d76-65595fced608",
+      "d430b92c-1089-46b4-8f4f-ef78905de5f1",
+      "62ec2667-79ab-4d91-9768-55c76ccf6629",
+      "3f4cb560-4240-4525-978d-ba1db6a8e7cf",
+      "a065d978-cbc1-4579-92dd-7f46f52d0325",
+      "84310746-0cd9-4fd4-8a9f-32f87d2b1fa6",
+      "0b5a086a-168d-4858-ad1b-52733c3479bf",
+      "444c5e44-a9fb-4249-a1fd-e03ddfc37590",
+      "3c8f74ef-a271-4763-ac05-6e9711d9d293",
+      "900f4260-92e7-4168-8909-3bfef8a91f13",
+      "8bb2381d-65fb-4461-b415-a3c371f995c5",
+      "00f9edb1-52dd-4550-9924-1fac6db14266",
+      "5e852350-992b-4e00-8216-781ad1719254",
+      "8728d53f-a060-4772-8eee-46a3458f8b59",
+      "cd87ec1c-fb3e-4121-bf04-6760c879d994",
+      "e02a4d01-eadf-4024-8e59-3caa5dde4e8b",
+      "4f03dd94-7eaa-4a45-bb4a-f7dc8758ed74",
+      "390a2d2b-9b4d-42b6-89b9-75c8e39ffce1",
+      "4b1f93fc-65eb-4cba-aefd-7fb5e178695e",
+      "7af52ef8-998d-476e-a67d-7b9d41e11b9f",
+      "3b26e2b9-2386-4350-bae4-4f54aa067018",
+      "74c6c40d-ff93-4566-83c5-6375fd067a2f",
+      "5182f746-63c2-4653-a894-51628a7e9a80",
+      "c4d5d19c-f029-4c75-823c-027fb0957298",
+      "d96b3fd3-6424-44d0-a5e8-acc6134ce2a9",
+      "3b1511db-89cb-468b-a851-4297a93c2447",
+      "e175f9ec-44aa-48e9-8365-6c9efa3108ab",
+      "ca12559e-28df-4091-926b-54c2c0893f5c",
+      "bf15ebf3-d8a0-4ef7-9d81-44dd6369c53a",
+      "ecfa30de-ce3d-4c02-a0ad-50c065741a00",
+      "2cc010dd-00dd-4a1d-8304-e39ca1f5b963",
+      "6f44ff2b-85fb-45b7-8c5e-e87c0dfdd59c",
+      "5cfbd14d-b6d5-4fcd-9a6a-982b1afac262",
+      "50fcd115-2f43-4f5e-85f1-2f27cba8f3ea",
+      "68e4bc9c-7c03-442d-8f56-6f3a71047dd6",
+      "1d40a804-2818-489f-bbb6-3fa8f938bbac",
+      "7d1da20c-f140-4619-9326-e7600840955f",
+      "88e143a3-40d9-4450-a986-3cf3763eb3f8",
+      "91d65574-4862-4f00-b7a0-c464a37e98f5",
+      "beac110c-ee74-48d8-8c05-f85c894af3c9",
+      "0caa12b5-91dd-43b0-a5d5-d8932c7e8df4",
+      "1ac44d81-d603-452a-87b4-e45c0dad6017",
+      "0bcbd0cb-bc20-4705-bc3e-0a5293b85ea9",
+      "f79b680f-61f1-4253-a5fb-21fa44425923",
+      "e61e777b-510f-46a4-ad7a-09948993c806",
+      "8307190c-abc5-4d51-b18e-bc1a3ead7495",
+      "ab58809b-fdab-4a0f-81e8-c1afb5836437",
+      "71e818ca-dae9-4472-a93a-716a0f1e0c39",
+      "b84ba456-14e6-4204-95c7-a8b7ccc45f78",
+      "e8db2424-523b-4abf-91eb-f1a4978784f9"
+    ],
+    "byId": {
+      "1849dba2-9abc-46aa-9133-cbe46967585b": {
+        "id": "1849dba2-9abc-46aa-9133-cbe46967585b",
+        "word": "object",
+        "transcription": "ˈɑːbdʒɪkt / əbˈdʒekt",
+        "partOfSpeech": "noun/verb",
+        "description": "a material thing that can be seen and touched; to express or feel disapproval."
+      },
+      "01986875-4fb7-4d9b-9db2-b1e8fc1cabaa": {
+        "id": "01986875-4fb7-4d9b-9db2-b1e8fc1cabaa",
+        "word": "objective",
+        "transcription": "əbˈdʒektɪv",
+        "partOfSpeech": "noun/adjective",
+        "description": "a goal or purpose; not influenced by personal feelings or opinions."
+      },
+      "4127fe97-ac9b-4556-a39b-21561a5b9d43": {
+        "id": "4127fe97-ac9b-4556-a39b-21561a5b9d43",
+        "word": "obligation",
+        "transcription": "ˌɑːblɪˈɡeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "an act or course of action to which a person is morally or legally bound."
+      },
+      "f78c80a8-bc4d-48dc-bd16-b578dc28a230": {
+        "id": "f78c80a8-bc4d-48dc-bd16-b578dc28a230",
+        "word": "observation",
+        "transcription": "ˌɑːbzərˈveɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the action or process of observing something carefully in order to gain information."
+      },
+      "b7de6380-b434-4696-82a8-b9d96e01dce5": {
+        "id": "b7de6380-b434-4696-82a8-b9d96e01dce5",
+        "word": "observe",
+        "transcription": "əbˈzɜːrv",
+        "partOfSpeech": "verb",
+        "description": "to notice or perceive something and register it as being significant."
+      },
+      "b1378fee-2703-4c0b-8751-fdfd118923ec": {
+        "id": "b1378fee-2703-4c0b-8751-fdfd118923ec",
+        "word": "obvious",
+        "transcription": "ˈɑːbviəs",
+        "partOfSpeech": "adjective",
+        "description": "easily perceived or understood; clear, self-evident."
+      },
+      "e3a9b86d-9b21-41e8-9bcd-ed8c32758b8f": {
+        "id": "e3a9b86d-9b21-41e8-9bcd-ed8c32758b8f",
+        "word": "obviously",
+        "transcription": "ˈɑːbviəsli",
+        "partOfSpeech": "adverb",
+        "description": "in a way that is easily perceived or understood."
+      },
+      "ef85cb28-dce4-4d72-881d-ab299cf0a1cf": {
+        "id": "ef85cb28-dce4-4d72-881d-ab299cf0a1cf",
+        "word": "occasion",
+        "transcription": "əˈkeɪʒn",
+        "partOfSpeech": "noun",
+        "description": "a particular time or instance of an event."
+      },
+      "6c21ea04-b7a8-4d4d-a8f8-07138aa08c4c": {
+        "id": "6c21ea04-b7a8-4d4d-a8f8-07138aa08c4c",
+        "word": "occasionally",
+        "transcription": "əˈkeɪʒnəli",
+        "partOfSpeech": "adverb",
+        "description": "at infrequent or irregular intervals; now and then."
+      },
+      "2db3a65b-b2c2-43d8-869a-4ce5560efb75": {
+        "id": "2db3a65b-b2c2-43d8-869a-4ce5560efb75",
+        "word": "occupy",
+        "transcription": "ˈɑːkjupaɪ",
+        "partOfSpeech": "verb",
+        "description": "to reside or have one's place of business in (a building)."
+      },
+      "c6276fcd-432a-4616-9315-17428b6a030e": {
+        "id": "c6276fcd-432a-4616-9315-17428b6a030e",
+        "word": "occur",
+        "transcription": "əˈkɜːr",
+        "partOfSpeech": "verb",
+        "description": "happen; take place."
+      },
+      "4aeecb4c-5e50-4cba-983f-cbffffeb1f43": {
+        "id": "4aeecb4c-5e50-4cba-983f-cbffffeb1f43",
+        "word": "ocean",
+        "transcription": "ˈoʊʃn",
+        "partOfSpeech": "noun",
+        "description": "a very large expanse of sea."
+      },
+      "a20344a8-776e-4e95-a9ae-9614d8b64a29": {
+        "id": "a20344a8-776e-4e95-a9ae-9614d8b64a29",
+        "word": "odd",
+        "transcription": "ɑːd",
+        "partOfSpeech": "adjective",
+        "description": "different from what is usual or expected; strange."
+      },
+      "2a147c8f-6fd4-4da9-bebb-beba9f6b45e8": {
+        "id": "2a147c8f-6fd4-4da9-bebb-beba9f6b45e8",
+        "word": "of",
+        "transcription": "əv / ʌv",
+        "partOfSpeech": "preposition",
+        "description": "expressing the relationship between a part and a whole."
+      },
+      "078ba5b2-98fa-4b06-9719-e38fee2c21b9": {
+        "id": "078ba5b2-98fa-4b06-9719-e38fee2c21b9",
+        "word": "off",
+        "transcription": "ɔːf",
+        "partOfSpeech": "preposition/adverb",
+        "description": "moving away and often down from."
+      },
+      "4cba2c4f-02ed-4a7a-8015-29d8457fb363": {
+        "id": "4cba2c4f-02ed-4a7a-8015-29d8457fb363",
+        "word": "offense",
+        "transcription": "əˈfens",
+        "partOfSpeech": "noun",
+        "description": "a breach of a law or rule; an illegal act."
+      },
+      "f0c501e6-8feb-4863-82ec-eece6bb562e1": {
+        "id": "f0c501e6-8feb-4863-82ec-eece6bb562e1",
+        "word": "offer",
+        "transcription": "ˈɔːfər",
+        "partOfSpeech": "verb",
+        "description": "present or proffer (something) for (someone) to accept or reject as desired."
+      },
+      "f3bdd31f-c40f-42a5-8873-61c9a7f2cc7b": {
+        "id": "f3bdd31f-c40f-42a5-8873-61c9a7f2cc7b",
+        "word": "office",
+        "transcription": "ˈɔːfɪs",
+        "partOfSpeech": "noun",
+        "description": "a room, set of rooms, or building used as a place for commercial, professional, or bureaucratic work."
+      },
+      "b7bec80e-e6b5-466a-9948-c380bd2630e5": {
+        "id": "b7bec80e-e6b5-466a-9948-c380bd2630e5",
+        "word": "officer",
+        "transcription": "ˈɔːfɪsər",
+        "partOfSpeech": "noun",
+        "description": "a person holding a position of command or authority."
+      },
+      "ceba5bd2-23d7-42b8-8d76-65595fced608": {
+        "id": "ceba5bd2-23d7-42b8-8d76-65595fced608",
+        "word": "official",
+        "transcription": "əˈfɪʃl",
+        "partOfSpeech": "adjective/noun",
+        "description": "relating to an authority or public body and its duties, actions, and responsibilities."
+      },
+      "d430b92c-1089-46b4-8f4f-ef78905de5f1": {
+        "id": "d430b92c-1089-46b4-8f4f-ef78905de5f1",
+        "word": "often",
+        "transcription": "ˈɔːfn / ˈɔːftən",
+        "partOfSpeech": "adverb",
+        "description": "frequently; many times."
+      },
+      "62ec2667-79ab-4d91-9768-55c76ccf6629": {
+        "id": "62ec2667-79ab-4d91-9768-55c76ccf6629",
+        "word": "oil",
+        "transcription": "ɔɪl",
+        "partOfSpeech": "noun",
+        "description": "a viscous liquid derived from petroleum, especially for use as a fuel or lubricant."
+      },
+      "3f4cb560-4240-4525-978d-ba1db6a8e7cf": {
+        "id": "3f4cb560-4240-4525-978d-ba1db6a8e7cf",
+        "word": "okay",
+        "transcription": "ˌoʊˈkeɪ",
+        "partOfSpeech": "adjective/adverb",
+        "description": "used to express agreement or acceptance."
+      },
+      "a065d978-cbc1-4579-92dd-7f46f52d0325": {
+        "id": "a065d978-cbc1-4579-92dd-7f46f52d0325",
+        "word": "old",
+        "transcription": "oʊld",
+        "partOfSpeech": "adjective",
+        "description": "having lived for a long time; no longer young."
+      },
+      "84310746-0cd9-4fd4-8a9f-32f87d2b1fa6": {
+        "id": "84310746-0cd9-4fd4-8a9f-32f87d2b1fa6",
+        "word": "on",
+        "transcription": "ɑːn",
+        "partOfSpeech": "preposition",
+        "description": "physically in contact with and supported by a surface."
+      },
+      "0b5a086a-168d-4858-ad1b-52733c3479bf": {
+        "id": "0b5a086a-168d-4858-ad1b-52733c3479bf",
+        "word": "once",
+        "transcription": "wʌns",
+        "partOfSpeech": "adverb",
+        "description": "on one occasion or for one time only."
+      },
+      "444c5e44-a9fb-4249-a1fd-e03ddfc37590": {
+        "id": "444c5e44-a9fb-4249-a1fd-e03ddfc37590",
+        "word": "one",
+        "transcription": "wʌn",
+        "partOfSpeech": "number/pronoun",
+        "description": "the lowest cardinal number; half of two."
+      },
+      "3c8f74ef-a271-4763-ac05-6e9711d9d293": {
+        "id": "3c8f74ef-a271-4763-ac05-6e9711d9d293",
+        "word": "online",
+        "transcription": "ˈɑːnlaɪn",
+        "partOfSpeech": "adjective/adverb",
+        "description": "controlled by or connected to a computer or to the Internet."
+      },
+      "900f4260-92e7-4168-8909-3bfef8a91f13": {
+        "id": "900f4260-92e7-4168-8909-3bfef8a91f13",
+        "word": "only",
+        "transcription": "ˈoʊnli",
+        "partOfSpeech": "adjective/adverb",
+        "description": "and no one or nothing more besides."
+      },
+      "8bb2381d-65fb-4461-b415-a3c371f995c5": {
+        "id": "8bb2381d-65fb-4461-b415-a3c371f995c5",
+        "word": "onto",
+        "transcription": "ˈɑːntu",
+        "partOfSpeech": "preposition",
+        "description": "moving to a location on the surface of something."
+      },
+      "00f9edb1-52dd-4550-9924-1fac6db14266": {
+        "id": "00f9edb1-52dd-4550-9924-1fac6db14266",
+        "word": "open",
+        "transcription": "ˈoʊpən",
+        "partOfSpeech": "adjective/verb",
+        "description": "allowing access, passage, or a view through an empty space; not closed or blocked."
+      },
+      "5e852350-992b-4e00-8216-781ad1719254": {
+        "id": "5e852350-992b-4e00-8216-781ad1719254",
+        "word": "opera",
+        "transcription": "ˈɑːprə",
+        "partOfSpeech": "noun",
+        "description": "a dramatic work in one or more acts, set to music for singers and instrumentalists."
+      },
+      "8728d53f-a060-4772-8eee-46a3458f8b59": {
+        "id": "8728d53f-a060-4772-8eee-46a3458f8b59",
+        "word": "operate",
+        "transcription": "ˈɑːpəreɪt",
+        "partOfSpeech": "verb",
+        "description": "to control the functioning of (a machine, process, or system)."
+      },
+      "cd87ec1c-fb3e-4121-bf04-6760c879d994": {
+        "id": "cd87ec1c-fb3e-4121-bf04-6760c879d994",
+        "word": "operation",
+        "transcription": "ˌɑːpəˈreɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the fact or condition of functioning or being active."
+      },
+      "e02a4d01-eadf-4024-8e59-3caa5dde4e8b": {
+        "id": "e02a4d01-eadf-4024-8e59-3caa5dde4e8b",
+        "word": "operator",
+        "transcription": "ˈɑːpəreɪtər",
+        "partOfSpeech": "noun",
+        "description": "a person who operates equipment or a machine."
+      },
+      "4f03dd94-7eaa-4a45-bb4a-f7dc8758ed74": {
+        "id": "4f03dd94-7eaa-4a45-bb4a-f7dc8758ed74",
+        "word": "opinion",
+        "transcription": "əˈpɪnjən",
+        "partOfSpeech": "noun",
+        "description": "a view or judgment formed about something, not necessarily based on fact or knowledge."
+      },
+      "390a2d2b-9b4d-42b6-89b9-75c8e39ffce1": {
+        "id": "390a2d2b-9b4d-42b6-89b9-75c8e39ffce1",
+        "word": "opponent",
+        "transcription": "əˈpoʊnənt",
+        "partOfSpeech": "noun",
+        "description": "someone who competes against or fights another in a contest, game, or argument."
+      },
+      "4b1f93fc-65eb-4cba-aefd-7fb5e178695e": {
+        "id": "4b1f93fc-65eb-4cba-aefd-7fb5e178695e",
+        "word": "opportunity",
+        "transcription": "ˌɑːpərˈtuːnəti",
+        "partOfSpeech": "noun",
+        "description": "a set of circumstances that makes it possible to do something."
+      },
+      "7af52ef8-998d-476e-a67d-7b9d41e11b9f": {
+        "id": "7af52ef8-998d-476e-a67d-7b9d41e11b9f",
+        "word": "oppose",
+        "transcription": "əˈpoʊz",
+        "partOfSpeech": "verb",
+        "description": "to resist or confront."
+      },
+      "3b26e2b9-2386-4350-bae4-4f54aa067018": {
+        "id": "3b26e2b9-2386-4350-bae4-4f54aa067018",
+        "word": "opposite",
+        "transcription": "ˈɑːpəzɪt",
+        "partOfSpeech": "adjective/noun",
+        "description": "having a position on the other or further side of something."
+      },
+      "74c6c40d-ff93-4566-83c5-6375fd067a2f": {
+        "id": "74c6c40d-ff93-4566-83c5-6375fd067a2f",
+        "word": "opposition",
+        "transcription": "ˌɑːpəˈzɪʃn",
+        "partOfSpeech": "noun",
+        "description": "resistance or dissent, expressed in action or argument."
+      },
+      "5182f746-63c2-4653-a894-51628a7e9a80": {
+        "id": "5182f746-63c2-4653-a894-51628a7e9a80",
+        "word": "option",
+        "transcription": "ˈɑːpʃn",
+        "partOfSpeech": "noun",
+        "description": "a thing that is or may be chosen."
+      },
+      "c4d5d19c-f029-4c75-823c-027fb0957298": {
+        "id": "c4d5d19c-f029-4c75-823c-027fb0957298",
+        "word": "or",
+        "transcription": "ɔːr",
+        "partOfSpeech": "conjunction",
+        "description": "used to link alternatives."
+      },
+      "d96b3fd3-6424-44d0-a5e8-acc6134ce2a9": {
+        "id": "d96b3fd3-6424-44d0-a5e8-acc6134ce2a9",
+        "word": "orange",
+        "transcription": "ˈɔːrɪndʒ",
+        "partOfSpeech": "noun/adjective",
+        "description": "a round juicy citrus fruit with a tough bright reddish-yellow rind."
+      },
+      "3b1511db-89cb-468b-a851-4297a93c2447": {
+        "id": "3b1511db-89cb-468b-a851-4297a93c2447",
+        "word": "order",
+        "transcription": "ˈɔːrdər",
+        "partOfSpeech": "noun/verb",
+        "description": "the arrangement or disposition of people or things in relation to each other."
+      },
+      "e175f9ec-44aa-48e9-8365-6c9efa3108ab": {
+        "id": "e175f9ec-44aa-48e9-8365-6c9efa3108ab",
+        "word": "ordinary",
+        "transcription": "ˈɔːrdəneri",
+        "partOfSpeech": "adjective",
+        "description": "with no special or distinctive features; normal."
+      },
+      "ca12559e-28df-4091-926b-54c2c0893f5c": {
+        "id": "ca12559e-28df-4091-926b-54c2c0893f5c",
+        "word": "organic",
+        "transcription": "ɔːrˈɡænɪk",
+        "partOfSpeech": "adjective",
+        "description": "relating to or derived from living matter."
+      },
+      "bf15ebf3-d8a0-4ef7-9d81-44dd6369c53a": {
+        "id": "bf15ebf3-d8a0-4ef7-9d81-44dd6369c53a",
+        "word": "organization",
+        "transcription": "ˌɔːrɡənəˈzeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "an organized body of people with a particular purpose."
+      },
+      "ecfa30de-ce3d-4c02-a0ad-50c065741a00": {
+        "id": "ecfa30de-ce3d-4c02-a0ad-50c065741a00",
+        "word": "organize",
+        "transcription": "ˈɔːrɡənaɪz",
+        "partOfSpeech": "verb",
+        "description": "arrange systematically; order."
+      },
+      "2cc010dd-00dd-4a1d-8304-e39ca1f5b963": {
+        "id": "2cc010dd-00dd-4a1d-8304-e39ca1f5b963",
+        "word": "origin",
+        "transcription": "ˈɔːrɪdʒɪn",
+        "partOfSpeech": "noun",
+        "description": "the point or place where something begins, arises, or is derived."
+      },
+      "6f44ff2b-85fb-45b7-8c5e-e87c0dfdd59c": {
+        "id": "6f44ff2b-85fb-45b7-8c5e-e87c0dfdd59c",
+        "word": "original",
+        "transcription": "əˈrɪdʒɪnl",
+        "partOfSpeech": "adjective",
+        "description": "present or existing from the beginning; first or earliest."
+      },
+      "5cfbd14d-b6d5-4fcd-9a6a-982b1afac262": {
+        "id": "5cfbd14d-b6d5-4fcd-9a6a-982b1afac262",
+        "word": "originally",
+        "transcription": "əˈrɪdʒɪnəli",
+        "partOfSpeech": "adverb",
+        "description": "from or in the beginning; at first."
+      },
+      "50fcd115-2f43-4f5e-85f1-2f27cba8f3ea": {
+        "id": "50fcd115-2f43-4f5e-85f1-2f27cba8f3ea",
+        "word": "other",
+        "transcription": "ˈʌðər",
+        "partOfSpeech": "adjective/pronoun",
+        "description": "used to refer to a person or thing that is different or distinct from one already mentioned or known."
+      },
+      "68e4bc9c-7c03-442d-8f56-6f3a71047dd6": {
+        "id": "68e4bc9c-7c03-442d-8f56-6f3a71047dd6",
+        "word": "otherwise",
+        "transcription": "ˈʌðərwaɪz",
+        "partOfSpeech": "adverb",
+        "description": "in circumstances different from those present or considered; or else."
+      },
+      "1d40a804-2818-489f-bbb6-3fa8f938bbac": {
+        "id": "1d40a804-2818-489f-bbb6-3fa8f938bbac",
+        "word": "ought",
+        "transcription": "ɔːt",
+        "partOfSpeech": "modal verb",
+        "description": "used to indicate duty or correctness, typically when criticizing someone's actions."
+      },
+      "7d1da20c-f140-4619-9326-e7600840955f": {
+        "id": "7d1da20c-f140-4619-9326-e7600840955f",
+        "word": "ourselves",
+        "transcription": "ɑːrˈselvz",
+        "partOfSpeech": "pronoun",
+        "description": "used by a speaker to refer to himself or herself and one or more other people considered together."
+      },
+      "88e143a3-40d9-4450-a986-3cf3763eb3f8": {
+        "id": "88e143a3-40d9-4450-a986-3cf3763eb3f8",
+        "word": "out",
+        "transcription": "aʊt",
+        "partOfSpeech": "adverb/preposition",
+        "description": "moving or appearing to move away from a particular place."
+      },
+      "91d65574-4862-4f00-b7a0-c464a37e98f5": {
+        "id": "91d65574-4862-4f00-b7a0-c464a37e98f5",
+        "word": "outcome",
+        "transcription": "ˈaʊtkʌm",
+        "partOfSpeech": "noun",
+        "description": "the way a thing turns out; a consequence."
+      },
+      "beac110c-ee74-48d8-8c05-f85c894af3c9": {
+        "id": "beac110c-ee74-48d8-8c05-f85c894af3c9",
+        "word": "outline",
+        "transcription": "ˈaʊtlaɪn",
+        "partOfSpeech": "noun",
+        "description": "a general description or plan giving the essential features of something but not the detail."
+      },
+      "0caa12b5-91dd-43b0-a5d5-d8932c7e8df4": {
+        "id": "0caa12b5-91dd-43b0-a5d5-d8932c7e8df4",
+        "word": "output",
+        "transcription": "ˈaʊtpʊt",
+        "partOfSpeech": "noun",
+        "description": "the amount of something produced by a person, machine, or industry."
+      },
+      "1ac44d81-d603-452a-87b4-e45c0dad6017": {
+        "id": "1ac44d81-d603-452a-87b4-e45c0dad6017",
+        "word": "outside",
+        "transcription": "ˌaʊtˈsaɪd",
+        "partOfSpeech": "noun/adjective/adverb/preposition",
+        "description": "the outer side or surface of something."
+      },
+      "0bcbd0cb-bc20-4705-bc3e-0a5293b85ea9": {
+        "id": "0bcbd0cb-bc20-4705-bc3e-0a5293b85ea9",
+        "word": "over",
+        "transcription": "ˈoʊvər",
+        "partOfSpeech": "preposition/adverb",
+        "description": "extending directly upward from."
+      },
+      "f79b680f-61f1-4253-a5fb-21fa44425923": {
+        "id": "f79b680f-61f1-4253-a5fb-21fa44425923",
+        "word": "overall",
+        "transcription": "ˈoʊvərɔːl",
+        "partOfSpeech": "adjective/adverb",
+        "description": "taking everything into account."
+      },
+      "e61e777b-510f-46a4-ad7a-09948993c806": {
+        "id": "e61e777b-510f-46a4-ad7a-09948993c806",
+        "word": "overcome",
+        "transcription": "ˌoʊvərˈkʌm",
+        "partOfSpeech": "verb",
+        "description": "succeed in dealing with (a problem or difficulty)."
+      },
+      "8307190c-abc5-4d51-b18e-bc1a3ead7495": {
+        "id": "8307190c-abc5-4d51-b18e-bc1a3ead7495",
+        "word": "overseas",
+        "transcription": "ˌoʊvərˈsiːz",
+        "partOfSpeech": "adverb/adjective",
+        "description": "in or to a foreign country, especially one across the sea."
+      },
+      "ab58809b-fdab-4a0f-81e8-c1afb5836437": {
+        "id": "ab58809b-fdab-4a0f-81e8-c1afb5836437",
+        "word": "owe",
+        "transcription": "oʊ",
+        "partOfSpeech": "verb",
+        "description": "have an obligation to pay or repay (something, especially money) in return for something received."
+      },
+      "71e818ca-dae9-4472-a93a-716a0f1e0c39": {
+        "id": "71e818ca-dae9-4472-a93a-716a0f1e0c39",
+        "word": "own",
+        "transcription": "oʊn",
+        "partOfSpeech": "verb/adjective",
+        "description": "have (something) as one's own; possess."
+      },
+      "b84ba456-14e6-4204-95c7-a8b7ccc45f78": {
+        "id": "b84ba456-14e6-4204-95c7-a8b7ccc45f78",
+        "word": "owner",
+        "transcription": "ˈoʊnər",
+        "partOfSpeech": "noun",
+        "description": "a person who owns something."
+      },
+      "e8db2424-523b-4abf-91eb-f1a4978784f9": {
+        "id": "e8db2424-523b-4abf-91eb-f1a4978784f9",
+        "word": "ownership",
+        "transcription": "ˈoʊnərʃɪp",
+        "partOfSpeech": "noun",
+        "description": "the act, state, or right of possessing something."
+      }
+    }
+  }
+}

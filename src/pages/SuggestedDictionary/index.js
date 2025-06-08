@@ -1,0 +1,1 @@
+export { SuggestedDictionaryPage } from './SuggestedDictionaryPage';

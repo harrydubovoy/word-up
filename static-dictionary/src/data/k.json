@@ -1,0 +1,128 @@
+{
+  "entities": {
+    "ids": [
+      "3df633e7-cd61-4169-9883-f6b2637d7e46",
+      "b224c5f4-4f9c-4c3a-9622-e29feaf30621",
+      "d4db2e0f-9150-4f8d-b419-39651e83867f",
+      "51e1f208-f70a-4770-b3e0-c3b1693545f8",
+      "2714a9d2-cbea-42d9-b801-9c32908eac4f",
+      "608aaea4-2d16-4824-984f-01cf9ab496b7",
+      "ee24e24d-7415-4c1e-ad7d-abc1e9c4f84d",
+      "9650e095-f6b9-4798-aa5e-8214a5aac28f",
+      "afeb52ad-15bc-4738-abe1-a2f3968bc16e",
+      "d6f00cb6-aab0-46d3-892e-f96a490f095f",
+      "7de8a570-65d5-49b0-a672-a3041cbf287e",
+      "9b776c86-a6d7-407f-8692-afd903721899",
+      "c999300e-41e8-4006-80fb-1cef19cb233d",
+      "8595cb6e-e38e-494f-8de6-d0306f09a01e",
+      "a45cda80-4cb8-4c6a-a746-06e605bfc11c"
+    ],
+    "byId": {
+      "3df633e7-cd61-4169-9883-f6b2637d7e46": {
+        "id": "3df633e7-cd61-4169-9883-f6b2637d7e46",
+        "word": "keen",
+        "transcription": "kiːn",
+        "partOfSpeech": "adjective",
+        "description": "having or showing eagerness or enthusiasm."
+      },
+      "b224c5f4-4f9c-4c3a-9622-e29feaf30621": {
+        "id": "b224c5f4-4f9c-4c3a-9622-e29feaf30621",
+        "word": "keep",
+        "transcription": "kiːp",
+        "partOfSpeech": "verb",
+        "description": "to have or retain possession of."
+      },
+      "d4db2e0f-9150-4f8d-b419-39651e83867f": {
+        "id": "d4db2e0f-9150-4f8d-b419-39651e83867f",
+        "word": "key",
+        "transcription": "kiː",
+        "partOfSpeech": "noun/adjective",
+        "description": "a device that opens a lock; of crucial importance."
+      },
+      "51e1f208-f70a-4770-b3e0-c3b1693545f8": {
+        "id": "51e1f208-f70a-4770-b3e0-c3b1693545f8",
+        "word": "kick",
+        "transcription": "kɪk",
+        "partOfSpeech": "verb/noun",
+        "description": "to strike or propel forcibly with the foot."
+      },
+      "2714a9d2-cbea-42d9-b801-9c32908eac4f": {
+        "id": "2714a9d2-cbea-42d9-b801-9c32908eac4f",
+        "word": "kid",
+        "transcription": "kɪd",
+        "partOfSpeech": "noun",
+        "description": "a child."
+      },
+      "608aaea4-2d16-4824-984f-01cf9ab496b7": {
+        "id": "608aaea4-2d16-4824-984f-01cf9ab496b7",
+        "word": "kill",
+        "transcription": "kɪl",
+        "partOfSpeech": "verb",
+        "description": "to cause the death of (a person, animal, or other living thing)."
+      },
+      "ee24e24d-7415-4c1e-ad7d-abc1e9c4f84d": {
+        "id": "ee24e24d-7415-4c1e-ad7d-abc1e9c4f84d",
+        "word": "kind",
+        "transcription": "kaɪnd",
+        "partOfSpeech": "noun/adjective",
+        "description": "a group of people or things having similar characteristics; having or showing a friendly, generous, and considerate nature."
+      },
+      "9650e095-f6b9-4798-aa5e-8214a5aac28f": {
+        "id": "9650e095-f6b9-4798-aa5e-8214a5aac28f",
+        "word": "king",
+        "transcription": "kɪŋ",
+        "partOfSpeech": "noun",
+        "description": "the male ruler of an independent state, especially one who inherits the position by right of birth."
+      },
+      "afeb52ad-15bc-4738-abe1-a2f3968bc16e": {
+        "id": "afeb52ad-15bc-4738-abe1-a2f3968bc16e",
+        "word": "kiss",
+        "transcription": "kɪs",
+        "partOfSpeech": "verb/noun",
+        "description": "to touch with the lips as a sign of love, sexual desire, or greeting."
+      },
+      "d6f00cb6-aab0-46d3-892e-f96a490f095f": {
+        "id": "d6f00cb6-aab0-46d3-892e-f96a490f095f",
+        "word": "kitchen",
+        "transcription": "ˈkɪtʃɪn",
+        "partOfSpeech": "noun",
+        "description": "a room or area where food is prepared and cooked."
+      },
+      "7de8a570-65d5-49b0-a672-a3041cbf287e": {
+        "id": "7de8a570-65d5-49b0-a672-a3041cbf287e",
+        "word": "knee",
+        "transcription": "niː",
+        "partOfSpeech": "noun",
+        "description": "the joint between the thigh and the lower leg."
+      },
+      "9b776c86-a6d7-407f-8692-afd903721899": {
+        "id": "9b776c86-a6d7-407f-8692-afd903721899",
+        "word": "knife",
+        "transcription": "naɪf",
+        "partOfSpeech": "noun",
+        "description": "an instrument composed of a blade fixed into a handle, used for cutting or as a weapon."
+      },
+      "c999300e-41e8-4006-80fb-1cef19cb233d": {
+        "id": "c999300e-41e8-4006-80fb-1cef19cb233d",
+        "word": "knock",
+        "transcription": "nɑːk",
+        "partOfSpeech": "verb",
+        "description": "to strike a surface noisily to attract attention."
+      },
+      "8595cb6e-e38e-494f-8de6-d0306f09a01e": {
+        "id": "8595cb6e-e38e-494f-8de6-d0306f09a01e",
+        "word": "know",
+        "transcription": "noʊ",
+        "partOfSpeech": "verb",
+        "description": "to be aware of through observation, inquiry, or information."
+      },
+      "a45cda80-4cb8-4c6a-a746-06e605bfc11c": {
+        "id": "a45cda80-4cb8-4c6a-a746-06e605bfc11c",
+        "word": "knowledge",
+        "transcription": "ˈnɑːlɪdʒ",
+        "partOfSpeech": "noun",
+        "description": "facts, information, and skills acquired through experience or education."
+      }
+    }
+  }
+}

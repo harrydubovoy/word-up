@@ -1,0 +1,488 @@
+{
+  "entities": {
+    "ids": [
+      "eb242094-5160-451f-a2ab-654bbd2ca631",
+      "cb05b78e-e3ed-4440-97ca-2fb5fd954e8d",
+      "0f511a2d-f3b0-4a7b-bdcc-8c88cd74620f",
+      "c68bc1f1-4721-4f4c-836a-492a76567e7e",
+      "e0994253-739e-4b97-8e79-7bf22146f1c9",
+      "5a764018-7271-4bf8-9a43-e7e3f4b56df7",
+      "518ea796-e78a-41eb-94cb-6e3884f72da6",
+      "323ad3f2-7343-4509-a0c1-1a3b6001c1ef",
+      "411ab150-3408-492d-9717-380b2a74d818",
+      "0e4a4dc3-d55f-4658-8d86-574506dbdb87",
+      "caf99d6f-8304-4c58-b8c8-2f237534d803",
+      "ec7854c9-b33d-4d6d-ac18-73ded749d4a7",
+      "4614df6d-39db-418e-87bc-75a080ea7ff8",
+      "ada828ba-9ad8-4529-9f9a-1bdf1081f3e7",
+      "6e72b29f-ae9f-4ccf-93fb-6012ff0a8707",
+      "fa88c4d0-7b07-4a5a-8f01-e781cf56d065",
+      "7602c8a8-8805-454f-804c-711feeb34400",
+      "ca98d4a6-757b-4d07-8acb-b53e81196395",
+      "7f5d7b08-b8cf-4b13-a9be-cfe92b7aea62",
+      "2abd8acf-5936-47dc-924d-4dab3778b02c",
+      "8e65397b-56f6-4cab-bd09-4eab1c36f1d8",
+      "2ed8e3ec-bee6-444e-997c-545990f3123c",
+      "cd258eb4-5d09-4d55-a808-ca6a7cddc40a",
+      "8b61c683-e0b9-4e54-b3a2-0da9ddd71d3b",
+      "52909e50-41c8-402c-b6fe-72e414c57cbf",
+      "645f1ef0-46ce-4736-bc89-78782f9b94e8",
+      "72bf36c0-87de-4e6c-8277-7d495bf1a45d",
+      "e0c4ee0c-0f21-4d8c-9c49-d863f33c08e8",
+      "c1b91e11-954b-4c89-95f2-ad4b027a9834",
+      "63d07292-ff59-494f-a547-8edb7c0151c0",
+      "1ab39218-7a6b-4c7f-98b7-05db16cc5cd0",
+      "1566f6d2-2919-4350-b783-8852beac3cf3",
+      "6994c3aa-d0de-40dd-91c9-349146b63a85",
+      "6a2c29fb-fd3d-43d3-aaef-a5f2900da8ac",
+      "3a0a7e9d-aff7-488d-93ff-2980079d5172",
+      "4b571f3a-518f-4b0c-8216-ad1f914743be",
+      "4ab916a4-3425-4d32-9519-2ffd73b20a19",
+      "b9efcee2-bd23-4a25-9ffe-96e2f59e2bc5",
+      "1794b5f7-535c-4bc5-ac0e-f3e4ce697b2d",
+      "e03f5776-9e82-4e2d-b450-e7286fd96eb6",
+      "9dcc663b-af9d-4f55-bd30-83051446341f",
+      "639b7eb1-4e20-4e62-884c-a7fc7c7c3380",
+      "f0a95c0a-0768-474e-8e2d-031aa61efeac",
+      "91866bde-8e36-4150-b98a-30974f8b71f5",
+      "0041ed4c-fd9f-41c7-a3f1-4415c69c3fb5",
+      "4820d56b-9f32-4206-8329-55c948d88418",
+      "518dd198-3ec3-490b-ae1b-ab1eaabd5344",
+      "e8022557-c164-4730-be0d-29c627932bc5",
+      "cfe8f84d-e156-432b-877a-ff2fc7b295fb",
+      "bfb91085-e14f-43de-9476-f643bbbe1622",
+      "6779fd3a-4e11-46cc-b6d8-00c66adcd05a",
+      "3aa8a063-ef71-486e-8191-780424f81d33",
+      "13562ebe-5fee-4327-a7cf-176be2827c19",
+      "23b566e6-f7c0-445c-9df8-0f625262c1f1",
+      "4a286ef7-e931-42a2-9ae2-0086fd18c247",
+      "40427923-cde6-430a-8ee4-05f183b8a39b",
+      "e28a81dd-db66-43ea-868f-29aa2c02e50b",
+      "da1db302-f24e-4175-8383-efa468b96f36",
+      "4d946b66-898f-4267-9a62-0d54be101d95",
+      "fa6b0dae-2039-4e54-9ca7-1a013a245105"
+    ],
+    "byId": {
+      "eb242094-5160-451f-a2ab-654bbd2ca631": {
+        "id": "eb242094-5160-451f-a2ab-654bbd2ca631",
+        "word": "name",
+        "transcription": "neɪm",
+        "partOfSpeech": "noun",
+        "description": "a word or set of words by which a person or thing is known, addressed, or referred to."
+      },
+      "cb05b78e-e3ed-4440-97ca-2fb5fd954e8d": {
+        "id": "cb05b78e-e3ed-4440-97ca-2fb5fd954e8d",
+        "word": "narrative",
+        "transcription": "ˈnærətɪv",
+        "partOfSpeech": "noun",
+        "description": "a spoken or written account of connected events; a story."
+      },
+      "0f511a2d-f3b0-4a7b-bdcc-8c88cd74620f": {
+        "id": "0f511a2d-f3b0-4a7b-bdcc-8c88cd74620f",
+        "word": "narrow",
+        "transcription": "ˈnæroʊ",
+        "partOfSpeech": "adjective",
+        "description": "of small width in relation to length."
+      },
+      "c68bc1f1-4721-4f4c-836a-492a76567e7e": {
+        "id": "c68bc1f1-4721-4f4c-836a-492a76567e7e",
+        "word": "nation",
+        "transcription": "ˈneɪʃn",
+        "partOfSpeech": "noun",
+        "description": "a large aggregate of people united by common descent, history, culture, or language, inhabiting a particular country or territory."
+      },
+      "e0994253-739e-4b97-8e79-7bf22146f1c9": {
+        "id": "e0994253-739e-4b97-8e79-7bf22146f1c9",
+        "word": "national",
+        "transcription": "ˈnæʃnəl",
+        "partOfSpeech": "adjective",
+        "description": "relating to a nation; common to a whole nation."
+      },
+      "5a764018-7271-4bf8-9a43-e7e3f4b56df7": {
+        "id": "5a764018-7271-4bf8-9a43-e7e3f4b56df7",
+        "word": "native",
+        "transcription": "ˈneɪtɪv",
+        "partOfSpeech": "adjective/noun",
+        "description": "associated with the place or circumstances of a person's birth."
+      },
+      "518ea796-e78a-41eb-94cb-6e3884f72da6": {
+        "id": "518ea796-e78a-41eb-94cb-6e3884f72da6",
+        "word": "natural",
+        "transcription": "ˈnætʃrəl",
+        "partOfSpeech": "adjective",
+        "description": "existing in or derived from nature; not made or caused by humankind."
+      },
+      "323ad3f2-7343-4509-a0c1-1a3b6001c1ef": {
+        "id": "323ad3f2-7343-4509-a0c1-1a3b6001c1ef",
+        "word": "naturally",
+        "transcription": "ˈnætʃrəli",
+        "partOfSpeech": "adverb",
+        "description": "in a natural manner."
+      },
+      "411ab150-3408-492d-9717-380b2a74d818": {
+        "id": "411ab150-3408-492d-9717-380b2a74d818",
+        "word": "nature",
+        "transcription": "ˈneɪtʃər",
+        "partOfSpeech": "noun",
+        "description": "the phenomena of the physical world collectively, including plants, animals, the landscape, and other features and products of the earth."
+      },
+      "0e4a4dc3-d55f-4658-8d86-574506dbdb87": {
+        "id": "0e4a4dc3-d55f-4658-8d86-574506dbdb87",
+        "word": "near",
+        "transcription": "nɪr",
+        "partOfSpeech": "preposition/adverb/adjective",
+        "description": "at or to a short distance away."
+      },
+      "caf99d6f-8304-4c58-b8c8-2f237534d803": {
+        "id": "caf99d6f-8304-4c58-b8c8-2f237534d803",
+        "word": "nearby",
+        "transcription": "ˈnɪrbaɪ",
+        "partOfSpeech": "adjective/adverb",
+        "description": "not far away; close."
+      },
+      "ec7854c9-b33d-4d6d-ac18-73ded749d4a7": {
+        "id": "ec7854c9-b33d-4d6d-ac18-73ded749d4a7",
+        "word": "nearly",
+        "transcription": "ˈnɪrli",
+        "partOfSpeech": "adverb",
+        "description": "very close to; almost."
+      },
+      "4614df6d-39db-418e-87bc-75a080ea7ff8": {
+        "id": "4614df6d-39db-418e-87bc-75a080ea7ff8",
+        "word": "necessarily",
+        "transcription": "ˌnesəˈserəli",
+        "partOfSpeech": "adverb",
+        "description": "as a necessary result; inevitably."
+      },
+      "ada828ba-9ad8-4529-9f9a-1bdf1081f3e7": {
+        "id": "ada828ba-9ad8-4529-9f9a-1bdf1081f3e7",
+        "word": "necessary",
+        "transcription": "ˈnesəseri",
+        "partOfSpeech": "adjective",
+        "description": "required to be done, achieved, or present; needed."
+      },
+      "6e72b29f-ae9f-4ccf-93fb-6012ff0a8707": {
+        "id": "6e72b29f-ae9f-4ccf-93fb-6012ff0a8707",
+        "word": "neck",
+        "transcription": "nek",
+        "partOfSpeech": "noun",
+        "description": "the part of a person's or animal's body connecting the head to the rest of the body."
+      },
+      "fa88c4d0-7b07-4a5a-8f01-e781cf56d065": {
+        "id": "fa88c4d0-7b07-4a5a-8f01-e781cf56d065",
+        "word": "need",
+        "transcription": "niːd",
+        "partOfSpeech": "verb/noun",
+        "description": "require (something) because it is essential or very important."
+      },
+      "7602c8a8-8805-454f-804c-711feeb34400": {
+        "id": "7602c8a8-8805-454f-804c-711feeb34400",
+        "word": "negative",
+        "transcription": "ˈneɡətɪv",
+        "partOfSpeech": "adjective",
+        "description": "consisting in or characterized by the absence rather than the presence of distinguishing features."
+      },
+      "ca98d4a6-757b-4d07-8acb-b53e81196395": {
+        "id": "ca98d4a6-757b-4d07-8acb-b53e81196395",
+        "word": "neglect",
+        "transcription": "nɪˈɡlekt",
+        "partOfSpeech": "verb",
+        "description": "fail to care for properly."
+      },
+      "7f5d7b08-b8cf-4b13-a9be-cfe92b7aea62": {
+        "id": "7f5d7b08-b8cf-4b13-a9be-cfe92b7aea62",
+        "word": "negotiate",
+        "transcription": "nɪˈɡoʊʃieɪt",
+        "partOfSpeech": "verb",
+        "description": "try to reach an agreement or compromise by discussion with others."
+      },
+      "2abd8acf-5936-47dc-924d-4dab3778b02c": {
+        "id": "2abd8acf-5936-47dc-924d-4dab3778b02c",
+        "word": "negotiation",
+        "transcription": "nɪˌɡoʊʃiˈeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "discussion aimed at reaching an agreement."
+      },
+      "8e65397b-56f6-4cab-bd09-4eab1c36f1d8": {
+        "id": "8e65397b-56f6-4cab-bd09-4eab1c36f1d8",
+        "word": "neighbor",
+        "transcription": "ˈneɪbər",
+        "partOfSpeech": "noun",
+        "description": "a person living near or next door to the speaker or person referred to."
+      },
+      "2ed8e3ec-bee6-444e-997c-545990f3123c": {
+        "id": "2ed8e3ec-bee6-444e-997c-545990f3123c",
+        "word": "neighborhood",
+        "transcription": "ˈneɪbərhʊd",
+        "partOfSpeech": "noun",
+        "description": "a district or community within a town or city."
+      },
+      "cd258eb4-5d09-4d55-a808-ca6a7cddc40a": {
+        "id": "cd258eb4-5d09-4d55-a808-ca6a7cddc40a",
+        "word": "neither",
+        "transcription": "ˈniːðər",
+        "partOfSpeech": "determiner/pronoun",
+        "description": "not one nor the other of two people or things; not either."
+      },
+      "8b61c683-e0b9-4e54-b3a2-0da9ddd71d3b": {
+        "id": "8b61c683-e0b9-4e54-b3a2-0da9ddd71d3b",
+        "word": "nerve",
+        "transcription": "nɜːrv",
+        "partOfSpeech": "noun",
+        "description": "a bundle of fibers that transmits impulses of sensation to the brain or spinal cord."
+      },
+      "52909e50-41c8-402c-b6fe-72e414c57cbf": {
+        "id": "52909e50-41c8-402c-b6fe-72e414c57cbf",
+        "word": "nervous",
+        "transcription": "ˈnɜːrvəs",
+        "partOfSpeech": "adjective",
+        "description": "easily agitated or alarmed."
+      },
+      "645f1ef0-46ce-4736-bc89-78782f9b94e8": {
+        "id": "645f1ef0-46ce-4736-bc89-78782f9b94e8",
+        "word": "net",
+        "transcription": "net",
+        "partOfSpeech": "noun/adjective",
+        "description": "a piece of open-meshed material; remaining after deductions."
+      },
+      "72bf36c0-87de-4e6c-8277-7d495bf1a45d": {
+        "id": "72bf36c0-87de-4e6c-8277-7d495bf1a45d",
+        "word": "network",
+        "transcription": "ˈnetwɜːrk",
+        "partOfSpeech": "noun",
+        "description": "a group or system of interconnected people or things."
+      },
+      "e0c4ee0c-0f21-4d8c-9c49-d863f33c08e8": {
+        "id": "e0c4ee0c-0f21-4d8c-9c49-d863f33c08e8",
+        "word": "never",
+        "transcription": "ˈnevər",
+        "partOfSpeech": "adverb",
+        "description": "at no time in the past or future."
+      },
+      "c1b91e11-954b-4c89-95f2-ad4b027a9834": {
+        "id": "c1b91e11-954b-4c89-95f2-ad4b027a9834",
+        "word": "nevertheless",
+        "transcription": "ˌnevərðəˈles",
+        "partOfSpeech": "adverb",
+        "description": "in spite of that; notwithstanding."
+      },
+      "63d07292-ff59-494f-a547-8edb7c0151c0": {
+        "id": "63d07292-ff59-494f-a547-8edb7c0151c0",
+        "word": "new",
+        "transcription": "nuː",
+        "partOfSpeech": "adjective",
+        "description": "not existing before; made, introduced, or discovered recently or now for the first time."
+      },
+      "1ab39218-7a6b-4c7f-98b7-05db16cc5cd0": {
+        "id": "1ab39218-7a6b-4c7f-98b7-05db16cc5cd0",
+        "word": "newly",
+        "transcription": "ˈnuːli",
+        "partOfSpeech": "adverb",
+        "description": "very recently."
+      },
+      "1566f6d2-2919-4350-b783-8852beac3cf3": {
+        "id": "1566f6d2-2919-4350-b783-8852beac3cf3",
+        "word": "news",
+        "transcription": "nuːz",
+        "partOfSpeech": "noun",
+        "description": "newly received or noteworthy information, especially about recent or important events."
+      },
+      "6994c3aa-d0de-40dd-91c9-349146b63a85": {
+        "id": "6994c3aa-d0de-40dd-91c9-349146b63a85",
+        "word": "newspaper",
+        "transcription": "ˈnuːzpeɪpər",
+        "partOfSpeech": "noun",
+        "description": "a printed publication (usually issued daily or weekly) consisting of folded unstapled sheets and containing news, articles, advertisements, and correspondence."
+      },
+      "6a2c29fb-fd3d-43d3-aaef-a5f2900da8ac": {
+        "id": "6a2c29fb-fd3d-43d3-aaef-a5f2900da8ac",
+        "word": "next",
+        "transcription": "nekst",
+        "partOfSpeech": "adjective/adverb",
+        "description": "coming immediately after the time of writing or speaking."
+      },
+      "3a0a7e9d-aff7-488d-93ff-2980079d5172": {
+        "id": "3a0a7e9d-aff7-488d-93ff-2980079d5172",
+        "word": "nice",
+        "transcription": "naɪs",
+        "partOfSpeech": "adjective",
+        "description": "pleasant; agreeable; satisfactory."
+      },
+      "4b571f3a-518f-4b0c-8216-ad1f914743be": {
+        "id": "4b571f3a-518f-4b0c-8216-ad1f914743be",
+        "word": "night",
+        "transcription": "naɪt",
+        "partOfSpeech": "noun",
+        "description": "the period from sunset to sunrise in each twenty-four hours."
+      },
+      "4ab916a4-3425-4d32-9519-2ffd73b20a19": {
+        "id": "4ab916a4-3425-4d32-9519-2ffd73b20a19",
+        "word": "no",
+        "transcription": "noʊ",
+        "partOfSpeech": "determiner/adverb",
+        "description": "used to give a negative response."
+      },
+      "b9efcee2-bd23-4a25-9ffe-96e2f59e2bc5": {
+        "id": "b9efcee2-bd23-4a25-9ffe-96e2f59e2bc5",
+        "word": "nobody",
+        "transcription": "ˈnoʊbədi",
+        "partOfSpeech": "pronoun",
+        "description": "no person; no one."
+      },
+      "1794b5f7-535c-4bc5-ac0e-f3e4ce697b2d": {
+        "id": "1794b5f7-535c-4bc5-ac0e-f3e4ce697b2d",
+        "word": "noise",
+        "transcription": "nɔɪz",
+        "partOfSpeech": "noun",
+        "description": "a sound, especially one that is loud or unpleasant or that causes disturbance."
+      },
+      "e03f5776-9e82-4e2d-b450-e7286fd96eb6": {
+        "id": "e03f5776-9e82-4e2d-b450-e7286fd96eb6",
+        "word": "none",
+        "transcription": "nʌn",
+        "partOfSpeech": "pronoun",
+        "description": "not any."
+      },
+      "9dcc663b-af9d-4f55-bd30-83051446341f": {
+        "id": "9dcc663b-af9d-4f55-bd30-83051446341f",
+        "word": "nor",
+        "transcription": "nɔːr",
+        "partOfSpeech": "conjunction",
+        "description": "used before the second or further of two or more alternatives (usually used after neither)."
+      },
+      "639b7eb1-4e20-4e62-884c-a7fc7c7c3380": {
+        "id": "639b7eb1-4e20-4e62-884c-a7fc7c7c3380",
+        "word": "normal",
+        "transcription": "ˈnɔːrml",
+        "partOfSpeech": "adjective",
+        "description": "conforming to a standard; usual, typical, or expected."
+      },
+      "f0a95c0a-0768-474e-8e2d-031aa61efeac": {
+        "id": "f0a95c0a-0768-474e-8e2d-031aa61efeac",
+        "word": "normally",
+        "transcription": "ˈnɔːrməli",
+        "partOfSpeech": "adverb",
+        "description": "under normal or usual conditions."
+      },
+      "91866bde-8e36-4150-b98a-30974f8b71f5": {
+        "id": "91866bde-8e36-4150-b98a-30974f8b71f5",
+        "word": "north",
+        "transcription": "nɔːrθ",
+        "partOfSpeech": "noun/adjective",
+        "description": "the direction in which a compass needle normally points, toward the horizon on the left when facing the rising sun."
+      },
+      "0041ed4c-fd9f-41c7-a3f1-4415c69c3fb5": {
+        "id": "0041ed4c-fd9f-41c7-a3f1-4415c69c3fb5",
+        "word": "northern",
+        "transcription": "ˈnɔːrðərn",
+        "partOfSpeech": "adjective",
+        "description": "situated in the north, or directed toward or facing the north."
+      },
+      "4820d56b-9f32-4206-8329-55c948d88418": {
+        "id": "4820d56b-9f32-4206-8329-55c948d88418",
+        "word": "nose",
+        "transcription": "noʊz",
+        "partOfSpeech": "noun",
+        "description": "the part projecting above the mouth on the face of a person or animal, containing the nostrils and used for breathing and smelling."
+      },
+      "518dd198-3ec3-490b-ae1b-ab1eaabd5344": {
+        "id": "518dd198-3ec3-490b-ae1b-ab1eaabd5344",
+        "word": "not",
+        "transcription": "nɑːt",
+        "partOfSpeech": "adverb",
+        "description": "used with an auxiliary verb or ‘be’ to form the negative."
+      },
+      "e8022557-c164-4730-be0d-29c627932bc5": {
+        "id": "e8022557-c164-4730-be0d-29c627932bc5",
+        "word": "note",
+        "transcription": "noʊt",
+        "partOfSpeech": "noun/verb",
+        "description": "a brief record of points or ideas written down as an aid to memory; to notice or pay particular attention to."
+      },
+      "cfe8f84d-e156-432b-877a-ff2fc7b295fb": {
+        "id": "cfe8f84d-e156-432b-877a-ff2fc7b295fb",
+        "word": "nothing",
+        "transcription": "ˈnʌθɪŋ",
+        "partOfSpeech": "pronoun",
+        "description": "not anything; no single thing."
+      },
+      "bfb91085-e14f-43de-9476-f643bbbe1622": {
+        "id": "bfb91085-e14f-43de-9476-f643bbbe1622",
+        "word": "notice",
+        "transcription": "ˈnoʊtɪs",
+        "partOfSpeech": "verb",
+        "description": "to become aware of."
+      },
+      "6779fd3a-4e11-46cc-b6d8-00c66adcd05a": {
+        "id": "6779fd3a-4e11-46cc-b6d8-00c66adcd05a",
+        "word": "notion",
+        "transcription": "ˈnoʊʃn",
+        "partOfSpeech": "noun",
+        "description": "a conception of or belief about something."
+      },
+      "3aa8a063-ef71-486e-8191-780424f81d33": {
+        "id": "3aa8a063-ef71-486e-8191-780424f81d33",
+        "word": "noun",
+        "transcription": "naʊn",
+        "partOfSpeech": "noun",
+        "description": "a word (other than a pronoun) used to identify any of a class of people, places, or things."
+      },
+      "13562ebe-5fee-4327-a7cf-176be2827c19": {
+        "id": "13562ebe-5fee-4327-a7cf-176be2827c19",
+        "word": "novel",
+        "transcription": "ˈnɑːvl",
+        "partOfSpeech": "noun",
+        "description": "a long written story usually about imaginary characters and events."
+      },
+      "23b566e6-f7c0-445c-9df8-0f625262c1f1": {
+        "id": "23b566e6-f7c0-445c-9df8-0f625262c1f1",
+        "word": "now",
+        "transcription": "naʊ",
+        "partOfSpeech": "adverb",
+        "description": "at the present time."
+      },
+      "4a286ef7-e931-42a2-9ae2-0086fd18c247": {
+        "id": "4a286ef7-e931-42a2-9ae2-0086fd18c247",
+        "word": "nowadays",
+        "transcription": "ˈnaʊədeɪz",
+        "partOfSpeech": "adverb",
+        "description": "at the present time, in contrast with the past."
+      },
+      "40427923-cde6-430a-8ee4-05f183b8a39b": {
+        "id": "40427923-cde6-430a-8ee4-05f183b8a39b",
+        "word": "nowhere",
+        "transcription": "ˈnoʊwer",
+        "partOfSpeech": "adverb",
+        "description": "not in or at any place."
+      },
+      "e28a81dd-db66-43ea-868f-29aa2c02e50b": {
+        "id": "e28a81dd-db66-43ea-868f-29aa2c02e50b",
+        "word": "nuclear",
+        "transcription": "ˈnuːkliər",
+        "partOfSpeech": "adjective",
+        "description": "relating to the nucleus of an atom."
+      },
+      "da1db302-f24e-4175-8383-efa468b96f36": {
+        "id": "da1db302-f24e-4175-8383-efa468b96f36",
+        "word": "number",
+        "transcription": "ˈnʌmbər",
+        "partOfSpeech": "noun",
+        "description": "an arithmetical value, expressed by a word, symbol, or figure."
+      },
+      "4d946b66-898f-4267-9a62-0d54be101d95": {
+        "id": "4d946b66-898f-4267-9a62-0d54be101d95",
+        "word": "numerous",
+        "transcription": "ˈnuːmərəs",
+        "partOfSpeech": "adjective",
+        "description": "great in number; many."
+      },
+      "fa6b0dae-2039-4e54-9ca7-1a013a245105": {
+        "id": "fa6b0dae-2039-4e54-9ca7-1a013a245105",
+        "word": "nurse",
+        "transcription": "nɜːrs",
+        "partOfSpeech": "noun",
+        "description": "a person trained to care for the sick or infirm, especially in a hospital."
+      }
+    }
+  }
+}

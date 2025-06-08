@@ -1,0 +1,1 @@
+export { SuggestedDictionaryWordCard } from './ui';

@@ -1,0 +1,144 @@
+{
+  "entities": {
+    "ids": [
+      "db81b57c-48b8-4d6b-8dd3-f90edd39ec71",
+      "791574e7-bf23-4034-a7ca-fc5e03cd9834",
+      "dc387d7d-f37b-4b92-85d1-61b8b88c65ea",
+      "568a23e9-afb5-47dd-905f-99d3b8af8805",
+      "78e8aad6-606e-4547-b914-f7646cefee4a",
+      "fa121993-39b3-4ff9-8e20-cbd986aee9aa",
+      "7163c931-211b-423b-8eb7-e0b50384cf9f",
+      "9e713322-427e-4ac1-bd31-ff9a77912d4b",
+      "feb32cd2-f45e-4f8a-850d-ed3c8b8f5d14",
+      "7da35f1e-28c8-442b-8c6f-b7456a463804",
+      "6549a922-0ae5-4c1e-bc6d-0be8414c5ade",
+      "137e3a08-b8ab-4287-80d3-ebb4ac70fec6",
+      "97262dcb-b135-4764-893d-3de62ee0188a",
+      "df3480ad-2e59-4b5b-b64c-115d2f5527ce",
+      "e2b1d4ed-9fb4-4c8b-a711-051028c951aa",
+      "c2052aba-6440-44ad-9102-639e9cec0727",
+      "067d64a5-3d61-4f8f-814d-fca8c3ba39e4"
+    ],
+    "byId": {
+      "db81b57c-48b8-4d6b-8dd3-f90edd39ec71": {
+        "id": "db81b57c-48b8-4d6b-8dd3-f90edd39ec71",
+        "word": "jacket",
+        "transcription": "ˈdʒækɪt",
+        "partOfSpeech": "noun",
+        "description": "an outer garment extending either to the waist or the hips."
+      },
+      "791574e7-bf23-4034-a7ca-fc5e03cd9834": {
+        "id": "791574e7-bf23-4034-a7ca-fc5e03cd9834",
+        "word": "jail",
+        "transcription": "dʒeɪl",
+        "partOfSpeech": "noun",
+        "description": "a place for the confinement of people accused or convicted of a crime."
+      },
+      "dc387d7d-f37b-4b92-85d1-61b8b88c65ea": {
+        "id": "dc387d7d-f37b-4b92-85d1-61b8b88c65ea",
+        "word": "job",
+        "transcription": "dʒɑːb",
+        "partOfSpeech": "noun",
+        "description": "a paid position of regular employment."
+      },
+      "568a23e9-afb5-47dd-905f-99d3b8af8805": {
+        "id": "568a23e9-afb5-47dd-905f-99d3b8af8805",
+        "word": "join",
+        "transcription": "dʒɔɪn",
+        "partOfSpeech": "verb",
+        "description": "to connect or fasten things together."
+      },
+      "78e8aad6-606e-4547-b914-f7646cefee4a": {
+        "id": "78e8aad6-606e-4547-b914-f7646cefee4a",
+        "word": "joint",
+        "transcription": "dʒɔɪnt",
+        "partOfSpeech": "noun/adjective",
+        "description": "a point at which parts of an artificial structure are joined."
+      },
+      "fa121993-39b3-4ff9-8e20-cbd986aee9aa": {
+        "id": "fa121993-39b3-4ff9-8e20-cbd986aee9aa",
+        "word": "joke",
+        "transcription": "dʒoʊk",
+        "partOfSpeech": "noun",
+        "description": "a thing that someone says to cause amusement or laughter."
+      },
+      "7163c931-211b-423b-8eb7-e0b50384cf9f": {
+        "id": "7163c931-211b-423b-8eb7-e0b50384cf9f",
+        "word": "journal",
+        "transcription": "ˈdʒɜːrnəl",
+        "partOfSpeech": "noun",
+        "description": "a newspaper or magazine that deals with a particular subject or professional activity."
+      },
+      "9e713322-427e-4ac1-bd31-ff9a77912d4b": {
+        "id": "9e713322-427e-4ac1-bd31-ff9a77912d4b",
+        "word": "journalist",
+        "transcription": "ˈdʒɜːrnəlɪst",
+        "partOfSpeech": "noun",
+        "description": "a person who writes for newspapers, magazines, or news websites or prepares news to be broadcast."
+      },
+      "feb32cd2-f45e-4f8a-850d-ed3c8b8f5d14": {
+        "id": "feb32cd2-f45e-4f8a-850d-ed3c8b8f5d14",
+        "word": "journey",
+        "transcription": "ˈdʒɜːrni",
+        "partOfSpeech": "noun",
+        "description": "an act of traveling from one place to another."
+      },
+      "7da35f1e-28c8-442b-8c6f-b7456a463804": {
+        "id": "7da35f1e-28c8-442b-8c6f-b7456a463804",
+        "word": "joy",
+        "transcription": "dʒɔɪ",
+        "partOfSpeech": "noun",
+        "description": "a feeling of great pleasure and happiness."
+      },
+      "6549a922-0ae5-4c1e-bc6d-0be8414c5ade": {
+        "id": "6549a922-0ae5-4c1e-bc6d-0be8414c5ade",
+        "word": "judge",
+        "transcription": "dʒʌdʒ",
+        "partOfSpeech": "noun/verb",
+        "description": "a public official appointed to decide cases in a court of law."
+      },
+      "137e3a08-b8ab-4287-80d3-ebb4ac70fec6": {
+        "id": "137e3a08-b8ab-4287-80d3-ebb4ac70fec6",
+        "word": "judgment",
+        "transcription": "ˈdʒʌdʒmənt",
+        "partOfSpeech": "noun",
+        "description": "the ability to make considered decisions or come to sensible conclusions."
+      },
+      "97262dcb-b135-4764-893d-3de62ee0188a": {
+        "id": "97262dcb-b135-4764-893d-3de62ee0188a",
+        "word": "jump",
+        "transcription": "dʒʌmp",
+        "partOfSpeech": "verb",
+        "description": "to push oneself off a surface and into the air by using the muscles in one's legs and feet."
+      },
+      "df3480ad-2e59-4b5b-b64c-115d2f5527ce": {
+        "id": "df3480ad-2e59-4b5b-b64c-115d2f5527ce",
+        "word": "jury",
+        "transcription": "ˈdʒʊri",
+        "partOfSpeech": "noun",
+        "description": "a group of people sworn to give a verdict in a legal case based on evidence."
+      },
+      "e2b1d4ed-9fb4-4c8b-a711-051028c951aa": {
+        "id": "e2b1d4ed-9fb4-4c8b-a711-051028c951aa",
+        "word": "just",
+        "transcription": "dʒʌst",
+        "partOfSpeech": "adverb/adjective",
+        "description": "exactly; based on or behaving according to what is morally right and fair."
+      },
+      "c2052aba-6440-44ad-9102-639e9cec0727": {
+        "id": "c2052aba-6440-44ad-9102-639e9cec0727",
+        "word": "justice",
+        "transcription": "ˈdʒʌstɪs",
+        "partOfSpeech": "noun",
+        "description": "just behavior or treatment; the quality of being fair and reasonable."
+      },
+      "067d64a5-3d61-4f8f-814d-fca8c3ba39e4": {
+        "id": "067d64a5-3d61-4f8f-814d-fca8c3ba39e4",
+        "word": "justify",
+        "transcription": "ˈdʒʌstɪfaɪ",
+        "partOfSpeech": "verb",
+        "description": "to show or prove to be right or reasonable."
+      }
+    }
+  }
+}

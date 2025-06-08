@@ -1,10 +1,13 @@
 import { styled } from '../../ui-kit/theme';
 import { Box } from '../../ui-kit/Box';
+
 import { List } from '../../shared/utils/List';
 
 import { useDictionary } from '../../entities';
 
 import { DictionaryWordCard } from '../../widgets/DictionaryWordCard';
+
+import { useUnmountPage } from './useUnmountPage';
 
 const Grid = styled(Box)({
   display: 'grid',
@@ -16,6 +19,7 @@ const Grid = styled(Box)({
 });
 
 export function DictionaryPage() {
+  useUnmountPage();
   const { dictionaryIds } = useDictionary();
 
   return (

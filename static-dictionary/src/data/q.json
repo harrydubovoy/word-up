@@ -1,0 +1,104 @@
+{
+  "entities": {
+    "ids": [
+      "04ad49db-8e06-45f4-9f3e-c55640f04688",
+      "7a508a2d-8180-4713-8ffb-608ccef6659c",
+      "e22046e8-a5b7-4af2-bfc8-0088a55f66f2",
+      "baa5349d-1a11-4167-a9ec-60fb5368a395",
+      "f2d44aa9-be03-4bbe-9bbd-24d8b5b7b143",
+      "1c259002-ef48-4a66-8860-2361a1335834",
+      "e96c8c03-7c19-493b-929c-d1b2d604db6b",
+      "c1451306-6808-4865-902e-e279300ba1ff",
+      "3a08050a-846a-4279-86f2-a17b6a0b67dd",
+      "89774e5d-5dbe-4203-89d8-2167bd5b46db",
+      "06fb40de-4dab-4ae3-b65e-901a830b4048",
+      "b46ebf3b-33da-489a-81ec-7db6e5b88fd4"
+    ],
+    "byId": {
+      "04ad49db-8e06-45f4-9f3e-c55640f04688": {
+        "id": "04ad49db-8e06-45f4-9f3e-c55640f04688",
+        "word": "qualification",
+        "transcription": "ˌkwɑːlɪfɪˈkeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "a quality or accomplishment that makes someone suitable for a particular job or activity."
+      },
+      "7a508a2d-8180-4713-8ffb-608ccef6659c": {
+        "id": "7a508a2d-8180-4713-8ffb-608ccef6659c",
+        "word": "qualify",
+        "transcription": "ˈkwɑːlɪfaɪ",
+        "partOfSpeech": "verb",
+        "description": "to be entitled to a particular benefit or privilege by fulfilling a necessary condition."
+      },
+      "e22046e8-a5b7-4af2-bfc8-0088a55f66f2": {
+        "id": "e22046e8-a5b7-4af2-bfc8-0088a55f66f2",
+        "word": "quality",
+        "transcription": "ˈkwɑːləti",
+        "partOfSpeech": "noun",
+        "description": "the standard of something as measured against other things of a similar kind."
+      },
+      "baa5349d-1a11-4167-a9ec-60fb5368a395": {
+        "id": "baa5349d-1a11-4167-a9ec-60fb5368a395",
+        "word": "quantity",
+        "transcription": "ˈkwɑːntəti",
+        "partOfSpeech": "noun",
+        "description": "the amount or number of a material or immaterial thing not usually estimated by spatial measurement."
+      },
+      "f2d44aa9-be03-4bbe-9bbd-24d8b5b7b143": {
+        "id": "f2d44aa9-be03-4bbe-9bbd-24d8b5b7b143",
+        "word": "quarter",
+        "transcription": "ˈkwɔːrtər",
+        "partOfSpeech": "noun",
+        "description": "each of four equal or corresponding parts into which something is or can be divided."
+      },
+      "1c259002-ef48-4a66-8860-2361a1335834": {
+        "id": "1c259002-ef48-4a66-8860-2361a1335834",
+        "word": "question",
+        "transcription": "ˈkwestʃən",
+        "partOfSpeech": "noun",
+        "description": "a sentence worded or expressed so as to elicit information."
+      },
+      "e96c8c03-7c19-493b-929c-d1b2d604db6b": {
+        "id": "e96c8c03-7c19-493b-929c-d1b2d604db6b",
+        "word": "quick",
+        "transcription": "kwɪk",
+        "partOfSpeech": "adjective",
+        "description": "moving fast or doing something in a short time."
+      },
+      "c1451306-6808-4865-902e-e279300ba1ff": {
+        "id": "c1451306-6808-4865-902e-e279300ba1ff",
+        "word": "quickly",
+        "transcription": "ˈkwɪkli",
+        "partOfSpeech": "adverb",
+        "description": "at a fast speed; rapidly."
+      },
+      "3a08050a-846a-4279-86f2-a17b6a0b67dd": {
+        "id": "3a08050a-846a-4279-86f2-a17b6a0b67dd",
+        "word": "quiet",
+        "transcription": "ˈkwaɪət",
+        "partOfSpeech": "adjective",
+        "description": "making little or no noise."
+      },
+      "89774e5d-5dbe-4203-89d8-2167bd5b46db": {
+        "id": "89774e5d-5dbe-4203-89d8-2167bd5b46db",
+        "word": "quietly",
+        "transcription": "ˈkwaɪətli",
+        "partOfSpeech": "adverb",
+        "description": "in a quiet manner."
+      },
+      "06fb40de-4dab-4ae3-b65e-901a830b4048": {
+        "id": "06fb40de-4dab-4ae3-b65e-901a830b4048",
+        "word": "quite",
+        "transcription": "kwaɪt",
+        "partOfSpeech": "adverb",
+        "description": "to the utmost or most absolute extent or degree; absolutely."
+      },
+      "b46ebf3b-33da-489a-81ec-7db6e5b88fd4": {
+        "id": "b46ebf3b-33da-489a-81ec-7db6e5b88fd4",
+        "word": "quote",
+        "transcription": "kwoʊt",
+        "partOfSpeech": "noun/verb",
+        "description": "to repeat or copy out (a group of words from a text or speech)."
+      }
+    }
+  }
+}

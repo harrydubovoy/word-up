@@ -1,0 +1,1048 @@
+{
+  "entities": {
+    "ids": [
+      "c9ac0501-6bc6-4db6-ad31-ab8e7b7544b8",
+      "51dd6e6e-1140-45b8-aa01-0851a4a07556",
+      "435e0f90-583a-467f-ad8f-4de70c6c586a",
+      "c582e48e-1703-4125-bed2-f00f623642be",
+      "1af789ab-ad45-466d-ac68-72757b8cbc41",
+      "ac06628a-e1a4-4045-a087-804ed94b0828",
+      "41533d57-4565-4583-8fc8-313fca012ac9",
+      "582f649e-fbe6-4193-b6d9-a8e4979774cf",
+      "e257f133-e9c3-477e-878f-88a16ce2513a",
+      "e16dc24c-dcf5-45ac-a0a0-489e5e9bed0f",
+      "e886be26-cd7b-4294-a88e-452dcc68669d",
+      "662958a8-4e26-4015-af21-409218f138ac",
+      "593b84ab-e72e-4783-9159-07b145ba150b",
+      "77913800-761f-4037-a5c2-d945a31826c1",
+      "9171ed29-e27b-44d1-9dda-0653987f01d3",
+      "59ec231b-3fbe-4ca5-93d0-2eda24cb00dc",
+      "229ef1ed-ff17-4201-b967-d7a3d6cb67b1",
+      "9022ff91-b7d3-4d1f-bffc-0b6e37c65081",
+      "8f856baa-1b4b-4f79-833c-e2aea5d5d82c",
+      "980a7deb-81a3-45af-8c01-d661ded3969e",
+      "910743ca-c064-4e41-962c-14d9eafbd849",
+      "44b13b3a-3539-4684-bf26-c59c68adb532",
+      "519d73d6-20c3-4c27-8df1-5f21066aefdd",
+      "1f5add64-4146-4d55-bd3a-1a548ecd4e8f",
+      "5e740f10-20a7-44a8-9283-dff369fd37c7",
+      "4d07cd5c-9c7b-432c-ac7d-19f7ce33f114",
+      "9f88853a-307f-4853-90ae-f0a0b9096275",
+      "dd384b63-6f90-4c96-961e-11f24c84e1a2",
+      "907e82fa-5be2-4603-9c9f-6e7f05f144b5",
+      "18514a5c-299b-4e2a-97f3-988358890acc",
+      "c4dd848d-e777-49ac-9698-7dc893f86987",
+      "72aa7d20-b9c0-49d6-8347-140e0b22017d",
+      "be635522-ae1f-40dc-90a8-83f135524dc3",
+      "535427d6-62ce-46b2-bae5-ad7d41f21fb9",
+      "86bc19ec-df5f-490d-854f-48ce56d283ae",
+      "8666d235-067d-42c1-95ea-dd1265807b4c",
+      "9e55e0b6-33ba-4855-a911-08b64f51a762",
+      "3fcb7563-96b5-48d5-adb2-11eb6dd9fac0",
+      "453cf411-47eb-4cfb-a4ae-4a7edd5fca1d",
+      "3ba654dc-12af-4e78-8cad-4e423de0339f",
+      "f0c3ccb7-f352-47f3-ac73-c5a8f27f9c2c",
+      "728d43bb-64a3-471f-9a59-63ffce59b2bc",
+      "b57552ba-c7ff-495e-b667-8a1f4e172f79",
+      "bd7362be-185a-4d28-95cc-5bdfceb313b5",
+      "d2d2d291-c3e0-4b37-8641-4468cbe2f6d5",
+      "c9197e9d-b3fb-4ca1-84c3-74b61c2fae3c",
+      "29c77539-c4ae-4e6b-ab59-79a38d7ed690",
+      "faccf388-778c-4cd5-a1b8-e86e4c1d003d",
+      "bc0a23aa-c7d8-4270-9399-d66f5a54f787",
+      "5516cfaf-48fe-4280-84b2-6e948234de73",
+      "a4fa24cd-5c6f-4e98-832f-69eb44e565d7",
+      "3ce561cb-c655-4caf-975f-5a8f601f06a9",
+      "4efad0c1-83d9-4834-aaba-10ec9e4ed721",
+      "fc3e2fbe-d9bb-4f5a-abce-739a2aca2fee",
+      "96a18f9f-852c-46c5-a419-b421e2bbdc88",
+      "d9e96d07-c407-486a-8c71-faea8be433d3",
+      "bbd4b9f3-e7df-4f3b-8c21-7065fa932746",
+      "499c1ea2-719b-427c-a965-979350e2c86b",
+      "7923a199-e675-4fd3-a950-7cfe4b7f2012",
+      "ba9dfd13-4d13-4a62-ba07-944e4db8872b",
+      "4331156d-9910-4e89-ad27-176de3c5428b",
+      "83b1e107-ce07-4289-92f6-b694d3402e1c",
+      "e744cea8-afcc-4269-a66a-5d508a32f0f9",
+      "6a4f6b8c-b1d8-4f81-9463-86252265cae5",
+      "f21f65cb-b8a7-44aa-a514-3a9d594cbb1a",
+      "b0701342-daa6-4802-af4c-fb66d32d9d72",
+      "dd73d175-7af7-49f4-9fe3-1ea853c5213e",
+      "a6edb38e-541c-4bc2-83a8-3030982289a8",
+      "9eeed49c-109f-4174-add9-49b971f60c1f",
+      "2395f644-7acf-4510-8b84-c00a67a0d883",
+      "204a0188-718a-4558-ae58-ebbae887bcca",
+      "4ebd0337-ecd1-4bd0-b7d0-f47eef517e66",
+      "8f8d63c7-a01d-4cfb-80c3-699053ff1b9f",
+      "53890278-9018-46a7-aaaa-83c3d2dcf450",
+      "d2f6b3c3-a3d4-4885-8253-5380ff263ea0",
+      "d6f2c7c4-11e2-417b-bf07-06b251c5a4b0",
+      "91d07558-06c5-41cd-b98b-12215218db61",
+      "f3ad2db4-9d99-46ef-afb5-a9dfb1096796",
+      "9f603f9a-affc-4e8b-aa41-4aed0baee2c6",
+      "b9884dc3-818e-4c70-9d09-7627b158dd30",
+      "85612b1e-9d0b-4a62-8739-5ddb5cc3b829",
+      "82ea531e-3ee5-40e9-b6fb-15116589b450",
+      "b63b93f2-f45d-4974-97f0-f3e47698dda8",
+      "a1880016-f61c-4da7-95c9-271a0cf1866c",
+      "40b3a3a1-6d74-4338-bf7c-0e352fa47728",
+      "7e80fc0d-c21b-4e51-84a8-249b20a5ff6b",
+      "ad164246-5c03-4b06-9ffb-675102fca5ba",
+      "8026b3c9-205f-4f92-a8eb-eb5fc7f58aa6",
+      "1e8d5dac-727b-41f4-b96b-5df1d2d4af54",
+      "ef88ddb7-862e-4a3e-8bb4-c37118dc9c4a",
+      "c7337f48-db51-42e0-b101-8d6efbe1d7e8",
+      "00c2cff3-7864-4d99-becc-96294dd155e4",
+      "0161ef21-42ff-4db7-813a-d3007645c7d6",
+      "a5e0eaf7-16d9-4039-ad0c-38e8d9cd36d1",
+      "6a685c4a-11dc-4655-90cf-e8213afd9df1",
+      "5653a363-c3a8-4275-bcc1-939053e2a657",
+      "29144e19-c2ec-4854-aebb-f88a6618f2bf",
+      "326557ab-076b-42af-b9bb-bfb14169ef49",
+      "4a853fb2-a933-46df-b735-93dd54b4afd8",
+      "8caa9553-c248-4eca-9955-268971c9b4ea",
+      "d361006c-7903-4e24-a1f6-135058d629cc",
+      "a8ae9157-bd1f-4673-921a-881e5e5307b5",
+      "b3554ad5-6b14-4e3d-b5b4-f933726f018f",
+      "baa5aca6-561d-491d-9b72-79d27af935f5",
+      "b6cba93b-b33e-46c1-87c4-d00042f4fcb2",
+      "07944fe1-c05f-4a42-ad52-c64a5c9662ae",
+      "9cf36681-ea54-4bac-92bc-e415ed417121",
+      "4c083b3f-b092-4c41-8852-e03ffc049b5f",
+      "cacdfb65-b700-4b0d-a21f-8c66709fba4f",
+      "a7db0206-72a8-47c6-9518-6a9081202d27",
+      "200cb9f8-0e44-44f0-8926-0560568ef465",
+      "9fa18311-f306-4b65-a2ef-c92369303865",
+      "5a8c431a-c1f8-4dc8-92ec-583cbb0e3417",
+      "6c16f1a9-859e-47b3-ad15-f6d3618a21d2",
+      "117eeff5-0c92-4ea7-a8ff-efbc25dd8e0b",
+      "7ef64703-1e2c-4429-a00c-15e48c1083db",
+      "eb7d5863-d906-40d8-9510-1a7331848999",
+      "13ea90bf-0dda-48af-8ffc-0f9a14ed2170",
+      "fea80c91-110c-4f1f-a588-743ec6ad21dd",
+      "f91fa9de-7804-4e7c-b85c-148097a8a4ca",
+      "5f2aefb2-639d-4c36-8b75-466ca24fb12a",
+      "f2660cfd-fe20-45b5-80bc-e5bd12540c17",
+      "4765a411-ec48-4f18-8694-d831593f4a41",
+      "5692186d-c038-41af-bd41-0ff2d787d610",
+      "1136ed94-ba73-4724-b846-05f67a3514ee",
+      "db5cd6d0-7b35-48b4-9b03-231e815ee902",
+      "738a61f0-3fd7-4b8f-9524-721da98f0cc8",
+      "439bbfb6-d652-4e62-ac60-f69ed270a557",
+      "11315454-7d1d-4a64-a337-041f7f933068",
+      "d2039d08-b390-4f39-917d-9c9a3f8a8db5"
+    ],
+    "byId": {
+      "c9ac0501-6bc6-4db6-ad31-ab8e7b7544b8": {
+        "id": "c9ac0501-6bc6-4db6-ad31-ab8e7b7544b8",
+        "word": "machine",
+        "transcription": "məˈʃiːn",
+        "partOfSpeech": "noun",
+        "description": "an apparatus using mechanical power and having several parts."
+      },
+      "51dd6e6e-1140-45b8-aa01-0851a4a07556": {
+        "id": "51dd6e6e-1140-45b8-aa01-0851a4a07556",
+        "word": "mad",
+        "transcription": "mæd",
+        "partOfSpeech": "adjective",
+        "description": "mentally ill; insane."
+      },
+      "435e0f90-583a-467f-ad8f-4de70c6c586a": {
+        "id": "435e0f90-583a-467f-ad8f-4de70c6c586a",
+        "word": "magazine",
+        "transcription": "ˈmæɡəziːn",
+        "partOfSpeech": "noun",
+        "description": "a periodical publication containing articles and illustrations."
+      },
+      "c582e48e-1703-4125-bed2-f00f623642be": {
+        "id": "c582e48e-1703-4125-bed2-f00f623642be",
+        "word": "magic",
+        "transcription": "ˈmædʒɪk",
+        "partOfSpeech": "noun",
+        "description": "the power of apparently influencing events by using mysterious or supernatural forces."
+      },
+      "1af789ab-ad45-466d-ac68-72757b8cbc41": {
+        "id": "1af789ab-ad45-466d-ac68-72757b8cbc41",
+        "word": "mail",
+        "transcription": "meɪl",
+        "partOfSpeech": "noun",
+        "description": "letters and parcels sent by post."
+      },
+      "ac06628a-e1a4-4045-a087-804ed94b0828": {
+        "id": "ac06628a-e1a4-4045-a087-804ed94b0828",
+        "word": "main",
+        "transcription": "meɪn",
+        "partOfSpeech": "adjective",
+        "description": "chief in size or importance."
+      },
+      "41533d57-4565-4583-8fc8-313fca012ac9": {
+        "id": "41533d57-4565-4583-8fc8-313fca012ac9",
+        "word": "mainly",
+        "transcription": "ˈmeɪnli",
+        "partOfSpeech": "adverb",
+        "description": "more than anything else."
+      },
+      "582f649e-fbe6-4193-b6d9-a8e4979774cf": {
+        "id": "582f649e-fbe6-4193-b6d9-a8e4979774cf",
+        "word": "maintain",
+        "transcription": "meɪnˈteɪn",
+        "partOfSpeech": "verb",
+        "description": "to keep in an existing state (as of repair, efficiency, or validity)."
+      },
+      "e257f133-e9c3-477e-878f-88a16ce2513a": {
+        "id": "e257f133-e9c3-477e-878f-88a16ce2513a",
+        "word": "maintenance",
+        "transcription": "ˈmeɪntənəns",
+        "partOfSpeech": "noun",
+        "description": "the process of preserving a condition or situation or the state of being preserved."
+      },
+      "e16dc24c-dcf5-45ac-a0a0-489e5e9bed0f": {
+        "id": "e16dc24c-dcf5-45ac-a0a0-489e5e9bed0f",
+        "word": "major",
+        "transcription": "ˈmeɪdʒər",
+        "partOfSpeech": "adjective",
+        "description": "important, serious, or significant."
+      },
+      "e886be26-cd7b-4294-a88e-452dcc68669d": {
+        "id": "e886be26-cd7b-4294-a88e-452dcc68669d",
+        "word": "majority",
+        "transcription": "məˈdʒɔːrəti",
+        "partOfSpeech": "noun",
+        "description": "the greater number."
+      },
+      "662958a8-4e26-4015-af21-409218f138ac": {
+        "id": "662958a8-4e26-4015-af21-409218f138ac",
+        "word": "make",
+        "transcription": "meɪk",
+        "partOfSpeech": "verb",
+        "description": "to form (something) by putting parts together or combining substances."
+      },
+      "593b84ab-e72e-4783-9159-07b145ba150b": {
+        "id": "593b84ab-e72e-4783-9159-07b145ba150b",
+        "word": "maker",
+        "transcription": "ˈmeɪkər",
+        "partOfSpeech": "noun",
+        "description": "a person or thing that makes or produces something."
+      },
+      "77913800-761f-4037-a5c2-d945a31826c1": {
+        "id": "77913800-761f-4037-a5c2-d945a31826c1",
+        "word": "male",
+        "transcription": "meɪl",
+        "partOfSpeech": "adjective/noun",
+        "description": "of or denoting the sex that produces small, typically motile gametes."
+      },
+      "9171ed29-e27b-44d1-9dda-0653987f01d3": {
+        "id": "9171ed29-e27b-44d1-9dda-0653987f01d3",
+        "word": "man",
+        "transcription": "mæn",
+        "partOfSpeech": "noun",
+        "description": "an adult human male."
+      },
+      "59ec231b-3fbe-4ca5-93d0-2eda24cb00dc": {
+        "id": "59ec231b-3fbe-4ca5-93d0-2eda24cb00dc",
+        "word": "manage",
+        "transcription": "ˈmænɪdʒ",
+        "partOfSpeech": "verb",
+        "description": "to be in charge of; administer; run."
+      },
+      "229ef1ed-ff17-4201-b967-d7a3d6cb67b1": {
+        "id": "229ef1ed-ff17-4201-b967-d7a3d6cb67b1",
+        "word": "management",
+        "transcription": "ˈmænɪdʒmənt",
+        "partOfSpeech": "noun",
+        "description": "the process of dealing with or controlling things or people."
+      },
+      "9022ff91-b7d3-4d1f-bffc-0b6e37c65081": {
+        "id": "9022ff91-b7d3-4d1f-bffc-0b6e37c65081",
+        "word": "manager",
+        "transcription": "ˈmænɪdʒər",
+        "partOfSpeech": "noun",
+        "description": "a person responsible for controlling or administering an organization or group of staff."
+      },
+      "8f856baa-1b4b-4f79-833c-e2aea5d5d82c": {
+        "id": "8f856baa-1b4b-4f79-833c-e2aea5d5d82c",
+        "word": "manner",
+        "transcription": "ˈmænər",
+        "partOfSpeech": "noun",
+        "description": "a way in which a thing is done or happens."
+      },
+      "980a7deb-81a3-45af-8c01-d661ded3969e": {
+        "id": "980a7deb-81a3-45af-8c01-d661ded3969e",
+        "word": "manufacture",
+        "transcription": "ˌmænjuˈfæktʃər",
+        "partOfSpeech": "verb",
+        "description": "to make (something) on a large scale using machinery."
+      },
+      "910743ca-c064-4e41-962c-14d9eafbd849": {
+        "id": "910743ca-c064-4e41-962c-14d9eafbd849",
+        "word": "manufacturer",
+        "transcription": "ˌmænjuˈfæktʃərər",
+        "partOfSpeech": "noun",
+        "description": "a person or company that makes goods for sale."
+      },
+      "44b13b3a-3539-4684-bf26-c59c68adb532": {
+        "id": "44b13b3a-3539-4684-bf26-c59c68adb532",
+        "word": "many",
+        "transcription": "ˈmeni",
+        "partOfSpeech": "determiner/pronoun",
+        "description": "a large number of."
+      },
+      "519d73d6-20c3-4c27-8df1-5f21066aefdd": {
+        "id": "519d73d6-20c3-4c27-8df1-5f21066aefdd",
+        "word": "map",
+        "transcription": "mæp",
+        "partOfSpeech": "noun",
+        "description": "a diagrammatic representation of an area of land or sea showing physical features, cities, roads, etc."
+      },
+      "1f5add64-4146-4d55-bd3a-1a548ecd4e8f": {
+        "id": "1f5add64-4146-4d55-bd3a-1a548ecd4e8f",
+        "word": "march",
+        "transcription": "mɑːrtʃ",
+        "partOfSpeech": "verb",
+        "description": "to walk in a military manner with a regular measured tread."
+      },
+      "5e740f10-20a7-44a8-9283-dff369fd37c7": {
+        "id": "5e740f10-20a7-44a8-9283-dff369fd37c7",
+        "word": "margin",
+        "transcription": "ˈmɑːrdʒɪn",
+        "partOfSpeech": "noun",
+        "description": "the edge or border of something."
+      },
+      "4d07cd5c-9c7b-432c-ac7d-19f7ce33f114": {
+        "id": "4d07cd5c-9c7b-432c-ac7d-19f7ce33f114",
+        "word": "mark",
+        "transcription": "mɑːrk",
+        "partOfSpeech": "noun/verb",
+        "description": "a small area on a surface having a different color from its surroundings; to make a visible impression or stain on."
+      },
+      "9f88853a-307f-4853-90ae-f0a0b9096275": {
+        "id": "9f88853a-307f-4853-90ae-f0a0b9096275",
+        "word": "market",
+        "transcription": "ˈmɑːrkɪt",
+        "partOfSpeech": "noun",
+        "description": "a regular gathering of people for the purchase and sale of provisions, livestock, and other commodities."
+      },
+      "dd384b63-6f90-4c96-961e-11f24c84e1a2": {
+        "id": "dd384b63-6f90-4c96-961e-11f24c84e1a2",
+        "word": "marriage",
+        "transcription": "ˈmærɪdʒ",
+        "partOfSpeech": "noun",
+        "description": "the legally or formally recognized union of two people as partners in a personal relationship."
+      },
+      "907e82fa-5be2-4603-9c9f-6e7f05f144b5": {
+        "id": "907e82fa-5be2-4603-9c9f-6e7f05f144b5",
+        "word": "marry",
+        "transcription": "ˈmæri",
+        "partOfSpeech": "verb",
+        "description": "to join in marriage."
+      },
+      "18514a5c-299b-4e2a-97f3-988358890acc": {
+        "id": "18514a5c-299b-4e2a-97f3-988358890acc",
+        "word": "mass",
+        "transcription": "mæs",
+        "partOfSpeech": "noun",
+        "description": "a large body of matter with no definite shape."
+      },
+      "c4dd848d-e777-49ac-9698-7dc893f86987": {
+        "id": "c4dd848d-e777-49ac-9698-7dc893f86987",
+        "word": "massive",
+        "transcription": "ˈmæsɪv",
+        "partOfSpeech": "adjective",
+        "description": "large and heavy or solid."
+      },
+      "72aa7d20-b9c0-49d6-8347-140e0b22017d": {
+        "id": "72aa7d20-b9c0-49d6-8347-140e0b22017d",
+        "word": "master",
+        "transcription": "ˈmæstər",
+        "partOfSpeech": "noun",
+        "description": "a person who has control or authority."
+      },
+      "be635522-ae1f-40dc-90a8-83f135524dc3": {
+        "id": "be635522-ae1f-40dc-90a8-83f135524dc3",
+        "word": "match",
+        "transcription": "mætʃ",
+        "partOfSpeech": "noun/verb",
+        "description": "a contest in which people or teams compete against each other; to correspond or cause to correspond."
+      },
+      "535427d6-62ce-46b2-bae5-ad7d41f21fb9": {
+        "id": "535427d6-62ce-46b2-bae5-ad7d41f21fb9",
+        "word": "mate",
+        "transcription": "meɪt",
+        "partOfSpeech": "noun",
+        "description": "a fellow member or companion."
+      },
+      "86bc19ec-df5f-490d-854f-48ce56d283ae": {
+        "id": "86bc19ec-df5f-490d-854f-48ce56d283ae",
+        "word": "material",
+        "transcription": "məˈtɪriəl",
+        "partOfSpeech": "noun",
+        "description": "the matter from which a thing is or can be made."
+      },
+      "8666d235-067d-42c1-95ea-dd1265807b4c": {
+        "id": "8666d235-067d-42c1-95ea-dd1265807b4c",
+        "word": "mathematics",
+        "transcription": "ˌmæθəˈmætɪks",
+        "partOfSpeech": "noun",
+        "description": "the abstract science of number, quantity, and space."
+      },
+      "9e55e0b6-33ba-4855-a911-08b64f51a762": {
+        "id": "9e55e0b6-33ba-4855-a911-08b64f51a762",
+        "word": "matter",
+        "transcription": "ˈmætər",
+        "partOfSpeech": "noun",
+        "description": "a subject or situation under consideration; physical substance in general."
+      },
+      "3fcb7563-96b5-48d5-adb2-11eb6dd9fac0": {
+        "id": "3fcb7563-96b5-48d5-adb2-11eb6dd9fac0",
+        "word": "mature",
+        "transcription": "məˈtʃʊr",
+        "partOfSpeech": "adjective",
+        "description": "fully developed physically; full-grown."
+      },
+      "453cf411-47eb-4cfb-a4ae-4a7edd5fca1d": {
+        "id": "453cf411-47eb-4cfb-a4ae-4a7edd5fca1d",
+        "word": "maximum",
+        "transcription": "ˈmæksɪməm",
+        "partOfSpeech": "noun/adjective",
+        "description": "the greatest amount, extent, or intensity possible."
+      },
+      "3ba654dc-12af-4e78-8cad-4e423de0339f": {
+        "id": "3ba654dc-12af-4e78-8cad-4e423de0339f",
+        "word": "may",
+        "transcription": "meɪ",
+        "partOfSpeech": "modal verb/noun",
+        "description": "expressing possibility; the fifth month of the year."
+      },
+      "f0c3ccb7-f352-47f3-ac73-c5a8f27f9c2c": {
+        "id": "f0c3ccb7-f352-47f3-ac73-c5a8f27f9c2c",
+        "word": "maybe",
+        "transcription": "ˈmeɪbi",
+        "partOfSpeech": "adverb",
+        "description": "perhaps; possibly."
+      },
+      "728d43bb-64a3-471f-9a59-63ffce59b2bc": {
+        "id": "728d43bb-64a3-471f-9a59-63ffce59b2bc",
+        "word": "mayor",
+        "transcription": "ˈmeɪər",
+        "partOfSpeech": "noun",
+        "description": "the elected head of a city, town, or other municipality."
+      },
+      "b57552ba-c7ff-495e-b667-8a1f4e172f79": {
+        "id": "b57552ba-c7ff-495e-b667-8a1f4e172f79",
+        "word": "meal",
+        "transcription": "miːl",
+        "partOfSpeech": "noun",
+        "description": "an occasion when food is eaten, or the food that is eaten on such an occasion."
+      },
+      "bd7362be-185a-4d28-95cc-5bdfceb313b5": {
+        "id": "bd7362be-185a-4d28-95cc-5bdfceb313b5",
+        "word": "mean",
+        "transcription": "miːn",
+        "partOfSpeech": "verb",
+        "description": "to convey or refer to (a particular thing); signify."
+      },
+      "d2d2d291-c3e0-4b37-8641-4468cbe2f6d5": {
+        "id": "d2d2d291-c3e0-4b37-8641-4468cbe2f6d5",
+        "word": "meanwhile",
+        "transcription": "ˈmiːnwaɪl",
+        "partOfSpeech": "adverb",
+        "description": "in the intervening period of time."
+      },
+      "c9197e9d-b3fb-4ca1-84c3-74b61c2fae3c": {
+        "id": "c9197e9d-b3fb-4ca1-84c3-74b61c2fae3c",
+        "word": "measure",
+        "transcription": "ˈmeʒər",
+        "partOfSpeech": "verb/noun",
+        "description": "ascertain the size, amount, or degree of something; a standard unit used to express the size, amount, or degree of something."
+      },
+      "29c77539-c4ae-4e6b-ab59-79a38d7ed690": {
+        "id": "29c77539-c4ae-4e6b-ab59-79a38d7ed690",
+        "word": "measurement",
+        "transcription": "ˈmeʒərmənt",
+        "partOfSpeech": "noun",
+        "description": "the action of measuring something."
+      },
+      "faccf388-778c-4cd5-a1b8-e86e4c1d003d": {
+        "id": "faccf388-778c-4cd5-a1b8-e86e4c1d003d",
+        "word": "meat",
+        "transcription": "miːt",
+        "partOfSpeech": "noun",
+        "description": "the flesh of an animal (especially a mammal) as food."
+      },
+      "bc0a23aa-c7d8-4270-9399-d66f5a54f787": {
+        "id": "bc0a23aa-c7d8-4270-9399-d66f5a54f787",
+        "word": "mechanism",
+        "transcription": "ˈmekənɪzəm",
+        "partOfSpeech": "noun",
+        "description": "a system of parts working together in a machine; a piece of machinery."
+      },
+      "5516cfaf-48fe-4280-84b2-6e948234de73": {
+        "id": "5516cfaf-48fe-4280-84b2-6e948234de73",
+        "word": "medical",
+        "transcription": "ˈmedɪkl",
+        "partOfSpeech": "adjective",
+        "description": "relating to the science or practice of medicine."
+      },
+      "a4fa24cd-5c6f-4e98-832f-69eb44e565d7": {
+        "id": "a4fa24cd-5c6f-4e98-832f-69eb44e565d7",
+        "word": "medicine",
+        "transcription": "ˈmedɪsn",
+        "partOfSpeech": "noun",
+        "description": "the science or practice of the diagnosis, treatment, and prevention of disease."
+      },
+      "3ce561cb-c655-4caf-975f-5a8f601f06a9": {
+        "id": "3ce561cb-c655-4caf-975f-5a8f601f06a9",
+        "word": "medium",
+        "transcription": "ˈmiːdiəm",
+        "partOfSpeech": "noun/adjective",
+        "description": "an agency or means of doing something; about halfway between two extremes."
+      },
+      "4efad0c1-83d9-4834-aaba-10ec9e4ed721": {
+        "id": "4efad0c1-83d9-4834-aaba-10ec9e4ed721",
+        "word": "meet",
+        "transcription": "miːt",
+        "partOfSpeech": "verb",
+        "description": "to come into the presence or company of someone by chance or arrangement."
+      },
+      "fc3e2fbe-d9bb-4f5a-abce-739a2aca2fee": {
+        "id": "fc3e2fbe-d9bb-4f5a-abce-739a2aca2fee",
+        "word": "member",
+        "transcription": "ˈmembər",
+        "partOfSpeech": "noun",
+        "description": "a person, animal, or plant belonging to a particular group."
+      },
+      "96a18f9f-852c-46c5-a419-b421e2bbdc88": {
+        "id": "96a18f9f-852c-46c5-a419-b421e2bbdc88",
+        "word": "membership",
+        "transcription": "ˈmembərʃɪp",
+        "partOfSpeech": "noun",
+        "description": "the fact of being a member of a group."
+      },
+      "d9e96d07-c407-486a-8c71-faea8be433d3": {
+        "id": "d9e96d07-c407-486a-8c71-faea8be433d3",
+        "word": "memory",
+        "transcription": "ˈmeməri",
+        "partOfSpeech": "noun",
+        "description": "the faculty by which the mind stores and remembers information."
+      },
+      "bbd4b9f3-e7df-4f3b-8c21-7065fa932746": {
+        "id": "bbd4b9f3-e7df-4f3b-8c21-7065fa932746",
+        "word": "mental",
+        "transcription": "ˈmentl",
+        "partOfSpeech": "adjective",
+        "description": "relating to the mind."
+      },
+      "499c1ea2-719b-427c-a965-979350e2c86b": {
+        "id": "499c1ea2-719b-427c-a965-979350e2c86b",
+        "word": "mention",
+        "transcription": "ˈmenʃn",
+        "partOfSpeech": "verb",
+        "description": "to refer to something briefly and without going into detail."
+      },
+      "7923a199-e675-4fd3-a950-7cfe4b7f2012": {
+        "id": "7923a199-e675-4fd3-a950-7cfe4b7f2012",
+        "word": "menu",
+        "transcription": "ˈmenjuː",
+        "partOfSpeech": "noun",
+        "description": "a list of dishes available in a restaurant."
+      },
+      "ba9dfd13-4d13-4a62-ba07-944e4db8872b": {
+        "id": "ba9dfd13-4d13-4a62-ba07-944e4db8872b",
+        "word": "mere",
+        "transcription": "mɪr",
+        "partOfSpeech": "adjective",
+        "description": "that is solely or no more or better than what is specified."
+      },
+      "4331156d-9910-4e89-ad27-176de3c5428b": {
+        "id": "4331156d-9910-4e89-ad27-176de3c5428b",
+        "word": "merely",
+        "transcription": "ˈmɪrli",
+        "partOfSpeech": "adverb",
+        "description": "just; only."
+      },
+      "83b1e107-ce07-4289-92f6-b694d3402e1c": {
+        "id": "83b1e107-ce07-4289-92f6-b694d3402e1c",
+        "word": "mess",
+        "transcription": "mes",
+        "partOfSpeech": "noun",
+        "description": "a dirty or untidy state of things or of a place."
+      },
+      "e744cea8-afcc-4269-a66a-5d508a32f0f9": {
+        "id": "e744cea8-afcc-4269-a66a-5d508a32f0f9",
+        "word": "message",
+        "transcription": "ˈmesɪdʒ",
+        "partOfSpeech": "noun",
+        "description": "a verbal, written, or recorded communication sent to or left for a recipient."
+      },
+      "6a4f6b8c-b1d8-4f81-9463-86252265cae5": {
+        "id": "6a4f6b8c-b1d8-4f81-9463-86252265cae5",
+        "word": "metal",
+        "transcription": "ˈmetl",
+        "partOfSpeech": "noun",
+        "description": "a solid material that is typically hard, shiny, malleable, fusible, and ductile."
+      },
+      "f21f65cb-b8a7-44aa-a514-3a9d594cbb1a": {
+        "id": "f21f65cb-b8a7-44aa-a514-3a9d594cbb1a",
+        "word": "meter",
+        "transcription": "ˈmiːtər",
+        "partOfSpeech": "noun",
+        "description": "the fundamental unit of length in the metric system; a device that measures and records the quantity of something."
+      },
+      "b0701342-daa6-4802-af4c-fb66d32d9d72": {
+        "id": "b0701342-daa6-4802-af4c-fb66d32d9d72",
+        "word": "method",
+        "transcription": "ˈmeθəd",
+        "partOfSpeech": "noun",
+        "description": "a particular form of procedure for accomplishing or approaching something."
+      },
+      "dd73d175-7af7-49f4-9fe3-1ea853c5213e": {
+        "id": "dd73d175-7af7-49f4-9fe3-1ea853c5213e",
+        "word": "middle",
+        "transcription": "ˈmɪdl",
+        "partOfSpeech": "noun/adjective",
+        "description": "the point or position at an equal distance from the sides, edges, or ends."
+      },
+      "a6edb38e-541c-4bc2-83a8-3030982289a8": {
+        "id": "a6edb38e-541c-4bc2-83a8-3030982289a8",
+        "word": "might",
+        "transcription": "maɪt",
+        "partOfSpeech": "modal verb/noun",
+        "description": "used to express possibility; great and impressive power or strength."
+      },
+      "9eeed49c-109f-4174-add9-49b971f60c1f": {
+        "id": "9eeed49c-109f-4174-add9-49b971f60c1f",
+        "word": "mile",
+        "transcription": "maɪl",
+        "partOfSpeech": "noun",
+        "description": "a unit of linear measure equal to 5,280 feet, or 1,760 yards."
+      },
+      "2395f644-7acf-4510-8b84-c00a67a0d883": {
+        "id": "2395f644-7acf-4510-8b84-c00a67a0d883",
+        "word": "military",
+        "transcription": "ˈmɪləteri",
+        "partOfSpeech": "adjective/noun",
+        "description": "relating to or characteristic of soldiers or armed forces."
+      },
+      "204a0188-718a-4558-ae58-ebbae887bcca": {
+        "id": "204a0188-718a-4558-ae58-ebbae887bcca",
+        "word": "milk",
+        "transcription": "mɪlk",
+        "partOfSpeech": "noun",
+        "description": "an opaque white fluid rich in fat and protein, secreted by female mammals for the nourishment of their young."
+      },
+      "4ebd0337-ecd1-4bd0-b7d0-f47eef517e66": {
+        "id": "4ebd0337-ecd1-4bd0-b7d0-f47eef517e66",
+        "word": "mind",
+        "transcription": "maɪnd",
+        "partOfSpeech": "noun",
+        "description": "the element of a person that enables them to be aware of the world and their experiences."
+      },
+      "8f8d63c7-a01d-4cfb-80c3-699053ff1b9f": {
+        "id": "8f8d63c7-a01d-4cfb-80c3-699053ff1b9f",
+        "word": "mine",
+        "transcription": "maɪn",
+        "partOfSpeech": "pronoun/noun",
+        "description": "belonging to or associated with the speaker; an excavation in the earth for extracting coal or other minerals."
+      },
+      "53890278-9018-46a7-aaaa-83c3d2dcf450": {
+        "id": "53890278-9018-46a7-aaaa-83c3d2dcf450",
+        "word": "minimum",
+        "transcription": "ˈmɪnɪməm",
+        "partOfSpeech": "noun/adjective",
+        "description": "the least or smallest amount or quantity possible, attainable, or required."
+      },
+      "d2f6b3c3-a3d4-4885-8253-5380ff263ea0": {
+        "id": "d2f6b3c3-a3d4-4885-8253-5380ff263ea0",
+        "word": "minister",
+        "transcription": "ˈmɪnɪstər",
+        "partOfSpeech": "noun",
+        "description": "the head of a government department."
+      },
+      "d6f2c7c4-11e2-417b-bf07-06b251c5a4b0": {
+        "id": "d6f2c7c4-11e2-417b-bf07-06b251c5a4b0",
+        "word": "minor",
+        "transcription": "ˈmaɪnər",
+        "partOfSpeech": "adjective/noun",
+        "description": "lesser in importance, seriousness, or significance; a person under the age of full legal responsibility."
+      },
+      "91d07558-06c5-41cd-b98b-12215218db61": {
+        "id": "91d07558-06c5-41cd-b98b-12215218db61",
+        "word": "minority",
+        "transcription": "maɪˈnɔːrəti",
+        "partOfSpeech": "noun",
+        "description": "the smaller number or part, especially a number less than half the whole."
+      },
+      "f3ad2db4-9d99-46ef-afb5-a9dfb1096796": {
+        "id": "f3ad2db4-9d99-46ef-afb5-a9dfb1096796",
+        "word": "minute",
+        "transcription": "ˈmɪnɪt",
+        "partOfSpeech": "noun",
+        "description": "a period of time equal to sixty seconds or a sixtieth of an hour."
+      },
+      "9f603f9a-affc-4e8b-aa41-4aed0baee2c6": {
+        "id": "9f603f9a-affc-4e8b-aa41-4aed0baee2c6",
+        "word": "mirror",
+        "transcription": "ˈmɪrər",
+        "partOfSpeech": "noun",
+        "description": "a reflective surface, now typically of glass coated with a metal amalgam, that reflects a clear image."
+      },
+      "b9884dc3-818e-4c70-9d09-7627b158dd30": {
+        "id": "b9884dc3-818e-4c70-9d09-7627b158dd30",
+        "word": "miss",
+        "transcription": "mɪs",
+        "partOfSpeech": "verb",
+        "description": "to fail to hit, reach, or come into contact with something; to notice the loss or absence of."
+      },
+      "85612b1e-9d0b-4a62-8739-5ddb5cc3b829": {
+        "id": "85612b1e-9d0b-4a62-8739-5ddb5cc3b829",
+        "word": "mission",
+        "transcription": "ˈmɪʃn",
+        "partOfSpeech": "noun",
+        "description": "an important assignment carried out for political, religious, or commercial purposes."
+      },
+      "82ea531e-3ee5-40e9-b6fb-15116589b450": {
+        "id": "82ea531e-3ee5-40e9-b6fb-15116589b450",
+        "word": "mistake",
+        "transcription": "mɪˈsteɪk",
+        "partOfSpeech": "noun",
+        "description": "an action or judgment that is misguided or wrong."
+      },
+      "b63b93f2-f45d-4974-97f0-f3e47698dda8": {
+        "id": "b63b93f2-f45d-4974-97f0-f3e47698dda8",
+        "word": "mix",
+        "transcription": "mɪks",
+        "partOfSpeech": "verb",
+        "description": "to combine or put together to form one substance or mass."
+      },
+      "a1880016-f61c-4da7-95c9-271a0cf1866c": {
+        "id": "a1880016-f61c-4da7-95c9-271a0cf1866c",
+        "word": "mixture",
+        "transcription": "ˈmɪkstʃər",
+        "partOfSpeech": "noun",
+        "description": "a substance made by mixing other substances together."
+      },
+      "40b3a3a1-6d74-4338-bf7c-0e352fa47728": {
+        "id": "40b3a3a1-6d74-4338-bf7c-0e352fa47728",
+        "word": "mobile",
+        "transcription": "ˈmoʊbl",
+        "partOfSpeech": "adjective",
+        "description": "able to move or be moved freely or easily."
+      },
+      "7e80fc0d-c21b-4e51-84a8-249b20a5ff6b": {
+        "id": "7e80fc0d-c21b-4e51-84a8-249b20a5ff6b",
+        "word": "mode",
+        "transcription": "moʊd",
+        "partOfSpeech": "noun",
+        "description": "a way or manner in which something occurs or is experienced, expressed, or done."
+      },
+      "ad164246-5c03-4b06-9ffb-675102fca5ba": {
+        "id": "ad164246-5c03-4b06-9ffb-675102fca5ba",
+        "word": "model",
+        "transcription": "ˈmɑːdl",
+        "partOfSpeech": "noun",
+        "description": "a three-dimensional representation of a person or thing or of a proposed structure."
+      },
+      "8026b3c9-205f-4f92-a8eb-eb5fc7f58aa6": {
+        "id": "8026b3c9-205f-4f92-a8eb-eb5fc7f58aa6",
+        "word": "moderate",
+        "transcription": "ˈmɑːdərət",
+        "partOfSpeech": "adjective",
+        "description": "average in amount, intensity, quality, or degree."
+      },
+      "1e8d5dac-727b-41f4-b96b-5df1d2d4af54": {
+        "id": "1e8d5dac-727b-41f4-b96b-5df1d2d4af54",
+        "word": "modern",
+        "transcription": "ˈmɑːdərn",
+        "partOfSpeech": "adjective",
+        "description": "relating to the present or recent times as opposed to the remote past."
+      },
+      "ef88ddb7-862e-4a3e-8bb4-c37118dc9c4a": {
+        "id": "ef88ddb7-862e-4a3e-8bb4-c37118dc9c4a",
+        "word": "modify",
+        "transcription": "ˈmɑːdɪfaɪ",
+        "partOfSpeech": "verb",
+        "description": "to make partial or minor changes to something."
+      },
+      "c7337f48-db51-42e0-b101-8d6efbe1d7e8": {
+        "id": "c7337f48-db51-42e0-b101-8d6efbe1d7e8",
+        "word": "module",
+        "transcription": "ˈmɑːdʒuːl",
+        "partOfSpeech": "noun",
+        "description": "each of a set of standardized parts or independent units that can be used to construct a more complex structure."
+      },
+      "00c2cff3-7864-4d99-becc-96294dd155e4": {
+        "id": "00c2cff3-7864-4d99-becc-96294dd155e4",
+        "word": "mom",
+        "transcription": "mɑːm",
+        "partOfSpeech": "noun",
+        "description": "mother (chiefly North American informal)."
+      },
+      "0161ef21-42ff-4db7-813a-d3007645c7d6": {
+        "id": "0161ef21-42ff-4db7-813a-d3007645c7d6",
+        "word": "moment",
+        "transcription": "ˈmoʊmənt",
+        "partOfSpeech": "noun",
+        "description": "a very brief period of time."
+      },
+      "a5e0eaf7-16d9-4039-ad0c-38e8d9cd36d1": {
+        "id": "a5e0eaf7-16d9-4039-ad0c-38e8d9cd36d1",
+        "word": "money",
+        "transcription": "ˈmʌni",
+        "partOfSpeech": "noun",
+        "description": "a current medium of exchange in the form of coins and banknotes."
+      },
+      "6a685c4a-11dc-4655-90cf-e8213afd9df1": {
+        "id": "6a685c4a-11dc-4655-90cf-e8213afd9df1",
+        "word": "monitor",
+        "transcription": "ˈmɑːnɪtər",
+        "partOfSpeech": "noun/verb",
+        "description": "a device used for observing, checking, or keeping a continuous record of something."
+      },
+      "5653a363-c3a8-4275-bcc1-939053e2a657": {
+        "id": "5653a363-c3a8-4275-bcc1-939053e2a657",
+        "word": "month",
+        "transcription": "mʌnθ",
+        "partOfSpeech": "noun",
+        "description": "each of the twelve named periods into which a year is divided."
+      },
+      "29144e19-c2ec-4854-aebb-f88a6618f2bf": {
+        "id": "29144e19-c2ec-4854-aebb-f88a6618f2bf",
+        "word": "monthly",
+        "transcription": "ˈmʌnθli",
+        "partOfSpeech": "adjective/adverb",
+        "description": "occurring once a month."
+      },
+      "326557ab-076b-42af-b9bb-bfb14169ef49": {
+        "id": "326557ab-076b-42af-b9bb-bfb14169ef49",
+        "word": "mood",
+        "transcription": "muːd",
+        "partOfSpeech": "noun",
+        "description": "a temporary state of mind or feeling."
+      },
+      "4a853fb2-a933-46df-b735-93dd54b4afd8": {
+        "id": "4a853fb2-a933-46df-b735-93dd54b4afd8",
+        "word": "moon",
+        "transcription": "muːn",
+        "partOfSpeech": "noun",
+        "description": "the natural satellite of the earth, visible (chiefly at night) by reflected light from the sun."
+      },
+      "8caa9553-c248-4eca-9955-268971c9b4ea": {
+        "id": "8caa9553-c248-4eca-9955-268971c9b4ea",
+        "word": "moral",
+        "transcription": "ˈmɔːrəl",
+        "partOfSpeech": "adjective",
+        "description": "concerned with the principles of right and wrong behavior."
+      },
+      "d361006c-7903-4e24-a1f6-135058d629cc": {
+        "id": "d361006c-7903-4e24-a1f6-135058d629cc",
+        "word": "more",
+        "transcription": "mɔːr",
+        "partOfSpeech": "determiner/pronoun/adverb",
+        "description": "a greater or additional amount or degree."
+      },
+      "a8ae9157-bd1f-4673-921a-881e5e5307b5": {
+        "id": "a8ae9157-bd1f-4673-921a-881e5e5307b5",
+        "word": "moreover",
+        "transcription": "mɔːrˈoʊvər",
+        "partOfSpeech": "adverb",
+        "description": "besides; in addition to what was just stated."
+      },
+      "b3554ad5-6b14-4e3d-b5b4-f933726f018f": {
+        "id": "b3554ad5-6b14-4e3d-b5b4-f933726f018f",
+        "word": "morning",
+        "transcription": "ˈmɔːrnɪŋ",
+        "partOfSpeech": "noun",
+        "description": "the period of time between midnight and noon, especially from sunrise to noon."
+      },
+      "baa5aca6-561d-491d-9b72-79d27af935f5": {
+        "id": "baa5aca6-561d-491d-9b72-79d27af935f5",
+        "word": "mortgage",
+        "transcription": "ˈmɔːrɡɪdʒ",
+        "partOfSpeech": "noun",
+        "description": "a legal agreement by which a bank lends money in exchange for taking title of the debtor's property."
+      },
+      "b6cba93b-b33e-46c1-87c4-d00042f4fcb2": {
+        "id": "b6cba93b-b33e-46c1-87c4-d00042f4fcb2",
+        "word": "most",
+        "transcription": "moʊst",
+        "partOfSpeech": "determiner/pronoun/adverb",
+        "description": "greatest in amount or degree."
+      },
+      "07944fe1-c05f-4a42-ad52-c64a5c9662ae": {
+        "id": "07944fe1-c05f-4a42-ad52-c64a5c9662ae",
+        "word": "mostly",
+        "transcription": "ˈmoʊstli",
+        "partOfSpeech": "adverb",
+        "description": "as regards the greater part or number."
+      },
+      "9cf36681-ea54-4bac-92bc-e415ed417121": {
+        "id": "9cf36681-ea54-4bac-92bc-e415ed417121",
+        "word": "mother",
+        "transcription": "ˈmʌðər",
+        "partOfSpeech": "noun",
+        "description": "a woman in relation to her child or children."
+      },
+      "4c083b3f-b092-4c41-8852-e03ffc049b5f": {
+        "id": "4c083b3f-b092-4c41-8852-e03ffc049b5f",
+        "word": "motion",
+        "transcription": "ˈmoʊʃn",
+        "partOfSpeech": "noun",
+        "description": "the action or process of moving or being moved."
+      },
+      "cacdfb65-b700-4b0d-a21f-8c66709fba4f": {
+        "id": "cacdfb65-b700-4b0d-a21f-8c66709fba4f",
+        "word": "motivate",
+        "transcription": "ˈmoʊtɪveɪt",
+        "partOfSpeech": "verb",
+        "description": "to provide with a reason for doing something."
+      },
+      "a7db0206-72a8-47c6-9518-6a9081202d27": {
+        "id": "a7db0206-72a8-47c6-9518-6a9081202d27",
+        "word": "motivation",
+        "transcription": "ˌmoʊtɪˈveɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the reason or reasons one has for acting or behaving in a particular way."
+      },
+      "200cb9f8-0e44-44f0-8926-0560568ef465": {
+        "id": "200cb9f8-0e44-44f0-8926-0560568ef465",
+        "word": "motor",
+        "transcription": "ˈmoʊtər",
+        "partOfSpeech": "noun",
+        "description": "a machine, especially one powered by electricity or internal combustion, that supplies motive power for a vehicle or for another device."
+      },
+      "9fa18311-f306-4b65-a2ef-c92369303865": {
+        "id": "9fa18311-f306-4b65-a2ef-c92369303865",
+        "word": "mount",
+        "transcription": "maʊnt",
+        "partOfSpeech": "verb",
+        "description": "to climb up (stairs, a hill, or other rising surface); to fix (something) in place."
+      },
+      "5a8c431a-c1f8-4dc8-92ec-583cbb0e3417": {
+        "id": "5a8c431a-c1f8-4dc8-92ec-583cbb0e3417",
+        "word": "mountain",
+        "transcription": "ˈmaʊntn",
+        "partOfSpeech": "noun",
+        "description": "a large natural elevation of the earth's surface rising abruptly from the surrounding level."
+      },
+      "6c16f1a9-859e-47b3-ad15-f6d3618a21d2": {
+        "id": "6c16f1a9-859e-47b3-ad15-f6d3618a21d2",
+        "word": "mouse",
+        "transcription": "maʊs",
+        "partOfSpeech": "noun",
+        "description": "a small rodent that typically has a pointed snout, relatively large ears and eyes, and a long tail."
+      },
+      "117eeff5-0c92-4ea7-a8ff-efbc25dd8e0b": {
+        "id": "117eeff5-0c92-4ea7-a8ff-efbc25dd8e0b",
+        "word": "mouth",
+        "transcription": "maʊθ",
+        "partOfSpeech": "noun",
+        "description": "the opening and cavity in the lower part of the human face, surrounded by the lips, through which food is taken in and from which speech and other sounds are emitted."
+      },
+      "7ef64703-1e2c-4429-a00c-15e48c1083db": {
+        "id": "7ef64703-1e2c-4429-a00c-15e48c1083db",
+        "word": "move",
+        "transcription": "muːv",
+        "partOfSpeech": "verb",
+        "description": "to change position or go from one place to another."
+      },
+      "eb7d5863-d906-40d8-9510-1a7331848999": {
+        "id": "eb7d5863-d906-40d8-9510-1a7331848999",
+        "word": "movement",
+        "transcription": "ˈmuːvmənt",
+        "partOfSpeech": "noun",
+        "description": "an act of changing physical location or position."
+      },
+      "13ea90bf-0dda-48af-8ffc-0f9a14ed2170": {
+        "id": "13ea90bf-0dda-48af-8ffc-0f9a14ed2170",
+        "word": "movie",
+        "transcription": "ˈmuːvi",
+        "partOfSpeech": "noun",
+        "description": "a story or event recorded by a camera as a set of moving images and shown in a theater or on television."
+      },
+      "fea80c91-110c-4f1f-a588-743ec6ad21dd": {
+        "id": "fea80c91-110c-4f1f-a588-743ec6ad21dd",
+        "word": "much",
+        "transcription": "mʌtʃ",
+        "partOfSpeech": "determiner/pronoun/adverb",
+        "description": "a large amount."
+      },
+      "f91fa9de-7804-4e7c-b85c-148097a8a4ca": {
+        "id": "f91fa9de-7804-4e7c-b85c-148097a8a4ca",
+        "word": "multiple",
+        "transcription": "ˈmʌltɪpl",
+        "partOfSpeech": "adjective",
+        "description": "having or involving several parts, elements, or members."
+      },
+      "5f2aefb2-639d-4c36-8b75-466ca24fb12a": {
+        "id": "5f2aefb2-639d-4c36-8b75-466ca24fb12a",
+        "word": "murder",
+        "transcription": "ˈmɜːrdər",
+        "partOfSpeech": "noun/verb",
+        "description": "the unlawful premeditated killing of one human being by another."
+      },
+      "f2660cfd-fe20-45b5-80bc-e5bd12540c17": {
+        "id": "f2660cfd-fe20-45b5-80bc-e5bd12540c17",
+        "word": "muscle",
+        "transcription": "ˈmʌsl",
+        "partOfSpeech": "noun",
+        "description": "a band or bundle of fibrous tissue that has the ability to contract, producing movement."
+      },
+      "4765a411-ec48-4f18-8694-d831593f4a41": {
+        "id": "4765a411-ec48-4f18-8694-d831593f4a41",
+        "word": "museum",
+        "transcription": "mjuˈziːəm",
+        "partOfSpeech": "noun",
+        "description": "a building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited."
+      },
+      "5692186d-c038-41af-bd41-0ff2d787d610": {
+        "id": "5692186d-c038-41af-bd41-0ff2d787d610",
+        "word": "music",
+        "transcription": "ˈmjuːzɪk",
+        "partOfSpeech": "noun",
+        "description": "vocal or instrumental sounds (or both) combined to produce beauty of form, harmony, and expression of emotion."
+      },
+      "1136ed94-ba73-4724-b846-05f67a3514ee": {
+        "id": "1136ed94-ba73-4724-b846-05f67a3514ee",
+        "word": "musical",
+        "transcription": "ˈmjuːzɪkl",
+        "partOfSpeech": "adjective",
+        "description": "relating to music; skilled at or fond of music."
+      },
+      "db5cd6d0-7b35-48b4-9b03-231e815ee902": {
+        "id": "db5cd6d0-7b35-48b4-9b03-231e815ee902",
+        "word": "musician",
+        "transcription": "mjuˈzɪʃn",
+        "partOfSpeech": "noun",
+        "description": "a person who plays a musical instrument, especially as a profession."
+      },
+      "738a61f0-3fd7-4b8f-9524-721da98f0cc8": {
+        "id": "738a61f0-3fd7-4b8f-9524-721da98f0cc8",
+        "word": "must",
+        "transcription": "mʌst",
+        "partOfSpeech": "modal verb",
+        "description": "used to express necessity or obligation."
+      },
+      "439bbfb6-d652-4e62-ac60-f69ed270a557": {
+        "id": "439bbfb6-d652-4e62-ac60-f69ed270a557",
+        "word": "mutual",
+        "transcription": "ˈmjuːtʃuəl",
+        "partOfSpeech": "adjective",
+        "description": "experienced or done by each of two or more parties toward the other or others."
+      },
+      "11315454-7d1d-4a64-a337-041f7f933068": {
+        "id": "11315454-7d1d-4a64-a337-041f7f933068",
+        "word": "myself",
+        "transcription": "maɪˈself",
+        "partOfSpeech": "pronoun",
+        "description": "used by a speaker to refer to himself or herself as the object of a verb or preposition when he or she is the subject of the clause."
+      },
+      "d2039d08-b390-4f39-917d-9c9a3f8a8db5": {
+        "id": "d2039d08-b390-4f39-917d-9c9a3f8a8db5",
+        "word": "mystery",
+        "transcription": "ˈmɪstəri",
+        "partOfSpeech": "noun",
+        "description": "something that is difficult or impossible to understand or explain."
+      }
+    }
+  }
+}

@@ -1,0 +1,1360 @@
+{
+  "entities": {
+    "ids": [
+      "19e32846-7f5a-4c2f-82ed-9678512f6f2a",
+      "9e7d4d0c-6f8f-4ede-9466-254aef32128a",
+      "7fb338ca-ff2b-4c5f-a199-cc0d38d96200",
+      "d52d38ca-12c6-4575-8608-ea6020906169",
+      "3a782fb4-a885-4bb8-b10b-39e184a80f74",
+      "3fc3bd84-8d08-4cbd-a68c-04858a780690",
+      "d1b76960-8427-46d7-b16b-65913cd27566",
+      "96b4dcc5-fcd1-43fa-b425-b37c3bccde5e",
+      "07a6e935-ee8e-42ea-b5c8-4a6960952756",
+      "22a12439-0068-43b5-bdc2-0d2b0ba39da0",
+      "632877b2-d166-4207-9583-2059964c3d69",
+      "162db0d7-c5e5-483b-b606-66a772c005bc",
+      "3a3f2bc7-561d-4d77-862b-4d5e4143c8ff",
+      "c1b02427-5da4-4e9d-aef7-90650e67d852",
+      "b16ecdb7-a8ac-4602-b5a1-51e847d2714a",
+      "f9114eca-bb0c-456a-b356-e04b9a5e049f",
+      "185700f3-085d-48d9-aa9c-e15d18d76613",
+      "88b43ecd-6384-4a8f-b551-97116cd28b01",
+      "b9c16d59-f53e-4c56-aa3a-479f5e0fb61a",
+      "e216fc0b-8eeb-474f-bc3b-416cdefd8c00",
+      "c1da252f-0099-4827-ad42-ed3123f74659",
+      "dd3b7924-406c-4158-a6eb-bc51872f816b",
+      "270e0456-b480-40f3-b406-6c52eb60eeec",
+      "d69872de-8577-4ea0-9ffb-feb9246d3de8",
+      "f4a6187b-6935-40fa-99a9-e296958d47d5",
+      "616f7bc3-18af-4c64-9062-d34d01c36c8d",
+      "80129572-1c48-4827-add7-c6461baaf966",
+      "ec0698cc-7c7b-4421-9013-13a4780cfa7c",
+      "e814a6b8-5ba7-49e0-8b03-3cadb178ffa1",
+      "3c768f8c-7e85-4767-b8be-4c09e5247d60",
+      "632e949a-ecaa-4909-8c6b-dea913a885d0",
+      "993327c1-aa1d-4d43-8e41-185f3250e4cb",
+      "ada9ff5c-3d9d-4066-bc83-158a4a11fc68",
+      "82faa2df-3755-4104-b6d5-b9d5fdbc5e5f",
+      "fe6d114c-76b3-4157-bc48-3347fd92924a",
+      "f95f3825-fe04-40bc-b747-310c78cc976c",
+      "4da087de-6cac-412a-87e6-c600e29cb8de",
+      "5a0b9334-a0d2-4084-bc3b-3b4749a5c6f7",
+      "63abeafa-09a3-443e-8681-7367398779b0",
+      "8a4a0c32-c630-4194-9b63-18f94f4a3194",
+      "27bbb194-2c0f-4997-9ca4-f5bb16f2ac55",
+      "7be2b03d-7675-4419-9d1b-cd3ae9d0a9fe",
+      "5ba66292-e334-47aa-b2c8-81a75555fbd0",
+      "4e1a4dd6-f777-414e-a5c7-9e1d71a8ae8c",
+      "1c0fd5f7-5b49-4232-816b-73e73dda5871",
+      "b5301e2e-f0e1-40c1-be47-1ccf5a8be8c9",
+      "555ce337-670e-447d-acfb-19dbf1bf8869",
+      "f6bfa319-e375-45cb-bee1-87ab53ef116c",
+      "74eb1a79-6c41-4a4f-90fe-16f940d67caa",
+      "ec7a8d06-e27e-449c-b8c4-97af120e185d",
+      "5273875c-3595-4329-b6ae-7b200ed45e1d",
+      "1c78d00e-48b5-49dc-8ef8-d66d489816a4",
+      "aa4ea38e-9eca-43fa-ab59-476e8f0f72d0",
+      "01d6f9c4-5f00-4bc1-8921-c7ca612c534d",
+      "21672507-c793-4a82-8f58-f3119e958402",
+      "d97011a3-3519-4e37-8de8-28d52534ac5a",
+      "6604b17b-6def-427d-8e85-0dd69530cceb",
+      "8f10ac3f-85d9-4ba6-b174-08efc305fec8",
+      "a0b7962f-e93f-450f-ae7d-417a27f718a9",
+      "861e3737-7ab5-44db-80b0-e52a51b8bc2b",
+      "04a93937-242a-46a7-aeef-7301d41a4e8e",
+      "8db0a857-0527-41a9-a294-841d8933213c",
+      "cf8de81d-18b8-48f4-9055-a542cf1c3ea4",
+      "546c127a-cf18-40f5-8620-e20dcd80879a",
+      "d8ac4701-d459-4f3b-af32-4b30d8d6dc75",
+      "4fd86eb9-e5a9-49ba-9c41-30d81c8811c0",
+      "56520198-636a-42a8-b6ce-c1e3f38d8716",
+      "a9175ec7-d338-4527-b18e-54ab5c2d9ad3",
+      "66a84251-40ed-4614-b1d6-00507094896a",
+      "97ee9aac-dfe0-4125-86bc-4d29c567a0b2",
+      "a6b8cd3e-797a-4060-9fbd-f50ae3e21b77",
+      "6304cbcf-a194-491e-b217-7cf3e37415de",
+      "c4299a1b-ae71-40c6-9bb4-1d3030c965e7",
+      "48154589-3af9-47d5-960a-1f95659f4d46",
+      "de884bfe-7502-46fd-9850-f95f4d4f9239",
+      "cada6608-be50-41bf-8f42-94e4064abd6b",
+      "f18c0c52-0b55-4bde-aae8-389129193b31",
+      "d8af9fa3-fea6-4e1f-8263-739ed899aa7a",
+      "a7a0d9f3-12da-462d-b2a8-fbdc338a6ee1",
+      "567e76c1-4337-4f69-87f4-a1806344d6d2",
+      "be0ef2db-10e5-45b9-88a1-529c1e9346f4",
+      "634d4569-357b-476e-b540-8a2b3950e871",
+      "0c9fd753-55af-488b-aaef-203bdccf511d",
+      "09accc04-d52a-447b-889e-eda603e81034",
+      "b7d38beb-4c5e-44b8-8cdf-0c048dda5c78",
+      "a4bebbf6-2a83-414c-8b42-833ac0bab0ee",
+      "0c859142-84c6-4544-94c5-4ad72a75307b",
+      "1ae2afbf-bbcf-4da5-b993-615ad35afbbe",
+      "1d06b390-cc60-4127-a405-06437ea5a421",
+      "f18154fc-a627-48df-b483-943afe19c3ed",
+      "fe5fcf30-623a-4496-92e6-98dbe7131ebe",
+      "c8171cce-74d4-4ef5-95e3-8200c704bdfb",
+      "66fa6fdd-8c79-422d-82dd-5fce145aa46d",
+      "931a7a5e-c712-41a0-a9be-6d5c4634319e",
+      "a0aa9219-848d-4d70-bf1d-ee2c9336fef1",
+      "ebf54f4b-a36d-4d25-8949-e2c0483da527",
+      "cf8cf73a-4072-417d-927d-686d8036b4a5",
+      "90dd9561-a890-4732-8396-770a5f4f1405",
+      "2fec8a67-778a-4a18-9520-5612306d7065",
+      "53f471d4-21a9-47be-8c36-07bbcb601e60",
+      "ef2ccceb-c23f-4247-a6d0-354210d44de8",
+      "16b22ca8-f511-4e50-89d6-1eb3e7557e46",
+      "7db5084e-5b8c-48b0-95c4-486dafd87df3",
+      "629f68a4-b9cd-43f6-b441-531ee0dab6be",
+      "7aa3949b-bb18-49e4-abc3-e26e7a9b9f8b",
+      "2c26d58e-fbcd-47b8-912d-c42d870fb22c",
+      "17a8eb29-9ffc-4fd5-9d18-856e913accc8",
+      "bc45db53-3739-40a0-b27f-121af3d2cc34",
+      "7d894d7d-8032-4641-b7cb-969fc609e050",
+      "7217af89-c828-4147-9525-6ad53d6382b0",
+      "fd521934-c359-4314-b444-570100204762",
+      "9e70a398-d07c-420e-884d-033d1d01af4e",
+      "473ae0eb-fda2-4c40-a41e-e8dd63781539",
+      "d3474c96-3461-4075-8982-835458527ba7",
+      "6b6db2fa-9404-4194-ac56-f1d0fd64ede8",
+      "13ff2632-5a1f-4ef3-a416-90ad480e0fd7",
+      "851bc5ae-b288-411a-86b9-568ac5813fc5",
+      "2c13f7cf-311d-4f70-ace1-129be07d25c4",
+      "a4527b04-1b45-480c-8c03-4af994bcc853",
+      "c8f5edf7-bce3-4a27-bef0-d4797dee9141",
+      "e2fc3384-dd0c-4bd7-9007-c00b4775c1cf",
+      "8ebfec6a-967a-46a8-89c7-7e9d83bb2bd5",
+      "2e8384a5-5f54-44d3-b458-d09d872b2180",
+      "ffc27a3d-0b47-4388-a270-065f1fd514a2",
+      "65ac91c9-e321-4bda-abbc-28ae809632f3",
+      "4d889607-a548-46cd-a029-5d2bd3e5dbdb",
+      "2bbd74ac-f6ce-4d35-b85d-e13e95d7b343",
+      "82a184c6-c8c0-48ab-887f-f05c4f775dd9",
+      "89af8077-974a-45c9-9342-58a9eab6a485",
+      "b1a3fd45-e6be-4b5f-89d4-e045ddd9ec94",
+      "6ad97703-77a4-4784-bb90-739bfcbdb401",
+      "760df142-c9d4-4d6f-acaa-b31492845ad6",
+      "147c6093-6a9e-4881-8613-11b5ceb8c13e",
+      "07a7f871-1cec-470c-b9b4-508c41b08934",
+      "7ae6b98b-468f-47f6-b0a0-7e1cd8eff361",
+      "f0e0af2e-9846-45cb-8cfb-536216f99712",
+      "72aea66d-35ce-4bcb-81b7-019e807f8b76",
+      "168c66e0-0e13-4ecd-afa3-7622a32ef9c7",
+      "cae4cfd6-fd05-468f-87aa-4362143c2d41",
+      "3c81d4d6-0b46-4e2d-bb5f-a9e77ceb8573",
+      "d3661aaa-ad01-4a02-83f9-6cc7fda8e4f8",
+      "cc08a57a-5ee1-44b7-bcdd-4e5ee74716e1",
+      "e1f51b0b-590f-4616-aeaf-fb0dfc3674f7",
+      "f64a73be-d0b9-4fb5-8510-1cf7d2a76ac0",
+      "67c6ce5c-b1f6-46fc-a4f2-3363680ae724",
+      "fcdd008e-9f31-4d7e-9490-513b0448fbdc",
+      "2820a2d3-90e2-488b-9d5a-e5d24b938c49",
+      "45187f5c-040e-43a1-bebf-a01ca832f259",
+      "54ac5214-37df-4574-8e1e-f4b4682deb21",
+      "840048fb-7daa-44f2-b313-7011d5e2f3ab",
+      "78ffd321-bbba-4b68-bf27-8b76fe792442",
+      "8fc45a50-c988-4004-9983-50083e1cb146",
+      "306eb84b-2e3c-4acf-9cbd-1c3c20c6c0fc",
+      "ebdd5e2a-eca0-4c60-b0dc-dff3832cfcbe",
+      "d0f270da-2c66-4897-89e2-46c194e5d987",
+      "b8ab6d7e-dc00-4ff1-bbed-714dbde9ff16",
+      "35dd8009-64bc-4d47-bb95-dd20537ec91d",
+      "3ec638d7-7c88-4e5d-80b9-312bc6883a5d",
+      "92145bc0-e9d1-4eaa-98aa-de72e0380ac3",
+      "365d793d-2596-4f76-b627-95370841f6ca",
+      "e355c55f-d7dd-4aeb-9fc5-b151a9d0fbb2",
+      "b62a3f3e-7e85-4c58-89a7-11d733c10662",
+      "f37d5fb9-9b66-483d-8201-cea8ba9f5e40",
+      "3d73b1f3-5805-4ac7-9a0b-c943ca9713e7",
+      "1186e6f4-9f74-4a1d-971f-86e877bef21d",
+      "1692dd9a-51b6-4faa-a93d-e06f20fcbb1c",
+      "03541c4b-cf03-4ee8-9b4a-5e05180b220d",
+      "b1e58c87-7380-449a-b83f-0b29c8a6692d",
+      "a3e10153-399a-4296-93c5-25b6c735d1bb"
+    ],
+    "byId": {
+      "19e32846-7f5a-4c2f-82ed-9678512f6f2a": {
+        "id": "19e32846-7f5a-4c2f-82ed-9678512f6f2a",
+        "word": "race",
+        "transcription": "reɪs",
+        "partOfSpeech": "noun",
+        "description": "each of the major divisions of humankind; a competition between runners, horses, vehicles, etc."
+      },
+      "9e7d4d0c-6f8f-4ede-9466-254aef32128a": {
+        "id": "9e7d4d0c-6f8f-4ede-9466-254aef32128a",
+        "word": "racial",
+        "transcription": "ˈreɪʃl",
+        "partOfSpeech": "adjective",
+        "description": "relating to race."
+      },
+      "7fb338ca-ff2b-4c5f-a199-cc0d38d96200": {
+        "id": "7fb338ca-ff2b-4c5f-a199-cc0d38d96200",
+        "word": "radical",
+        "transcription": "ˈrædɪkl",
+        "partOfSpeech": "adjective",
+        "description": "relating to or affecting the fundamental nature of something; far-reaching or thorough."
+      },
+      "d52d38ca-12c6-4575-8608-ea6020906169": {
+        "id": "d52d38ca-12c6-4575-8608-ea6020906169",
+        "word": "radio",
+        "transcription": "ˈreɪdiəʊ",
+        "partOfSpeech": "noun",
+        "description": "the transmission and reception of electromagnetic waves of radio frequency."
+      },
+      "3a782fb4-a885-4bb8-b10b-39e184a80f74": {
+        "id": "3a782fb4-a885-4bb8-b10b-39e184a80f74",
+        "word": "rail",
+        "transcription": "reɪl",
+        "partOfSpeech": "noun",
+        "description": "a bar or series of bars, typically fixed on upright supports, serving as part of a fence or barrier or used to hang things on."
+      },
+      "3fc3bd84-8d08-4cbd-a68c-04858a780690": {
+        "id": "3fc3bd84-8d08-4cbd-a68c-04858a780690",
+        "word": "rain",
+        "transcription": "reɪn",
+        "partOfSpeech": "noun/verb",
+        "description": "moisture condensed from the atmosphere that falls visibly in separate drops."
+      },
+      "d1b76960-8427-46d7-b16b-65913cd27566": {
+        "id": "d1b76960-8427-46d7-b16b-65913cd27566",
+        "word": "raise",
+        "transcription": "reɪz",
+        "partOfSpeech": "verb",
+        "description": "to lift or move to a higher position or level."
+      },
+      "96b4dcc5-fcd1-43fa-b425-b37c3bccde5e": {
+        "id": "96b4dcc5-fcd1-43fa-b425-b37c3bccde5e",
+        "word": "random",
+        "transcription": "ˈrændəm",
+        "partOfSpeech": "adjective",
+        "description": "made, done, or happening without method or conscious decision."
+      },
+      "07a6e935-ee8e-42ea-b5c8-4a6960952756": {
+        "id": "07a6e935-ee8e-42ea-b5c8-4a6960952756",
+        "word": "range",
+        "transcription": "reɪndʒ",
+        "partOfSpeech": "noun/verb",
+        "description": "the area of variation between upper and lower limits on a particular scale."
+      },
+      "22a12439-0068-43b5-bdc2-0d2b0ba39da0": {
+        "id": "22a12439-0068-43b5-bdc2-0d2b0ba39da0",
+        "word": "rank",
+        "transcription": "ræŋk",
+        "partOfSpeech": "noun",
+        "description": "a position in the hierarchy of the armed forces."
+      },
+      "632877b2-d166-4207-9583-2059964c3d69": {
+        "id": "632877b2-d166-4207-9583-2059964c3d69",
+        "word": "rapid",
+        "transcription": "ˈræpɪd",
+        "partOfSpeech": "adjective",
+        "description": "happening in a short time or at a fast pace."
+      },
+      "162db0d7-c5e5-483b-b606-66a772c005bc": {
+        "id": "162db0d7-c5e5-483b-b606-66a772c005bc",
+        "word": "rapidly",
+        "transcription": "ˈræpɪdli",
+        "partOfSpeech": "adverb",
+        "description": "very quickly; at a great rate."
+      },
+      "3a3f2bc7-561d-4d77-862b-4d5e4143c8ff": {
+        "id": "3a3f2bc7-561d-4d77-862b-4d5e4143c8ff",
+        "word": "rare",
+        "transcription": "rer",
+        "partOfSpeech": "adjective",
+        "description": "uncommon; infrequent."
+      },
+      "c1b02427-5da4-4e9d-aef7-90650e67d852": {
+        "id": "c1b02427-5da4-4e9d-aef7-90650e67d852",
+        "word": "rarely",
+        "transcription": "ˈrerli",
+        "partOfSpeech": "adverb",
+        "description": "not often; seldom."
+      },
+      "b16ecdb7-a8ac-4602-b5a1-51e847d2714a": {
+        "id": "b16ecdb7-a8ac-4602-b5a1-51e847d2714a",
+        "word": "rat",
+        "transcription": "ræt",
+        "partOfSpeech": "noun",
+        "description": "a rodent that resembles a large mouse."
+      },
+      "f9114eca-bb0c-456a-b356-e04b9a5e049f": {
+        "id": "f9114eca-bb0c-456a-b356-e04b9a5e049f",
+        "word": "rate",
+        "transcription": "reɪt",
+        "partOfSpeech": "noun",
+        "description": "a measure, quantity, or frequency, typically one measured against another quantity or measure."
+      },
+      "185700f3-085d-48d9-aa9c-e15d18d76613": {
+        "id": "185700f3-085d-48d9-aa9c-e15d18d76613",
+        "word": "rather",
+        "transcription": "ˈræðər",
+        "partOfSpeech": "adverb",
+        "description": "used to indicate one's preference in a particular matter."
+      },
+      "88b43ecd-6384-4a8f-b551-97116cd28b01": {
+        "id": "88b43ecd-6384-4a8f-b551-97116cd28b01",
+        "word": "ratio",
+        "transcription": "ˈreɪʃioʊ",
+        "partOfSpeech": "noun",
+        "description": "the quantitative relation between two amounts."
+      },
+      "b9c16d59-f53e-4c56-aa3a-479f5e0fb61a": {
+        "id": "b9c16d59-f53e-4c56-aa3a-479f5e0fb61a",
+        "word": "raw",
+        "transcription": "rɔː",
+        "partOfSpeech": "adjective",
+        "description": "uncooked (especially of food)."
+      },
+      "e216fc0b-8eeb-474f-bc3b-416cdefd8c00": {
+        "id": "e216fc0b-8eeb-474f-bc3b-416cdefd8c00",
+        "word": "reach",
+        "transcription": "riːtʃ",
+        "partOfSpeech": "verb",
+        "description": "stretch out an arm in a specified direction in order to touch or grasp something."
+      },
+      "c1da252f-0099-4827-ad42-ed3123f74659": {
+        "id": "c1da252f-0099-4827-ad42-ed3123f74659",
+        "word": "react",
+        "transcription": "riˈækt",
+        "partOfSpeech": "verb",
+        "description": "to respond or behave in a particular way in response to something."
+      },
+      "dd3b7924-406c-4158-a6eb-bc51872f816b": {
+        "id": "dd3b7924-406c-4158-a6eb-bc51872f816b",
+        "word": "reaction",
+        "transcription": "riˈækʃn",
+        "partOfSpeech": "noun",
+        "description": "an action performed or a feeling experienced in response to a situation or event."
+      },
+      "270e0456-b480-40f3-b406-6c52eb60eeec": {
+        "id": "270e0456-b480-40f3-b406-6c52eb60eeec",
+        "word": "read",
+        "transcription": "riːd",
+        "partOfSpeech": "verb",
+        "description": "to look at and comprehend the meaning of written or printed matter."
+      },
+      "d69872de-8577-4ea0-9ffb-feb9246d3de8": {
+        "id": "d69872de-8577-4ea0-9ffb-feb9246d3de8",
+        "word": "reader",
+        "transcription": "ˈriːdər",
+        "partOfSpeech": "noun",
+        "description": "a person who reads or who is fond of reading."
+      },
+      "f4a6187b-6935-40fa-99a9-e296958d47d5": {
+        "id": "f4a6187b-6935-40fa-99a9-e296958d47d5",
+        "word": "ready",
+        "transcription": "ˈredi",
+        "partOfSpeech": "adjective",
+        "description": "in a suitable state for an action or situation; fully prepared."
+      },
+      "616f7bc3-18af-4c64-9062-d34d01c36c8d": {
+        "id": "616f7bc3-18af-4c64-9062-d34d01c36c8d",
+        "word": "real",
+        "transcription": "riːəl",
+        "partOfSpeech": "adjective",
+        "description": "actually existing as a thing or occurring in fact."
+      },
+      "80129572-1c48-4827-add7-c6461baaf966": {
+        "id": "80129572-1c48-4827-add7-c6461baaf966",
+        "word": "reality",
+        "transcription": "riˈæləti",
+        "partOfSpeech": "noun",
+        "description": "the world or the state of things as they actually exist."
+      },
+      "ec0698cc-7c7b-4421-9013-13a4780cfa7c": {
+        "id": "ec0698cc-7c7b-4421-9013-13a4780cfa7c",
+        "word": "realize",
+        "transcription": "ˈriːəlaɪz",
+        "partOfSpeech": "verb",
+        "description": "to become fully aware of something as a fact."
+      },
+      "e814a6b8-5ba7-49e0-8b03-3cadb178ffa1": {
+        "id": "e814a6b8-5ba7-49e0-8b03-3cadb178ffa1",
+        "word": "really",
+        "transcription": "ˈriːəli",
+        "partOfSpeech": "adverb",
+        "description": "in actual fact, as opposed to what is said or imagined to be true."
+      },
+      "3c768f8c-7e85-4767-b8be-4c09e5247d60": {
+        "id": "3c768f8c-7e85-4767-b8be-4c09e5247d60",
+        "word": "rear",
+        "transcription": "rɪr",
+        "partOfSpeech": "noun/adjective",
+        "description": "the back part of something, especially a building or vehicle."
+      },
+      "632e949a-ecaa-4909-8c6b-dea913a885d0": {
+        "id": "632e949a-ecaa-4909-8c6b-dea913a885d0",
+        "word": "reason",
+        "transcription": "ˈriːzn",
+        "partOfSpeech": "noun",
+        "description": "a cause, explanation, or justification for an action or event."
+      },
+      "993327c1-aa1d-4d43-8e41-185f3250e4cb": {
+        "id": "993327c1-aa1d-4d43-8e41-185f3250e4cb",
+        "word": "reasonable",
+        "transcription": "ˈriːznəbl",
+        "partOfSpeech": "adjective",
+        "description": "having sound judgment; fair and sensible."
+      },
+      "ada9ff5c-3d9d-4066-bc83-158a4a11fc68": {
+        "id": "ada9ff5c-3d9d-4066-bc83-158a4a11fc68",
+        "word": "reasonably",
+        "transcription": "ˈriːznəbli",
+        "partOfSpeech": "adverb",
+        "description": "in a fair and sensible way."
+      },
+      "82faa2df-3755-4104-b6d5-b9d5fdbc5e5f": {
+        "id": "82faa2df-3755-4104-b6d5-b9d5fdbc5e5f",
+        "word": "recall",
+        "transcription": "rɪˈkɔːl",
+        "partOfSpeech": "verb",
+        "description": "to remember something from the past."
+      },
+      "fe6d114c-76b3-4157-bc48-3347fd92924a": {
+        "id": "fe6d114c-76b3-4157-bc48-3347fd92924a",
+        "word": "receive",
+        "transcription": "rɪˈsiːv",
+        "partOfSpeech": "verb",
+        "description": "to be given, presented with, or paid (something)."
+      },
+      "f95f3825-fe04-40bc-b747-310c78cc976c": {
+        "id": "f95f3825-fe04-40bc-b747-310c78cc976c",
+        "word": "recent",
+        "transcription": "ˈriːsnt",
+        "partOfSpeech": "adjective",
+        "description": "having happened or started only a short time ago."
+      },
+      "4da087de-6cac-412a-87e6-c600e29cb8de": {
+        "id": "4da087de-6cac-412a-87e6-c600e29cb8de",
+        "word": "recently",
+        "transcription": "ˈriːsntli",
+        "partOfSpeech": "adverb",
+        "description": "at a recent time; not long ago."
+      },
+      "5a0b9334-a0d2-4084-bc3b-3b4749a5c6f7": {
+        "id": "5a0b9334-a0d2-4084-bc3b-3b4749a5c6f7",
+        "word": "reckon",
+        "transcription": "ˈrekən",
+        "partOfSpeech": "verb",
+        "description": "to think or believe."
+      },
+      "63abeafa-09a3-443e-8681-7367398779b0": {
+        "id": "63abeafa-09a3-443e-8681-7367398779b0",
+        "word": "recognition",
+        "transcription": "ˌrekəɡˈnɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the action or process of recognizing or being recognized."
+      },
+      "8a4a0c32-c630-4194-9b63-18f94f4a3194": {
+        "id": "8a4a0c32-c630-4194-9b63-18f94f4a3194",
+        "word": "recognize",
+        "transcription": "ˈrekəɡnaɪz",
+        "partOfSpeech": "verb",
+        "description": "to identify someone or something seen before."
+      },
+      "27bbb194-2c0f-4997-9ca4-f5bb16f2ac55": {
+        "id": "27bbb194-2c0f-4997-9ca4-f5bb16f2ac55",
+        "word": "recommend",
+        "transcription": "ˌrekəˈmend",
+        "partOfSpeech": "verb",
+        "description": "to suggest that someone or something would be good or suitable for a particular job or purpose."
+      },
+      "7be2b03d-7675-4419-9d1b-cd3ae9d0a9fe": {
+        "id": "7be2b03d-7675-4419-9d1b-cd3ae9d0a9fe",
+        "word": "recommendation",
+        "transcription": "ˌrekəmenˈdeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "an official suggestion about the best thing to do."
+      },
+      "5ba66292-e334-47aa-b2c8-81a75555fbd0": {
+        "id": "5ba66292-e334-47aa-b2c8-81a75555fbd0",
+        "word": "record",
+        "transcription": "ˈrekɔːrd",
+        "partOfSpeech": "noun/verb",
+        "description": "a piece of evidence about the past; to set down in writing or some other permanent form."
+      },
+      "4e1a4dd6-f777-414e-a5c7-9e1d71a8ae8c": {
+        "id": "4e1a4dd6-f777-414e-a5c7-9e1d71a8ae8c",
+        "word": "recover",
+        "transcription": "rɪˈkʌvər",
+        "partOfSpeech": "verb",
+        "description": "to return to a normal state of health, mind, or strength."
+      },
+      "1c0fd5f7-5b49-4232-816b-73e73dda5871": {
+        "id": "1c0fd5f7-5b49-4232-816b-73e73dda5871",
+        "word": "recovery",
+        "transcription": "rɪˈkʌvəri",
+        "partOfSpeech": "noun",
+        "description": "a return to a normal state of health, mind, or strength."
+      },
+      "b5301e2e-f0e1-40c1-be47-1ccf5a8be8c9": {
+        "id": "b5301e2e-f0e1-40c1-be47-1ccf5a8be8c9",
+        "word": "recruit",
+        "transcription": "rɪˈkruːt",
+        "partOfSpeech": "verb/noun",
+        "description": "to enlist new people in the armed forces or a company; a person newly enlisted."
+      },
+      "555ce337-670e-447d-acfb-19dbf1bf8869": {
+        "id": "555ce337-670e-447d-acfb-19dbf1bf8869",
+        "word": "red",
+        "transcription": "red",
+        "partOfSpeech": "adjective",
+        "description": "of the color at the end of the spectrum next to orange and opposite violet."
+      },
+      "f6bfa319-e375-45cb-bee1-87ab53ef116c": {
+        "id": "f6bfa319-e375-45cb-bee1-87ab53ef116c",
+        "word": "reduce",
+        "transcription": "rɪˈduːs",
+        "partOfSpeech": "verb",
+        "description": "to make smaller or less in amount, degree, or size."
+      },
+      "74eb1a79-6c41-4a4f-90fe-16f940d67caa": {
+        "id": "74eb1a79-6c41-4a4f-90fe-16f940d67caa",
+        "word": "reduction",
+        "transcription": "rɪˈdʌkʃn",
+        "partOfSpeech": "noun",
+        "description": "the action or fact of making something smaller or less in amount, degree, or size."
+      },
+      "ec7a8d06-e27e-449c-b8c4-97af120e185d": {
+        "id": "ec7a8d06-e27e-449c-b8c4-97af120e185d",
+        "word": "refer",
+        "transcription": "rɪˈfɜːr",
+        "partOfSpeech": "verb",
+        "description": "to mention or allude to."
+      },
+      "5273875c-3595-4329-b6ae-7b200ed45e1d": {
+        "id": "5273875c-3595-4329-b6ae-7b200ed45e1d",
+        "word": "reference",
+        "transcription": "ˈrefrəns",
+        "partOfSpeech": "noun",
+        "description": "the action of mentioning or alluding to something."
+      },
+      "1c78d00e-48b5-49dc-8ef8-d66d489816a4": {
+        "id": "1c78d00e-48b5-49dc-8ef8-d66d489816a4",
+        "word": "reflect",
+        "transcription": "rɪˈflekt",
+        "partOfSpeech": "verb",
+        "description": "to throw back (heat, light, or sound) without absorbing it."
+      },
+      "aa4ea38e-9eca-43fa-ab59-476e8f0f72d0": {
+        "id": "aa4ea38e-9eca-43fa-ab59-476e8f0f72d0",
+        "word": "reflection",
+        "transcription": "rɪˈflekʃn",
+        "partOfSpeech": "noun",
+        "description": "the throwing back by a body or surface of light, heat, or sound without absorbing it; serious thought or consideration."
+      },
+      "01d6f9c4-5f00-4bc1-8921-c7ca612c534d": {
+        "id": "01d6f9c4-5f00-4bc1-8921-c7ca612c534d",
+        "word": "reform",
+        "transcription": "rɪˈfɔːrm",
+        "partOfSpeech": "noun/verb",
+        "description": "the action or process of reforming an institution or practice."
+      },
+      "21672507-c793-4a82-8f58-f3119e958402": {
+        "id": "21672507-c793-4a82-8f58-f3119e958402",
+        "word": "refugee",
+        "transcription": "ˌrefjuˈdʒiː",
+        "partOfSpeech": "noun",
+        "description": "a person who has been forced to leave their country in order to escape war, persecution, or natural disaster."
+      },
+      "d97011a3-3519-4e37-8de8-28d52534ac5a": {
+        "id": "d97011a3-3519-4e37-8de8-28d52534ac5a",
+        "word": "refuse",
+        "transcription": "rɪˈfjuːz",
+        "partOfSpeech": "verb",
+        "description": "to indicate or show that one is not willing to do something."
+      },
+      "6604b17b-6def-427d-8e85-0dd69530cceb": {
+        "id": "6604b17b-6def-427d-8e85-0dd69530cceb",
+        "word": "regard",
+        "transcription": "rɪˈɡɑːrd",
+        "partOfSpeech": "verb/noun",
+        "description": "to consider or think of in a specified way; attention to or concern for something."
+      },
+      "8f10ac3f-85d9-4ba6-b174-08efc305fec8": {
+        "id": "8f10ac3f-85d9-4ba6-b174-08efc305fec8",
+        "word": "regardless",
+        "transcription": "rɪˈɡɑːrdləs",
+        "partOfSpeech": "adverb",
+        "description": "without paying attention to the current situation."
+      },
+      "a0b7962f-e93f-450f-ae7d-417a27f718a9": {
+        "id": "a0b7962f-e93f-450f-ae7d-417a27f718a9",
+        "word": "region",
+        "transcription": "ˈriːdʒən",
+        "partOfSpeech": "noun",
+        "description": "an area, especially part of a country or the world having definable characteristics."
+      },
+      "861e3737-7ab5-44db-80b0-e52a51b8bc2b": {
+        "id": "861e3737-7ab5-44db-80b0-e52a51b8bc2b",
+        "word": "regional",
+        "transcription": "ˈriːdʒənl",
+        "partOfSpeech": "adjective",
+        "description": "relating to or characteristic of a region."
+      },
+      "04a93937-242a-46a7-aeef-7301d41a4e8e": {
+        "id": "04a93937-242a-46a7-aeef-7301d41a4e8e",
+        "word": "register",
+        "transcription": "ˈredʒɪstər",
+        "partOfSpeech": "verb/noun",
+        "description": "to enter or record on an official list or directory."
+      },
+      "8db0a857-0527-41a9-a294-841d8933213c": {
+        "id": "8db0a857-0527-41a9-a294-841d8933213c",
+        "word": "registration",
+        "transcription": "ˌredʒɪˈstreɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the action or process of registering or of being registered."
+      },
+      "cf8de81d-18b8-48f4-9055-a542cf1c3ea4": {
+        "id": "cf8de81d-18b8-48f4-9055-a542cf1c3ea4",
+        "word": "regret",
+        "transcription": "rɪˈɡret",
+        "partOfSpeech": "verb/noun",
+        "description": "to feel sad, repentant, or disappointed over something that has happened or been done."
+      },
+      "546c127a-cf18-40f5-8620-e20dcd80879a": {
+        "id": "546c127a-cf18-40f5-8620-e20dcd80879a",
+        "word": "regular",
+        "transcription": "ˈreɡjələr",
+        "partOfSpeech": "adjective",
+        "description": "done or happening frequently."
+      },
+      "d8ac4701-d459-4f3b-af32-4b30d8d6dc75": {
+        "id": "d8ac4701-d459-4f3b-af32-4b30d8d6dc75",
+        "word": "regularly",
+        "transcription": "ˈreɡjələrli",
+        "partOfSpeech": "adverb",
+        "description": "at uniform intervals of time."
+      },
+      "4fd86eb9-e5a9-49ba-9c41-30d81c8811c0": {
+        "id": "4fd86eb9-e5a9-49ba-9c41-30d81c8811c0",
+        "word": "regulate",
+        "transcription": "ˈreɡjuleɪt",
+        "partOfSpeech": "verb",
+        "description": "to control or maintain the rate or speed of (a machine or process) so that it operates properly."
+      },
+      "56520198-636a-42a8-b6ce-c1e3f38d8716": {
+        "id": "56520198-636a-42a8-b6ce-c1e3f38d8716",
+        "word": "regulation",
+        "transcription": "ˌreɡjuˈleɪʃn",
+        "partOfSpeech": "noun",
+        "description": "a rule or directive made and maintained by an authority."
+      },
+      "a9175ec7-d338-4527-b18e-54ab5c2d9ad3": {
+        "id": "a9175ec7-d338-4527-b18e-54ab5c2d9ad3",
+        "word": "reject",
+        "transcription": "rɪˈdʒekt",
+        "partOfSpeech": "verb",
+        "description": "to refuse to accept, believe in, or agree with something."
+      },
+      "66a84251-40ed-4614-b1d6-00507094896a": {
+        "id": "66a84251-40ed-4614-b1d6-00507094896a",
+        "word": "relate",
+        "transcription": "rɪˈleɪt",
+        "partOfSpeech": "verb",
+        "description": "to show or make a connection between two or more things."
+      },
+      "97ee9aac-dfe0-4125-86bc-4d29c567a0b2": {
+        "id": "97ee9aac-dfe0-4125-86bc-4d29c567a0b2",
+        "word": "relation",
+        "transcription": "rɪˈleɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the way in which two or more concepts, objects, or people are connected."
+      },
+      "a6b8cd3e-797a-4060-9fbd-f50ae3e21b77": {
+        "id": "a6b8cd3e-797a-4060-9fbd-f50ae3e21b77",
+        "word": "relationship",
+        "transcription": "rɪˈleɪʃnʃɪp",
+        "partOfSpeech": "noun",
+        "description": "the way in which two or more people or things are connected."
+      },
+      "6304cbcf-a194-491e-b217-7cf3e37415de": {
+        "id": "6304cbcf-a194-491e-b217-7cf3e37415de",
+        "word": "relative",
+        "transcription": "ˈrelətɪv",
+        "partOfSpeech": "noun/adjective",
+        "description": "a person connected by blood or marriage; considered in relation to something else."
+      },
+      "c4299a1b-ae71-40c6-9bb4-1d3030c965e7": {
+        "id": "c4299a1b-ae71-40c6-9bb4-1d3030c965e7",
+        "word": "relatively",
+        "transcription": "ˈrelətɪvli",
+        "partOfSpeech": "adverb",
+        "description": "in comparison with something else."
+      },
+      "48154589-3af9-47d5-960a-1f95659f4d46": {
+        "id": "48154589-3af9-47d5-960a-1f95659f4d46",
+        "word": "relax",
+        "transcription": "rɪˈlæks",
+        "partOfSpeech": "verb",
+        "description": "to make or become less tense or anxious."
+      },
+      "de884bfe-7502-46fd-9850-f95f4d4f9239": {
+        "id": "de884bfe-7502-46fd-9850-f95f4d4f9239",
+        "word": "release",
+        "transcription": "rɪˈliːs",
+        "partOfSpeech": "noun/verb",
+        "description": "the action or process of releasing or being released; to allow something to move, act, or flow freely."
+      },
+      "cada6608-be50-41bf-8f42-94e4064abd6b": {
+        "id": "cada6608-be50-41bf-8f42-94e4064abd6b",
+        "word": "relevant",
+        "transcription": "ˈreləvənt",
+        "partOfSpeech": "adjective",
+        "description": "closely connected or appropriate to what is being done or considered."
+      },
+      "f18c0c52-0b55-4bde-aae8-389129193b31": {
+        "id": "f18c0c52-0b55-4bde-aae8-389129193b31",
+        "word": "reliable",
+        "transcription": "rɪˈlaɪəbl",
+        "partOfSpeech": "adjective",
+        "description": "consistently good in quality or performance; able to be trusted."
+      },
+      "d8af9fa3-fea6-4e1f-8263-739ed899aa7a": {
+        "id": "d8af9fa3-fea6-4e1f-8263-739ed899aa7a",
+        "word": "relief",
+        "transcription": "rɪˈliːf",
+        "partOfSpeech": "noun",
+        "description": "a feeling of reassurance and relaxation following release from anxiety or distress."
+      },
+      "a7a0d9f3-12da-462d-b2a8-fbdc338a6ee1": {
+        "id": "a7a0d9f3-12da-462d-b2a8-fbdc338a6ee1",
+        "word": "religion",
+        "transcription": "rɪˈlɪdʒən",
+        "partOfSpeech": "noun",
+        "description": "the belief in and worship of a superhuman controlling power, especially a personal God or gods."
+      },
+      "567e76c1-4337-4f69-87f4-a1806344d6d2": {
+        "id": "567e76c1-4337-4f69-87f4-a1806344d6d2",
+        "word": "religious",
+        "transcription": "rɪˈlɪdʒəs",
+        "partOfSpeech": "adjective",
+        "description": "relating to or believing in a religion."
+      },
+      "be0ef2db-10e5-45b9-88a1-529c1e9346f4": {
+        "id": "be0ef2db-10e5-45b9-88a1-529c1e9346f4",
+        "word": "rely",
+        "transcription": "rɪˈlaɪ",
+        "partOfSpeech": "verb",
+        "description": "to depend on with full trust or confidence."
+      },
+      "634d4569-357b-476e-b540-8a2b3950e871": {
+        "id": "634d4569-357b-476e-b540-8a2b3950e871",
+        "word": "remain",
+        "transcription": "rɪˈmeɪn",
+        "partOfSpeech": "verb",
+        "description": "to continue to exist, especially after other similar or related people or things have ceased to exist."
+      },
+      "0c9fd753-55af-488b-aaef-203bdccf511d": {
+        "id": "0c9fd753-55af-488b-aaef-203bdccf511d",
+        "word": "remark",
+        "transcription": "rɪˈmɑːrk",
+        "partOfSpeech": "noun/verb",
+        "description": "to say something as a comment; a written or spoken comment."
+      },
+      "09accc04-d52a-447b-889e-eda603e81034": {
+        "id": "09accc04-d52a-447b-889e-eda603e81034",
+        "word": "remarkable",
+        "transcription": "rɪˈmɑːrkəbl",
+        "partOfSpeech": "adjective",
+        "description": "worthy of attention; striking."
+      },
+      "b7d38beb-4c5e-44b8-8cdf-0c048dda5c78": {
+        "id": "b7d38beb-4c5e-44b8-8cdf-0c048dda5c78",
+        "word": "remember",
+        "transcription": "rɪˈmembər",
+        "partOfSpeech": "verb",
+        "description": "to have in or be able to bring to one's mind an awareness of (someone or something from the past)."
+      },
+      "a4bebbf6-2a83-414c-8b42-833ac0bab0ee": {
+        "id": "a4bebbf6-2a83-414c-8b42-833ac0bab0ee",
+        "word": "remind",
+        "transcription": "rɪˈmaɪnd",
+        "partOfSpeech": "verb",
+        "description": "to cause someone to remember something."
+      },
+      "0c859142-84c6-4544-94c5-4ad72a75307b": {
+        "id": "0c859142-84c6-4544-94c5-4ad72a75307b",
+        "word": "remote",
+        "transcription": "rɪˈmoʊt",
+        "partOfSpeech": "adjective",
+        "description": "situated far from the main centers of population; distant."
+      },
+      "1ae2afbf-bbcf-4da5-b993-615ad35afbbe": {
+        "id": "1ae2afbf-bbcf-4da5-b993-615ad35afbbe",
+        "word": "remove",
+        "transcription": "rɪˈmuːv",
+        "partOfSpeech": "verb",
+        "description": "to take away or abolish."
+      },
+      "1d06b390-cc60-4127-a405-06437ea5a421": {
+        "id": "1d06b390-cc60-4127-a405-06437ea5a421",
+        "word": "rent",
+        "transcription": "rent",
+        "partOfSpeech": "noun/verb",
+        "description": "a tenant's regular payment to a landlord for the use of property or land."
+      },
+      "f18154fc-a627-48df-b483-943afe19c3ed": {
+        "id": "f18154fc-a627-48df-b483-943afe19c3ed",
+        "word": "repair",
+        "transcription": "rɪˈper",
+        "partOfSpeech": "noun/verb",
+        "description": "to restore (something damaged, faulty, or worn) to a good condition."
+      },
+      "fe5fcf30-623a-4496-92e6-98dbe7131ebe": {
+        "id": "fe5fcf30-623a-4496-92e6-98dbe7131ebe",
+        "word": "repeat",
+        "transcription": "rɪˈpiːt",
+        "partOfSpeech": "verb",
+        "description": "to say again something one has already said."
+      },
+      "c8171cce-74d4-4ef5-95e3-8200c704bdfb": {
+        "id": "c8171cce-74d4-4ef5-95e3-8200c704bdfb",
+        "word": "replace",
+        "transcription": "rɪˈpleɪs",
+        "partOfSpeech": "verb",
+        "description": "to take the place of."
+      },
+      "66fa6fdd-8c79-422d-82dd-5fce145aa46d": {
+        "id": "66fa6fdd-8c79-422d-82dd-5fce145aa46d",
+        "word": "reply",
+        "transcription": "rɪˈplaɪ",
+        "partOfSpeech": "verb/noun",
+        "description": "to say something in response to something someone has said."
+      },
+      "931a7a5e-c712-41a0-a9be-6d5c4634319e": {
+        "id": "931a7a5e-c712-41a0-a9be-6d5c4634319e",
+        "word": "report",
+        "transcription": "rɪˈpɔːrt",
+        "partOfSpeech": "noun/verb",
+        "description": "a spoken or written account of something that one has observed, heard, done, or investigated."
+      },
+      "a0aa9219-848d-4d70-bf1d-ee2c9336fef1": {
+        "id": "a0aa9219-848d-4d70-bf1d-ee2c9336fef1",
+        "word": "reporter",
+        "transcription": "rɪˈpɔːrtər",
+        "partOfSpeech": "noun",
+        "description": "a person who reports, especially one employed to report news or conduct interviews for newspapers or broadcasts."
+      },
+      "ebf54f4b-a36d-4d25-8949-e2c0483da527": {
+        "id": "ebf54f4b-a36d-4d25-8949-e2c0483da527",
+        "word": "represent",
+        "transcription": "ˌreprɪˈzent",
+        "partOfSpeech": "verb",
+        "description": "to act or speak officially for someone or something."
+      },
+      "cf8cf73a-4072-417d-927d-686d8036b4a5": {
+        "id": "cf8cf73a-4072-417d-927d-686d8036b4a5",
+        "word": "representation",
+        "transcription": "ˌreprɪzenˈteɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the action of speaking or acting on behalf of someone."
+      },
+      "90dd9561-a890-4732-8396-770a5f4f1405": {
+        "id": "90dd9561-a890-4732-8396-770a5f4f1405",
+        "word": "representative",
+        "transcription": "ˌreprɪˈzentətɪv",
+        "partOfSpeech": "noun",
+        "description": "a person chosen or appointed to act or speak for others."
+      },
+      "2fec8a67-778a-4a18-9520-5612306d7065": {
+        "id": "2fec8a67-778a-4a18-9520-5612306d7065",
+        "word": "reputation",
+        "transcription": "ˌrepjuˈteɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the beliefs or opinions that are generally held about someone or something."
+      },
+      "53f471d4-21a9-47be-8c36-07bbcb601e60": {
+        "id": "53f471d4-21a9-47be-8c36-07bbcb601e60",
+        "word": "request",
+        "transcription": "rɪˈkwest",
+        "partOfSpeech": "noun/verb",
+        "description": "an act of asking politely or formally for something."
+      },
+      "ef2ccceb-c23f-4247-a6d0-354210d44de8": {
+        "id": "ef2ccceb-c23f-4247-a6d0-354210d44de8",
+        "word": "require",
+        "transcription": "rɪˈkwaɪər",
+        "partOfSpeech": "verb",
+        "description": "to need for a particular purpose."
+      },
+      "16b22ca8-f511-4e50-89d6-1eb3e7557e46": {
+        "id": "16b22ca8-f511-4e50-89d6-1eb3e7557e46",
+        "word": "requirement",
+        "transcription": "rɪˈkwaɪərmənt",
+        "partOfSpeech": "noun",
+        "description": "a thing that is needed or wanted."
+      },
+      "7db5084e-5b8c-48b0-95c4-486dafd87df3": {
+        "id": "7db5084e-5b8c-48b0-95c4-486dafd87df3",
+        "word": "rescue",
+        "transcription": "ˈreskjuː",
+        "partOfSpeech": "noun/verb",
+        "description": "to save (someone) from a dangerous or distressing situation."
+      },
+      "629f68a4-b9cd-43f6-b441-531ee0dab6be": {
+        "id": "629f68a4-b9cd-43f6-b441-531ee0dab6be",
+        "word": "research",
+        "transcription": "ˈriːsɜːrtʃ",
+        "partOfSpeech": "noun/verb",
+        "description": "the systematic investigation into and study of materials and sources in order to establish facts and reach new conclusions."
+      },
+      "7aa3949b-bb18-49e4-abc3-e26e7a9b9f8b": {
+        "id": "7aa3949b-bb18-49e4-abc3-e26e7a9b9f8b",
+        "word": "researcher",
+        "transcription": "rɪˈsɜːrtʃər",
+        "partOfSpeech": "noun",
+        "description": "a person who carries out academic or scientific research."
+      },
+      "2c26d58e-fbcd-47b8-912d-c42d870fb22c": {
+        "id": "2c26d58e-fbcd-47b8-912d-c42d870fb22c",
+        "word": "reserve",
+        "transcription": "rɪˈzɜːrv",
+        "partOfSpeech": "noun/verb",
+        "description": "to arrange for (a seat, ticket, etc.) to be kept for the use of a particular person."
+      },
+      "17a8eb29-9ffc-4fd5-9d18-856e913accc8": {
+        "id": "17a8eb29-9ffc-4fd5-9d18-856e913accc8",
+        "word": "resident",
+        "transcription": "ˈrezɪdənt",
+        "partOfSpeech": "noun",
+        "description": "a person who lives somewhere permanently or on a long-term basis."
+      },
+      "bc45db53-3739-40a0-b27f-121af3d2cc34": {
+        "id": "bc45db53-3739-40a0-b27f-121af3d2cc34",
+        "word": "resign",
+        "transcription": "rɪˈzaɪn",
+        "partOfSpeech": "verb",
+        "description": "to voluntarily leave a job or other position."
+      },
+      "7d894d7d-8032-4641-b7cb-969fc609e050": {
+        "id": "7d894d7d-8032-4641-b7cb-969fc609e050",
+        "word": "resist",
+        "transcription": "rɪˈzɪst",
+        "partOfSpeech": "verb",
+        "description": "to withstand the action or effect of."
+      },
+      "7217af89-c828-4147-9525-6ad53d6382b0": {
+        "id": "7217af89-c828-4147-9525-6ad53d6382b0",
+        "word": "resistance",
+        "transcription": "rɪˈzɪstəns",
+        "partOfSpeech": "noun",
+        "description": "the refusal to accept or comply with something; the attempt to prevent something by action or argument."
+      },
+      "fd521934-c359-4314-b444-570100204762": {
+        "id": "fd521934-c359-4314-b444-570100204762",
+        "word": "resolution",
+        "transcription": "ˌrezəˈluːʃn",
+        "partOfSpeech": "noun",
+        "description": "a firm decision to do or not to do something."
+      },
+      "9e70a398-d07c-420e-884d-033d1d01af4e": {
+        "id": "9e70a398-d07c-420e-884d-033d1d01af4e",
+        "word": "resolve",
+        "transcription": "rɪˈzɑːlv",
+        "partOfSpeech": "verb",
+        "description": "to settle or find a solution to a problem, dispute, or contentious matter."
+      },
+      "473ae0eb-fda2-4c40-a41e-e8dd63781539": {
+        "id": "473ae0eb-fda2-4c40-a41e-e8dd63781539",
+        "word": "resort",
+        "transcription": "rɪˈzɔːrt",
+        "partOfSpeech": "noun/verb",
+        "description": "a place that is a popular destination for vacations; to turn to and adopt a strategy or course of action."
+      },
+      "d3474c96-3461-4075-8982-835458527ba7": {
+        "id": "d3474c96-3461-4075-8982-835458527ba7",
+        "word": "resource",
+        "transcription": "rɪˈsɔːrs",
+        "partOfSpeech": "noun",
+        "description": "a stock or supply of money, materials, staff, and other assets that can be drawn on by a person or organization."
+      },
+      "6b6db2fa-9404-4194-ac56-f1d0fd64ede8": {
+        "id": "6b6db2fa-9404-4194-ac56-f1d0fd64ede8",
+        "word": "respect",
+        "transcription": "rɪˈspekt",
+        "partOfSpeech": "noun/verb",
+        "description": "a feeling of deep admiration for someone or something elicited by their abilities, qualities, or achievements."
+      },
+      "13ff2632-5a1f-4ef3-a416-90ad480e0fd7": {
+        "id": "13ff2632-5a1f-4ef3-a416-90ad480e0fd7",
+        "word": "respectively",
+        "transcription": "rɪˈspektɪvli",
+        "partOfSpeech": "adverb",
+        "description": "separately or individually and in the order already mentioned."
+      },
+      "851bc5ae-b288-411a-86b9-568ac5813fc5": {
+        "id": "851bc5ae-b288-411a-86b9-568ac5813fc5",
+        "word": "respond",
+        "transcription": "rɪˈspɑːnd",
+        "partOfSpeech": "verb",
+        "description": "to say something in reply."
+      },
+      "2c13f7cf-311d-4f70-ace1-129be07d25c4": {
+        "id": "2c13f7cf-311d-4f70-ace1-129be07d25c4",
+        "word": "response",
+        "transcription": "rɪˈspɑːns",
+        "partOfSpeech": "noun",
+        "description": "a verbal or written answer."
+      },
+      "a4527b04-1b45-480c-8c03-4af994bcc853": {
+        "id": "a4527b04-1b45-480c-8c03-4af994bcc853",
+        "word": "responsibility",
+        "transcription": "rɪˌspɑːnsəˈbɪləti",
+        "partOfSpeech": "noun",
+        "description": "the state or fact of having a duty to deal with something or of having control over someone."
+      },
+      "c8f5edf7-bce3-4a27-bef0-d4797dee9141": {
+        "id": "c8f5edf7-bce3-4a27-bef0-d4797dee9141",
+        "word": "responsible",
+        "transcription": "rɪˈspɑːnsəbl",
+        "partOfSpeech": "adjective",
+        "description": "having an obligation to do something, or having control over or care for someone."
+      },
+      "e2fc3384-dd0c-4bd7-9007-c00b4775c1cf": {
+        "id": "e2fc3384-dd0c-4bd7-9007-c00b4775c1cf",
+        "word": "rest",
+        "transcription": "rest",
+        "partOfSpeech": "noun/verb",
+        "description": "cease work or movement in order to relax or recover strength; the remaining part of something."
+      },
+      "8ebfec6a-967a-46a8-89c7-7e9d83bb2bd5": {
+        "id": "8ebfec6a-967a-46a8-89c7-7e9d83bb2bd5",
+        "word": "restaurant",
+        "transcription": "ˈrestrɑːnt",
+        "partOfSpeech": "noun",
+        "description": "a place where people pay to sit and eat meals that are cooked and served on the premises."
+      },
+      "2e8384a5-5f54-44d3-b458-d09d872b2180": {
+        "id": "2e8384a5-5f54-44d3-b458-d09d872b2180",
+        "word": "restore",
+        "transcription": "rɪˈstɔːr",
+        "partOfSpeech": "verb",
+        "description": "to bring back to a former condition, place, or position."
+      },
+      "ffc27a3d-0b47-4388-a270-065f1fd514a2": {
+        "id": "ffc27a3d-0b47-4388-a270-065f1fd514a2",
+        "word": "restrict",
+        "transcription": "rɪˈstrɪkt",
+        "partOfSpeech": "verb",
+        "description": "to put a limit on; keep under control."
+      },
+      "65ac91c9-e321-4bda-abbc-28ae809632f3": {
+        "id": "65ac91c9-e321-4bda-abbc-28ae809632f3",
+        "word": "restriction",
+        "transcription": "rɪˈstrɪkʃn",
+        "partOfSpeech": "noun",
+        "description": "a limiting condition or measure, especially a legal one."
+      },
+      "4d889607-a548-46cd-a029-5d2bd3e5dbdb": {
+        "id": "4d889607-a548-46cd-a029-5d2bd3e5dbdb",
+        "word": "result",
+        "transcription": "rɪˈzʌlt",
+        "partOfSpeech": "noun",
+        "description": "a consequence, effect, or outcome of something."
+      },
+      "2bbd74ac-f6ce-4d35-b85d-e13e95d7b343": {
+        "id": "2bbd74ac-f6ce-4d35-b85d-e13e95d7b343",
+        "word": "retail",
+        "transcription": "ˈriːteɪl",
+        "partOfSpeech": "noun/verb",
+        "description": "the sale of goods to the public in relatively small quantities for use or consumption rather than for resale."
+      },
+      "82a184c6-c8c0-48ab-887f-f05c4f775dd9": {
+        "id": "82a184c6-c8c0-48ab-887f-f05c4f775dd9",
+        "word": "retain",
+        "transcription": "rɪˈteɪn",
+        "partOfSpeech": "verb",
+        "description": "to keep possession of."
+      },
+      "89af8077-974a-45c9-9342-58a9eab6a485": {
+        "id": "89af8077-974a-45c9-9342-58a9eab6a485",
+        "word": "retire",
+        "transcription": "rɪˈtaɪər",
+        "partOfSpeech": "verb",
+        "description": "to leave one's job and cease to work, typically upon reaching the normal age for leaving employment."
+      },
+      "b1a3fd45-e6be-4b5f-89d4-e045ddd9ec94": {
+        "id": "b1a3fd45-e6be-4b5f-89d4-e045ddd9ec94",
+        "word": "retirement",
+        "transcription": "rɪˈtaɪərmənt",
+        "partOfSpeech": "noun",
+        "description": "the action or fact of leaving one's job and ceasing to work."
+      },
+      "6ad97703-77a4-4784-bb90-739bfcbdb401": {
+        "id": "6ad97703-77a4-4784-bb90-739bfcbdb401",
+        "word": "return",
+        "transcription": "rɪˈtɜːrn",
+        "partOfSpeech": "noun/verb",
+        "description": "to come or go back to a place or person."
+      },
+      "760df142-c9d4-4d6f-acaa-b31492845ad6": {
+        "id": "760df142-c9d4-4d6f-acaa-b31492845ad6",
+        "word": "reveal",
+        "transcription": "rɪˈviːl",
+        "partOfSpeech": "verb",
+        "description": "to make (previously unknown or secret information) known to others."
+      },
+      "147c6093-6a9e-4881-8613-11b5ceb8c13e": {
+        "id": "147c6093-6a9e-4881-8613-11b5ceb8c13e",
+        "word": "revenue",
+        "transcription": "ˈrevənuː",
+        "partOfSpeech": "noun",
+        "description": "income, especially when of a company or organization and of a substantial nature."
+      },
+      "07a7f871-1cec-470c-b9b4-508c41b08934": {
+        "id": "07a7f871-1cec-470c-b9b4-508c41b08934",
+        "word": "reverse",
+        "transcription": "rɪˈvɜːrs",
+        "partOfSpeech": "noun/verb",
+        "description": "to move backward; the opposite or contrary of something."
+      },
+      "7ae6b98b-468f-47f6-b0a0-7e1cd8eff361": {
+        "id": "7ae6b98b-468f-47f6-b0a0-7e1cd8eff361",
+        "word": "review",
+        "transcription": "rɪˈvjuː",
+        "partOfSpeech": "noun/verb",
+        "description": "a formal assessment or examination of something with the possibility or intention of instituting change if necessary."
+      },
+      "f0e0af2e-9846-45cb-8cfb-536216f99712": {
+        "id": "f0e0af2e-9846-45cb-8cfb-536216f99712",
+        "word": "revise",
+        "transcription": "rɪˈvaɪz",
+        "partOfSpeech": "verb",
+        "description": "to re-examine and make alterations to (written or printed matter)."
+      },
+      "72aea66d-35ce-4bcb-81b7-019e807f8b76": {
+        "id": "72aea66d-35ce-4bcb-81b7-019e807f8b76",
+        "word": "revolution",
+        "transcription": "ˌrevəˈluːʃn",
+        "partOfSpeech": "noun",
+        "description": "a forcible overthrow of a government or social order in favor of a new system."
+      },
+      "168c66e0-0e13-4ecd-afa3-7622a32ef9c7": {
+        "id": "168c66e0-0e13-4ecd-afa3-7622a32ef9c7",
+        "word": "reward",
+        "transcription": "rɪˈwɔːrd",
+        "partOfSpeech": "noun/verb",
+        "description": "a thing given in recognition of service, effort, or achievement."
+      },
+      "cae4cfd6-fd05-468f-87aa-4362143c2d41": {
+        "id": "cae4cfd6-fd05-468f-87aa-4362143c2d41",
+        "word": "rice",
+        "transcription": "raɪs",
+        "partOfSpeech": "noun",
+        "description": "a swamp grass cultivated as a source of food."
+      },
+      "3c81d4d6-0b46-4e2d-bb5f-a9e77ceb8573": {
+        "id": "3c81d4d6-0b46-4e2d-bb5f-a9e77ceb8573",
+        "word": "rich",
+        "transcription": "rɪtʃ",
+        "partOfSpeech": "adjective",
+        "description": "having a great deal of money or assets; wealthy."
+      },
+      "d3661aaa-ad01-4a02-83f9-6cc7fda8e4f8": {
+        "id": "d3661aaa-ad01-4a02-83f9-6cc7fda8e4f8",
+        "word": "rid",
+        "transcription": "rɪd",
+        "partOfSpeech": "verb",
+        "description": "to make someone or something free of (a troublesome or unwanted person or thing)."
+      },
+      "cc08a57a-5ee1-44b7-bcdd-4e5ee74716e1": {
+        "id": "cc08a57a-5ee1-44b7-bcdd-4e5ee74716e1",
+        "word": "ride",
+        "transcription": "raɪd",
+        "partOfSpeech": "noun/verb",
+        "description": "to sit on and control the movement of (an animal, especially a horse) or vehicle."
+      },
+      "e1f51b0b-590f-4616-aeaf-fb0dfc3674f7": {
+        "id": "e1f51b0b-590f-4616-aeaf-fb0dfc3674f7",
+        "word": "right",
+        "transcription": "raɪt",
+        "partOfSpeech": "adjective/noun",
+        "description": "morally good, justified, or acceptable; a moral or legal entitlement to have or do something."
+      },
+      "f64a73be-d0b9-4fb5-8510-1cf7d2a76ac0": {
+        "id": "f64a73be-d0b9-4fb5-8510-1cf7d2a76ac0",
+        "word": "ring",
+        "transcription": "rɪŋ",
+        "partOfSpeech": "noun/verb",
+        "description": "a small circular band, typically of precious metal; to sound a bell or similar device."
+      },
+      "67c6ce5c-b1f6-46fc-a4f2-3363680ae724": {
+        "id": "67c6ce5c-b1f6-46fc-a4f2-3363680ae724",
+        "word": "rise",
+        "transcription": "raɪz",
+        "partOfSpeech": "verb/noun",
+        "description": "to move from a lower position to a higher one; an upward movement."
+      },
+      "fcdd008e-9f31-4d7e-9490-513b0448fbdc": {
+        "id": "fcdd008e-9f31-4d7e-9490-513b0448fbdc",
+        "word": "risk",
+        "transcription": "rɪsk",
+        "partOfSpeech": "noun/verb",
+        "description": "a situation involving exposure to danger; to expose to danger or loss."
+      },
+      "2820a2d3-90e2-488b-9d5a-e5d24b938c49": {
+        "id": "2820a2d3-90e2-488b-9d5a-e5d24b938c49",
+        "word": "rival",
+        "transcription": "ˈraɪvl",
+        "partOfSpeech": "noun",
+        "description": "a person or thing competing with another for the same objective or for superiority."
+      },
+      "45187f5c-040e-43a1-bebf-a01ca832f259": {
+        "id": "45187f5c-040e-43a1-bebf-a01ca832f259",
+        "word": "river",
+        "transcription": "ˈrɪvər",
+        "partOfSpeech": "noun",
+        "description": "a large natural stream of water flowing in a channel to the sea, a lake, or another river."
+      },
+      "54ac5214-37df-4574-8e1e-f4b4682deb21": {
+        "id": "54ac5214-37df-4574-8e1e-f4b4682deb21",
+        "word": "road",
+        "transcription": "roʊd",
+        "partOfSpeech": "noun",
+        "description": "a wide way leading from one place to another."
+      },
+      "840048fb-7daa-44f2-b313-7011d5e2f3ab": {
+        "id": "840048fb-7daa-44f2-b313-7011d5e2f3ab",
+        "word": "rock",
+        "transcription": "rɑːk",
+        "partOfSpeech": "noun",
+        "description": "the solid mineral material forming part of the surface of the earth; a genre of popular music."
+      },
+      "78ffd321-bbba-4b68-bf27-8b76fe792442": {
+        "id": "78ffd321-bbba-4b68-bf27-8b76fe792442",
+        "word": "role",
+        "transcription": "roʊl",
+        "partOfSpeech": "noun",
+        "description": "the function assumed or part played by a person or thing in a particular situation."
+      },
+      "8fc45a50-c988-4004-9983-50083e1cb146": {
+        "id": "8fc45a50-c988-4004-9983-50083e1cb146",
+        "word": "roll",
+        "transcription": "roʊl",
+        "partOfSpeech": "verb/noun",
+        "description": "to move by turning over and over on a surface; a cylindrical mass of something."
+      },
+      "306eb84b-2e3c-4acf-9cbd-1c3c20c6c0fc": {
+        "id": "306eb84b-2e3c-4acf-9cbd-1c3c20c6c0fc",
+        "word": "romantic",
+        "transcription": "roʊˈmæntɪk",
+        "partOfSpeech": "adjective",
+        "description": "conducive to or characterized by the expression of love."
+      },
+      "ebdd5e2a-eca0-4c60-b0dc-dff3832cfcbe": {
+        "id": "ebdd5e2a-eca0-4c60-b0dc-dff3832cfcbe",
+        "word": "roof",
+        "transcription": "ruːf",
+        "partOfSpeech": "noun",
+        "description": "the structure forming the upper covering of a building or vehicle."
+      },
+      "d0f270da-2c66-4897-89e2-46c194e5d987": {
+        "id": "d0f270da-2c66-4897-89e2-46c194e5d987",
+        "word": "room",
+        "transcription": "ruːm",
+        "partOfSpeech": "noun",
+        "description": "a part or division of a building enclosed by walls, floor, and ceiling."
+      },
+      "b8ab6d7e-dc00-4ff1-bbed-714dbde9ff16": {
+        "id": "b8ab6d7e-dc00-4ff1-bbed-714dbde9ff16",
+        "word": "root",
+        "transcription": "ruːt",
+        "partOfSpeech": "noun",
+        "description": "the part of a plant which attaches it to the ground or to a support."
+      },
+      "35dd8009-64bc-4d47-bb95-dd20537ec91d": {
+        "id": "35dd8009-64bc-4d47-bb95-dd20537ec91d",
+        "word": "rose",
+        "transcription": "roʊz",
+        "partOfSpeech": "noun",
+        "description": "a woody perennial flowering plant of the genus Rosa."
+      },
+      "3ec638d7-7c88-4e5d-80b9-312bc6883a5d": {
+        "id": "3ec638d7-7c88-4e5d-80b9-312bc6883a5d",
+        "word": "rough",
+        "transcription": "rʌf",
+        "partOfSpeech": "adjective",
+        "description": "having an uneven or irregular surface; not smooth or level."
+      },
+      "92145bc0-e9d1-4eaa-98aa-de72e0380ac3": {
+        "id": "92145bc0-e9d1-4eaa-98aa-de72e0380ac3",
+        "word": "roughly",
+        "transcription": "ˈrʌfli",
+        "partOfSpeech": "adverb",
+        "description": "approximately but not exactly."
+      },
+      "365d793d-2596-4f76-b627-95370841f6ca": {
+        "id": "365d793d-2596-4f76-b627-95370841f6ca",
+        "word": "round",
+        "transcription": "raʊnd",
+        "partOfSpeech": "adjective/adverb",
+        "description": "shaped like a circle or cylinder; located or situated on every side."
+      },
+      "e355c55f-d7dd-4aeb-9fc5-b151a9d0fbb2": {
+        "id": "e355c55f-d7dd-4aeb-9fc5-b151a9d0fbb2",
+        "word": "route",
+        "transcription": "ruːt",
+        "partOfSpeech": "noun",
+        "description": "a way or course taken in getting from a starting point to a destination."
+      },
+      "b62a3f3e-7e85-4c58-89a7-11d733c10662": {
+        "id": "b62a3f3e-7e85-4c58-89a7-11d733c10662",
+        "word": "routine",
+        "transcription": "ruːˈtiːn",
+        "partOfSpeech": "noun",
+        "description": "a sequence of actions regularly followed."
+      },
+      "f37d5fb9-9b66-483d-8201-cea8ba9f5e40": {
+        "id": "f37d5fb9-9b66-483d-8201-cea8ba9f5e40",
+        "word": "row",
+        "transcription": "roʊ",
+        "partOfSpeech": "noun/verb",
+        "description": "a number of people or things in a more or less straight line; to propel a boat with oars."
+      },
+      "3d73b1f3-5805-4ac7-9a0b-c943ca9713e7": {
+        "id": "3d73b1f3-5805-4ac7-9a0b-c943ca9713e7",
+        "word": "royal",
+        "transcription": "ˈrɔɪəl",
+        "partOfSpeech": "adjective",
+        "description": "having the status of a king or queen or a member of their family."
+      },
+      "1186e6f4-9f74-4a1d-971f-86e877bef21d": {
+        "id": "1186e6f4-9f74-4a1d-971f-86e877bef21d",
+        "word": "ruin",
+        "transcription": "ˈruːɪn",
+        "partOfSpeech": "noun/verb",
+        "description": "the physical destruction or disintegration of something; to reduce to a state of decay or collapse."
+      },
+      "1692dd9a-51b6-4faa-a93d-e06f20fcbb1c": {
+        "id": "1692dd9a-51b6-4faa-a93d-e06f20fcbb1c",
+        "word": "rule",
+        "transcription": "ruːl",
+        "partOfSpeech": "noun/verb",
+        "description": "one of a set of explicit or understood regulations; to exercise ultimate power or authority."
+      },
+      "03541c4b-cf03-4ee8-9b4a-5e05180b220d": {
+        "id": "03541c4b-cf03-4ee8-9b4a-5e05180b220d",
+        "word": "run",
+        "transcription": "rʌn",
+        "partOfSpeech": "verb/noun",
+        "description": "to move at a speed faster than a walk; an act or spell of running."
+      },
+      "b1e58c87-7380-449a-b83f-0b29c8a6692d": {
+        "id": "b1e58c87-7380-449a-b83f-0b29c8a6692d",
+        "word": "rural",
+        "transcription": "ˈrʊrəl",
+        "partOfSpeech": "adjective",
+        "description": "relating to the countryside rather than the town."
+      },
+      "a3e10153-399a-4296-93c5-25b6c735d1bb": {
+        "id": "a3e10153-399a-4296-93c5-25b6c735d1bb",
+        "word": "rush",
+        "transcription": "rʌʃ",
+        "partOfSpeech": "verb/noun",
+        "description": "to move with urgent haste; a sudden quick movement towards something."
+      }
+    }
+  }
+}

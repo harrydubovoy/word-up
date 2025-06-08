@@ -1,0 +1,1088 @@
+{
+  "entities": {
+    "ids": [
+      "b2516ca3-0e6f-4c92-9c9d-a95f5f8ffd82",
+      "15722761-6b5d-4134-a77b-ba7a4230b93e",
+      "1bb28100-7b3d-43ac-a096-3fc71555936b",
+      "dffaffb2-fa7e-4b7e-873c-3b6ab4cf8ed7",
+      "38e75f2f-8996-45c6-bf56-0ceed5293925",
+      "adf366a8-f695-4d04-8883-21d6e751d89e",
+      "3470254e-3d15-487e-b061-d0eddd242532",
+      "ac17c02e-762f-4133-8ea0-25e5ac561da1",
+      "5762723d-defe-41b7-9964-06e013c0c090",
+      "81bccf92-dde0-4ee0-a2c6-4786b64f9df6",
+      "9f0f6869-973d-4022-8410-7e2152551324",
+      "3d185a64-5b50-4d3a-95f4-41a663c8ce91",
+      "0975a6f8-4f62-4bca-9779-7c7c81355173",
+      "602e5625-59bb-4527-ac5b-6f0f52fb40ea",
+      "1b2bc66e-6767-4ccf-b327-1e54e3255b1b",
+      "a81cdd0d-edc6-49c6-b146-3f695cdee5fc",
+      "a105d0d6-431e-4040-b330-75879e8e0120",
+      "4f43c4f4-500b-4518-b00f-acff0b42ffee",
+      "394d4069-81e9-4990-bf25-8539b87b9a9d",
+      "77a41b4c-6178-4ae0-94bc-03c5b60be5e2",
+      "eb379609-2509-4e2d-b21c-9226c589fa5f",
+      "5a22945d-388c-4283-bf87-e04e1609e933",
+      "5d8ff5d1-55db-40a5-8eda-547b75dd9d4a",
+      "a30e4e6f-838a-429f-8fd9-11fa50a1328f",
+      "e0a6a209-b803-4d60-a5b5-9264571ee278",
+      "dbf0ac63-33a4-4a4c-9593-264c7684c058",
+      "24b4ce3e-d7db-4251-82f7-4915e1817514",
+      "30bac3fd-cd35-473a-8ca2-47e8d133d775",
+      "20a9c40f-e4c9-4073-a3f6-8badceb521d8",
+      "643c247b-4639-4b66-9a52-41b927db1960",
+      "02e23fe0-38f2-4dcf-99bb-2a194c10d71d",
+      "ec0e5715-9c31-435e-a1bb-170a22bedb68",
+      "f680c481-9713-4867-b8fd-3f9e068cde5d",
+      "61387e68-b6bc-4b2f-ac94-f3dd865daf21",
+      "a0802e8c-6a17-43cc-8da0-9d11c8b6b57d",
+      "772df0dd-f6b1-46c9-9953-62c20ca91f2d",
+      "ff520ac8-ecc9-4d83-aa55-f7f325ddc8eb",
+      "9f0ba241-9f6f-4a07-b4d3-05ab9094ffdb",
+      "0afd02e6-1867-4e3f-893c-30d520e3caa9",
+      "2eed6371-7f54-4877-85be-a17d46b929f4",
+      "a3006f25-861e-4b35-97b5-c68b197d13c3",
+      "87dd218e-45f3-48b7-8d81-522be1397d7e",
+      "8f29e2a2-e134-4f00-93f5-1fcf4366d7a4",
+      "6b611b13-642f-4018-8e87-8f0b43fb550c",
+      "0040ac81-3234-4310-81f7-3cd0699f7d1f",
+      "7a2615d1-9035-417a-afdb-1e1564a7d861",
+      "ac50350b-0eea-4f6e-9322-981e1fef9ca9",
+      "bfdccb34-31d4-42f9-854d-f5b75f9e96b3",
+      "86d13d2c-bdfb-4ffa-9ebd-7163fa6cb470",
+      "c19808d0-33a4-4da2-aa63-b9a12beeffe6",
+      "78fdfc57-f48c-49e6-b060-c519d5cbe97a",
+      "fd620b95-9254-4bee-a86c-b5d1ee109ef5",
+      "7e4eeb92-4147-4e39-9738-313233a0d255",
+      "0d1229c6-b809-4dda-95bc-c23bf2d1adba",
+      "98c3bdbd-89e0-4bf2-ad18-f974c06e94f8",
+      "89ef81c3-2783-41d0-beb5-dd015dfa86e4",
+      "200f6b3b-8a51-49fd-a772-a880ba5c3579",
+      "ad3e5121-eba9-4c32-ae10-e893b6bb6e24",
+      "7a025996-a731-4d1a-912b-5e50ff302757",
+      "5d60537c-9799-44c5-90ce-12c92c2c4c36",
+      "490e0daa-7a24-4ec6-806b-3b1d23a6be16",
+      "e6b659c3-efd9-460c-9ff8-761fe824592f",
+      "a45afe39-a9e9-483e-8824-d69898b60b62",
+      "74035c1f-ba48-4d25-bfaf-4042504deb24",
+      "b19bbb88-10bf-439b-a19c-c04a422688b2",
+      "0e90e3ba-cadb-4356-b226-82f19f52440a",
+      "13788fe1-f8bc-4d0d-8d55-9e8d4c87e832",
+      "819de43c-8854-4b69-81ea-0582e1749318",
+      "e5fcf321-df68-4392-9c86-06540b13afa9",
+      "d2ba7c0e-076b-42c2-87ea-f02f1744bca7",
+      "cc887c13-c74f-41e5-a736-09421d9fc3f8",
+      "0f5ca414-0849-44f0-817e-59f3a7c349ab",
+      "29a90c7f-d71b-4442-8908-c0681de77e57",
+      "becdf5a9-1b89-439e-9de3-3fe3e280947b",
+      "6e7a6652-a004-442b-868c-a9841b82fca4",
+      "e8aa9c63-8ca7-4865-8275-b0695f2b1103",
+      "bc493f8a-179c-410c-b154-6b3631611e65",
+      "8b9fddb8-03ae-44ad-b672-24f5fdbd8278",
+      "5495867e-058f-4d19-b502-a226b1bcb021",
+      "cba6af4e-ef72-448c-a5cd-7f811bd40a4c",
+      "20495891-eae1-4cc2-98e2-1d6d5f38d273",
+      "65528c2f-1892-416e-9a22-9415bc41823e",
+      "2072be0e-b739-4c88-ba6c-54e7e9c339eb",
+      "2b423eff-e6a2-45f3-97dd-e9dc5078f4a3",
+      "533b27d3-b0a9-49d0-96df-6bc4b5e66e82",
+      "5dbe430e-1a3b-4354-b633-e1402bc18cdc",
+      "0f11b4d3-bb23-4aee-aa72-e749b683423e",
+      "17a57df7-9647-4c8b-9a7f-2fcd3e71800f",
+      "e1465f89-209c-4d6c-84f2-2a36215d24b1",
+      "76a48988-c8e2-417c-866b-c86cf8aaa1e9",
+      "5d9d38f7-7289-4d4e-bbfa-ef2cc869e392",
+      "e4fa108b-de7c-4722-a58d-d827128710c8",
+      "7ac61a5e-8d72-4306-bcdb-1346f032d7e0",
+      "3ec04767-3c73-4651-b2a8-8873ebf232a3",
+      "4e5dd6d2-b939-4d16-ada8-e022982155e1",
+      "598b8ccd-29b2-4b60-b995-3c2d0b290f87",
+      "ba6ea5ae-3781-4002-beb9-a0af68c59623",
+      "36922b2b-39ad-49f4-a897-230fae044491",
+      "e484dd09-d4ff-4919-a886-42667df996ca",
+      "1b17d4b8-6dbe-4462-8623-98c1b5a464da",
+      "08aea00a-a237-4966-a893-037aad429710",
+      "b802a98f-8c0f-4372-b4c6-f62be155d349",
+      "e769e2c9-bd52-40eb-bf0d-ddbedbfc917b",
+      "d8800edd-5061-4882-b6a8-e01aee1bf550",
+      "24181873-8ee6-418c-bd1f-5dc655c856e5",
+      "a67be334-4508-482f-8abd-081af90cf7e1",
+      "b56a7b6e-71d4-4ffa-b161-6dcc32c04291",
+      "3972080c-baf8-4a5f-acbd-28f9774defa5",
+      "959318d0-2e6c-4b32-89be-f785db33b37e",
+      "706e2b3a-1be5-4be5-a1e8-ad8a70771877",
+      "c07ed4a2-8bb2-4782-9a3c-6529f7bcaae0",
+      "33f9b3f1-e0a2-4e3f-b325-f6a7aafe0a7e",
+      "9d475665-e2f6-47c6-9b1f-9734805cee98",
+      "0ea7691b-9ecd-4cd9-8efc-4c7164428106",
+      "4c25b8d3-39d0-4420-9b96-d5a4a2ff5c87",
+      "e51a1044-dcae-4ce8-b14b-bb4c5cdc9c47",
+      "a32d64f7-8817-42d3-9b4e-f1a92dcb5fde",
+      "27c600f4-927b-4d20-bb89-79427ad72291",
+      "4e12a20e-4d84-4975-a911-5deb0c34a1ed",
+      "7d08c5c0-579e-4c33-8170-741e00440c4b",
+      "e6a94d2c-f989-4715-8b39-cb2000c42e04",
+      "bf31186f-9b5e-4eaa-b607-f0d9f35d65a3",
+      "b56562f3-cd0e-44f7-819e-77ac2f21e5dc",
+      "ccf23250-ff56-4693-84f3-7a501014f3a2",
+      "c6bdaa69-1af1-45ab-bfd7-ffcdb5812a7a",
+      "0459cc0e-fecb-492a-8a47-9000b6cdd277",
+      "51f9352d-46c7-41c8-95df-7c349bada804",
+      "f4130677-1e4b-4dfc-a8c1-76ccb123feef",
+      "a3653d24-0db5-40bd-80d0-268fe77e2df0",
+      "67b67952-e211-4153-96cb-29acfa884d10",
+      "d105ec31-131a-4328-a3a6-f0da087287ed",
+      "b1985fa3-cc7a-4022-bf56-942d4356bebd",
+      "277b1c5c-1eff-4a8e-a047-1876b86e3c6a",
+      "1356019f-8452-4d53-906d-25741a765406",
+      "fa10e63a-da75-4621-be74-548979cdcf93"
+    ],
+    "byId": {
+      "b2516ca3-0e6f-4c92-9c9d-a95f5f8ffd82": {
+        "id": "b2516ca3-0e6f-4c92-9c9d-a95f5f8ffd82",
+        "word": "face",
+        "transcription": "feɪs",
+        "partOfSpeech": "noun",
+        "description": "the front part of the head where the eyes, nose, and mouth are."
+      },
+      "15722761-6b5d-4134-a77b-ba7a4230b93e": {
+        "id": "15722761-6b5d-4134-a77b-ba7a4230b93e",
+        "word": "facility",
+        "transcription": "fəˈsɪləti",
+        "partOfSpeech": "noun",
+        "description": "a place, especially including buildings, where a particular activity happens."
+      },
+      "1bb28100-7b3d-43ac-a096-3fc71555936b": {
+        "id": "1bb28100-7b3d-43ac-a096-3fc71555936b",
+        "word": "fact",
+        "transcription": "fækt",
+        "partOfSpeech": "noun",
+        "description": "something that is known or proved to be true."
+      },
+      "dffaffb2-fa7e-4b7e-873c-3b6ab4cf8ed7": {
+        "id": "dffaffb2-fa7e-4b7e-873c-3b6ab4cf8ed7",
+        "word": "factor",
+        "transcription": "ˈfæktər",
+        "partOfSpeech": "noun",
+        "description": "one of several things that influence a situation."
+      },
+      "38e75f2f-8996-45c6-bf56-0ceed5293925": {
+        "id": "38e75f2f-8996-45c6-bf56-0ceed5293925",
+        "word": "factory",
+        "transcription": "ˈfæktəri",
+        "partOfSpeech": "noun",
+        "description": "a building or set of buildings where goods are made."
+      },
+      "adf366a8-f695-4d04-8883-21d6e751d89e": {
+        "id": "adf366a8-f695-4d04-8883-21d6e751d89e",
+        "word": "fade",
+        "transcription": "feɪd",
+        "partOfSpeech": "verb",
+        "description": "to gradually become less visible or disappear."
+      },
+      "3470254e-3d15-487e-b061-d0eddd242532": {
+        "id": "3470254e-3d15-487e-b061-d0eddd242532",
+        "word": "fail",
+        "transcription": "feɪl",
+        "partOfSpeech": "verb",
+        "description": "to not succeed in what you are trying to achieve."
+      },
+      "ac17c02e-762f-4133-8ea0-25e5ac561da1": {
+        "id": "ac17c02e-762f-4133-8ea0-25e5ac561da1",
+        "word": "failure",
+        "transcription": "ˈfeɪljər",
+        "partOfSpeech": "noun",
+        "description": "lack of success in doing or achieving something."
+      },
+      "5762723d-defe-41b7-9964-06e013c0c090": {
+        "id": "5762723d-defe-41b7-9964-06e013c0c090",
+        "word": "fair",
+        "transcription": "fer",
+        "partOfSpeech": "adjective",
+        "description": "treating people equally without favoritism or discrimination."
+      },
+      "81bccf92-dde0-4ee0-a2c6-4786b64f9df6": {
+        "id": "81bccf92-dde0-4ee0-a2c6-4786b64f9df6",
+        "word": "fairly",
+        "transcription": "ˈferli",
+        "partOfSpeech": "adverb",
+        "description": "to some extent but not completely."
+      },
+      "9f0f6869-973d-4022-8410-7e2152551324": {
+        "id": "9f0f6869-973d-4022-8410-7e2152551324",
+        "word": "faith",
+        "transcription": "feɪθ",
+        "partOfSpeech": "noun",
+        "description": "strong belief or trust in someone or something."
+      },
+      "3d185a64-5b50-4d3a-95f4-41a663c8ce91": {
+        "id": "3d185a64-5b50-4d3a-95f4-41a663c8ce91",
+        "word": "faithfully",
+        "transcription": "ˈfeɪθfəli",
+        "partOfSpeech": "adverb",
+        "description": "in a loyal and dependable way."
+      },
+      "0975a6f8-4f62-4bca-9779-7c7c81355173": {
+        "id": "0975a6f8-4f62-4bca-9779-7c7c81355173",
+        "word": "fall",
+        "transcription": "fɔːl",
+        "partOfSpeech": "verb",
+        "description": "to move down towards the ground."
+      },
+      "602e5625-59bb-4527-ac5b-6f0f52fb40ea": {
+        "id": "602e5625-59bb-4527-ac5b-6f0f52fb40ea",
+        "word": "false",
+        "transcription": "fɔːls",
+        "partOfSpeech": "adjective",
+        "description": "not true or correct."
+      },
+      "1b2bc66e-6767-4ccf-b327-1e54e3255b1b": {
+        "id": "1b2bc66e-6767-4ccf-b327-1e54e3255b1b",
+        "word": "familiar",
+        "transcription": "fəˈmɪliər",
+        "partOfSpeech": "adjective",
+        "description": "well known or easily recognized."
+      },
+      "a81cdd0d-edc6-49c6-b146-3f695cdee5fc": {
+        "id": "a81cdd0d-edc6-49c6-b146-3f695cdee5fc",
+        "word": "family",
+        "transcription": "ˈfæməli",
+        "partOfSpeech": "noun",
+        "description": "a group consisting of two parents and their children."
+      },
+      "a105d0d6-431e-4040-b330-75879e8e0120": {
+        "id": "a105d0d6-431e-4040-b330-75879e8e0120",
+        "word": "famous",
+        "transcription": "ˈfeɪməs",
+        "partOfSpeech": "adjective",
+        "description": "known about by many people."
+      },
+      "4f43c4f4-500b-4518-b00f-acff0b42ffee": {
+        "id": "4f43c4f4-500b-4518-b00f-acff0b42ffee",
+        "word": "fan",
+        "transcription": "fæn",
+        "partOfSpeech": "noun",
+        "description": "a person who has a strong interest in or admiration for a particular person or thing."
+      },
+      "394d4069-81e9-4990-bf25-8539b87b9a9d": {
+        "id": "394d4069-81e9-4990-bf25-8539b87b9a9d",
+        "word": "fancy",
+        "transcription": "ˈfænsi",
+        "partOfSpeech": "adjective",
+        "description": "elaborate in structure or decoration."
+      },
+      "77a41b4c-6178-4ae0-94bc-03c5b60be5e2": {
+        "id": "77a41b4c-6178-4ae0-94bc-03c5b60be5e2",
+        "word": "fantastic",
+        "transcription": "fænˈtæstɪk",
+        "partOfSpeech": "adjective",
+        "description": "extremely good or impressive."
+      },
+      "eb379609-2509-4e2d-b21c-9226c589fa5f": {
+        "id": "eb379609-2509-4e2d-b21c-9226c589fa5f",
+        "word": "far",
+        "transcription": "fɑːr",
+        "partOfSpeech": "adverb",
+        "description": "at, to, or by a great distance."
+      },
+      "5a22945d-388c-4283-bf87-e04e1609e933": {
+        "id": "5a22945d-388c-4283-bf87-e04e1609e933",
+        "word": "farm",
+        "transcription": "fɑːrm",
+        "partOfSpeech": "noun",
+        "description": "an area of land used for growing crops and raising animals."
+      },
+      "5d8ff5d1-55db-40a5-8eda-547b75dd9d4a": {
+        "id": "5d8ff5d1-55db-40a5-8eda-547b75dd9d4a",
+        "word": "farmer",
+        "transcription": "ˈfɑːrmər",
+        "partOfSpeech": "noun",
+        "description": "a person who owns or manages a farm."
+      },
+      "a30e4e6f-838a-429f-8fd9-11fa50a1328f": {
+        "id": "a30e4e6f-838a-429f-8fd9-11fa50a1328f",
+        "word": "fascinate",
+        "transcription": "ˈfæsɪneɪt",
+        "partOfSpeech": "verb",
+        "description": "to attract and hold the attention of someone."
+      },
+      "e0a6a209-b803-4d60-a5b5-9264571ee278": {
+        "id": "e0a6a209-b803-4d60-a5b5-9264571ee278",
+        "word": "fashion",
+        "transcription": "ˈfæʃn",
+        "partOfSpeech": "noun",
+        "description": "a popular style of clothes, hair, etc."
+      },
+      "dbf0ac63-33a4-4a4c-9593-264c7684c058": {
+        "id": "dbf0ac63-33a4-4a4c-9593-264c7684c058",
+        "word": "fast",
+        "transcription": "fæst",
+        "partOfSpeech": "adjective",
+        "description": "moving or able to move quickly."
+      },
+      "24b4ce3e-d7db-4251-82f7-4915e1817514": {
+        "id": "24b4ce3e-d7db-4251-82f7-4915e1817514",
+        "word": "fat",
+        "transcription": "fæt",
+        "partOfSpeech": "adjective",
+        "description": "having a lot of flesh on the body."
+      },
+      "30bac3fd-cd35-473a-8ca2-47e8d133d775": {
+        "id": "30bac3fd-cd35-473a-8ca2-47e8d133d775",
+        "word": "father",
+        "transcription": "ˈfɑːðər",
+        "partOfSpeech": "noun",
+        "description": "a male parent."
+      },
+      "20a9c40f-e4c9-4073-a3f6-8badceb521d8": {
+        "id": "20a9c40f-e4c9-4073-a3f6-8badceb521d8",
+        "word": "fault",
+        "transcription": "fɔːlt",
+        "partOfSpeech": "noun",
+        "description": "a mistake, especially something for which you are to blame."
+      },
+      "643c247b-4639-4b66-9a52-41b927db1960": {
+        "id": "643c247b-4639-4b66-9a52-41b927db1960",
+        "word": "favor",
+        "transcription": "ˈfeɪvər",
+        "partOfSpeech": "noun",
+        "description": "an act of kindness beyond what is due or usual."
+      },
+      "02e23fe0-38f2-4dcf-99bb-2a194c10d71d": {
+        "id": "02e23fe0-38f2-4dcf-99bb-2a194c10d71d",
+        "word": "favorite",
+        "transcription": "ˈfeɪvərɪt",
+        "partOfSpeech": "adjective",
+        "description": "preferred before all others of the same kind."
+      },
+      "ec0e5715-9c31-435e-a1bb-170a22bedb68": {
+        "id": "ec0e5715-9c31-435e-a1bb-170a22bedb68",
+        "word": "fear",
+        "transcription": "fɪr",
+        "partOfSpeech": "noun",
+        "description": "an unpleasant emotion caused by being aware of danger."
+      },
+      "f680c481-9713-4867-b8fd-3f9e068cde5d": {
+        "id": "f680c481-9713-4867-b8fd-3f9e068cde5d",
+        "word": "feature",
+        "transcription": "ˈfiːtʃər",
+        "partOfSpeech": "noun",
+        "description": "a typical quality or important part of something."
+      },
+      "61387e68-b6bc-4b2f-ac94-f3dd865daf21": {
+        "id": "61387e68-b6bc-4b2f-ac94-f3dd865daf21",
+        "word": "federal",
+        "transcription": "ˈfedərəl",
+        "partOfSpeech": "adjective",
+        "description": "relating to a system of government where several states form a unity but remain independent in internal affairs."
+      },
+      "a0802e8c-6a17-43cc-8da0-9d11c8b6b57d": {
+        "id": "a0802e8c-6a17-43cc-8da0-9d11c8b6b57d",
+        "word": "fee",
+        "transcription": "fiː",
+        "partOfSpeech": "noun",
+        "description": "an amount of money paid for a particular service."
+      },
+      "772df0dd-f6b1-46c9-9953-62c20ca91f2d": {
+        "id": "772df0dd-f6b1-46c9-9953-62c20ca91f2d",
+        "word": "feed",
+        "transcription": "fiːd",
+        "partOfSpeech": "verb",
+        "description": "to give food to a person, group, or animal."
+      },
+      "ff520ac8-ecc9-4d83-aa55-f7f325ddc8eb": {
+        "id": "ff520ac8-ecc9-4d83-aa55-f7f325ddc8eb",
+        "word": "feel",
+        "transcription": "fiːl",
+        "partOfSpeech": "verb",
+        "description": "to experience something physical or emotional."
+      },
+      "9f0ba241-9f6f-4a07-b4d3-05ab9094ffdb": {
+        "id": "9f0ba241-9f6f-4a07-b4d3-05ab9094ffdb",
+        "word": "fellow",
+        "transcription": "ˈfeloʊ",
+        "partOfSpeech": "noun",
+        "description": "a person who is in the same situation as you."
+      },
+      "0afd02e6-1867-4e3f-893c-30d520e3caa9": {
+        "id": "0afd02e6-1867-4e3f-893c-30d520e3caa9",
+        "word": "female",
+        "transcription": "ˈfiːmeɪl",
+        "partOfSpeech": "adjective",
+        "description": "belonging to the sex that can have babies."
+      },
+      "2eed6371-7f54-4877-85be-a17d46b929f4": {
+        "id": "2eed6371-7f54-4877-85be-a17d46b929f4",
+        "word": "fence",
+        "transcription": "fens",
+        "partOfSpeech": "noun",
+        "description": "a structure that divides two areas of land."
+      },
+      "a3006f25-861e-4b35-97b5-c68b197d13c3": {
+        "id": "a3006f25-861e-4b35-97b5-c68b197d13c3",
+        "word": "festival",
+        "transcription": "ˈfestɪvl",
+        "partOfSpeech": "noun",
+        "description": "an organized series of events such as music, film, etc."
+      },
+      "87dd218e-45f3-48b7-8d81-522be1397d7e": {
+        "id": "87dd218e-45f3-48b7-8d81-522be1397d7e",
+        "word": "few",
+        "transcription": "fjuː",
+        "partOfSpeech": "determiner",
+        "description": "a small number of something."
+      },
+      "8f29e2a2-e134-4f00-93f5-1fcf4366d7a4": {
+        "id": "8f29e2a2-e134-4f00-93f5-1fcf4366d7a4",
+        "word": "fiction",
+        "transcription": "ˈfɪkʃn",
+        "partOfSpeech": "noun",
+        "description": "literature in the form of prose, especially novels, that describes imaginary events and people."
+      },
+      "6b611b13-642f-4018-8e87-8f0b43fb550c": {
+        "id": "6b611b13-642f-4018-8e87-8f0b43fb550c",
+        "word": "field",
+        "transcription": "fiːld",
+        "partOfSpeech": "noun",
+        "description": "an area of land used for farming or sports."
+      },
+      "0040ac81-3234-4310-81f7-3cd0699f7d1f": {
+        "id": "0040ac81-3234-4310-81f7-3cd0699f7d1f",
+        "word": "fight",
+        "transcription": "faɪt",
+        "partOfSpeech": "verb",
+        "description": "to use physical force to try to defeat someone or something."
+      },
+      "7a2615d1-9035-417a-afdb-1e1564a7d861": {
+        "id": "7a2615d1-9035-417a-afdb-1e1564a7d861",
+        "word": "figure",
+        "transcription": "ˈfɪɡjər",
+        "partOfSpeech": "noun",
+        "description": "a number or a shape of a person or an object."
+      },
+      "ac50350b-0eea-4f6e-9322-981e1fef9ca9": {
+        "id": "ac50350b-0eea-4f6e-9322-981e1fef9ca9",
+        "word": "file",
+        "transcription": "faɪl",
+        "partOfSpeech": "noun",
+        "description": "a collection of information stored electronically or on paper."
+      },
+      "bfdccb34-31d4-42f9-854d-f5b75f9e96b3": {
+        "id": "bfdccb34-31d4-42f9-854d-f5b75f9e96b3",
+        "word": "fill",
+        "transcription": "fɪl",
+        "partOfSpeech": "verb",
+        "description": "to make something full."
+      },
+      "86d13d2c-bdfb-4ffa-9ebd-7163fa6cb470": {
+        "id": "86d13d2c-bdfb-4ffa-9ebd-7163fa6cb470",
+        "word": "film",
+        "transcription": "fɪlm",
+        "partOfSpeech": "noun",
+        "description": "a story or event recorded by a camera as a set of moving images."
+      },
+      "c19808d0-33a4-4da2-aa63-b9a12beeffe6": {
+        "id": "c19808d0-33a4-4da2-aa63-b9a12beeffe6",
+        "word": "filter",
+        "transcription": "ˈfɪltər",
+        "partOfSpeech": "noun",
+        "description": "a device to remove unwanted substances from something."
+      },
+      "78fdfc57-f48c-49e6-b060-c519d5cbe97a": {
+        "id": "78fdfc57-f48c-49e6-b060-c519d5cbe97a",
+        "word": "final",
+        "transcription": "ˈfaɪnl",
+        "partOfSpeech": "adjective",
+        "description": "last in a series or process."
+      },
+      "fd620b95-9254-4bee-a86c-b5d1ee109ef5": {
+        "id": "fd620b95-9254-4bee-a86c-b5d1ee109ef5",
+        "word": "finally",
+        "transcription": "ˈfaɪnəli",
+        "partOfSpeech": "adverb",
+        "description": "after a long time or some difficulty."
+      },
+      "7e4eeb92-4147-4e39-9738-313233a0d255": {
+        "id": "7e4eeb92-4147-4e39-9738-313233a0d255",
+        "word": "finance",
+        "transcription": "ˈfaɪnæns",
+        "partOfSpeech": "noun",
+        "description": "the management of large amounts of money."
+      },
+      "0d1229c6-b809-4dda-95bc-c23bf2d1adba": {
+        "id": "0d1229c6-b809-4dda-95bc-c23bf2d1adba",
+        "word": "financial",
+        "transcription": "faɪˈnænʃl",
+        "partOfSpeech": "adjective",
+        "description": "relating to money."
+      },
+      "98c3bdbd-89e0-4bf2-ad18-f974c06e94f8": {
+        "id": "98c3bdbd-89e0-4bf2-ad18-f974c06e94f8",
+        "word": "find",
+        "transcription": "faɪnd",
+        "partOfSpeech": "verb",
+        "description": "to discover something or someone by searching."
+      },
+      "89ef81c3-2783-41d0-beb5-dd015dfa86e4": {
+        "id": "89ef81c3-2783-41d0-beb5-dd015dfa86e4",
+        "word": "fine",
+        "transcription": "faɪn",
+        "partOfSpeech": "adjective",
+        "description": "good or satisfactory."
+      },
+      "200f6b3b-8a51-49fd-a772-a880ba5c3579": {
+        "id": "200f6b3b-8a51-49fd-a772-a880ba5c3579",
+        "word": "finger",
+        "transcription": "ˈfɪŋɡər",
+        "partOfSpeech": "noun",
+        "description": "one of the five long parts at the end of your hand."
+      },
+      "ad3e5121-eba9-4c32-ae10-e893b6bb6e24": {
+        "id": "ad3e5121-eba9-4c32-ae10-e893b6bb6e24",
+        "word": "finish",
+        "transcription": "ˈfɪnɪʃ",
+        "partOfSpeech": "verb",
+        "description": "to complete something."
+      },
+      "7a025996-a731-4d1a-912b-5e50ff302757": {
+        "id": "7a025996-a731-4d1a-912b-5e50ff302757",
+        "word": "fire",
+        "transcription": "ˈfaɪər",
+        "partOfSpeech": "noun",
+        "description": "flames, light, and heat that are produced when something burns."
+      },
+      "5d60537c-9799-44c5-90ce-12c92c2c4c36": {
+        "id": "5d60537c-9799-44c5-90ce-12c92c2c4c36",
+        "word": "firm",
+        "transcription": "fɜːrm",
+        "partOfSpeech": "adjective",
+        "description": "not soft but not completely hard."
+      },
+      "490e0daa-7a24-4ec6-806b-3b1d23a6be16": {
+        "id": "490e0daa-7a24-4ec6-806b-3b1d23a6be16",
+        "word": "firmly",
+        "transcription": "ˈfɜːrmli",
+        "partOfSpeech": "adverb",
+        "description": "in a strong, steady way."
+      },
+      "e6b659c3-efd9-460c-9ff8-761fe824592f": {
+        "id": "e6b659c3-efd9-460c-9ff8-761fe824592f",
+        "word": "first",
+        "transcription": "fɜːrst",
+        "partOfSpeech": "adjective",
+        "description": "coming before all others in time or order."
+      },
+      "a45afe39-a9e9-483e-8824-d69898b60b62": {
+        "id": "a45afe39-a9e9-483e-8824-d69898b60b62",
+        "word": "firstly",
+        "transcription": "ˈfɜːrstli",
+        "partOfSpeech": "adverb",
+        "description": "used to introduce the first point or reason."
+      },
+      "74035c1f-ba48-4d25-bfaf-4042504deb24": {
+        "id": "74035c1f-ba48-4d25-bfaf-4042504deb24",
+        "word": "fish",
+        "transcription": "fɪʃ",
+        "partOfSpeech": "noun",
+        "description": "an animal that lives in water, breathes with gills, and usually has fins and scales."
+      },
+      "b19bbb88-10bf-439b-a19c-c04a422688b2": {
+        "id": "b19bbb88-10bf-439b-a19c-c04a422688b2",
+        "word": "fit",
+        "transcription": "fɪt",
+        "partOfSpeech": "verb",
+        "description": "to be the right size or shape."
+      },
+      "0e90e3ba-cadb-4356-b226-82f19f52440a": {
+        "id": "0e90e3ba-cadb-4356-b226-82f19f52440a",
+        "word": "fix",
+        "transcription": "fɪks",
+        "partOfSpeech": "verb",
+        "description": "to repair something that is broken or not working."
+      },
+      "13788fe1-f8bc-4d0d-8d55-9e8d4c87e832": {
+        "id": "13788fe1-f8bc-4d0d-8d55-9e8d4c87e832",
+        "word": "flag",
+        "transcription": "flæɡ",
+        "partOfSpeech": "noun",
+        "description": "a piece of cloth with a special design used as a symbol of a country or institution."
+      },
+      "819de43c-8854-4b69-81ea-0582e1749318": {
+        "id": "819de43c-8854-4b69-81ea-0582e1749318",
+        "word": "flash",
+        "transcription": "flæʃ",
+        "partOfSpeech": "noun",
+        "description": "a sudden bright light."
+      },
+      "e5fcf321-df68-4392-9c86-06540b13afa9": {
+        "id": "e5fcf321-df68-4392-9c86-06540b13afa9",
+        "word": "flat",
+        "transcription": "flæt",
+        "partOfSpeech": "adjective",
+        "description": "smooth and level, without raised areas or indentations."
+      },
+      "d2ba7c0e-076b-42c2-87ea-f02f1744bca7": {
+        "id": "d2ba7c0e-076b-42c2-87ea-f02f1744bca7",
+        "word": "flexible",
+        "transcription": "ˈfleksəbl",
+        "partOfSpeech": "adjective",
+        "description": "able to bend easily without breaking."
+      },
+      "cc887c13-c74f-41e5-a736-09421d9fc3f8": {
+        "id": "cc887c13-c74f-41e5-a736-09421d9fc3f8",
+        "word": "flight",
+        "transcription": "flaɪt",
+        "partOfSpeech": "noun",
+        "description": "the act of flying through the air."
+      },
+      "0f5ca414-0849-44f0-817e-59f3a7c349ab": {
+        "id": "0f5ca414-0849-44f0-817e-59f3a7c349ab",
+        "word": "float",
+        "transcription": "floʊt",
+        "partOfSpeech": "verb",
+        "description": "to stay on the surface of a liquid without sinking."
+      },
+      "29a90c7f-d71b-4442-8908-c0681de77e57": {
+        "id": "29a90c7f-d71b-4442-8908-c0681de77e57",
+        "word": "flood",
+        "transcription": "flʌd",
+        "partOfSpeech": "noun",
+        "description": "an overflowing of a large amount of water beyond its normal limits."
+      },
+      "becdf5a9-1b89-439e-9de3-3fe3e280947b": {
+        "id": "becdf5a9-1b89-439e-9de3-3fe3e280947b",
+        "word": "floor",
+        "transcription": "flɔːr",
+        "partOfSpeech": "noun",
+        "description": "the lower surface of a room, on which you stand."
+      },
+      "6e7a6652-a004-442b-868c-a9841b82fca4": {
+        "id": "6e7a6652-a004-442b-868c-a9841b82fca4",
+        "word": "flow",
+        "transcription": "floʊ",
+        "partOfSpeech": "verb",
+        "description": "to move along in a steady, continuous stream."
+      },
+      "e8aa9c63-8ca7-4865-8275-b0695f2b1103": {
+        "id": "e8aa9c63-8ca7-4865-8275-b0695f2b1103",
+        "word": "flower",
+        "transcription": "ˈflaʊər",
+        "partOfSpeech": "noun",
+        "description": "the colored part of a plant from which the seed or fruit develops."
+      },
+      "bc493f8a-179c-410c-b154-6b3631611e65": {
+        "id": "bc493f8a-179c-410c-b154-6b3631611e65",
+        "word": "fly",
+        "transcription": "flaɪ",
+        "partOfSpeech": "verb",
+        "description": "to move through the air using wings."
+      },
+      "8b9fddb8-03ae-44ad-b672-24f5fdbd8278": {
+        "id": "8b9fddb8-03ae-44ad-b672-24f5fdbd8278",
+        "word": "focus",
+        "transcription": "ˈfoʊkəs",
+        "partOfSpeech": "verb",
+        "description": "to concentrate attention or effort on something."
+      },
+      "5495867e-058f-4d19-b502-a226b1bcb021": {
+        "id": "5495867e-058f-4d19-b502-a226b1bcb021",
+        "word": "fold",
+        "transcription": "foʊld",
+        "partOfSpeech": "verb",
+        "description": "to bend something so that one part covers another part."
+      },
+      "cba6af4e-ef72-448c-a5cd-7f811bd40a4c": {
+        "id": "cba6af4e-ef72-448c-a5cd-7f811bd40a4c",
+        "word": "folk",
+        "transcription": "foʊk",
+        "partOfSpeech": "noun",
+        "description": "people in general."
+      },
+      "20495891-eae1-4cc2-98e2-1d6d5f38d273": {
+        "id": "20495891-eae1-4cc2-98e2-1d6d5f38d273",
+        "word": "follow",
+        "transcription": "ˈfɑːloʊ",
+        "partOfSpeech": "verb",
+        "description": "to move behind someone or something and go where they go."
+      },
+      "65528c2f-1892-416e-9a22-9415bc41823e": {
+        "id": "65528c2f-1892-416e-9a22-9415bc41823e",
+        "word": "food",
+        "transcription": "fuːd",
+        "partOfSpeech": "noun",
+        "description": "something that people and animals eat to keep them alive."
+      },
+      "2072be0e-b739-4c88-ba6c-54e7e9c339eb": {
+        "id": "2072be0e-b739-4c88-ba6c-54e7e9c339eb",
+        "word": "fool",
+        "transcription": "fuːl",
+        "partOfSpeech": "noun",
+        "description": "a person who behaves in a silly way without thinking."
+      },
+      "2b423eff-e6a2-45f3-97dd-e9dc5078f4a3": {
+        "id": "2b423eff-e6a2-45f3-97dd-e9dc5078f4a3",
+        "word": "foot",
+        "transcription": "fʊt",
+        "partOfSpeech": "noun",
+        "description": "the lower extremity of the leg below the ankle."
+      },
+      "533b27d3-b0a9-49d0-96df-6bc4b5e66e82": {
+        "id": "533b27d3-b0a9-49d0-96df-6bc4b5e66e82",
+        "word": "football",
+        "transcription": "ˈfʊtbɔːl",
+        "partOfSpeech": "noun",
+        "description": "a game played by two teams of eleven players with a round ball."
+      },
+      "5dbe430e-1a3b-4354-b633-e1402bc18cdc": {
+        "id": "5dbe430e-1a3b-4354-b633-e1402bc18cdc",
+        "word": "for",
+        "transcription": "fɔːr",
+        "partOfSpeech": "preposition",
+        "description": "used to show the purpose of something."
+      },
+      "0f11b4d3-bb23-4aee-aa72-e749b683423e": {
+        "id": "0f11b4d3-bb23-4aee-aa72-e749b683423e",
+        "word": "force",
+        "transcription": "fɔːrs",
+        "partOfSpeech": "noun",
+        "description": "strength or energy as an attribute of action or movement."
+      },
+      "17a57df7-9647-4c8b-9a7f-2fcd3e71800f": {
+        "id": "17a57df7-9647-4c8b-9a7f-2fcd3e71800f",
+        "word": "forecast",
+        "transcription": "ˈfɔːrkæst",
+        "partOfSpeech": "noun",
+        "description": "a statement of what is judged likely to happen in the future."
+      },
+      "e1465f89-209c-4d6c-84f2-2a36215d24b1": {
+        "id": "e1465f89-209c-4d6c-84f2-2a36215d24b1",
+        "word": "foreign",
+        "transcription": "ˈfɔːrən",
+        "partOfSpeech": "adjective",
+        "description": "from a country that is not your own."
+      },
+      "76a48988-c8e2-417c-866b-c86cf8aaa1e9": {
+        "id": "76a48988-c8e2-417c-866b-c86cf8aaa1e9",
+        "word": "forest",
+        "transcription": "ˈfɔːrɪst",
+        "partOfSpeech": "noun",
+        "description": "a large area of land covered with trees."
+      },
+      "5d9d38f7-7289-4d4e-bbfa-ef2cc869e392": {
+        "id": "5d9d38f7-7289-4d4e-bbfa-ef2cc869e392",
+        "word": "forever",
+        "transcription": "fərˈevər",
+        "partOfSpeech": "adverb",
+        "description": "for all time in the future."
+      },
+      "e4fa108b-de7c-4722-a58d-d827128710c8": {
+        "id": "e4fa108b-de7c-4722-a58d-d827128710c8",
+        "word": "forget",
+        "transcription": "fərˈɡet",
+        "partOfSpeech": "verb",
+        "description": "to be unable to remember something."
+      },
+      "7ac61a5e-8d72-4306-bcdb-1346f032d7e0": {
+        "id": "7ac61a5e-8d72-4306-bcdb-1346f032d7e0",
+        "word": "form",
+        "transcription": "fɔːrm",
+        "partOfSpeech": "noun",
+        "description": "the shape and structure of something."
+      },
+      "3ec04767-3c73-4651-b2a8-8873ebf232a3": {
+        "id": "3ec04767-3c73-4651-b2a8-8873ebf232a3",
+        "word": "formal",
+        "transcription": "ˈfɔːrml",
+        "partOfSpeech": "adjective",
+        "description": "following established customs or rules."
+      },
+      "4e5dd6d2-b939-4d16-ada8-e022982155e1": {
+        "id": "4e5dd6d2-b939-4d16-ada8-e022982155e1",
+        "word": "format",
+        "transcription": "ˈfɔːrmæt",
+        "partOfSpeech": "noun",
+        "description": "the way in which something is arranged or set out."
+      },
+      "598b8ccd-29b2-4b60-b995-3c2d0b290f87": {
+        "id": "598b8ccd-29b2-4b60-b995-3c2d0b290f87",
+        "word": "formation",
+        "transcription": "fɔːrˈmeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the action of forming or process of being formed."
+      },
+      "ba6ea5ae-3781-4002-beb9-a0af68c59623": {
+        "id": "ba6ea5ae-3781-4002-beb9-a0af68c59623",
+        "word": "former",
+        "transcription": "ˈfɔːrmər",
+        "partOfSpeech": "adjective",
+        "description": "having previously been a particular thing."
+      },
+      "36922b2b-39ad-49f4-a897-230fae044491": {
+        "id": "36922b2b-39ad-49f4-a897-230fae044491",
+        "word": "formula",
+        "transcription": "ˈfɔːrmjələ",
+        "partOfSpeech": "noun",
+        "description": "a set of symbols that expresses a mathematical rule or principle."
+      },
+      "e484dd09-d4ff-4919-a886-42667df996ca": {
+        "id": "e484dd09-d4ff-4919-a886-42667df996ca",
+        "word": "forth",
+        "transcription": "fɔːrθ",
+        "partOfSpeech": "adverb",
+        "description": "outward into view or into action."
+      },
+      "1b17d4b8-6dbe-4462-8623-98c1b5a464da": {
+        "id": "1b17d4b8-6dbe-4462-8623-98c1b5a464da",
+        "word": "fortunate",
+        "transcription": "ˈfɔːrtʃənət",
+        "partOfSpeech": "adjective",
+        "description": "lucky or favorable."
+      },
+      "08aea00a-a237-4966-a893-037aad429710": {
+        "id": "08aea00a-a237-4966-a893-037aad429710",
+        "word": "fortune",
+        "transcription": "ˈfɔːrtʃən",
+        "partOfSpeech": "noun",
+        "description": "chance or luck; a large amount of money."
+      },
+      "b802a98f-8c0f-4372-b4c6-f62be155d349": {
+        "id": "b802a98f-8c0f-4372-b4c6-f62be155d349",
+        "word": "forward",
+        "transcription": "ˈfɔːrwərd",
+        "partOfSpeech": "adverb",
+        "description": "toward a place or position that is in front."
+      },
+      "e769e2c9-bd52-40eb-bf0d-ddbedbfc917b": {
+        "id": "e769e2c9-bd52-40eb-bf0d-ddbedbfc917b",
+        "word": "found",
+        "transcription": "faʊnd",
+        "partOfSpeech": "verb",
+        "description": "to establish or originate."
+      },
+      "d8800edd-5061-4882-b6a8-e01aee1bf550": {
+        "id": "d8800edd-5061-4882-b6a8-e01aee1bf550",
+        "word": "foundation",
+        "transcription": "faʊnˈdeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the basis or groundwork of anything."
+      },
+      "24181873-8ee6-418c-bd1f-5dc655c856e5": {
+        "id": "24181873-8ee6-418c-bd1f-5dc655c856e5",
+        "word": "fragment",
+        "transcription": "ˈfræɡmənt",
+        "partOfSpeech": "noun",
+        "description": "a small part broken off or separated from something."
+      },
+      "a67be334-4508-482f-8abd-081af90cf7e1": {
+        "id": "a67be334-4508-482f-8abd-081af90cf7e1",
+        "word": "frame",
+        "transcription": "freɪm",
+        "partOfSpeech": "noun",
+        "description": "a structure that surrounds or encloses something."
+      },
+      "b56a7b6e-71d4-4ffa-b161-6dcc32c04291": {
+        "id": "b56a7b6e-71d4-4ffa-b161-6dcc32c04291",
+        "word": "framework",
+        "transcription": "ˈfreɪmwɜːrk",
+        "partOfSpeech": "noun",
+        "description": "a supporting structure or system."
+      },
+      "3972080c-baf8-4a5f-acbd-28f9774defa5": {
+        "id": "3972080c-baf8-4a5f-acbd-28f9774defa5",
+        "word": "free",
+        "transcription": "friː",
+        "partOfSpeech": "adjective",
+        "description": "not under the control or in the power of another."
+      },
+      "959318d0-2e6c-4b32-89be-f785db33b37e": {
+        "id": "959318d0-2e6c-4b32-89be-f785db33b37e",
+        "word": "freedom",
+        "transcription": "ˈfriːdəm",
+        "partOfSpeech": "noun",
+        "description": "the power or right to act, speak, or think as one wants."
+      },
+      "706e2b3a-1be5-4be5-a1e8-ad8a70771877": {
+        "id": "706e2b3a-1be5-4be5-a1e8-ad8a70771877",
+        "word": "freeze",
+        "transcription": "friːz",
+        "partOfSpeech": "verb",
+        "description": "to turn into ice or another solid as a result of extreme cold."
+      },
+      "c07ed4a2-8bb2-4782-9a3c-6529f7bcaae0": {
+        "id": "c07ed4a2-8bb2-4782-9a3c-6529f7bcaae0",
+        "word": "frequency",
+        "transcription": "ˈfriːkwənsi",
+        "partOfSpeech": "noun",
+        "description": "the rate at which something occurs over a particular period or in a given sample."
+      },
+      "33f9b3f1-e0a2-4e3f-b325-f6a7aafe0a7e": {
+        "id": "33f9b3f1-e0a2-4e3f-b325-f6a7aafe0a7e",
+        "word": "frequent",
+        "transcription": "ˈfriːkwənt",
+        "partOfSpeech": "adjective",
+        "description": "happening often."
+      },
+      "9d475665-e2f6-47c6-9b1f-9734805cee98": {
+        "id": "9d475665-e2f6-47c6-9b1f-9734805cee98",
+        "word": "frequently",
+        "transcription": "ˈfriːkwəntli",
+        "partOfSpeech": "adverb",
+        "description": "happening often."
+      },
+      "0ea7691b-9ecd-4cd9-8efc-4c7164428106": {
+        "id": "0ea7691b-9ecd-4cd9-8efc-4c7164428106",
+        "word": "fresh",
+        "transcription": "freʃ",
+        "partOfSpeech": "adjective",
+        "description": "recently made, obtained, or experienced."
+      },
+      "4c25b8d3-39d0-4420-9b96-d5a4a2ff5c87": {
+        "id": "4c25b8d3-39d0-4420-9b96-d5a4a2ff5c87",
+        "word": "friend",
+        "transcription": "frend",
+        "partOfSpeech": "noun",
+        "description": "a person with whom one has a bond of mutual affection."
+      },
+      "e51a1044-dcae-4ce8-b14b-bb4c5cdc9c47": {
+        "id": "e51a1044-dcae-4ce8-b14b-bb4c5cdc9c47",
+        "word": "friendly",
+        "transcription": "ˈfrendli",
+        "partOfSpeech": "adjective",
+        "description": "kind and pleasant."
+      },
+      "a32d64f7-8817-42d3-9b4e-f1a92dcb5fde": {
+        "id": "a32d64f7-8817-42d3-9b4e-f1a92dcb5fde",
+        "word": "friendship",
+        "transcription": "ˈfrendʃɪp",
+        "partOfSpeech": "noun",
+        "description": "the emotions or conduct of friends; the state of being friends."
+      },
+      "27c600f4-927b-4d20-bb89-79427ad72291": {
+        "id": "27c600f4-927b-4d20-bb89-79427ad72291",
+        "word": "frighten",
+        "transcription": "ˈfraɪtn",
+        "partOfSpeech": "verb",
+        "description": "to make someone afraid or anxious."
+      },
+      "4e12a20e-4d84-4975-a911-5deb0c34a1ed": {
+        "id": "4e12a20e-4d84-4975-a911-5deb0c34a1ed",
+        "word": "from",
+        "transcription": "frəm",
+        "partOfSpeech": "preposition",
+        "description": "indicating the point in space at which a journey, motion, or action starts."
+      },
+      "7d08c5c0-579e-4c33-8170-741e00440c4b": {
+        "id": "7d08c5c0-579e-4c33-8170-741e00440c4b",
+        "word": "front",
+        "transcription": "frʌnt",
+        "partOfSpeech": "noun",
+        "description": "the side or part of something that is seen first."
+      },
+      "e6a94d2c-f989-4715-8b39-cb2000c42e04": {
+        "id": "e6a94d2c-f989-4715-8b39-cb2000c42e04",
+        "word": "fruit",
+        "transcription": "fruːt",
+        "partOfSpeech": "noun",
+        "description": "the sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food."
+      },
+      "bf31186f-9b5e-4eaa-b607-f0d9f35d65a3": {
+        "id": "bf31186f-9b5e-4eaa-b607-f0d9f35d65a3",
+        "word": "fuel",
+        "transcription": "ˈfjuːəl",
+        "partOfSpeech": "noun",
+        "description": "a material such as coal, gas, or oil that is burned to produce heat or power."
+      },
+      "b56562f3-cd0e-44f7-819e-77ac2f21e5dc": {
+        "id": "b56562f3-cd0e-44f7-819e-77ac2f21e5dc",
+        "word": "fulfill",
+        "transcription": "fʊlˈfɪl",
+        "partOfSpeech": "verb",
+        "description": "to carry out (a duty or task); to satisfy (a requirement or condition)."
+      },
+      "ccf23250-ff56-4693-84f3-7a501014f3a2": {
+        "id": "ccf23250-ff56-4693-84f3-7a501014f3a2",
+        "word": "full",
+        "transcription": "fʊl",
+        "partOfSpeech": "adjective",
+        "description": "containing or holding as much as possible."
+      },
+      "c6bdaa69-1af1-45ab-bfd7-ffcdb5812a7a": {
+        "id": "c6bdaa69-1af1-45ab-bfd7-ffcdb5812a7a",
+        "word": "fully",
+        "transcription": "ˈfʊli",
+        "partOfSpeech": "adverb",
+        "description": "completely or entirely."
+      },
+      "0459cc0e-fecb-492a-8a47-9000b6cdd277": {
+        "id": "0459cc0e-fecb-492a-8a47-9000b6cdd277",
+        "word": "fun",
+        "transcription": "fʌn",
+        "partOfSpeech": "noun",
+        "description": "enjoyment, amusement, or lighthearted pleasure."
+      },
+      "51f9352d-46c7-41c8-95df-7c349bada804": {
+        "id": "51f9352d-46c7-41c8-95df-7c349bada804",
+        "word": "function",
+        "transcription": "ˈfʌŋkʃn",
+        "partOfSpeech": "noun",
+        "description": "an activity that is natural to or the purpose of a person or thing."
+      },
+      "f4130677-1e4b-4dfc-a8c1-76ccb123feef": {
+        "id": "f4130677-1e4b-4dfc-a8c1-76ccb123feef",
+        "word": "functional",
+        "transcription": "ˈfʌŋkʃənl",
+        "partOfSpeech": "adjective",
+        "description": "designed to be practical and useful, rather than attractive."
+      },
+      "a3653d24-0db5-40bd-80d0-268fe77e2df0": {
+        "id": "a3653d24-0db5-40bd-80d0-268fe77e2df0",
+        "word": "fund",
+        "transcription": "fʌnd",
+        "partOfSpeech": "noun",
+        "description": "an amount of money saved or made available for a particular purpose."
+      },
+      "67b67952-e211-4153-96cb-29acfa884d10": {
+        "id": "67b67952-e211-4153-96cb-29acfa884d10",
+        "word": "fundamental",
+        "transcription": "ˌfʌndəˈmentl",
+        "partOfSpeech": "adjective",
+        "description": "forming a necessary base or core; of central importance."
+      },
+      "d105ec31-131a-4328-a3a6-f0da087287ed": {
+        "id": "d105ec31-131a-4328-a3a6-f0da087287ed",
+        "word": "funny",
+        "transcription": "ˈfʌni",
+        "partOfSpeech": "adjective",
+        "description": "causing laughter or amusement."
+      },
+      "b1985fa3-cc7a-4022-bf56-942d4356bebd": {
+        "id": "b1985fa3-cc7a-4022-bf56-942d4356bebd",
+        "word": "furniture",
+        "transcription": "ˈfɜːrnɪtʃər",
+        "partOfSpeech": "noun",
+        "description": "large movable equipment, such as tables and chairs, used to make a house, office, or other space suitable for living or working."
+      },
+      "277b1c5c-1eff-4a8e-a047-1876b86e3c6a": {
+        "id": "277b1c5c-1eff-4a8e-a047-1876b86e3c6a",
+        "word": "further",
+        "transcription": "ˈfɜːrðər",
+        "partOfSpeech": "adverb",
+        "description": "at or to a greater distance."
+      },
+      "1356019f-8452-4d53-906d-25741a765406": {
+        "id": "1356019f-8452-4d53-906d-25741a765406",
+        "word": "furthermore",
+        "transcription": "ˌfɜːrðərˈmɔːr",
+        "partOfSpeech": "adverb",
+        "description": "in addition; besides."
+      },
+      "fa10e63a-da75-4621-be74-548979cdcf93": {
+        "id": "fa10e63a-da75-4621-be74-548979cdcf93",
+        "word": "future",
+        "transcription": "ˈfjuːtʃər",
+        "partOfSpeech": "noun",
+        "description": "the time yet to come."
+      }
+    }
+  }
+}

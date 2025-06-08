@@ -1,0 +1,344 @@
+{
+  "entities": {
+    "ids": [
+      "56d90405-2f20-47d3-836a-ea1bbd55ae95",
+      "732eb57e-63a1-4f1e-a631-e79d83dfb401",
+      "8444e21d-4296-444f-8e21-f68c2960d4d8",
+      "94786f43-1eb0-4939-9917-363ab4c30633",
+      "c6ecb97b-2f08-42cf-850d-f97f11e61014",
+      "eee53f98-cc3a-462c-8690-03a32b6f6824",
+      "54ddfff8-9466-431c-a1af-36ef19043f60",
+      "8ae2a501-af5a-4ef8-88c2-d7a81d5c7f7d",
+      "61ab8282-6fa0-4a6f-997c-5c55738df8b7",
+      "ea776290-a0e7-472c-8864-f9aa688289f1",
+      "cbb2420b-8644-42b0-99cb-2c313b3e7086",
+      "3f370e82-a5fd-40c8-a1c6-f98181d82d28",
+      "c6a05434-411d-4e8e-add3-3ed93535ce29",
+      "97a73474-9789-4c58-8890-8e3366d638e8",
+      "9331f3ff-e130-43ea-9917-727b584a125b",
+      "31ffabf5-47d4-4885-a4e7-4ab218c53818",
+      "45fde0d0-d611-4700-93bb-12e99e4452ef",
+      "8f175c38-589d-4f73-8982-7e01fba14742",
+      "5838f036-37ab-4ba5-ad26-a911b892cb2b",
+      "46c3b352-5311-49d5-9762-4b61a704cc54",
+      "690e0ded-c899-4f00-985e-9c06dd690321",
+      "a7ffb44d-f0b2-404e-97bc-994fd842aa4c",
+      "9a51490f-fed4-49dc-9b9c-b8aea0ce6e8c",
+      "98a0118d-6d75-494a-bbf7-b38cf77eb021",
+      "12dc222c-e819-4c61-9882-83299a1d1dc5",
+      "ab07fdd6-f768-447b-87b0-badc9c2f81ca",
+      "64565772-5e5e-4426-bbcc-3fe8f5bd90db",
+      "fc220522-8cc3-413b-92a8-8f4eba40152a",
+      "915bf9a4-1cee-49bc-bbb2-055b265e6c96",
+      "e86c8e8b-9d11-4339-a781-6f6628fc67c8",
+      "6e620b52-c028-4f0f-b8f0-4067bd9575d6",
+      "99532c98-4bbf-46e9-ae6c-cb0a82f409ce",
+      "7bdb4ab2-7aef-4f3b-b1e3-dbee50bc9dc4",
+      "72c76a89-4dff-42e2-9365-35d43dc76350",
+      "a9f5de94-95d0-4108-b677-f3171c24f355",
+      "eefb1717-5d78-44b7-a83f-3dbc7c4d4e0f",
+      "5b122ea5-19ed-488c-a80b-58d7143e5e0b",
+      "b69257b3-8ffe-4425-913e-071ab5d651b6",
+      "18b16dbb-f58a-4097-b516-a2d27d3b9b0e",
+      "20f57ae2-24bb-4350-865c-2e40965a6a7a",
+      "6548c0f9-4d52-45b9-accb-7c3eb547a0a2",
+      "2fd77dfa-3998-4bc0-a8be-60c89ec3b8c3"
+    ],
+    "byId": {
+      "56d90405-2f20-47d3-836a-ea1bbd55ae95": {
+        "id": "56d90405-2f20-47d3-836a-ea1bbd55ae95",
+        "word": "valley",
+        "transcription": "ˈvæli",
+        "partOfSpeech": "noun",
+        "description": "a low area of land between hills or mountains"
+      },
+      "732eb57e-63a1-4f1e-a631-e79d83dfb401": {
+        "id": "732eb57e-63a1-4f1e-a631-e79d83dfb401",
+        "word": "valuable",
+        "transcription": "ˈvæljuəbl",
+        "partOfSpeech": "adjective",
+        "description": "worth a lot of money or very useful"
+      },
+      "8444e21d-4296-444f-8e21-f68c2960d4d8": {
+        "id": "8444e21d-4296-444f-8e21-f68c2960d4d8",
+        "word": "value",
+        "transcription": "ˈvæljuː",
+        "partOfSpeech": "noun/verb",
+        "description": "the worth of something; to consider something important"
+      },
+      "94786f43-1eb0-4939-9917-363ab4c30633": {
+        "id": "94786f43-1eb0-4939-9917-363ab4c30633",
+        "word": "van",
+        "transcription": "væn",
+        "partOfSpeech": "noun",
+        "description": "a vehicle used for carrying goods or people"
+      },
+      "c6ecb97b-2f08-42cf-850d-f97f11e61014": {
+        "id": "c6ecb97b-2f08-42cf-850d-f97f11e61014",
+        "word": "variable",
+        "transcription": "ˈveriəbl",
+        "partOfSpeech": "adjective/noun",
+        "description": "likely to change; something that can change"
+      },
+      "eee53f98-cc3a-462c-8690-03a32b6f6824": {
+        "id": "eee53f98-cc3a-462c-8690-03a32b6f6824",
+        "word": "variation",
+        "transcription": "ˌveriˈeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "a difference or change in condition"
+      },
+      "54ddfff8-9466-431c-a1af-36ef19043f60": {
+        "id": "54ddfff8-9466-431c-a1af-36ef19043f60",
+        "word": "variety",
+        "transcription": "vəˈraɪəti",
+        "partOfSpeech": "noun",
+        "description": "a number of different types of things"
+      },
+      "8ae2a501-af5a-4ef8-88c2-d7a81d5c7f7d": {
+        "id": "8ae2a501-af5a-4ef8-88c2-d7a81d5c7f7d",
+        "word": "various",
+        "transcription": "ˈveriəs",
+        "partOfSpeech": "adjective",
+        "description": "different from one another"
+      },
+      "61ab8282-6fa0-4a6f-997c-5c55738df8b7": {
+        "id": "61ab8282-6fa0-4a6f-997c-5c55738df8b7",
+        "word": "vary",
+        "transcription": "ˈveri",
+        "partOfSpeech": "verb",
+        "description": "to change or differ"
+      },
+      "ea776290-a0e7-472c-8864-f9aa688289f1": {
+        "id": "ea776290-a0e7-472c-8864-f9aa688289f1",
+        "word": "vast",
+        "transcription": "væst",
+        "partOfSpeech": "adjective",
+        "description": "very large"
+      },
+      "cbb2420b-8644-42b0-99cb-2c313b3e7086": {
+        "id": "cbb2420b-8644-42b0-99cb-2c313b3e7086",
+        "word": "vegetable",
+        "transcription": "ˈvedʒtəbl",
+        "partOfSpeech": "noun",
+        "description": "a plant or part of a plant used as food"
+      },
+      "3f370e82-a5fd-40c8-a1c6-f98181d82d28": {
+        "id": "3f370e82-a5fd-40c8-a1c6-f98181d82d28",
+        "word": "vehicle",
+        "transcription": "ˈviːɪkl",
+        "partOfSpeech": "noun",
+        "description": "a machine used for transporting people or goods"
+      },
+      "c6a05434-411d-4e8e-add3-3ed93535ce29": {
+        "id": "c6a05434-411d-4e8e-add3-3ed93535ce29",
+        "word": "venture",
+        "transcription": "ˈventʃər",
+        "partOfSpeech": "noun",
+        "description": "a risky or daring journey or business"
+      },
+      "97a73474-9789-4c58-8890-8e3366d638e8": {
+        "id": "97a73474-9789-4c58-8890-8e3366d638e8",
+        "word": "verb",
+        "transcription": "vɜːrb",
+        "partOfSpeech": "noun",
+        "description": "a word that describes an action"
+      },
+      "9331f3ff-e130-43ea-9917-727b584a125b": {
+        "id": "9331f3ff-e130-43ea-9917-727b584a125b",
+        "word": "version",
+        "transcription": "ˈvɜːrʒn",
+        "partOfSpeech": "noun",
+        "description": "a particular form of something"
+      },
+      "31ffabf5-47d4-4885-a4e7-4ab218c53818": {
+        "id": "31ffabf5-47d4-4885-a4e7-4ab218c53818",
+        "word": "versus",
+        "transcription": "ˈvɜːrsəs",
+        "partOfSpeech": "preposition",
+        "description": "against"
+      },
+      "45fde0d0-d611-4700-93bb-12e99e4452ef": {
+        "id": "45fde0d0-d611-4700-93bb-12e99e4452ef",
+        "word": "very",
+        "transcription": "ˈveri",
+        "partOfSpeech": "adverb",
+        "description": "to a great degree"
+      },
+      "8f175c38-589d-4f73-8982-7e01fba14742": {
+        "id": "8f175c38-589d-4f73-8982-7e01fba14742",
+        "word": "vessel",
+        "transcription": "ˈvesl",
+        "partOfSpeech": "noun",
+        "description": "a ship or large boat; a container"
+      },
+      "5838f036-37ab-4ba5-ad26-a911b892cb2b": {
+        "id": "5838f036-37ab-4ba5-ad26-a911b892cb2b",
+        "word": "veteran",
+        "transcription": "ˈvetərən",
+        "partOfSpeech": "noun",
+        "description": "someone who has long experience, often in military service"
+      },
+      "46c3b352-5311-49d5-9762-4b61a704cc54": {
+        "id": "46c3b352-5311-49d5-9762-4b61a704cc54",
+        "word": "via",
+        "transcription": "ˈvaɪə",
+        "partOfSpeech": "preposition",
+        "description": "through; by way of"
+      },
+      "690e0ded-c899-4f00-985e-9c06dd690321": {
+        "id": "690e0ded-c899-4f00-985e-9c06dd690321",
+        "word": "vice",
+        "transcription": "vaɪs",
+        "partOfSpeech": "noun",
+        "description": "bad or immoral behavior; a deputy or assistant"
+      },
+      "a7ffb44d-f0b2-404e-97bc-994fd842aa4c": {
+        "id": "a7ffb44d-f0b2-404e-97bc-994fd842aa4c",
+        "word": "victim",
+        "transcription": "ˈvɪktɪm",
+        "partOfSpeech": "noun",
+        "description": "someone harmed by a crime or accident"
+      },
+      "9a51490f-fed4-49dc-9b9c-b8aea0ce6e8c": {
+        "id": "9a51490f-fed4-49dc-9b9c-b8aea0ce6e8c",
+        "word": "victory",
+        "transcription": "ˈvɪktəri",
+        "partOfSpeech": "noun",
+        "description": "the act of winning"
+      },
+      "98a0118d-6d75-494a-bbf7-b38cf77eb021": {
+        "id": "98a0118d-6d75-494a-bbf7-b38cf77eb021",
+        "word": "video",
+        "transcription": "ˈvɪdioʊ",
+        "partOfSpeech": "noun",
+        "description": "a recording of moving visual images"
+      },
+      "12dc222c-e819-4c61-9882-83299a1d1dc5": {
+        "id": "12dc222c-e819-4c61-9882-83299a1d1dc5",
+        "word": "view",
+        "transcription": "vjuː",
+        "partOfSpeech": "noun/verb",
+        "description": "a sight or prospect; to look at something"
+      },
+      "ab07fdd6-f768-447b-87b0-badc9c2f81ca": {
+        "id": "ab07fdd6-f768-447b-87b0-badc9c2f81ca",
+        "word": "village",
+        "transcription": "ˈvɪlɪdʒ",
+        "partOfSpeech": "noun",
+        "description": "a small community or group of houses"
+      },
+      "64565772-5e5e-4426-bbcc-3fe8f5bd90db": {
+        "id": "64565772-5e5e-4426-bbcc-3fe8f5bd90db",
+        "word": "violence",
+        "transcription": "ˈvaɪələns",
+        "partOfSpeech": "noun",
+        "description": "physical force used to harm people or damage property"
+      },
+      "fc220522-8cc3-413b-92a8-8f4eba40152a": {
+        "id": "fc220522-8cc3-413b-92a8-8f4eba40152a",
+        "word": "violent",
+        "transcription": "ˈvaɪələnt",
+        "partOfSpeech": "adjective",
+        "description": "using or involving physical force"
+      },
+      "915bf9a4-1cee-49bc-bbb2-055b265e6c96": {
+        "id": "915bf9a4-1cee-49bc-bbb2-055b265e6c96",
+        "word": "virtually",
+        "transcription": "ˈvɜːrtʃuəli",
+        "partOfSpeech": "adverb",
+        "description": "almost completely"
+      },
+      "e86c8e8b-9d11-4339-a781-6f6628fc67c8": {
+        "id": "e86c8e8b-9d11-4339-a781-6f6628fc67c8",
+        "word": "virus",
+        "transcription": "ˈvaɪrəs",
+        "partOfSpeech": "noun",
+        "description": "a tiny organism that causes disease"
+      },
+      "6e620b52-c028-4f0f-b8f0-4067bd9575d6": {
+        "id": "6e620b52-c028-4f0f-b8f0-4067bd9575d6",
+        "word": "visible",
+        "transcription": "ˈvɪzəbl",
+        "partOfSpeech": "adjective",
+        "description": "able to be seen"
+      },
+      "99532c98-4bbf-46e9-ae6c-cb0a82f409ce": {
+        "id": "99532c98-4bbf-46e9-ae6c-cb0a82f409ce",
+        "word": "vision",
+        "transcription": "ˈvɪʒn",
+        "partOfSpeech": "noun",
+        "description": "the ability to see; an idea of the future"
+      },
+      "7bdb4ab2-7aef-4f3b-b1e3-dbee50bc9dc4": {
+        "id": "7bdb4ab2-7aef-4f3b-b1e3-dbee50bc9dc4",
+        "word": "visit",
+        "transcription": "ˈvɪzɪt",
+        "partOfSpeech": "verb/noun",
+        "description": "to go to see someone or someplace; the act of going to see someone"
+      },
+      "72c76a89-4dff-42e2-9365-35d43dc76350": {
+        "id": "72c76a89-4dff-42e2-9365-35d43dc76350",
+        "word": "visitor",
+        "transcription": "ˈvɪzɪtər",
+        "partOfSpeech": "noun",
+        "description": "a person who visits"
+      },
+      "a9f5de94-95d0-4108-b677-f3171c24f355": {
+        "id": "a9f5de94-95d0-4108-b677-f3171c24f355",
+        "word": "visual",
+        "transcription": "ˈvɪʒuəl",
+        "partOfSpeech": "adjective",
+        "description": "related to seeing"
+      },
+      "eefb1717-5d78-44b7-a83f-3dbc7c4d4e0f": {
+        "id": "eefb1717-5d78-44b7-a83f-3dbc7c4d4e0f",
+        "word": "vital",
+        "transcription": "ˈvaɪtl",
+        "partOfSpeech": "adjective",
+        "description": "extremely important"
+      },
+      "5b122ea5-19ed-488c-a80b-58d7143e5e0b": {
+        "id": "5b122ea5-19ed-488c-a80b-58d7143e5e0b",
+        "word": "voice",
+        "transcription": "vɔɪs",
+        "partOfSpeech": "noun",
+        "description": "the sound made when speaking"
+      },
+      "b69257b3-8ffe-4425-913e-071ab5d651b6": {
+        "id": "b69257b3-8ffe-4425-913e-071ab5d651b6",
+        "word": "volume",
+        "transcription": "ˈvɑːljuːm",
+        "partOfSpeech": "noun",
+        "description": "the amount of space or loudness"
+      },
+      "18b16dbb-f58a-4097-b516-a2d27d3b9b0e": {
+        "id": "18b16dbb-f58a-4097-b516-a2d27d3b9b0e",
+        "word": "voluntary",
+        "transcription": "ˈvɑːlənteri",
+        "partOfSpeech": "adjective",
+        "description": "done by choice, not by force"
+      },
+      "20f57ae2-24bb-4350-865c-2e40965a6a7a": {
+        "id": "20f57ae2-24bb-4350-865c-2e40965a6a7a",
+        "word": "volunteer",
+        "transcription": "ˌvɑːlənˈtɪr",
+        "partOfSpeech": "noun/verb",
+        "description": "a person who offers to help; to offer to do something freely"
+      },
+      "6548c0f9-4d52-45b9-accb-7c3eb547a0a2": {
+        "id": "6548c0f9-4d52-45b9-accb-7c3eb547a0a2",
+        "word": "vote",
+        "transcription": "voʊt",
+        "partOfSpeech": "verb/noun",
+        "description": "to choose in an election; a choice made in an election"
+      },
+      "2fd77dfa-3998-4bc0-a8be-60c89ec3b8c3": {
+        "id": "2fd77dfa-3998-4bc0-a8be-60c89ec3b8c3",
+        "word": "voter",
+        "transcription": "ˈvoʊtər",
+        "partOfSpeech": "noun",
+        "description": "a person who votes"
+      }
+    }
+  }
+}

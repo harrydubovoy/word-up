@@ -1,0 +1,1688 @@
+{
+  "entities": {
+    "ids": [
+      "5dab604d-fb84-4dc9-84f3-a1ca55fea8cd",
+      "3f848b66-aff0-4f20-ab2f-5402002cba3e",
+      "a369defc-7b50-43ea-98a0-b795b14ab88a",
+      "a77415f3-166f-444b-96dc-23e5eb0dcbd1",
+      "839bba31-1af2-4a28-8efc-0f4aa82bf93c",
+      "6941eee2-7f05-4cbd-a7d6-d82d460099e1",
+      "e655ef7e-faa7-489b-9ba6-7fc7df2602f3",
+      "f562e9f2-6d68-462d-bb38-c45454751ac6",
+      "65693591-c2ea-4a1d-9e0d-89cc7228dbe1",
+      "0b387f8c-3ba6-441f-855b-178bf842ac89",
+      "ec1918bb-a2da-41f9-ab28-b41ddb71a925",
+      "bef7f4fb-90df-4ce8-8dd9-51f1b2bbd41a",
+      "f0f4dfa6-b663-40c1-b2a0-6d776de2067e",
+      "cb1c45e5-ae0e-49c5-a74c-d0ecbf1b07a2",
+      "62914a6f-504e-41c1-a3cf-344dd5630945",
+      "2bab8e5c-8dda-4ce9-98d0-ac44c19de427",
+      "7bd8c852-3e8e-437b-85a9-6199a50e30e0",
+      "8a1faed4-861e-4e8d-9eab-4ab3ecac3514",
+      "0e9e4b26-3d4e-4c25-926e-783da9029a63",
+      "01aa5567-fc39-4584-ad26-7628cba5dbf1",
+      "768dec6f-cf2a-431b-aaa0-de04dffb59f8",
+      "7dec40a0-6f66-401f-a0eb-b563d395791a",
+      "bec7dffe-125b-4379-96e7-1ce87ed2d1bc",
+      "ba1fe579-867e-4b81-8c57-ac61016b25b5",
+      "9b714606-870e-4c9f-8bc2-243df324865b",
+      "ee070c09-a4a8-43c7-8e98-fbedb4bae098",
+      "09b21577-928b-4927-b5c4-3d71d2b83377",
+      "e48043ac-ca99-45bd-975b-e7b4249e3b19",
+      "74990e44-df53-4bbb-af6c-5fbd20ca7faa",
+      "a4965bb9-5800-4f17-8642-b77d0869b9fb",
+      "2c36645c-7deb-4077-81aa-f7eec5001e13",
+      "7c14163e-d7ba-4171-b555-626f3867c3ed",
+      "b793c386-a347-46cd-b0b5-9262ce5960f7",
+      "648a04e7-c143-4624-9c65-132bee273d50",
+      "43489e72-ce8d-47f2-ba3c-9312e5d31d60",
+      "fc8fecb2-67cb-4b9c-9b72-d419c257dfc4",
+      "03db1efe-c697-4828-80b3-4d730bd95a62",
+      "5ca6d205-3404-4380-895c-3ec466d244b0",
+      "642409ae-af78-48d3-94f0-5497e1bb98a6",
+      "afb3d51c-ed1a-4dfd-879d-73522565975c",
+      "3d6e16ee-b496-4aa6-bd55-735181a4a8f6",
+      "b1a15bba-44ff-467d-9090-43319dffb118",
+      "232cf340-f3ff-49b0-ae5b-6f65c51e57ca",
+      "a2f2dbde-c3cc-4afe-b2e7-6862aff89177",
+      "3e6f08db-1c95-49b5-af09-8c2013a19b27",
+      "2fcbe1f1-8838-450b-bf9b-57a226fdb8c6",
+      "d805670c-a9ca-4b58-8188-eac3beae85ac",
+      "05c57737-e3de-475b-8f20-3f9e8916bd6f",
+      "125242fe-9b31-4314-9223-5ecf65a92485",
+      "bba33fa4-0d1d-4b77-829d-beb3d5f76940",
+      "fc6fd884-47fd-4604-a206-7d9143dab8ff",
+      "50c0164e-e209-4683-a3bd-63575fefc4b4",
+      "d57c867c-b814-4050-ad1d-ddb20debfdde",
+      "ca34e231-5446-457b-8b97-dc59b5c1a26f",
+      "6d729901-4dbe-4c09-afce-e79535eff6ac",
+      "68446758-bbf2-4812-9cc3-0abcb188db46",
+      "ca8fec38-68e9-459a-afe6-5a313f39a79a",
+      "37741049-5996-4a14-bd7a-491a40c9ff9d",
+      "9645edda-6bb2-46bb-a10f-0bc784622f32",
+      "2a486f00-3d7b-4514-9bfe-28613b481ff7",
+      "d5c87d7e-96ac-4602-b175-ad95f8807c5b",
+      "b52dc0c3-3e51-45dd-821d-c093abd364fe",
+      "ad718a0b-54af-4fea-8773-10aaf8cdc1fa",
+      "11046144-550a-452b-9746-966f49499398",
+      "085d2b58-a052-472c-9d5d-6bdaffc60d49",
+      "ad7574c3-ed16-4a27-afe8-8f74d57b4a3f",
+      "521431bd-5092-4d46-acc0-56bf32f77111",
+      "79c80ccc-f79f-46c0-8d20-f174854e224a",
+      "cbdb15eb-87f7-4b11-a40a-b5f4580cec02",
+      "ada24fd5-ee2a-4a41-a9c8-d36df685b84d",
+      "62f004c2-3188-4099-8de7-1b7a3d2915ac",
+      "cd0598ba-e57f-4c90-838c-00579681f984",
+      "93700a56-5935-4fe4-a98d-4ab8943b49b9",
+      "79f29252-c0a1-4402-aacc-71d82fd62938",
+      "e3a73dba-c3b9-4629-8845-4167f3a8fae8",
+      "10660955-e3e9-4f14-b0d9-3ef0433edfde",
+      "a9cad980-75e6-4371-9e6b-e6baa7b56691",
+      "96fa29e2-1661-4d46-a7d7-3c7cf99cc55f",
+      "bb1d97d0-fb58-455a-8b53-5890c9f7dc88",
+      "f8774cad-d80c-4a6f-a57a-2b32cc54d854",
+      "cf7b0cac-479e-40ba-b8f5-f15b85eaed29",
+      "73101f0e-beb4-4d87-98f1-2cdb55ec7092",
+      "771d872e-df09-4cca-bd5c-7451a12ebd34",
+      "29d05fc7-f52c-4298-8c8b-816bf2a1d10d",
+      "7db930e5-0593-43b1-85e1-bcde7efc4bf3",
+      "39ae63db-6bab-4830-916a-f89984452518",
+      "97b56ee6-4b9e-42ba-8906-61b4eb9399ca",
+      "6addaf87-1fa3-4b02-ab7d-94e3cea8cac4",
+      "da7010b6-0c21-4c8f-8dc2-741093a4c60a",
+      "e32f97b2-ed0d-483b-8108-1c46eec586da",
+      "d1895700-5ab3-4a60-b592-26942a791ad6",
+      "a016dd55-f5c1-4bd5-be32-92582269d030",
+      "499b090e-a56e-4d89-93f1-95f6e099d817",
+      "d139702f-b7b8-4bbc-9a70-36c93c9ed2a6",
+      "6f432a6f-e3a5-4e6d-a866-f925af0c6bf7",
+      "9ede6a33-6f4c-4b6e-a3d0-00df58d32ac7",
+      "6c9f2c1d-3009-42a8-b08d-c29f3a43f1b4",
+      "d615f23d-c456-4822-b018-f5b99e6b4db2",
+      "31569b0e-59ba-41ca-8c76-72313c1ae5bb",
+      "08995fa5-44aa-4be7-bd9d-4d60864f5c02",
+      "8fa7f985-6ea4-42a8-8b1d-20abccd47c2a",
+      "af46e04c-0640-46c6-95f4-4433bcc84d60",
+      "82ad9829-fa68-4942-9481-489bc2463203",
+      "1698b153-0e84-4981-8342-32084b3f69cf",
+      "dbf87a92-368d-4495-ab3d-e8306e93d744",
+      "a921219e-6daf-4f6a-9fee-904d998ab015",
+      "28cd8c83-5bc3-4245-aad7-3bea8311fee7",
+      "dd5d2b6e-e286-4216-b3bd-6b5437d2de06",
+      "3a40aa84-ce68-4f4b-8876-09f9ba8b30dd",
+      "4e978bf6-79ee-40b2-ac71-bdbbee2c5048",
+      "435b9090-13a3-45c5-8e1d-9c9b4f880d5e",
+      "eb176629-09d0-41b3-9007-d4aa95492796",
+      "14964b79-8c26-467d-b745-5aeaa672a12c",
+      "87d79e50-ef59-4c8e-a95c-b6593b55045a",
+      "86673089-809c-4851-a9fd-764108493abe",
+      "9cea7f59-7ab8-4950-81d6-83df76bff73e",
+      "a0328e9d-43f9-46b1-96dd-a886da8519d8",
+      "51ca8415-cf2c-4e1d-8300-98f60a548747",
+      "e9f30e95-3dc9-4222-b42b-17f781440d2d",
+      "d3f471ec-6a2f-4b68-8ad5-119e819fc3a8",
+      "fe40c11f-8df0-4799-8664-69bcf0f731ec",
+      "95affc09-0fbd-40e8-a5c3-532d1c356615",
+      "8940e952-9ab0-4b56-8f04-81d80cbfeaef",
+      "de2774e9-49b3-4964-9ae8-74b46dc6ce2b",
+      "887511c0-e39d-416a-9788-ab78581b0571",
+      "a8c54e5a-7c1d-4328-96d7-fb2b88018bc9",
+      "c4cd942f-5cec-43a3-a027-4ca021b18ec5",
+      "ed968998-0923-4000-b33f-1c83598302c3",
+      "762bd015-9c8e-4498-95bb-bd14d08a15da",
+      "b3201d71-3b91-4883-9aac-77f4e19fd2f9",
+      "2e73bdc3-bb4c-4417-b86b-14ea1662cf12",
+      "e99ee56c-0bbc-4cac-b188-ce599b64e06b",
+      "3e4972a6-0d4f-4dcc-93f4-0eda45a6ee6d",
+      "8d271f2e-3c8d-4f4f-a829-f01fb5dcfeb8",
+      "c4c56f22-bb00-4cac-a35f-6bebf85d6d7f",
+      "415e4f78-3038-4209-94a5-5d8f785458ef",
+      "bcd01074-c724-4ea8-a933-29b8e1fa2002",
+      "5281bc0f-13fb-4937-b914-fc767c839d48",
+      "4632e9fc-174d-4486-8124-b5810ec55a93",
+      "fbd44fd4-ac07-43ba-b65a-3ae5962dc2ad",
+      "2e423cb7-a6eb-4a57-a8be-a9b5afe950aa",
+      "336d556c-d4a9-4ad4-a614-8b381f2a2974",
+      "33b631c4-01cb-40cc-b46d-afa623e6af54",
+      "22376d90-b315-4af3-94c2-6448c232ed0d",
+      "7c1602c9-6ac8-4351-b2b4-0d304c40c49e",
+      "eb090ade-a15f-4771-9e8c-55e64928038a",
+      "1d35531b-8a74-4f1c-9252-3a2f552a38e0",
+      "760021ec-7325-4c5f-8017-9b53130bb7d7",
+      "7992feb4-f085-40f1-b43e-8953796a8dea",
+      "a4960afc-1050-4584-8317-cd53f42528d9",
+      "9507c365-2704-48b8-82be-7fdfc7ed0636",
+      "0afb8e55-9f7a-42eb-a8d1-dbf15a6ae738",
+      "1040ddca-e292-460f-be75-ad0388be1338",
+      "83a6a2c2-065e-4647-a1ba-fc64f129742b",
+      "2ed669de-fa32-4693-b705-dca1b7b696d6",
+      "e6a900ac-7fba-468b-9623-7b39b3f7bafe",
+      "4575f544-c173-40f1-b3df-27019764cf46",
+      "7fc1ade9-ccde-4783-9143-7087e122a7c7",
+      "0bdf46f2-19ad-4d21-b4e8-ba42b27a40d2",
+      "0d4a7c40-53c9-410a-bccf-c9454c157e26",
+      "779e03d0-c1a8-4d64-9c7d-a01dac8ec915",
+      "b680d4ae-ec50-4b13-ac11-cf3a0ff839f4",
+      "e275e913-6cc5-4c1b-a924-974c9b2b478b",
+      "2a0865cb-e86a-4b95-8c28-db5dbf4016b4",
+      "15c445a7-590c-4e09-ba1f-d465e100a282",
+      "864982f5-0c38-493b-9c61-3fb27a6ce8a8",
+      "a1faa3fe-ede1-4499-bb79-38524f73c296",
+      "8b02cc70-9840-4212-8219-a0ed2b3d2f12",
+      "4a26d4ce-b331-49ff-9217-1a886316817a",
+      "7c117343-594e-4607-9d43-a41ee18ad573",
+      "46d4973a-5944-4405-88ff-99e0b96596ec",
+      "1da13a67-1a8b-47e1-b4d3-0256d085d674",
+      "00595683-151d-4f71-85c4-bb12498decf4",
+      "65f1dc18-e14b-4226-9730-6a11749a9e69",
+      "33a6ed5d-a973-4620-bf3e-d2d86a103fe8",
+      "e27eaa34-dbea-4674-80bd-af593c602a2b",
+      "c36b4672-43d5-47b7-9786-98edfc1c53ed",
+      "6637b00b-2511-4560-8b3c-4df96fc6b667",
+      "2448937c-5492-4d34-81b6-af4baea972be",
+      "57de68e1-908d-4066-8d0d-be01ccac7b65",
+      "2c6da782-75d6-4c0d-9161-55f7bfe6133f",
+      "9537dfa9-ca0e-46dd-9f4d-4aaa07a1352e",
+      "b7a42337-6b52-4f03-83a8-427785207a39",
+      "461be7b3-2467-4b43-aa66-2f1b0d48a5fa",
+      "0e0b5266-c433-4ed7-8d78-9d618ea79699",
+      "15de9671-3665-4e35-a7ea-964513132015",
+      "f28cd0c7-2858-4d84-af1e-6d1b3e4834f4",
+      "8be8b886-1d8d-4c6a-9126-05d924d73b49",
+      "bf5f5f5d-c3d8-46d5-bd85-83e94af14a18",
+      "89a83bc9-f05c-4988-83cc-742664145f8e",
+      "a43d955a-a673-40ef-b2d1-b9becec8731e",
+      "e6f36c13-f48a-4268-99a4-874f89abcb7b",
+      "6c8bdcd5-5096-43f4-9712-c27efe3a3de2",
+      "d40f2200-90f9-4d8e-80ea-31c375790366",
+      "25161d60-778d-40a1-aa97-787dba54aeed",
+      "c79922da-1c2a-4adf-91af-d0ce2772fde1",
+      "b2b5911c-82cf-4a64-b9d9-c87e9f34f8e3",
+      "c26db1f1-c85a-4724-b2a2-433623dbb7f9",
+      "0fd7b9a4-bd72-476c-9ac9-549cf71e12d6",
+      "35d4e192-fdff-4a2f-8e2c-73204bdf4e44",
+      "21991523-330f-4ec2-8a12-5cb036011df7",
+      "c1c5b023-f47e-4481-aef0-3824ed6fc52f",
+      "a2d345f5-eea1-4c66-b0ad-407adae915c6",
+      "800ea3af-4929-40bf-b514-331ed2853536",
+      "81dab7a5-8a22-434c-a6c3-146d6bfa5f28",
+      "6a8f7ca8-212b-473a-9418-70bb588b149a",
+      "b4348885-7a5f-4fe7-a85d-7f797239074f",
+      "55c0b144-251d-44f9-abf9-f9e3dce9f44c",
+      "fd332130-a8b1-49af-a8f2-708e2c5912d9",
+      "19cf40e1-7068-4048-b186-d33f4c993e2d"
+    ],
+    "byId": {
+      "5dab604d-fb84-4dc9-84f3-a1ca55fea8cd": {
+        "id": "5dab604d-fb84-4dc9-84f3-a1ca55fea8cd",
+        "word": "a",
+        "transcription": "ə",
+        "partOfSpeech": "article",
+        "description": "used before singular countable nouns"
+      },
+      "3f848b66-aff0-4f20-ab2f-5402002cba3e": {
+        "id": "3f848b66-aff0-4f20-ab2f-5402002cba3e",
+        "word": "abandon",
+        "transcription": "əˈbændən",
+        "partOfSpeech": "verb",
+        "description": "to leave something behind"
+      },
+      "a369defc-7b50-43ea-98a0-b795b14ab88a": {
+        "id": "a369defc-7b50-43ea-98a0-b795b14ab88a",
+        "word": "ability",
+        "transcription": "əˈbɪləti",
+        "partOfSpeech": "noun",
+        "description": "the power or skill to do something"
+      },
+      "a77415f3-166f-444b-96dc-23e5eb0dcbd1": {
+        "id": "a77415f3-166f-444b-96dc-23e5eb0dcbd1",
+        "word": "able",
+        "transcription": "ˈeɪbl",
+        "partOfSpeech": "adjective",
+        "description": "having the power or skill to do something"
+      },
+      "839bba31-1af2-4a28-8efc-0f4aa82bf93c": {
+        "id": "839bba31-1af2-4a28-8efc-0f4aa82bf93c",
+        "word": "abortion",
+        "transcription": "əˈbɔːrʃn",
+        "partOfSpeech": "noun",
+        "description": "the ending of a pregnancy"
+      },
+      "6941eee2-7f05-4cbd-a7d6-d82d460099e1": {
+        "id": "6941eee2-7f05-4cbd-a7d6-d82d460099e1",
+        "word": "about",
+        "transcription": "əˈbaʊt",
+        "partOfSpeech": "preposition/adverb",
+        "description": "on the subject of; approximately"
+      },
+      "e655ef7e-faa7-489b-9ba6-7fc7df2602f3": {
+        "id": "e655ef7e-faa7-489b-9ba6-7fc7df2602f3",
+        "word": "above",
+        "transcription": "əˈbʌv",
+        "partOfSpeech": "preposition/adverb",
+        "description": "at a higher level or position"
+      },
+      "f562e9f2-6d68-462d-bb38-c45454751ac6": {
+        "id": "f562e9f2-6d68-462d-bb38-c45454751ac6",
+        "word": "abroad",
+        "transcription": "əˈbrɔːd",
+        "partOfSpeech": "adverb",
+        "description": "in or to a foreign country"
+      },
+      "65693591-c2ea-4a1d-9e0d-89cc7228dbe1": {
+        "id": "65693591-c2ea-4a1d-9e0d-89cc7228dbe1",
+        "word": "absence",
+        "transcription": "ˈæbsəns",
+        "partOfSpeech": "noun",
+        "description": "the state of being away from a place or person"
+      },
+      "0b387f8c-3ba6-441f-855b-178bf842ac89": {
+        "id": "0b387f8c-3ba6-441f-855b-178bf842ac89",
+        "word": "absolute",
+        "transcription": "ˈæbsəluːt",
+        "partOfSpeech": "adjective",
+        "description": "complete; total"
+      },
+      "ec1918bb-a2da-41f9-ab28-b41ddb71a925": {
+        "id": "ec1918bb-a2da-41f9-ab28-b41ddb71a925",
+        "word": "absolutely",
+        "transcription": "ˈæbsəluːtli",
+        "partOfSpeech": "adverb",
+        "description": "completely; totally"
+      },
+      "bef7f4fb-90df-4ce8-8dd9-51f1b2bbd41a": {
+        "id": "bef7f4fb-90df-4ce8-8dd9-51f1b2bbd41a",
+        "word": "abstract",
+        "transcription": "ˈæbstrækt",
+        "partOfSpeech": "adjective",
+        "description": "existing as an idea but not a physical thing"
+      },
+      "f0f4dfa6-b663-40c1-b2a0-6d776de2067e": {
+        "id": "f0f4dfa6-b663-40c1-b2a0-6d776de2067e",
+        "word": "abuse",
+        "transcription": "əˈbjuːs",
+        "partOfSpeech": "noun/verb",
+        "description": "cruel or violent treatment; to use wrongly"
+      },
+      "cb1c45e5-ae0e-49c5-a74c-d0ecbf1b07a2": {
+        "id": "cb1c45e5-ae0e-49c5-a74c-d0ecbf1b07a2",
+        "word": "academic",
+        "transcription": "ˌækəˈdemɪk",
+        "partOfSpeech": "adjective",
+        "description": "related to education or scholarly work"
+      },
+      "62914a6f-504e-41c1-a3cf-344dd5630945": {
+        "id": "62914a6f-504e-41c1-a3cf-344dd5630945",
+        "word": "accept",
+        "transcription": "əkˈsept",
+        "partOfSpeech": "verb",
+        "description": "to agree to take something"
+      },
+      "2bab8e5c-8dda-4ce9-98d0-ac44c19de427": {
+        "id": "2bab8e5c-8dda-4ce9-98d0-ac44c19de427",
+        "word": "acceptable",
+        "transcription": "əkˈseptəbl",
+        "partOfSpeech": "adjective",
+        "description": "good enough to be agreed on"
+      },
+      "7bd8c852-3e8e-437b-85a9-6199a50e30e0": {
+        "id": "7bd8c852-3e8e-437b-85a9-6199a50e30e0",
+        "word": "access",
+        "transcription": "ˈækses",
+        "partOfSpeech": "noun",
+        "description": "the ability to enter or use something"
+      },
+      "8a1faed4-861e-4e8d-9eab-4ab3ecac3514": {
+        "id": "8a1faed4-861e-4e8d-9eab-4ab3ecac3514",
+        "word": "accident",
+        "transcription": "ˈæksɪdənt",
+        "partOfSpeech": "noun",
+        "description": "an unexpected event causing harm or damage"
+      },
+      "0e9e4b26-3d4e-4c25-926e-783da9029a63": {
+        "id": "0e9e4b26-3d4e-4c25-926e-783da9029a63",
+        "word": "accommodation",
+        "transcription": "əˌkɑːməˈdeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "a place where someone can live or stay"
+      },
+      "01aa5567-fc39-4584-ad26-7628cba5dbf1": {
+        "id": "01aa5567-fc39-4584-ad26-7628cba5dbf1",
+        "word": "accompany",
+        "transcription": "əˈkʌmpəni",
+        "partOfSpeech": "verb",
+        "description": "to go with someone"
+      },
+      "768dec6f-cf2a-431b-aaa0-de04dffb59f8": {
+        "id": "768dec6f-cf2a-431b-aaa0-de04dffb59f8",
+        "word": "accomplish",
+        "transcription": "əˈkɑːmplɪʃ",
+        "partOfSpeech": "verb",
+        "description": "to achieve or complete successfully"
+      },
+      "7dec40a0-6f66-401f-a0eb-b563d395791a": {
+        "id": "7dec40a0-6f66-401f-a0eb-b563d395791a",
+        "word": "accord",
+        "transcription": "əˈkɔːrd",
+        "partOfSpeech": "noun",
+        "description": "an official agreement or treaty."
+      },
+      "bec7dffe-125b-4379-96e7-1ce87ed2d1bc": {
+        "id": "bec7dffe-125b-4379-96e7-1ce87ed2d1bc",
+        "word": "account",
+        "transcription": "əˈkaʊnt",
+        "partOfSpeech": "noun",
+        "description": "an arrangement with a bank to keep your money there and allow you to take it out."
+      },
+      "ba1fe579-867e-4b81-8c57-ac61016b25b5": {
+        "id": "ba1fe579-867e-4b81-8c57-ac61016b25b5",
+        "word": "accurate",
+        "transcription": "ˈækjərət",
+        "partOfSpeech": "adjective",
+        "description": "correct and without any mistakes."
+      },
+      "9b714606-870e-4c9f-8bc2-243df324865b": {
+        "id": "9b714606-870e-4c9f-8bc2-243df324865b",
+        "word": "accuse",
+        "transcription": "əˈkjuːz",
+        "partOfSpeech": "verb",
+        "description": "to say that someone has done something morally wrong, illegal, or unkind."
+      },
+      "ee070c09-a4a8-43c7-8e98-fbedb4bae098": {
+        "id": "ee070c09-a4a8-43c7-8e98-fbedb4bae098",
+        "word": "achieve",
+        "transcription": "əˈtʃiːv",
+        "partOfSpeech": "verb",
+        "description": "to succeed in finishing something or reaching an aim, especially after a lot of work or effort."
+      },
+      "09b21577-928b-4927-b5c4-3d71d2b83377": {
+        "id": "09b21577-928b-4927-b5c4-3d71d2b83377",
+        "word": "achievement",
+        "transcription": "əˈtʃiːvmənt",
+        "partOfSpeech": "noun",
+        "description": "something very good and difficult that you have succeeded in doing."
+      },
+      "e48043ac-ca99-45bd-975b-e7b4249e3b19": {
+        "id": "e48043ac-ca99-45bd-975b-e7b4249e3b19",
+        "word": "acknowledge",
+        "transcription": "əkˈnɑːlɪdʒ",
+        "partOfSpeech": "verb",
+        "description": "to accept, admit, or recognize something, or the truth or existence of something."
+      },
+      "74990e44-df53-4bbb-af6c-5fbd20ca7faa": {
+        "id": "74990e44-df53-4bbb-af6c-5fbd20ca7faa",
+        "word": "acquire",
+        "transcription": "əˈkwaɪər",
+        "partOfSpeech": "verb",
+        "description": "to get something."
+      },
+      "a4965bb9-5800-4f17-8642-b77d0869b9fb": {
+        "id": "a4965bb9-5800-4f17-8642-b77d0869b9fb",
+        "word": "acquisition",
+        "transcription": "ˌækwɪˈzɪʃn",
+        "partOfSpeech": "noun",
+        "description": "something that someone buys or obtains."
+      },
+      "2c36645c-7deb-4077-81aa-f7eec5001e13": {
+        "id": "2c36645c-7deb-4077-81aa-f7eec5001e13",
+        "word": "across",
+        "transcription": "əˈkrɔːs",
+        "partOfSpeech": "preposition",
+        "description": "from one side to the other of something."
+      },
+      "7c14163e-d7ba-4171-b555-626f3867c3ed": {
+        "id": "7c14163e-d7ba-4171-b555-626f3867c3ed",
+        "word": "act",
+        "transcription": "ækt",
+        "partOfSpeech": "verb",
+        "description": "to do something for a particular purpose or to solve a problem."
+      },
+      "b793c386-a347-46cd-b0b5-9262ce5960f7": {
+        "id": "b793c386-a347-46cd-b0b5-9262ce5960f7",
+        "word": "action",
+        "transcription": "ˈækʃn",
+        "partOfSpeech": "noun",
+        "description": "the process of doing something in order to make something happen or to deal with a situation."
+      },
+      "648a04e7-c143-4624-9c65-132bee273d50": {
+        "id": "648a04e7-c143-4624-9c65-132bee273d50",
+        "word": "active",
+        "transcription": "ˈæktɪv",
+        "partOfSpeech": "adjective",
+        "description": "busy with a particular activity."
+      },
+      "43489e72-ce8d-47f2-ba3c-9312e5d31d60": {
+        "id": "43489e72-ce8d-47f2-ba3c-9312e5d31d60",
+        "word": "activity",
+        "transcription": "ækˈtɪvəti",
+        "partOfSpeech": "noun",
+        "description": "a situation in which a lot of things are happening or people are moving around."
+      },
+      "fc8fecb2-67cb-4b9c-9b72-d419c257dfc4": {
+        "id": "fc8fecb2-67cb-4b9c-9b72-d419c257dfc4",
+        "word": "actor",
+        "transcription": "ˈæktər",
+        "partOfSpeech": "noun",
+        "description": "someone who pretends to be someone else while performing in a film, play, or television or radio program."
+      },
+      "03db1efe-c697-4828-80b3-4d730bd95a62": {
+        "id": "03db1efe-c697-4828-80b3-4d730bd95a62",
+        "word": "actual",
+        "transcription": "ˈæktʃuəl",
+        "partOfSpeech": "adjective",
+        "description": "existing in fact."
+      },
+      "5ca6d205-3404-4380-895c-3ec466d244b0": {
+        "id": "5ca6d205-3404-4380-895c-3ec466d244b0",
+        "word": "actually",
+        "transcription": "ˈæktʃuəli",
+        "partOfSpeech": "adverb",
+        "description": "used to emphasize that something is true, especially when the truth is different from what has been suggested."
+      },
+      "642409ae-af78-48d3-94f0-5497e1bb98a6": {
+        "id": "642409ae-af78-48d3-94f0-5497e1bb98a6",
+        "word": "ad",
+        "transcription": "æd",
+        "partOfSpeech": "noun",
+        "description": "an advertisement."
+      },
+      "afb3d51c-ed1a-4dfd-879d-73522565975c": {
+        "id": "afb3d51c-ed1a-4dfd-879d-73522565975c",
+        "word": "adapt",
+        "transcription": "əˈdæpt",
+        "partOfSpeech": "verb",
+        "description": "to change, or to change something, to suit different conditions or uses."
+      },
+      "3d6e16ee-b496-4aa6-bd55-735181a4a8f6": {
+        "id": "3d6e16ee-b496-4aa6-bd55-735181a4a8f6",
+        "word": "add",
+        "transcription": "æd",
+        "partOfSpeech": "verb",
+        "description": "to put something with something else to increase the number or amount or to improve the whole."
+      },
+      "b1a15bba-44ff-467d-9090-43319dffb118": {
+        "id": "b1a15bba-44ff-467d-9090-43319dffb118",
+        "word": "addition",
+        "transcription": "əˈdɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the process of adding numbers or things together."
+      },
+      "232cf340-f3ff-49b0-ae5b-6f65c51e57ca": {
+        "id": "232cf340-f3ff-49b0-ae5b-6f65c51e57ca",
+        "word": "additional",
+        "transcription": "əˈdɪʃənl",
+        "partOfSpeech": "adjective",
+        "description": "extra things or amounts."
+      },
+      "a2f2dbde-c3cc-4afe-b2e7-6862aff89177": {
+        "id": "a2f2dbde-c3cc-4afe-b2e7-6862aff89177",
+        "word": "address",
+        "transcription": "əˈdres",
+        "partOfSpeech": "noun",
+        "description": "the number of the house, name of the road, and name of the town where someone lives or works."
+      },
+      "3e6f08db-1c95-49b5-af09-8c2013a19b27": {
+        "id": "3e6f08db-1c95-49b5-af09-8c2013a19b27",
+        "word": "adequate",
+        "transcription": "ˈædɪkwət",
+        "partOfSpeech": "adjective",
+        "description": "enough or satisfactory for a particular purpose."
+      },
+      "2fcbe1f1-8838-450b-bf9b-57a226fdb8c6": {
+        "id": "2fcbe1f1-8838-450b-bf9b-57a226fdb8c6",
+        "word": "adjust",
+        "transcription": "əˈdʒʌst",
+        "partOfSpeech": "verb",
+        "description": "to change something slightly, especially to make it more correct, effective, or suitable."
+      },
+      "d805670c-a9ca-4b58-8188-eac3beae85ac": {
+        "id": "d805670c-a9ca-4b58-8188-eac3beae85ac",
+        "word": "adjustment",
+        "transcription": "əˈdʒʌstmənt",
+        "partOfSpeech": "noun",
+        "description": "a small change made to something in order to improve it."
+      },
+      "05c57737-e3de-475b-8f20-3f9e8916bd6f": {
+        "id": "05c57737-e3de-475b-8f20-3f9e8916bd6f",
+        "word": "administration",
+        "transcription": "ədˌmɪnɪˈstreɪʃn",
+        "partOfSpeech": "noun",
+        "description": "the arrangements and tasks needed to control the operation of a plan or organization."
+      },
+      "125242fe-9b31-4314-9223-5ecf65a92485": {
+        "id": "125242fe-9b31-4314-9223-5ecf65a92485",
+        "word": "admire",
+        "transcription": "ədˈmaɪər",
+        "partOfSpeech": "verb",
+        "description": "to find someone or something attractive and pleasant to look at."
+      },
+      "bba33fa4-0d1d-4b77-829d-beb3d5f76940": {
+        "id": "bba33fa4-0d1d-4b77-829d-beb3d5f76940",
+        "word": "admit",
+        "transcription": "ədˈmɪt",
+        "partOfSpeech": "verb",
+        "description": "to agree that something is true, especially unwillingly."
+      },
+      "fc6fd884-47fd-4604-a206-7d9143dab8ff": {
+        "id": "fc6fd884-47fd-4604-a206-7d9143dab8ff",
+        "word": "adopt",
+        "transcription": "əˈdɑːpt",
+        "partOfSpeech": "verb",
+        "description": "to legally take another person's child into your own family and take care of him or her as your own child."
+      },
+      "50c0164e-e209-4683-a3bd-63575fefc4b4": {
+        "id": "50c0164e-e209-4683-a3bd-63575fefc4b4",
+        "word": "adult",
+        "transcription": "ˈædʌlt",
+        "partOfSpeech": "noun",
+        "description": "a person or animal that has grown to full size and strength."
+      },
+      "d57c867c-b814-4050-ad1d-ddb20debfdde": {
+        "id": "d57c867c-b814-4050-ad1d-ddb20debfdde",
+        "word": "advance",
+        "transcription": "ədˈvæns",
+        "partOfSpeech": "noun",
+        "description": "the forward movement of something, or an improvement or development in something."
+      },
+      "ca34e231-5446-457b-8b97-dc59b5c1a26f": {
+        "id": "ca34e231-5446-457b-8b97-dc59b5c1a26f",
+        "word": "advantage",
+        "transcription": "ədˈvæntɪdʒ",
+        "partOfSpeech": "noun",
+        "description": "a condition giving a greater chance of success."
+      },
+      "6d729901-4dbe-4c09-afce-e79535eff6ac": {
+        "id": "6d729901-4dbe-4c09-afce-e79535eff6ac",
+        "word": "adventure",
+        "transcription": "ədˈventʃər",
+        "partOfSpeech": "noun",
+        "description": "an unusual, exciting, and possibly dangerous activity."
+      },
+      "68446758-bbf2-4812-9cc3-0abcb188db46": {
+        "id": "68446758-bbf2-4812-9cc3-0abcb188db46",
+        "word": "advertise",
+        "transcription": "ˈædvərtaɪz",
+        "partOfSpeech": "verb",
+        "description": "to make something known generally or in public, especially in order to sell it."
+      },
+      "ca8fec38-68e9-459a-afe6-5a313f39a79a": {
+        "id": "ca8fec38-68e9-459a-afe6-5a313f39a79a",
+        "word": "advertisement",
+        "transcription": "ˌædvərˈtaɪzmənt",
+        "partOfSpeech": "noun",
+        "description": "a picture, short film, song, etc. that tries to persuade people to buy a product or service."
+      },
+      "37741049-5996-4a14-bd7a-491a40c9ff9d": {
+        "id": "37741049-5996-4a14-bd7a-491a40c9ff9d",
+        "word": "advice",
+        "transcription": "ədˈvaɪs",
+        "partOfSpeech": "noun",
+        "description": "an opinion that someone offers you about what you should do or how you should act in a particular situation."
+      },
+      "9645edda-6bb2-46bb-a10f-0bc784622f32": {
+        "id": "9645edda-6bb2-46bb-a10f-0bc784622f32",
+        "word": "advise",
+        "transcription": "ədˈvaɪz",
+        "partOfSpeech": "verb",
+        "description": "to give someone advice."
+      },
+      "2a486f00-3d7b-4514-9bfe-28613b481ff7": {
+        "id": "2a486f00-3d7b-4514-9bfe-28613b481ff7",
+        "word": "adviser",
+        "transcription": "ədˈvaɪzər",
+        "partOfSpeech": "noun",
+        "description": "someone whose job is to give advice about a subject."
+      },
+      "d5c87d7e-96ac-4602-b175-ad95f8807c5b": {
+        "id": "d5c87d7e-96ac-4602-b175-ad95f8807c5b",
+        "word": "advocate",
+        "transcription": "ˈædvəkət",
+        "partOfSpeech": "noun",
+        "description": "someone who publicly supports something."
+      },
+      "b52dc0c3-3e51-45dd-821d-c093abd364fe": {
+        "id": "b52dc0c3-3e51-45dd-821d-c093abd364fe",
+        "word": "affair",
+        "transcription": "əˈfer",
+        "partOfSpeech": "noun",
+        "description": "a matter or situation that needs to be dealt with."
+      },
+      "ad718a0b-54af-4fea-8773-10aaf8cdc1fa": {
+        "id": "ad718a0b-54af-4fea-8773-10aaf8cdc1fa",
+        "word": "affect",
+        "transcription": "əˈfekt",
+        "partOfSpeech": "verb",
+        "description": "to have an influence on someone or something, or to cause a change."
+      },
+      "11046144-550a-452b-9746-966f49499398": {
+        "id": "11046144-550a-452b-9746-966f49499398",
+        "word": "afford",
+        "transcription": "əˈfɔːrd",
+        "partOfSpeech": "verb",
+        "description": "to be able to buy or do something because you have enough money or time."
+      },
+      "085d2b58-a052-472c-9d5d-6bdaffc60d49": {
+        "id": "085d2b58-a052-472c-9d5d-6bdaffc60d49",
+        "word": "afraid",
+        "transcription": "əˈfreɪd",
+        "partOfSpeech": "adjective",
+        "description": "feeling fear, or feeling worry about the possible results of a particular situation."
+      },
+      "ad7574c3-ed16-4a27-afe8-8f74d57b4a3f": {
+        "id": "ad7574c3-ed16-4a27-afe8-8f74d57b4a3f",
+        "word": "after",
+        "transcription": "ˈæftər",
+        "partOfSpeech": "preposition",
+        "description": "following in time, place, or order."
+      },
+      "521431bd-5092-4d46-acc0-56bf32f77111": {
+        "id": "521431bd-5092-4d46-acc0-56bf32f77111",
+        "word": "afternoon",
+        "transcription": "ˌæftərˈnuːn",
+        "partOfSpeech": "noun",
+        "description": "the period of time from about 12 o'clock to about 6 o'clock in the evening."
+      },
+      "79c80ccc-f79f-46c0-8d20-f174854e224a": {
+        "id": "79c80ccc-f79f-46c0-8d20-f174854e224a",
+        "word": "again",
+        "transcription": "əˈɡen",
+        "partOfSpeech": "adverb",
+        "description": "one more time."
+      },
+      "cbdb15eb-87f7-4b11-a40a-b5f4580cec02": {
+        "id": "cbdb15eb-87f7-4b11-a40a-b5f4580cec02",
+        "word": "against",
+        "transcription": "əˈɡenst",
+        "partOfSpeech": "preposition",
+        "description": "opposing or disagreeing with someone or something."
+      },
+      "ada24fd5-ee2a-4a41-a9c8-d36df685b84d": {
+        "id": "ada24fd5-ee2a-4a41-a9c8-d36df685b84d",
+        "word": "age",
+        "transcription": "eɪdʒ",
+        "partOfSpeech": "noun",
+        "description": "the period of time someone has been alive or something has existed."
+      },
+      "62f004c2-3188-4099-8de7-1b7a3d2915ac": {
+        "id": "62f004c2-3188-4099-8de7-1b7a3d2915ac",
+        "word": "agency",
+        "transcription": "ˈeɪdʒənsi",
+        "partOfSpeech": "noun",
+        "description": "a business that represents one group of people when dealing with another group."
+      },
+      "cd0598ba-e57f-4c90-838c-00579681f984": {
+        "id": "cd0598ba-e57f-4c90-838c-00579681f984",
+        "word": "agenda",
+        "transcription": "əˈdʒendə",
+        "partOfSpeech": "noun",
+        "description": "a list of matters to be discussed at a meeting."
+      },
+      "93700a56-5935-4fe4-a98d-4ab8943b49b9": {
+        "id": "93700a56-5935-4fe4-a98d-4ab8943b49b9",
+        "word": "agent",
+        "transcription": "ˈeɪdʒənt",
+        "partOfSpeech": "noun",
+        "description": "a person who acts for or represents another."
+      },
+      "79f29252-c0a1-4402-aacc-71d82fd62938": {
+        "id": "79f29252-c0a1-4402-aacc-71d82fd62938",
+        "word": "aggressive",
+        "transcription": "əˈɡresɪv",
+        "partOfSpeech": "adjective",
+        "description": "behaving in an angry and violent way towards another person."
+      },
+      "e3a73dba-c3b9-4629-8845-4167f3a8fae8": {
+        "id": "e3a73dba-c3b9-4629-8845-4167f3a8fae8",
+        "word": "ago",
+        "transcription": "əˈɡoʊ",
+        "partOfSpeech": "adverb",
+        "description": "used to refer to a time in the past."
+      },
+      "10660955-e3e9-4f14-b0d9-3ef0433edfde": {
+        "id": "10660955-e3e9-4f14-b0d9-3ef0433edfde",
+        "word": "agree",
+        "transcription": "əˈɡriː",
+        "partOfSpeech": "verb",
+        "description": "to have the same opinion."
+      },
+      "a9cad980-75e6-4371-9e6b-e6baa7b56691": {
+        "id": "a9cad980-75e6-4371-9e6b-e6baa7b56691",
+        "word": "agreement",
+        "transcription": "əˈɡriːmənt",
+        "partOfSpeech": "noun",
+        "description": "a decision or arrangement, often formal and written, between two or more groups or people."
+      },
+      "96fa29e2-1661-4d46-a7d7-3c7cf99cc55f": {
+        "id": "96fa29e2-1661-4d46-a7d7-3c7cf99cc55f",
+        "word": "agricultural",
+        "transcription": "ˌæɡrɪˈkʌltʃərəl",
+        "partOfSpeech": "adjective",
+        "description": "related to farming."
+      },
+      "bb1d97d0-fb58-455a-8b53-5890c9f7dc88": {
+        "id": "bb1d97d0-fb58-455a-8b53-5890c9f7dc88",
+        "word": "ahead",
+        "transcription": "əˈhed",
+        "partOfSpeech": "adverb",
+        "description": "in front."
+      },
+      "f8774cad-d80c-4a6f-a57a-2b32cc54d854": {
+        "id": "f8774cad-d80c-4a6f-a57a-2b32cc54d854",
+        "word": "aid",
+        "transcription": "eɪd",
+        "partOfSpeech": "noun",
+        "description": "help or support."
+      },
+      "cf7b0cac-479e-40ba-b8f5-f15b85eaed29": {
+        "id": "cf7b0cac-479e-40ba-b8f5-f15b85eaed29",
+        "word": "aim",
+        "transcription": "eɪm",
+        "partOfSpeech": "noun",
+        "description": "a result that your plans or actions are intended to achieve."
+      },
+      "73101f0e-beb4-4d87-98f1-2cdb55ec7092": {
+        "id": "73101f0e-beb4-4d87-98f1-2cdb55ec7092",
+        "word": "air",
+        "transcription": "er",
+        "partOfSpeech": "noun",
+        "description": "the mixture of gases that surrounds the earth and that we breathe."
+      },
+      "771d872e-df09-4cca-bd5c-7451a12ebd34": {
+        "id": "771d872e-df09-4cca-bd5c-7451a12ebd34",
+        "word": "aircraft",
+        "transcription": "ˈerkræft",
+        "partOfSpeech": "noun",
+        "description": "any vehicle, with or without an engine, that can fly, such as a plane or helicopter."
+      },
+      "29d05fc7-f52c-4298-8c8b-816bf2a1d10d": {
+        "id": "29d05fc7-f52c-4298-8c8b-816bf2a1d10d",
+        "word": "airline",
+        "transcription": "ˈerlaɪn",
+        "partOfSpeech": "noun",
+        "description": "a business that operates regular services for carrying passengers and/or goods by aircraft."
+      },
+      "7db930e5-0593-43b1-85e1-bcde7efc4bf3": {
+        "id": "7db930e5-0593-43b1-85e1-bcde7efc4bf3",
+        "word": "alarm",
+        "transcription": "əˈlɑːrm",
+        "partOfSpeech": "noun",
+        "description": "a warning of danger, usually a loud noise or flashing light."
+      },
+      "39ae63db-6bab-4830-916a-f89984452518": {
+        "id": "39ae63db-6bab-4830-916a-f89984452518",
+        "word": "album",
+        "transcription": "ˈælbəm",
+        "partOfSpeech": "noun",
+        "description": "a collection of recordings issued as a single item."
+      },
+      "97b56ee6-4b9e-42ba-8906-61b4eb9399ca": {
+        "id": "97b56ee6-4b9e-42ba-8906-61b4eb9399ca",
+        "word": "alcohol",
+        "transcription": "ˈælkəhɔːl",
+        "partOfSpeech": "noun",
+        "description": "a clear liquid that can make you drunk, used in drinks such as beer, wine, etc."
+      },
+      "6addaf87-1fa3-4b02-ab7d-94e3cea8cac4": {
+        "id": "6addaf87-1fa3-4b02-ab7d-94e3cea8cac4",
+        "word": "alive",
+        "transcription": "əˈlaɪv",
+        "partOfSpeech": "adjective",
+        "description": "living, not dead."
+      },
+      "da7010b6-0c21-4c8f-8dc2-741093a4c60a": {
+        "id": "da7010b6-0c21-4c8f-8dc2-741093a4c60a",
+        "word": "all",
+        "transcription": "ɔːl",
+        "partOfSpeech": "determiner",
+        "description": "the whole number or amount of something."
+      },
+      "e32f97b2-ed0d-483b-8108-1c46eec586da": {
+        "id": "e32f97b2-ed0d-483b-8108-1c46eec586da",
+        "word": "allege",
+        "transcription": "əˈledʒ",
+        "partOfSpeech": "verb",
+        "description": "to say that someone has done something illegal or wrong without giving proof."
+      },
+      "d1895700-5ab3-4a60-b592-26942a791ad6": {
+        "id": "d1895700-5ab3-4a60-b592-26942a791ad6",
+        "word": "allow",
+        "transcription": "əˈlaʊ",
+        "partOfSpeech": "verb",
+        "description": "to give permission for someone to do something."
+      },
+      "a016dd55-f5c1-4bd5-be32-92582269d030": {
+        "id": "a016dd55-f5c1-4bd5-be32-92582269d030",
+        "word": "ally",
+        "transcription": "ˈælaɪ",
+        "partOfSpeech": "noun",
+        "description": "a country that has agreed officially to give help and support to another one, especially during a war."
+      },
+      "499b090e-a56e-4d89-93f1-95f6e099d817": {
+        "id": "499b090e-a56e-4d89-93f1-95f6e099d817",
+        "word": "almost",
+        "transcription": "ˈɔːlmoʊst",
+        "partOfSpeech": "adverb",
+        "description": "nearly."
+      },
+      "d139702f-b7b8-4bbc-9a70-36c93c9ed2a6": {
+        "id": "d139702f-b7b8-4bbc-9a70-36c93c9ed2a6",
+        "word": "alone",
+        "transcription": "əˈloʊn",
+        "partOfSpeech": "adjective",
+        "description": "without other people."
+      },
+      "6f432a6f-e3a5-4e6d-a866-f925af0c6bf7": {
+        "id": "6f432a6f-e3a5-4e6d-a866-f925af0c6bf7",
+        "word": "along",
+        "transcription": "əˈlɔːŋ",
+        "partOfSpeech": "preposition",
+        "description": "from one part of a road, river, etc. to another."
+      },
+      "9ede6a33-6f4c-4b6e-a3d0-00df58d32ac7": {
+        "id": "9ede6a33-6f4c-4b6e-a3d0-00df58d32ac7",
+        "word": "alongside",
+        "transcription": "əˌlɔːŋˈsaɪd",
+        "partOfSpeech": "preposition",
+        "description": "next to someone or something."
+      },
+      "6c9f2c1d-3009-42a8-b08d-c29f3a43f1b4": {
+        "id": "6c9f2c1d-3009-42a8-b08d-c29f3a43f1b4",
+        "word": "already",
+        "transcription": "ɔːlˈredi",
+        "partOfSpeech": "adverb",
+        "description": "before now, or before a particular time."
+      },
+      "d615f23d-c456-4822-b018-f5b99e6b4db2": {
+        "id": "d615f23d-c456-4822-b018-f5b99e6b4db2",
+        "word": "alright",
+        "transcription": "ɔːlˈraɪt",
+        "partOfSpeech": "adjective",
+        "description": "satisfactory but not excellent."
+      },
+      "31569b0e-59ba-41ca-8c76-72313c1ae5bb": {
+        "id": "31569b0e-59ba-41ca-8c76-72313c1ae5bb",
+        "word": "also",
+        "transcription": "ˈɔːlsoʊ",
+        "partOfSpeech": "adverb",
+        "description": "in addition."
+      },
+      "08995fa5-44aa-4be7-bd9d-4d60864f5c02": {
+        "id": "08995fa5-44aa-4be7-bd9d-4d60864f5c02",
+        "word": "alter",
+        "transcription": "ˈɔːltər",
+        "partOfSpeech": "verb",
+        "description": "to change something, usually slightly."
+      },
+      "8fa7f985-6ea4-42a8-8b1d-20abccd47c2a": {
+        "id": "8fa7f985-6ea4-42a8-8b1d-20abccd47c2a",
+        "word": "alternative",
+        "transcription": "ɑːlˈtɜːrnətɪv",
+        "partOfSpeech": "noun",
+        "description": "something that is different from something else, especially from what is usual."
+      },
+      "af46e04c-0640-46c6-95f4-4433bcc84d60": {
+        "id": "af46e04c-0640-46c6-95f4-4433bcc84d60",
+        "word": "although",
+        "transcription": "ɔːlˈðoʊ",
+        "partOfSpeech": "conjunction",
+        "description": "despite the fact that."
+      },
+      "82ad9829-fa68-4942-9481-489bc2463203": {
+        "id": "82ad9829-fa68-4942-9481-489bc2463203",
+        "word": "altogether",
+        "transcription": "ˌɔːltəˈɡeðər",
+        "partOfSpeech": "adverb",
+        "description": "completely or in total."
+      },
+      "1698b153-0e84-4981-8342-32084b3f69cf": {
+        "id": "1698b153-0e84-4981-8342-32084b3f69cf",
+        "word": "always",
+        "transcription": "ˈɔːlweɪz",
+        "partOfSpeech": "adverb",
+        "description": "at all times or at every time."
+      },
+      "dbf87a92-368d-4495-ab3d-e8306e93d744": {
+        "id": "dbf87a92-368d-4495-ab3d-e8306e93d744",
+        "word": "amaze",
+        "transcription": "əˈmeɪz",
+        "partOfSpeech": "verb",
+        "description": "to cause someone to be extremely surprised."
+      },
+      "a921219e-6daf-4f6a-9fee-904d998ab015": {
+        "id": "a921219e-6daf-4f6a-9fee-904d998ab015",
+        "word": "amendment",
+        "transcription": "əˈmendmənt",
+        "partOfSpeech": "noun",
+        "description": "a change or changes made to the words of a text."
+      },
+      "28cd8c83-5bc3-4245-aad7-3bea8311fee7": {
+        "id": "28cd8c83-5bc3-4245-aad7-3bea8311fee7",
+        "word": "among",
+        "transcription": "əˈmʌŋ",
+        "partOfSpeech": "preposition",
+        "description": "in the middle of or surrounded by other things."
+      },
+      "dd5d2b6e-e286-4216-b3bd-6b5437d2de06": {
+        "id": "dd5d2b6e-e286-4216-b3bd-6b5437d2de06",
+        "word": "amount",
+        "transcription": "əˈmaʊnt",
+        "partOfSpeech": "noun",
+        "description": "a collection or mass, especially of something that cannot be counted."
+      },
+      "3a40aa84-ce68-4f4b-8876-09f9ba8b30dd": {
+        "id": "3a40aa84-ce68-4f4b-8876-09f9ba8b30dd",
+        "word": "analysis",
+        "transcription": "əˈnæləsɪs",
+        "partOfSpeech": "noun",
+        "description": "the process of studying something closely and critically."
+      },
+      "4e978bf6-79ee-40b2-ac71-bdbbee2c5048": {
+        "id": "4e978bf6-79ee-40b2-ac71-bdbbee2c5048",
+        "word": "analyst",
+        "transcription": "ˈænəlɪst",
+        "partOfSpeech": "noun",
+        "description": "someone whose job is to study or examine something in detail."
+      },
+      "435b9090-13a3-45c5-8e1d-9c9b4f880d5e": {
+        "id": "435b9090-13a3-45c5-8e1d-9c9b4f880d5e",
+        "word": "analyze",
+        "transcription": "ˈænəlaɪz",
+        "partOfSpeech": "verb",
+        "description": "to study or examine something in detail."
+      },
+      "eb176629-09d0-41b3-9007-d4aa95492796": {
+        "id": "eb176629-09d0-41b3-9007-d4aa95492796",
+        "word": "ancient",
+        "transcription": "ˈeɪnʃənt",
+        "partOfSpeech": "adjective",
+        "description": "belonging to a time long ago in history, especially thousands of years ago."
+      },
+      "14964b79-8c26-467d-b745-5aeaa672a12c": {
+        "id": "14964b79-8c26-467d-b745-5aeaa672a12c",
+        "word": "and",
+        "transcription": "ænd",
+        "partOfSpeech": "conjunction",
+        "description": "used to join two words, phrases, parts of sentences, or related statements together."
+      },
+      "87d79e50-ef59-4c8e-a95c-b6593b55045a": {
+        "id": "87d79e50-ef59-4c8e-a95c-b6593b55045a",
+        "word": "anger",
+        "transcription": "ˈæŋɡər",
+        "partOfSpeech": "noun",
+        "description": "a strong feeling that makes you want to hurt someone or be unpleasant because of something unfair or unkind that has happened."
+      },
+      "86673089-809c-4851-a9fd-764108493abe": {
+        "id": "86673089-809c-4851-a9fd-764108493abe",
+        "word": "angle",
+        "transcription": "ˈæŋɡl",
+        "partOfSpeech": "noun",
+        "description": "the space between two lines or surfaces at the point at which they touch each other, measured in degrees."
+      },
+      "9cea7f59-7ab8-4950-81d6-83df76bff73e": {
+        "id": "9cea7f59-7ab8-4950-81d6-83df76bff73e",
+        "word": "angry",
+        "transcription": "ˈæŋɡri",
+        "partOfSpeech": "adjective",
+        "description": "having strong feelings about something that you dislike very much or about an unfair situation."
+      },
+      "a0328e9d-43f9-46b1-96dd-a886da8519d8": {
+        "id": "a0328e9d-43f9-46b1-96dd-a886da8519d8",
+        "word": "animal",
+        "transcription": "ˈænɪml",
+        "partOfSpeech": "noun",
+        "description": "a living thing that can move independently and feeds on organic matter."
+      },
+      "51ca8415-cf2c-4e1d-8300-98f60a548747": {
+        "id": "51ca8415-cf2c-4e1d-8300-98f60a548747",
+        "word": "announce",
+        "transcription": "əˈnaʊns",
+        "partOfSpeech": "verb",
+        "description": "to make something known or tell people about something officially."
+      },
+      "e9f30e95-3dc9-4222-b42b-17f781440d2d": {
+        "id": "e9f30e95-3dc9-4222-b42b-17f781440d2d",
+        "word": "announcement",
+        "transcription": "əˈnaʊnsmənt",
+        "partOfSpeech": "noun",
+        "description": "something that someone says officially, giving information about something."
+      },
+      "d3f471ec-6a2f-4b68-8ad5-119e819fc3a8": {
+        "id": "d3f471ec-6a2f-4b68-8ad5-119e819fc3a8",
+        "word": "annual",
+        "transcription": "ˈænjuəl",
+        "partOfSpeech": "adjective",
+        "description": "happening once every year."
+      },
+      "fe40c11f-8df0-4799-8664-69bcf0f731ec": {
+        "id": "fe40c11f-8df0-4799-8664-69bcf0f731ec",
+        "word": "another",
+        "transcription": "əˈnʌðər",
+        "partOfSpeech": "determiner",
+        "description": "one more person or thing or an extra amount."
+      },
+      "95affc09-0fbd-40e8-a5c3-532d1c356615": {
+        "id": "95affc09-0fbd-40e8-a5c3-532d1c356615",
+        "word": "answer",
+        "transcription": "ˈænsər",
+        "partOfSpeech": "noun",
+        "description": "something you say, write, or do that reacts to a question or situation."
+      },
+      "8940e952-9ab0-4b56-8f04-81d80cbfeaef": {
+        "id": "8940e952-9ab0-4b56-8f04-81d80cbfeaef",
+        "word": "anticipate",
+        "transcription": "ænˈtɪsɪpeɪt",
+        "partOfSpeech": "verb",
+        "description": "to imagine or expect that something will happen."
+      },
+      "de2774e9-49b3-4964-9ae8-74b46dc6ce2b": {
+        "id": "de2774e9-49b3-4964-9ae8-74b46dc6ce2b",
+        "word": "anxiety",
+        "transcription": "æŋˈzaɪəti",
+        "partOfSpeech": "noun",
+        "description": "an uncomfortable feeling of nervousness or worry about something that is happening or might happen in the future."
+      },
+      "887511c0-e39d-416a-9788-ab78581b0571": {
+        "id": "887511c0-e39d-416a-9788-ab78581b0571",
+        "word": "anxious",
+        "transcription": "ˈæŋkʃəs",
+        "partOfSpeech": "adjective",
+        "description": "worried and nervous."
+      },
+      "a8c54e5a-7c1d-4328-96d7-fb2b88018bc9": {
+        "id": "a8c54e5a-7c1d-4328-96d7-fb2b88018bc9",
+        "word": "any",
+        "transcription": "ˈeni",
+        "partOfSpeech": "determiner",
+        "description": "some, or even the smallest amount or number of."
+      },
+      "c4cd942f-5cec-43a3-a027-4ca021b18ec5": {
+        "id": "c4cd942f-5cec-43a3-a027-4ca021b18ec5",
+        "word": "anybody",
+        "transcription": "ˈenibɑːdi",
+        "partOfSpeech": "pronoun",
+        "description": "any person."
+      },
+      "ed968998-0923-4000-b33f-1c83598302c3": {
+        "id": "ed968998-0923-4000-b33f-1c83598302c3",
+        "word": "anymore",
+        "transcription": "ˌen.iˈmɔːr",
+        "partOfSpeech": "adverb",
+        "description": "at the present time and no longer in the past."
+      },
+      "762bd015-9c8e-4498-95bb-bd14d08a15da": {
+        "id": "762bd015-9c8e-4498-95bb-bd14d08a15da",
+        "word": "anyone",
+        "transcription": "ˈeniwʌn",
+        "partOfSpeech": "pronoun",
+        "description": "any person."
+      },
+      "b3201d71-3b91-4883-9aac-77f4e19fd2f9": {
+        "id": "b3201d71-3b91-4883-9aac-77f4e19fd2f9",
+        "word": "anything",
+        "transcription": "ˈeniθɪŋ",
+        "partOfSpeech": "pronoun",
+        "description": "any object, event, or matter."
+      },
+      "2e73bdc3-bb4c-4417-b86b-14ea1662cf12": {
+        "id": "2e73bdc3-bb4c-4417-b86b-14ea1662cf12",
+        "word": "anyway",
+        "transcription": "ˈeniweɪ",
+        "partOfSpeech": "adverb",
+        "description": "whatever else is happening, without considering other things."
+      },
+      "e99ee56c-0bbc-4cac-b188-ce599b64e06b": {
+        "id": "e99ee56c-0bbc-4cac-b188-ce599b64e06b",
+        "word": "anywhere",
+        "transcription": "ˈeniwer",
+        "partOfSpeech": "adverb",
+        "description": "in, at, or to any place."
+      },
+      "3e4972a6-0d4f-4dcc-93f4-0eda45a6ee6d": {
+        "id": "3e4972a6-0d4f-4dcc-93f4-0eda45a6ee6d",
+        "word": "apart",
+        "transcription": "əˈpɑːrt",
+        "partOfSpeech": "adverb",
+        "description": "separated by a distance or period of time."
+      },
+      "8d271f2e-3c8d-4f4f-a829-f01fb5dcfeb8": {
+        "id": "8d271f2e-3c8d-4f4f-a829-f01fb5dcfeb8",
+        "word": "apartment",
+        "transcription": "əˈpɑːrtmənt",
+        "partOfSpeech": "noun",
+        "description": "a set of rooms for living in, usually on one floor of a building."
+      },
+      "c4c56f22-bb00-4cac-a35f-6bebf85d6d7f": {
+        "id": "c4c56f22-bb00-4cac-a35f-6bebf85d6d7f",
+        "word": "apologize",
+        "transcription": "əˈpɑːlədʒaɪz",
+        "partOfSpeech": "verb",
+        "description": "to tell someone that you are sorry for having done something that has caused problems or unhappiness."
+      },
+      "415e4f78-3038-4209-94a5-5d8f785458ef": {
+        "id": "415e4f78-3038-4209-94a5-5d8f785458ef",
+        "word": "apparent",
+        "transcription": "əˈpærənt",
+        "partOfSpeech": "adjective",
+        "description": "able to be seen or understood."
+      },
+      "bcd01074-c724-4ea8-a933-29b8e1fa2002": {
+        "id": "bcd01074-c724-4ea8-a933-29b8e1fa2002",
+        "word": "apparently",
+        "transcription": "əˈpærəntli",
+        "partOfSpeech": "adverb",
+        "description": "used to say you have read or been told something although you are not certain it is true."
+      },
+      "5281bc0f-13fb-4937-b914-fc767c839d48": {
+        "id": "5281bc0f-13fb-4937-b914-fc767c839d48",
+        "word": "appeal",
+        "transcription": "əˈpiːl",
+        "partOfSpeech": "noun",
+        "description": "a request to the public for money, information, or help."
+      },
+      "4632e9fc-174d-4486-8124-b5810ec55a93": {
+        "id": "4632e9fc-174d-4486-8124-b5810ec55a93",
+        "word": "appear",
+        "transcription": "əˈpɪr",
+        "partOfSpeech": "verb",
+        "description": "to start to be seen or to be present."
+      },
+      "fbd44fd4-ac07-43ba-b65a-3ae5962dc2ad": {
+        "id": "fbd44fd4-ac07-43ba-b65a-3ae5962dc2ad",
+        "word": "appearance",
+        "transcription": "əˈpɪrəns",
+        "partOfSpeech": "noun",
+        "description": "the way a person or thing looks to other people."
+      },
+      "2e423cb7-a6eb-4a57-a8be-a9b5afe950aa": {
+        "id": "2e423cb7-a6eb-4a57-a8be-a9b5afe950aa",
+        "word": "application",
+        "transcription": "ˌæplɪˈkeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "an official request for something, usually in writing."
+      },
+      "336d556c-d4a9-4ad4-a614-8b381f2a2974": {
+        "id": "336d556c-d4a9-4ad4-a614-8b381f2a2974",
+        "word": "apply",
+        "transcription": "əˈplaɪ",
+        "partOfSpeech": "verb",
+        "description": "to make use of something or to request something officially."
+      },
+      "33b631c4-01cb-40cc-b46d-afa623e6af54": {
+        "id": "33b631c4-01cb-40cc-b46d-afa623e6af54",
+        "word": "appoint",
+        "transcription": "əˈpɔɪnt",
+        "partOfSpeech": "verb",
+        "description": "to choose someone officially for a job or responsibility."
+      },
+      "22376d90-b315-4af3-94c2-6448c232ed0d": {
+        "id": "22376d90-b315-4af3-94c2-6448c232ed0d",
+        "word": "appointment",
+        "transcription": "əˈpɔɪntmənt",
+        "partOfSpeech": "noun",
+        "description": "a formal arrangement to meet or visit someone at a particular time and place."
+      },
+      "7c1602c9-6ac8-4351-b2b4-0d304c40c49e": {
+        "id": "7c1602c9-6ac8-4351-b2b4-0d304c40c49e",
+        "word": "appreciate",
+        "transcription": "əˈpriːʃieɪt",
+        "partOfSpeech": "verb",
+        "description": "to recognize how good someone or something is and to value them."
+      },
+      "eb090ade-a15f-4771-9e8c-55e64928038a": {
+        "id": "eb090ade-a15f-4771-9e8c-55e64928038a",
+        "word": "approach",
+        "transcription": "əˈproʊtʃ",
+        "partOfSpeech": "noun",
+        "description": "a way of dealing with something."
+      },
+      "1d35531b-8a74-4f1c-9252-3a2f552a38e0": {
+        "id": "1d35531b-8a74-4f1c-9252-3a2f552a38e0",
+        "word": "appropriate",
+        "transcription": "əˈproʊpriət",
+        "partOfSpeech": "adjective",
+        "description": "suitable or right for a particular situation or occasion."
+      },
+      "760021ec-7325-4c5f-8017-9b53130bb7d7": {
+        "id": "760021ec-7325-4c5f-8017-9b53130bb7d7",
+        "word": "approval",
+        "transcription": "əˈpruːvl",
+        "partOfSpeech": "noun",
+        "description": "the feeling of having a positive opinion of someone or something."
+      },
+      "7992feb4-f085-40f1-b43e-8953796a8dea": {
+        "id": "7992feb4-f085-40f1-b43e-8953796a8dea",
+        "word": "approve",
+        "transcription": "əˈpruːv",
+        "partOfSpeech": "verb",
+        "description": "to have a positive opinion of someone or something."
+      },
+      "a4960afc-1050-4584-8317-cd53f42528d9": {
+        "id": "a4960afc-1050-4584-8317-cd53f42528d9",
+        "word": "approximately",
+        "transcription": "əˈprɑːksɪmətli",
+        "partOfSpeech": "adverb",
+        "description": "close to a particular number or time although not exactly that number or time."
+      },
+      "9507c365-2704-48b8-82be-7fdfc7ed0636": {
+        "id": "9507c365-2704-48b8-82be-7fdfc7ed0636",
+        "word": "architecture",
+        "transcription": "ˈɑːrkɪtektʃər",
+        "partOfSpeech": "noun",
+        "description": "the art and practice of designing and making buildings."
+      },
+      "0afb8e55-9f7a-42eb-a8d1-dbf15a6ae738": {
+        "id": "0afb8e55-9f7a-42eb-a8d1-dbf15a6ae738",
+        "word": "area",
+        "transcription": "ˈeriə",
+        "partOfSpeech": "noun",
+        "description": "a particular part of a place, piece of land, or country."
+      },
+      "1040ddca-e292-460f-be75-ad0388be1338": {
+        "id": "1040ddca-e292-460f-be75-ad0388be1338",
+        "word": "argue",
+        "transcription": "ˈɑːrɡjuː",
+        "partOfSpeech": "verb",
+        "description": "to speak angrily to someone, telling them that you disagree with them."
+      },
+      "83a6a2c2-065e-4647-a1ba-fc64f129742b": {
+        "id": "83a6a2c2-065e-4647-a1ba-fc64f129742b",
+        "word": "argument",
+        "transcription": "ˈɑːrɡjumənt",
+        "partOfSpeech": "noun",
+        "description": "a disagreement, or the process of disagreeing."
+      },
+      "2ed669de-fa32-4693-b705-dca1b7b696d6": {
+        "id": "2ed669de-fa32-4693-b705-dca1b7b696d6",
+        "word": "arise",
+        "transcription": "əˈraɪz",
+        "partOfSpeech": "verb",
+        "description": "to happen."
+      },
+      "e6a900ac-7fba-468b-9623-7b39b3f7bafe": {
+        "id": "e6a900ac-7fba-468b-9623-7b39b3f7bafe",
+        "word": "arm",
+        "transcription": "ɑːrm",
+        "partOfSpeech": "noun",
+        "description": "either of the two long parts of the upper body that are attached to the shoulders and have the hands at the end."
+      },
+      "4575f544-c173-40f1-b3df-27019764cf46": {
+        "id": "4575f544-c173-40f1-b3df-27019764cf46",
+        "word": "army",
+        "transcription": "ˈɑːrmi",
+        "partOfSpeech": "noun",
+        "description": "a particular country's fighting force that uses soldiers and weapons, especially on land."
+      },
+      "7fc1ade9-ccde-4783-9143-7087e122a7c7": {
+        "id": "7fc1ade9-ccde-4783-9143-7087e122a7c7",
+        "word": "around",
+        "transcription": "əˈraʊnd",
+        "partOfSpeech": "preposition",
+        "description": "on all sides of something."
+      },
+      "0bdf46f2-19ad-4d21-b4e8-ba42b27a40d2": {
+        "id": "0bdf46f2-19ad-4d21-b4e8-ba42b27a40d2",
+        "word": "arrange",
+        "transcription": "əˈreɪndʒ",
+        "partOfSpeech": "verb",
+        "description": "to plan, prepare for, or organize something."
+      },
+      "0d4a7c40-53c9-410a-bccf-c9454c157e26": {
+        "id": "0d4a7c40-53c9-410a-bccf-c9454c157e26",
+        "word": "arrangement",
+        "transcription": "əˈreɪndʒmənt",
+        "partOfSpeech": "noun",
+        "description": "a plan for how something will happen."
+      },
+      "779e03d0-c1a8-4d64-9c7d-a01dac8ec915": {
+        "id": "779e03d0-c1a8-4d64-9c7d-a01dac8ec915",
+        "word": "arrest",
+        "transcription": "əˈrest",
+        "partOfSpeech": "verb",
+        "description": "if the police arrest someone, they take them away to ask them about a crime which they might have committed."
+      },
+      "b680d4ae-ec50-4b13-ac11-cf3a0ff839f4": {
+        "id": "b680d4ae-ec50-4b13-ac11-cf3a0ff839f4",
+        "word": "arrival",
+        "transcription": "əˈraɪvl",
+        "partOfSpeech": "noun",
+        "description": "the fact of arriving somewhere."
+      },
+      "e275e913-6cc5-4c1b-a924-974c9b2b478b": {
+        "id": "e275e913-6cc5-4c1b-a924-974c9b2b478b",
+        "word": "arrive",
+        "transcription": "əˈraɪv",
+        "partOfSpeech": "verb",
+        "description": "to reach a place, especially at the end of a journey."
+      },
+      "2a0865cb-e86a-4b95-8c28-db5dbf4016b4": {
+        "id": "2a0865cb-e86a-4b95-8c28-db5dbf4016b4",
+        "word": "art",
+        "transcription": "ɑːrt",
+        "partOfSpeech": "noun",
+        "description": "the making of objects, images, music, etc. that are beautiful or express feelings."
+      },
+      "15c445a7-590c-4e09-ba1f-d465e100a282": {
+        "id": "15c445a7-590c-4e09-ba1f-d465e100a282",
+        "word": "article",
+        "transcription": "ˈɑːrtɪkl",
+        "partOfSpeech": "noun",
+        "description": "a piece of writing on a particular subject in a newspaper or magazine."
+      },
+      "864982f5-0c38-493b-9c61-3fb27a6ce8a8": {
+        "id": "864982f5-0c38-493b-9c61-3fb27a6ce8a8",
+        "word": "artist",
+        "transcription": "ˈɑːrtɪst",
+        "partOfSpeech": "noun",
+        "description": "someone who creates art, especially paintings and drawings."
+      },
+      "a1faa3fe-ede1-4499-bb79-38524f73c296": {
+        "id": "a1faa3fe-ede1-4499-bb79-38524f73c296",
+        "word": "as",
+        "transcription": "æz",
+        "partOfSpeech": "conjunction",
+        "description": "used in comparisons to refer to the degree of something."
+      },
+      "8b02cc70-9840-4212-8219-a0ed2b3d2f12": {
+        "id": "8b02cc70-9840-4212-8219-a0ed2b3d2f12",
+        "word": "ashamed",
+        "transcription": "əˈʃeɪmd",
+        "partOfSpeech": "adjective",
+        "description": "feeling guilty or embarrassed about something you have done."
+      },
+      "4a26d4ce-b331-49ff-9217-1a886316817a": {
+        "id": "4a26d4ce-b331-49ff-9217-1a886316817a",
+        "word": "aside",
+        "transcription": "əˈsaɪd",
+        "partOfSpeech": "adverb",
+        "description": "on or to one side."
+      },
+      "7c117343-594e-4607-9d43-a41ee18ad573": {
+        "id": "7c117343-594e-4607-9d43-a41ee18ad573",
+        "word": "ask",
+        "transcription": "æsk",
+        "partOfSpeech": "verb",
+        "description": "to say something to someone as a question."
+      },
+      "46d4973a-5944-4405-88ff-99e0b96596ec": {
+        "id": "46d4973a-5944-4405-88ff-99e0b96596ec",
+        "word": "assess",
+        "transcription": "əˈses",
+        "partOfSpeech": "verb",
+        "description": "to judge or decide the amount, value, quality, or importance of something."
+      },
+      "1da13a67-1a8b-47e1-b4d3-0256d085d674": {
+        "id": "1da13a67-1a8b-47e1-b4d3-0256d085d674",
+        "word": "assessment",
+        "transcription": "əˈsesmənt",
+        "partOfSpeech": "noun",
+        "description": "the act of judging or deciding the amount, value, quality, or importance of something."
+      },
+      "00595683-151d-4f71-85c4-bb12498decf4": {
+        "id": "00595683-151d-4f71-85c4-bb12498decf4",
+        "word": "asset",
+        "transcription": "ˈæset",
+        "partOfSpeech": "noun",
+        "description": "something valuable owned by a person or company."
+      },
+      "65f1dc18-e14b-4226-9730-6a11749a9e69": {
+        "id": "65f1dc18-e14b-4226-9730-6a11749a9e69",
+        "word": "assign",
+        "transcription": "əˈsaɪn",
+        "partOfSpeech": "verb",
+        "description": "to give a particular job or piece of work to someone."
+      },
+      "33a6ed5d-a973-4620-bf3e-d2d86a103fe8": {
+        "id": "33a6ed5d-a973-4620-bf3e-d2d86a103fe8",
+        "word": "assist",
+        "transcription": "əˈsɪst",
+        "partOfSpeech": "verb",
+        "description": "to help."
+      },
+      "e27eaa34-dbea-4674-80bd-af593c602a2b": {
+        "id": "e27eaa34-dbea-4674-80bd-af593c602a2b",
+        "word": "assistance",
+        "transcription": "əˈsɪstəns",
+        "partOfSpeech": "noun",
+        "description": "help or support."
+      },
+      "c36b4672-43d5-47b7-9786-98edfc1c53ed": {
+        "id": "c36b4672-43d5-47b7-9786-98edfc1c53ed",
+        "word": "assistant",
+        "transcription": "əˈsɪstənt",
+        "partOfSpeech": "noun",
+        "description": "someone who helps someone else to do a job."
+      },
+      "6637b00b-2511-4560-8b3c-4df96fc6b667": {
+        "id": "6637b00b-2511-4560-8b3c-4df96fc6b667",
+        "word": "associate",
+        "transcription": "əˈsoʊʃieɪt",
+        "partOfSpeech": "verb",
+        "description": "to connect someone or something in your mind with someone or something else."
+      },
+      "2448937c-5492-4d34-81b6-af4baea972be": {
+        "id": "2448937c-5492-4d34-81b6-af4baea972be",
+        "word": "association",
+        "transcription": "əˌsoʊʃiˈeɪʃn",
+        "partOfSpeech": "noun",
+        "description": "a group of people who work together in a single organization for a particular purpose."
+      },
+      "57de68e1-908d-4066-8d0d-be01ccac7b65": {
+        "id": "57de68e1-908d-4066-8d0d-be01ccac7b65",
+        "word": "assume",
+        "transcription": "əˈsuːm",
+        "partOfSpeech": "verb",
+        "description": "to accept something to be true without question or proof."
+      },
+      "2c6da782-75d6-4c0d-9161-55f7bfe6133f": {
+        "id": "2c6da782-75d6-4c0d-9161-55f7bfe6133f",
+        "word": "assumption",
+        "transcription": "əˈsʌmpʃn",
+        "partOfSpeech": "noun",
+        "description": "something that you accept as true without question or proof."
+      },
+      "9537dfa9-ca0e-46dd-9f4d-4aaa07a1352e": {
+        "id": "9537dfa9-ca0e-46dd-9f4d-4aaa07a1352e",
+        "word": "assure",
+        "transcription": "əˈʃʊr",
+        "partOfSpeech": "verb",
+        "description": "to tell someone confidently that something is true, especially so that they do not worry."
+      },
+      "b7a42337-6b52-4f03-83a8-427785207a39": {
+        "id": "b7a42337-6b52-4f03-83a8-427785207a39",
+        "word": "at",
+        "transcription": "æt",
+        "partOfSpeech": "preposition",
+        "description": "used to show an exact position or particular place."
+      },
+      "461be7b3-2467-4b43-aa66-2f1b0d48a5fa": {
+        "id": "461be7b3-2467-4b43-aa66-2f1b0d48a5fa",
+        "word": "athlete",
+        "transcription": "ˈæθliːt",
+        "partOfSpeech": "noun",
+        "description": "a person who is very good at sports or physical exercise."
+      },
+      "0e0b5266-c433-4ed7-8d78-9d618ea79699": {
+        "id": "0e0b5266-c433-4ed7-8d78-9d618ea79699",
+        "word": "atmosphere",
+        "transcription": "ˈætməsfɪr",
+        "partOfSpeech": "noun",
+        "description": "the mixture of gases that surrounds the earth."
+      },
+      "15de9671-3665-4e35-a7ea-964513132015": {
+        "id": "15de9671-3665-4e35-a7ea-964513132015",
+        "word": "attach",
+        "transcription": "əˈtætʃ",
+        "partOfSpeech": "verb",
+        "description": "to fasten, join, or connect something."
+      },
+      "f28cd0c7-2858-4d84-af1e-6d1b3e4834f4": {
+        "id": "f28cd0c7-2858-4d84-af1e-6d1b3e4834f4",
+        "word": "attachment",
+        "transcription": "əˈtætʃmənt",
+        "partOfSpeech": "noun",
+        "description": "an extra piece of equipment that can be added to a machine."
+      },
+      "8be8b886-1d8d-4c6a-9126-05d924d73b49": {
+        "id": "8be8b886-1d8d-4c6a-9126-05d924d73b49",
+        "word": "attack",
+        "transcription": "əˈtæk",
+        "partOfSpeech": "verb",
+        "description": "to try to hurt or defeat using violence."
+      },
+      "bf5f5f5d-c3d8-46d5-bd85-83e94af14a18": {
+        "id": "bf5f5f5d-c3d8-46d5-bd85-83e94af14a18",
+        "word": "attempt",
+        "transcription": "əˈtempt",
+        "partOfSpeech": "noun",
+        "description": "the act of trying to do something, especially something difficult."
+      },
+      "89a83bc9-f05c-4988-83cc-742664145f8e": {
+        "id": "89a83bc9-f05c-4988-83cc-742664145f8e",
+        "word": "attend",
+        "transcription": "əˈtend",
+        "partOfSpeech": "verb",
+        "description": "to go to an event, place, etc."
+      },
+      "a43d955a-a673-40ef-b2d1-b9becec8731e": {
+        "id": "a43d955a-a673-40ef-b2d1-b9becec8731e",
+        "word": "attendance",
+        "transcription": "əˈtendəns",
+        "partOfSpeech": "noun",
+        "description": "the act of being present at a place, for example at school."
+      },
+      "e6f36c13-f48a-4268-99a4-874f89abcb7b": {
+        "id": "e6f36c13-f48a-4268-99a4-874f89abcb7b",
+        "word": "attention",
+        "transcription": "əˈtenʃn",
+        "partOfSpeech": "noun",
+        "description": "the act of directing the mind to listen, see, or understand."
+      },
+      "6c8bdcd5-5096-43f4-9712-c27efe3a3de2": {
+        "id": "6c8bdcd5-5096-43f4-9712-c27efe3a3de2",
+        "word": "attitude",
+        "transcription": "ˈætɪtuːd",
+        "partOfSpeech": "noun",
+        "description": "a feeling or opinion about something or someone."
+      },
+      "d40f2200-90f9-4d8e-80ea-31c375790366": {
+        "id": "d40f2200-90f9-4d8e-80ea-31c375790366",
+        "word": "attract",
+        "transcription": "əˈtrækt",
+        "partOfSpeech": "verb",
+        "description": "to pull or draw someone or something towards them."
+      },
+      "25161d60-778d-40a1-aa97-787dba54aeed": {
+        "id": "25161d60-778d-40a1-aa97-787dba54aeed",
+        "word": "attraction",
+        "transcription": "əˈtrækʃn",
+        "partOfSpeech": "noun",
+        "description": "something that makes people want to go to a place or do a particular thing."
+      },
+      "c79922da-1c2a-4adf-91af-d0ce2772fde1": {
+        "id": "c79922da-1c2a-4adf-91af-d0ce2772fde1",
+        "word": "attractive",
+        "transcription": "əˈtræktɪv",
+        "partOfSpeech": "adjective",
+        "description": "very pleasing in appearance or sound."
+      },
+      "b2b5911c-82cf-4a64-b9d9-c87e9f34f8e3": {
+        "id": "b2b5911c-82cf-4a64-b9d9-c87e9f34f8e3",
+        "word": "attribute",
+        "transcription": "ˈætrɪbjuːt",
+        "partOfSpeech": "noun",
+        "description": "a quality or characteristic that someone or something has."
+      },
+      "c26db1f1-c85a-4724-b2a2-433623dbb7f9": {
+        "id": "c26db1f1-c85a-4724-b2a2-433623dbb7f9",
+        "word": "audience",
+        "transcription": "ˈɔːdiəns",
+        "partOfSpeech": "noun",
+        "description": "the group of people together in one place to watch or listen to a play, film, someone speaking, etc."
+      },
+      "0fd7b9a4-bd72-476c-9ac9-549cf71e12d6": {
+        "id": "0fd7b9a4-bd72-476c-9ac9-549cf71e12d6",
+        "word": "aunt",
+        "transcription": "ænt",
+        "partOfSpeech": "noun",
+        "description": "the sister of someone's father or mother, or the wife of someone's uncle."
+      },
+      "35d4e192-fdff-4a2f-8e2c-73204bdf4e44": {
+        "id": "35d4e192-fdff-4a2f-8e2c-73204bdf4e44",
+        "word": "author",
+        "transcription": "ˈɔːθər",
+        "partOfSpeech": "noun",
+        "description": "the writer of a book, article, play, etc."
+      },
+      "21991523-330f-4ec2-8a12-5cb036011df7": {
+        "id": "21991523-330f-4ec2-8a12-5cb036011df7",
+        "word": "automatically",
+        "transcription": "ˌɔːtəˈmætɪkli",
+        "partOfSpeech": "adverb",
+        "description": "happening without thinking or without being controlled by someone."
+      },
+      "c1c5b023-f47e-4481-aef0-3824ed6fc52f": {
+        "id": "c1c5b023-f47e-4481-aef0-3824ed6fc52f",
+        "word": "autumn",
+        "transcription": "ˈɔːtəm",
+        "partOfSpeech": "noun",
+        "description": "the season of the year between summer and winter."
+      },
+      "a2d345f5-eea1-4c66-b0ad-407adae915c6": {
+        "id": "a2d345f5-eea1-4c66-b0ad-407adae915c6",
+        "word": "available",
+        "transcription": "əˈveɪləbl",
+        "partOfSpeech": "adjective",
+        "description": "able to be obtained, used, or reached."
+      },
+      "800ea3af-4929-40bf-b514-331ed2853536": {
+        "id": "800ea3af-4929-40bf-b514-331ed2853536",
+        "word": "average",
+        "transcription": "ˈævərɪdʒ",
+        "partOfSpeech": "adjective",
+        "description": "typical or normal; around a usual or ordinary level."
+      },
+      "81dab7a5-8a22-434c-a6c3-146d6bfa5f28": {
+        "id": "81dab7a5-8a22-434c-a6c3-146d6bfa5f28",
+        "word": "avoid",
+        "transcription": "əˈvɔɪd",
+        "partOfSpeech": "verb",
+        "description": "to stay away from someone or something."
+      },
+      "6a8f7ca8-212b-473a-9418-70bb588b149a": {
+        "id": "6a8f7ca8-212b-473a-9418-70bb588b149a",
+        "word": "award",
+        "transcription": "əˈwɔːrd",
+        "partOfSpeech": "noun",
+        "description": "a prize given to someone for something they have achieved."
+      },
+      "b4348885-7a5f-4fe7-a85d-7f797239074f": {
+        "id": "b4348885-7a5f-4fe7-a85d-7f797239074f",
+        "word": "aware",
+        "transcription": "əˈwer",
+        "partOfSpeech": "adjective",
+        "description": "knowing about something."
+      },
+      "55c0b144-251d-44f9-abf9-f9e3dce9f44c": {
+        "id": "55c0b144-251d-44f9-abf9-f9e3dce9f44c",
+        "word": "awareness",
+        "transcription": "əˈwernəs",
+        "partOfSpeech": "noun",
+        "description": "knowledge that something exists, or understanding of a situation."
+      },
+      "fd332130-a8b1-49af-a8f2-708e2c5912d9": {
+        "id": "fd332130-a8b1-49af-a8f2-708e2c5912d9",
+        "word": "away",
+        "transcription": "əˈweɪ",
+        "partOfSpeech": "adverb",
+        "description": "to or at a distance from a particular place or person."
+      },
+      "19cf40e1-7068-4048-b186-d33f4c993e2d": {
+        "id": "19cf40e1-7068-4048-b186-d33f4c993e2d",
+        "word": "awful",
+        "transcription": "ˈɔːfl",
+        "partOfSpeech": "adjective",
+        "description": "extremely bad or unpleasant."
+      }
+    }
+  }
+}

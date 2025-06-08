@@ -1,0 +1,760 @@
+{
+  "entities": {
+    "ids": [
+      "898b5c37-fb68-47a4-8a8f-17a8968967c2",
+      "8269b177-3d17-4760-9e0b-5f0f5efe45ee",
+      "3fc437c7-5928-47b2-9a13-84512eb2d7c7",
+      "23eb4461-44fe-425a-9c17-a8c3f83642d8",
+      "f97e11e1-f493-4821-9a26-189013d9102c",
+      "96c526fb-ae48-4ae3-abf6-c979912c8bb6",
+      "69aeb11a-f5f5-4dbb-a785-c9caa1a4a872",
+      "1e0953c7-f4a1-4a0c-a94f-f5612091ebeb",
+      "76a3b26e-dba9-4027-acfd-9c0488e8651c",
+      "77eb6a73-208b-4bfe-bae6-3416ae3d1311",
+      "756acc7b-8f29-4294-9ae0-6b044ae48fc4",
+      "5a1c7927-96b0-4f08-bdde-721efae678a4",
+      "48d0e0b8-231b-44d6-8679-4c32767d0e59",
+      "7e4bfc26-f45a-4200-a327-631a597ee5cb",
+      "fe9fa314-28bf-45b0-b1da-836ee3ee4f22",
+      "0005372c-b019-4157-a9c5-8f7e8d89dfe2",
+      "ddbbff40-4603-4301-82e1-cc7b8d1a0850",
+      "07e0fe5d-2610-4603-b3a4-8aeddb631576",
+      "a233db6a-26c2-412b-8299-bafca8b3168b",
+      "efd39614-8d29-43a6-add8-1aaf4d2380e0",
+      "e9ca5708-7901-4913-b5ee-3f94ddd0e3b3",
+      "b0628ff6-6e90-4ad4-b91c-b5a161e89b99",
+      "8dde6f26-457c-45cf-8302-c5513e623bc5",
+      "5593b94b-3672-4c4b-8670-b829829ee509",
+      "d121efdd-f2ad-4cec-ad49-f15f09c1e87e",
+      "5140c400-f905-4e6f-90e2-c29ff966f3d4",
+      "b64e0854-3374-41a0-85c3-49b4769f51bb",
+      "f88cc8c9-274c-4d26-bdd5-f53b4f94273f",
+      "249c7c46-b918-4ccf-aea7-9c85773bad12",
+      "725b2f7b-3515-4456-9ac1-6e123141d615",
+      "f360fd38-5368-4a26-b6f0-1da4c9d6337f",
+      "41d0fa84-a962-4248-8a61-c7d4f02913e3",
+      "0b8621bd-056b-4fda-80a1-7fa1016ddeeb",
+      "c0e94f13-e1ab-4288-93c8-c7a90a8255a0",
+      "bfca9b21-af1b-4a60-af3d-63cb684fffcd",
+      "46778fa1-ab8a-4448-a3a7-2fce9704a339",
+      "5217e32b-6a29-443c-8ee4-484194a967ca",
+      "5df0e174-ffb5-40be-8f83-9d6b801a863a",
+      "7537ad72-02c6-44bb-94ac-55276d1e2005",
+      "589f38ea-b974-43b6-b338-70c4a324612b",
+      "b629c6df-e5de-4cda-b6c0-c5416083adde",
+      "dde1bfe2-e5af-4709-8ba4-c38242d0ccd7",
+      "4e7844f7-2a27-4c51-85ae-12eacc425dcf",
+      "086aa26b-3a5b-465f-ad7a-9f5ac95491d9",
+      "787ecef9-ac36-4645-9986-03503282d4b5",
+      "e1ef57f9-e9c5-4de6-bdfd-35e2b6718a94",
+      "c0343a90-7a0b-46e7-b49f-614db983732e",
+      "4c730b47-81e5-4403-914a-8ce70c966bff",
+      "dd9fdc6b-2887-4870-84be-99b2eb111627",
+      "bb179071-deed-46fd-9aa5-84cf8673709b",
+      "f4791e49-116f-48d7-9888-29859d8cf339",
+      "8b778869-918d-442f-89e9-555a1210fbcb",
+      "f8b3503f-ecdf-44c7-af15-292e2e43d38c",
+      "788a5e6c-3c5c-4d1d-8d51-437cd8e47ebe",
+      "073aca32-a3a4-4899-9ddc-9e854d332840",
+      "a2019c5b-a426-4965-b3dc-48abdda38f33",
+      "56dda577-d1e2-457b-bd0d-79b2911f66f3",
+      "f0fcc596-2dc2-4434-8b70-ecfcac446d66",
+      "9e9587ea-ba2c-4951-817e-32134a380a54",
+      "9315a190-a724-4bb4-8802-03321fa03f5b",
+      "983c0a1b-e855-45b1-a31f-63561469f4eb",
+      "57429b6e-908a-4de8-83c6-890fe2d7771f",
+      "85045838-15d0-4096-8f25-102f6b8ad35a",
+      "39c080d2-a6eb-4a5a-863e-f9352d2f9b3a",
+      "8da81c3d-5bb5-44ce-b907-0fe161f34a6f",
+      "a90d7b20-f30c-4d6c-b6f1-90a57afec1d5",
+      "ea0bc2d7-be8d-4b38-8bdd-187510164f73",
+      "92006967-5bc4-4f71-8840-7d40f29f402d",
+      "bc7d5674-85f6-40ba-aa56-f4584da8d5ce",
+      "10816fe0-9ae2-4f41-abf1-e097c96f9d15",
+      "f2cdf015-127b-4436-9416-60f43eac087c",
+      "9b366d4d-08d4-438b-b601-8b6e9d5bbdad",
+      "369fa1a2-67e3-4a38-9fbb-fd9d25ec7a93",
+      "7171a4f4-9290-4277-999f-077137878baa",
+      "3775d829-d40d-41b5-9098-c163911c98e0",
+      "ea90133b-7ca0-4b27-b9a1-04219f4532be",
+      "d9da9120-89f9-47e3-87cf-580ac259ee93",
+      "10caff37-f1d8-427e-9ee1-5f0a24c9b756",
+      "682c7ac2-d857-4c58-94ee-26b41906623f",
+      "ccc11d21-e89d-41c4-8024-e3ab93ffc5af",
+      "e14e2dc2-518c-4496-b25b-7b6a974c3fa4",
+      "c99f347c-99e7-4c90-91fa-e7fa3702614d",
+      "962fd236-21a9-4a93-b962-25f797d0a071",
+      "c08426b7-6a77-4c9e-8a5b-da3dbd030072",
+      "e07fcbaa-a3df-4385-a48c-4f2189c2bd4e",
+      "dd1138e6-6319-40c4-9288-55a00f0e6b1f",
+      "0d9c2dbf-074f-42bd-a4a2-1e9bc63005ac",
+      "341fa206-ff85-42ac-99dd-3785bf023eb6",
+      "920c6365-672b-4e96-afad-37c90cf8d9e1",
+      "0ddb792e-6f56-49be-9e9f-64b3fe537828",
+      "05e269cb-6b3e-4540-b988-d220a3a14f0e",
+      "de728f35-84b0-41af-a24b-8007a1bddd0e",
+      "be88fd46-49eb-419b-979b-da7b933f2a00",
+      "487ed551-1701-47bf-b830-b63dcc344dbe"
+    ],
+    "byId": {
+      "898b5c37-fb68-47a4-8a8f-17a8968967c2": {
+        "id": "898b5c37-fb68-47a4-8a8f-17a8968967c2",
+        "word": "wage",
+        "transcription": "weɪdʒ",
+        "partOfSpeech": "noun",
+        "description": "payment for work done"
+      },
+      "8269b177-3d17-4760-9e0b-5f0f5efe45ee": {
+        "id": "8269b177-3d17-4760-9e0b-5f0f5efe45ee",
+        "word": "wait",
+        "transcription": "weɪt",
+        "partOfSpeech": "verb",
+        "description": "to stay in one place until something happens"
+      },
+      "3fc437c7-5928-47b2-9a13-84512eb2d7c7": {
+        "id": "3fc437c7-5928-47b2-9a13-84512eb2d7c7",
+        "word": "wake",
+        "transcription": "weɪk",
+        "partOfSpeech": "verb",
+        "description": "to stop sleeping"
+      },
+      "23eb4461-44fe-425a-9c17-a8c3f83642d8": {
+        "id": "23eb4461-44fe-425a-9c17-a8c3f83642d8",
+        "word": "walk",
+        "transcription": "wɔːk",
+        "partOfSpeech": "verb",
+        "description": "to move by putting one foot in front of the other"
+      },
+      "f97e11e1-f493-4821-9a26-189013d9102c": {
+        "id": "f97e11e1-f493-4821-9a26-189013d9102c",
+        "word": "wall",
+        "transcription": "wɔːl",
+        "partOfSpeech": "noun",
+        "description": "a vertical structure that divides or encloses an area"
+      },
+      "96c526fb-ae48-4ae3-abf6-c979912c8bb6": {
+        "id": "96c526fb-ae48-4ae3-abf6-c979912c8bb6",
+        "word": "wander",
+        "transcription": "ˈwɑːndər",
+        "partOfSpeech": "verb",
+        "description": "to move around without a clear direction"
+      },
+      "69aeb11a-f5f5-4dbb-a785-c9caa1a4a872": {
+        "id": "69aeb11a-f5f5-4dbb-a785-c9caa1a4a872",
+        "word": "want",
+        "transcription": "wɑːnt",
+        "partOfSpeech": "verb",
+        "description": "to wish for something"
+      },
+      "1e0953c7-f4a1-4a0c-a94f-f5612091ebeb": {
+        "id": "1e0953c7-f4a1-4a0c-a94f-f5612091ebeb",
+        "word": "war",
+        "transcription": "wɔːr",
+        "partOfSpeech": "noun",
+        "description": "a conflict between countries or groups"
+      },
+      "76a3b26e-dba9-4027-acfd-9c0488e8651c": {
+        "id": "76a3b26e-dba9-4027-acfd-9c0488e8651c",
+        "word": "warm",
+        "transcription": "wɔːrm",
+        "partOfSpeech": "adjective",
+        "description": "having a comfortably high temperature"
+      },
+      "77eb6a73-208b-4bfe-bae6-3416ae3d1311": {
+        "id": "77eb6a73-208b-4bfe-bae6-3416ae3d1311",
+        "word": "warn",
+        "transcription": "wɔːrn",
+        "partOfSpeech": "verb",
+        "description": "to tell someone about possible danger"
+      },
+      "756acc7b-8f29-4294-9ae0-6b044ae48fc4": {
+        "id": "756acc7b-8f29-4294-9ae0-6b044ae48fc4",
+        "word": "wash",
+        "transcription": "wɑːʃ",
+        "partOfSpeech": "verb",
+        "description": "to clean with water"
+      },
+      "5a1c7927-96b0-4f08-bdde-721efae678a4": {
+        "id": "5a1c7927-96b0-4f08-bdde-721efae678a4",
+        "word": "waste",
+        "transcription": "weɪst",
+        "partOfSpeech": "verb/noun",
+        "description": "to use something carelessly; unused material"
+      },
+      "48d0e0b8-231b-44d6-8679-4c32767d0e59": {
+        "id": "48d0e0b8-231b-44d6-8679-4c32767d0e59",
+        "word": "watch",
+        "transcription": "wɑːtʃ",
+        "partOfSpeech": "verb/noun",
+        "description": "to look at something; a device for telling time"
+      },
+      "7e4bfc26-f45a-4200-a327-631a597ee5cb": {
+        "id": "7e4bfc26-f45a-4200-a327-631a597ee5cb",
+        "word": "water",
+        "transcription": "ˈwɔːtər",
+        "partOfSpeech": "noun",
+        "description": "a clear liquid essential for life"
+      },
+      "fe9fa314-28bf-45b0-b1da-836ee3ee4f22": {
+        "id": "fe9fa314-28bf-45b0-b1da-836ee3ee4f22",
+        "word": "wave",
+        "transcription": "weɪv",
+        "partOfSpeech": "noun/verb",
+        "description": "a moving swell on water; to move your hand in greeting"
+      },
+      "0005372c-b019-4157-a9c5-8f7e8d89dfe2": {
+        "id": "0005372c-b019-4157-a9c5-8f7e8d89dfe2",
+        "word": "way",
+        "transcription": "weɪ",
+        "partOfSpeech": "noun",
+        "description": "a method, style, or road"
+      },
+      "ddbbff40-4603-4301-82e1-cc7b8d1a0850": {
+        "id": "ddbbff40-4603-4301-82e1-cc7b8d1a0850",
+        "word": "we",
+        "transcription": "wiː",
+        "partOfSpeech": "pronoun",
+        "description": "used by a speaker to refer to himself and others"
+      },
+      "07e0fe5d-2610-4603-b3a4-8aeddb631576": {
+        "id": "07e0fe5d-2610-4603-b3a4-8aeddb631576",
+        "word": "weak",
+        "transcription": "wiːk",
+        "partOfSpeech": "adjective",
+        "description": "not strong"
+      },
+      "a233db6a-26c2-412b-8299-bafca8b3168b": {
+        "id": "a233db6a-26c2-412b-8299-bafca8b3168b",
+        "word": "weakness",
+        "transcription": "ˈwiːknəs",
+        "partOfSpeech": "noun",
+        "description": "the state of being weak"
+      },
+      "efd39614-8d29-43a6-add8-1aaf4d2380e0": {
+        "id": "efd39614-8d29-43a6-add8-1aaf4d2380e0",
+        "word": "wealth",
+        "transcription": "welθ",
+        "partOfSpeech": "noun",
+        "description": "a large amount of money or valuable things"
+      },
+      "e9ca5708-7901-4913-b5ee-3f94ddd0e3b3": {
+        "id": "e9ca5708-7901-4913-b5ee-3f94ddd0e3b3",
+        "word": "wealthy",
+        "transcription": "ˈwelθi",
+        "partOfSpeech": "adjective",
+        "description": "having a lot of money or valuable things"
+      },
+      "b0628ff6-6e90-4ad4-b91c-b5a161e89b99": {
+        "id": "b0628ff6-6e90-4ad4-b91c-b5a161e89b99",
+        "word": "weapon",
+        "transcription": "ˈwepən",
+        "partOfSpeech": "noun",
+        "description": "an object used to hurt or kill someone"
+      },
+      "8dde6f26-457c-45cf-8302-c5513e623bc5": {
+        "id": "8dde6f26-457c-45cf-8302-c5513e623bc5",
+        "word": "wear",
+        "transcription": "wer",
+        "partOfSpeech": "verb",
+        "description": "to have clothes or accessories on your body"
+      },
+      "5593b94b-3672-4c4b-8670-b829829ee509": {
+        "id": "5593b94b-3672-4c4b-8670-b829829ee509",
+        "word": "weather",
+        "transcription": "ˈweðər",
+        "partOfSpeech": "noun",
+        "description": "the state of the atmosphere at a particular time"
+      },
+      "d121efdd-f2ad-4cec-ad49-f15f09c1e87e": {
+        "id": "d121efdd-f2ad-4cec-ad49-f15f09c1e87e",
+        "word": "web",
+        "transcription": "web",
+        "partOfSpeech": "noun",
+        "description": "a system of connected things, especially the internet"
+      },
+      "5140c400-f905-4e6f-90e2-c29ff966f3d4": {
+        "id": "5140c400-f905-4e6f-90e2-c29ff966f3d4",
+        "word": "website",
+        "transcription": "ˈwebsaɪt",
+        "partOfSpeech": "noun",
+        "description": "a set of related web pages on the internet"
+      },
+      "b64e0854-3374-41a0-85c3-49b4769f51bb": {
+        "id": "b64e0854-3374-41a0-85c3-49b4769f51bb",
+        "word": "wed",
+        "transcription": "wed",
+        "partOfSpeech": "verb",
+        "description": "to get married"
+      },
+      "f88cc8c9-274c-4d26-bdd5-f53b4f94273f": {
+        "id": "f88cc8c9-274c-4d26-bdd5-f53b4f94273f",
+        "word": "week",
+        "transcription": "wiːk",
+        "partOfSpeech": "noun",
+        "description": "a period of seven days"
+      },
+      "249c7c46-b918-4ccf-aea7-9c85773bad12": {
+        "id": "249c7c46-b918-4ccf-aea7-9c85773bad12",
+        "word": "weekend",
+        "transcription": "ˈwiːkend",
+        "partOfSpeech": "noun",
+        "description": "Saturday and Sunday"
+      },
+      "725b2f7b-3515-4456-9ac1-6e123141d615": {
+        "id": "725b2f7b-3515-4456-9ac1-6e123141d615",
+        "word": "weekly",
+        "transcription": "ˈwiːkli",
+        "partOfSpeech": "adjective/adverb",
+        "description": "happening every week"
+      },
+      "f360fd38-5368-4a26-b6f0-1da4c9d6337f": {
+        "id": "f360fd38-5368-4a26-b6f0-1da4c9d6337f",
+        "word": "weigh",
+        "transcription": "weɪ",
+        "partOfSpeech": "verb",
+        "description": "to measure how heavy something is"
+      },
+      "41d0fa84-a962-4248-8a61-c7d4f02913e3": {
+        "id": "41d0fa84-a962-4248-8a61-c7d4f02913e3",
+        "word": "weight",
+        "transcription": "weɪt",
+        "partOfSpeech": "noun",
+        "description": "how heavy something is"
+      },
+      "0b8621bd-056b-4fda-80a1-7fa1016ddeeb": {
+        "id": "0b8621bd-056b-4fda-80a1-7fa1016ddeeb",
+        "word": "weird",
+        "transcription": "wɪrd",
+        "partOfSpeech": "adjective",
+        "description": "strange or unusual"
+      },
+      "c0e94f13-e1ab-4288-93c8-c7a90a8255a0": {
+        "id": "c0e94f13-e1ab-4288-93c8-c7a90a8255a0",
+        "word": "welcome",
+        "transcription": "ˈwelkəm",
+        "partOfSpeech": "verb/adjective",
+        "description": "to greet someone warmly; pleasing and accepted"
+      },
+      "bfca9b21-af1b-4a60-af3d-63cb684fffcd": {
+        "id": "bfca9b21-af1b-4a60-af3d-63cb684fffcd",
+        "word": "welfare",
+        "transcription": "ˈwelfer",
+        "partOfSpeech": "noun",
+        "description": "health, happiness, and prosperity"
+      },
+      "46778fa1-ab8a-4448-a3a7-2fce9704a339": {
+        "id": "46778fa1-ab8a-4448-a3a7-2fce9704a339",
+        "word": "well",
+        "transcription": "wel",
+        "partOfSpeech": "adverb/noun",
+        "description": "in a good way; a deep hole for water"
+      },
+      "5217e32b-6a29-443c-8ee4-484194a967ca": {
+        "id": "5217e32b-6a29-443c-8ee4-484194a967ca",
+        "word": "west",
+        "transcription": "west",
+        "partOfSpeech": "noun/adjective",
+        "description": "the direction where the sun sets"
+      },
+      "5df0e174-ffb5-40be-8f83-9d6b801a863a": {
+        "id": "5df0e174-ffb5-40be-8f83-9d6b801a863a",
+        "word": "western",
+        "transcription": "ˈwestərn",
+        "partOfSpeech": "adjective",
+        "description": "relating to the west"
+      },
+      "7537ad72-02c6-44bb-94ac-55276d1e2005": {
+        "id": "7537ad72-02c6-44bb-94ac-55276d1e2005",
+        "word": "wet",
+        "transcription": "wet",
+        "partOfSpeech": "adjective",
+        "description": "covered with water or another liquid"
+      },
+      "589f38ea-b974-43b6-b338-70c4a324612b": {
+        "id": "589f38ea-b974-43b6-b338-70c4a324612b",
+        "word": "what",
+        "transcription": "wʌt",
+        "partOfSpeech": "pronoun",
+        "description": "used to ask for information"
+      },
+      "b629c6df-e5de-4cda-b6c0-c5416083adde": {
+        "id": "b629c6df-e5de-4cda-b6c0-c5416083adde",
+        "word": "whatever",
+        "transcription": "wʌtˈevər",
+        "partOfSpeech": "pronoun",
+        "description": "anything that; no matter what"
+      },
+      "dde1bfe2-e5af-4709-8ba4-c38242d0ccd7": {
+        "id": "dde1bfe2-e5af-4709-8ba4-c38242d0ccd7",
+        "word": "wheel",
+        "transcription": "wiːl",
+        "partOfSpeech": "noun",
+        "description": "a round object that moves vehicles"
+      },
+      "4e7844f7-2a27-4c51-85ae-12eacc425dcf": {
+        "id": "4e7844f7-2a27-4c51-85ae-12eacc425dcf",
+        "word": "when",
+        "transcription": "wen",
+        "partOfSpeech": "adverb/conjunction",
+        "description": "at what time"
+      },
+      "086aa26b-3a5b-465f-ad7a-9f5ac95491d9": {
+        "id": "086aa26b-3a5b-465f-ad7a-9f5ac95491d9",
+        "word": "whenever",
+        "transcription": "wenˈevər",
+        "partOfSpeech": "conjunction",
+        "description": "at any time when"
+      },
+      "787ecef9-ac36-4645-9986-03503282d4b5": {
+        "id": "787ecef9-ac36-4645-9986-03503282d4b5",
+        "word": "where",
+        "transcription": "wer",
+        "partOfSpeech": "adverb/conjunction",
+        "description": "in what place"
+      },
+      "e1ef57f9-e9c5-4de6-bdfd-35e2b6718a94": {
+        "id": "e1ef57f9-e9c5-4de6-bdfd-35e2b6718a94",
+        "word": "whereas",
+        "transcription": "werˈæz",
+        "partOfSpeech": "conjunction",
+        "description": "used to show contrast between two facts"
+      },
+      "c0343a90-7a0b-46e7-b49f-614db983732e": {
+        "id": "c0343a90-7a0b-46e7-b49f-614db983732e",
+        "word": "wherever",
+        "transcription": "werˈevər",
+        "partOfSpeech": "conjunction",
+        "description": "in any place where"
+      },
+      "4c730b47-81e5-4403-914a-8ce70c966bff": {
+        "id": "4c730b47-81e5-4403-914a-8ce70c966bff",
+        "word": "whether",
+        "transcription": "ˈweðər",
+        "partOfSpeech": "conjunction",
+        "description": "expressing a doubt or choice between alternatives"
+      },
+      "dd9fdc6b-2887-4870-84be-99b2eb111627": {
+        "id": "dd9fdc6b-2887-4870-84be-99b2eb111627",
+        "word": "which",
+        "transcription": "wɪtʃ",
+        "partOfSpeech": "pronoun/determiner",
+        "description": "asking or talking about one or more items from a known set"
+      },
+      "bb179071-deed-46fd-9aa5-84cf8673709b": {
+        "id": "bb179071-deed-46fd-9aa5-84cf8673709b",
+        "word": "while",
+        "transcription": "waɪl",
+        "partOfSpeech": "conjunction/noun",
+        "description": "during the time; a short period of time"
+      },
+      "f4791e49-116f-48d7-9888-29859d8cf339": {
+        "id": "f4791e49-116f-48d7-9888-29859d8cf339",
+        "word": "whilst",
+        "transcription": "waɪlst",
+        "partOfSpeech": "conjunction",
+        "description": "British form of 'while'; during the time"
+      },
+      "8b778869-918d-442f-89e9-555a1210fbcb": {
+        "id": "8b778869-918d-442f-89e9-555a1210fbcb",
+        "word": "whisper",
+        "transcription": "ˈwɪspər",
+        "partOfSpeech": "verb/noun",
+        "description": "to speak very quietly; a soft voice"
+      },
+      "f8b3503f-ecdf-44c7-af15-292e2e43d38c": {
+        "id": "f8b3503f-ecdf-44c7-af15-292e2e43d38c",
+        "word": "white",
+        "transcription": "waɪt",
+        "partOfSpeech": "adjective",
+        "description": "having the color of snow or milk"
+      },
+      "788a5e6c-3c5c-4d1d-8d51-437cd8e47ebe": {
+        "id": "788a5e6c-3c5c-4d1d-8d51-437cd8e47ebe",
+        "word": "who",
+        "transcription": "huː",
+        "partOfSpeech": "pronoun",
+        "description": "used to ask or talk about a person"
+      },
+      "073aca32-a3a4-4899-9ddc-9e854d332840": {
+        "id": "073aca32-a3a4-4899-9ddc-9e854d332840",
+        "word": "whole",
+        "transcription": "hoʊl",
+        "partOfSpeech": "adjective",
+        "description": "complete; all of something"
+      },
+      "a2019c5b-a426-4965-b3dc-48abdda38f33": {
+        "id": "a2019c5b-a426-4965-b3dc-48abdda38f33",
+        "word": "why",
+        "transcription": "waɪ",
+        "partOfSpeech": "adverb",
+        "description": "asking for a reason"
+      },
+      "56dda577-d1e2-457b-bd0d-79b2911f66f3": {
+        "id": "56dda577-d1e2-457b-bd0d-79b2911f66f3",
+        "word": "wide",
+        "transcription": "waɪd",
+        "partOfSpeech": "adjective",
+        "description": "having a large distance from side to side"
+      },
+      "f0fcc596-2dc2-4434-8b70-ecfcac446d66": {
+        "id": "f0fcc596-2dc2-4434-8b70-ecfcac446d66",
+        "word": "widely",
+        "transcription": "ˈwaɪdli",
+        "partOfSpeech": "adverb",
+        "description": "over a large area or range"
+      },
+      "9e9587ea-ba2c-4951-817e-32134a380a54": {
+        "id": "9e9587ea-ba2c-4951-817e-32134a380a54",
+        "word": "wife",
+        "transcription": "waɪf",
+        "partOfSpeech": "noun",
+        "description": "a married woman"
+      },
+      "9315a190-a724-4bb4-8802-03321fa03f5b": {
+        "id": "9315a190-a724-4bb4-8802-03321fa03f5b",
+        "word": "wild",
+        "transcription": "waɪld",
+        "partOfSpeech": "adjective",
+        "description": "living or growing in nature; not tamed"
+      },
+      "983c0a1b-e855-45b1-a31f-63561469f4eb": {
+        "id": "983c0a1b-e855-45b1-a31f-63561469f4eb",
+        "word": "will",
+        "transcription": "wɪl",
+        "partOfSpeech": "noun/modal verb",
+        "description": "the ability to decide; expressing the future"
+      },
+      "57429b6e-908a-4de8-83c6-890fe2d7771f": {
+        "id": "57429b6e-908a-4de8-83c6-890fe2d7771f",
+        "word": "win",
+        "transcription": "wɪn",
+        "partOfSpeech": "verb",
+        "description": "to be successful in a competition or battle"
+      },
+      "85045838-15d0-4096-8f25-102f6b8ad35a": {
+        "id": "85045838-15d0-4096-8f25-102f6b8ad35a",
+        "word": "wind",
+        "transcription": "wɪnd",
+        "partOfSpeech": "noun",
+        "description": "moving air"
+      },
+      "39c080d2-a6eb-4a5a-863e-f9352d2f9b3a": {
+        "id": "39c080d2-a6eb-4a5a-863e-f9352d2f9b3a",
+        "word": "window",
+        "transcription": "ˈwɪndoʊ",
+        "partOfSpeech": "noun",
+        "description": "an opening in a wall to let in light and air"
+      },
+      "8da81c3d-5bb5-44ce-b907-0fe161f34a6f": {
+        "id": "8da81c3d-5bb5-44ce-b907-0fe161f34a6f",
+        "word": "wine",
+        "transcription": "waɪn",
+        "partOfSpeech": "noun",
+        "description": "an alcoholic drink made from grapes"
+      },
+      "a90d7b20-f30c-4d6c-b6f1-90a57afec1d5": {
+        "id": "a90d7b20-f30c-4d6c-b6f1-90a57afec1d5",
+        "word": "wing",
+        "transcription": "wɪŋ",
+        "partOfSpeech": "noun",
+        "description": "a part of an animal or plane used for flying"
+      },
+      "ea0bc2d7-be8d-4b38-8bdd-187510164f73": {
+        "id": "ea0bc2d7-be8d-4b38-8bdd-187510164f73",
+        "word": "winner",
+        "transcription": "ˈwɪnər",
+        "partOfSpeech": "noun",
+        "description": "a person who wins"
+      },
+      "92006967-5bc4-4f71-8840-7d40f29f402d": {
+        "id": "92006967-5bc4-4f71-8840-7d40f29f402d",
+        "word": "winter",
+        "transcription": "ˈwɪntər",
+        "partOfSpeech": "noun",
+        "description": "the coldest season of the year"
+      },
+      "bc7d5674-85f6-40ba-aa56-f4584da8d5ce": {
+        "id": "bc7d5674-85f6-40ba-aa56-f4584da8d5ce",
+        "word": "wipe",
+        "transcription": "waɪp",
+        "partOfSpeech": "verb",
+        "description": "to clean or dry by rubbing"
+      },
+      "10816fe0-9ae2-4f41-abf1-e097c96f9d15": {
+        "id": "10816fe0-9ae2-4f41-abf1-e097c96f9d15",
+        "word": "wire",
+        "transcription": "ˈwaɪər",
+        "partOfSpeech": "noun",
+        "description": "a thin, flexible thread of metal"
+      },
+      "f2cdf015-127b-4436-9416-60f43eac087c": {
+        "id": "f2cdf015-127b-4436-9416-60f43eac087c",
+        "word": "wise",
+        "transcription": "waɪz",
+        "partOfSpeech": "adjective",
+        "description": "showing good judgment"
+      },
+      "9b366d4d-08d4-438b-b601-8b6e9d5bbdad": {
+        "id": "9b366d4d-08d4-438b-b601-8b6e9d5bbdad",
+        "word": "wish",
+        "transcription": "wɪʃ",
+        "partOfSpeech": "verb/noun",
+        "description": "to want something; a hope or desire"
+      },
+      "369fa1a2-67e3-4a38-9fbb-fd9d25ec7a93": {
+        "id": "369fa1a2-67e3-4a38-9fbb-fd9d25ec7a93",
+        "word": "with",
+        "transcription": "wɪð",
+        "partOfSpeech": "preposition",
+        "description": "accompanied by"
+      },
+      "7171a4f4-9290-4277-999f-077137878baa": {
+        "id": "7171a4f4-9290-4277-999f-077137878baa",
+        "word": "withdraw",
+        "transcription": "wɪðˈdrɔː",
+        "partOfSpeech": "verb",
+        "description": "to take out or remove"
+      },
+      "3775d829-d40d-41b5-9098-c163911c98e0": {
+        "id": "3775d829-d40d-41b5-9098-c163911c98e0",
+        "word": "within",
+        "transcription": "wɪˈðɪn",
+        "partOfSpeech": "preposition",
+        "description": "inside of; not beyond"
+      },
+      "ea90133b-7ca0-4b27-b9a1-04219f4532be": {
+        "id": "ea90133b-7ca0-4b27-b9a1-04219f4532be",
+        "word": "without",
+        "transcription": "wɪˈðaʊt",
+        "partOfSpeech": "preposition",
+        "description": "not having"
+      },
+      "d9da9120-89f9-47e3-87cf-580ac259ee93": {
+        "id": "d9da9120-89f9-47e3-87cf-580ac259ee93",
+        "word": "witness",
+        "transcription": "ˈwɪtnəs",
+        "partOfSpeech": "noun/verb",
+        "description": "someone who sees an event; to see something happen"
+      },
+      "10caff37-f1d8-427e-9ee1-5f0a24c9b756": {
+        "id": "10caff37-f1d8-427e-9ee1-5f0a24c9b756",
+        "word": "woman",
+        "transcription": "ˈwʊmən",
+        "partOfSpeech": "noun",
+        "description": "an adult female person"
+      },
+      "682c7ac2-d857-4c58-94ee-26b41906623f": {
+        "id": "682c7ac2-d857-4c58-94ee-26b41906623f",
+        "word": "wonder",
+        "transcription": "ˈwʌndər",
+        "partOfSpeech": "verb/noun",
+        "description": "to want to know; something amazing"
+      },
+      "ccc11d21-e89d-41c4-8024-e3ab93ffc5af": {
+        "id": "ccc11d21-e89d-41c4-8024-e3ab93ffc5af",
+        "word": "wonderful",
+        "transcription": "ˈwʌndərfl",
+        "partOfSpeech": "adjective",
+        "description": "extremely good; marvelous"
+      },
+      "e14e2dc2-518c-4496-b25b-7b6a974c3fa4": {
+        "id": "e14e2dc2-518c-4496-b25b-7b6a974c3fa4",
+        "word": "wood",
+        "transcription": "wʊd",
+        "partOfSpeech": "noun",
+        "description": "the material that trees are made of; a small forest"
+      },
+      "c99f347c-99e7-4c90-91fa-e7fa3702614d": {
+        "id": "c99f347c-99e7-4c90-91fa-e7fa3702614d",
+        "word": "wooden",
+        "transcription": "ˈwʊdn",
+        "partOfSpeech": "adjective",
+        "description": "made of wood"
+      },
+      "962fd236-21a9-4a93-b962-25f797d0a071": {
+        "id": "962fd236-21a9-4a93-b962-25f797d0a071",
+        "word": "word",
+        "transcription": "wɜːrd",
+        "partOfSpeech": "noun",
+        "description": "a unit of language with meaning"
+      },
+      "c08426b7-6a77-4c9e-8a5b-da3dbd030072": {
+        "id": "c08426b7-6a77-4c9e-8a5b-da3dbd030072",
+        "word": "work",
+        "transcription": "wɜːrk",
+        "partOfSpeech": "noun/verb",
+        "description": "activity to achieve a purpose; to do a job"
+      },
+      "e07fcbaa-a3df-4385-a48c-4f2189c2bd4e": {
+        "id": "e07fcbaa-a3df-4385-a48c-4f2189c2bd4e",
+        "word": "worker",
+        "transcription": "ˈwɜːrkər",
+        "partOfSpeech": "noun",
+        "description": "a person who works"
+      },
+      "dd1138e6-6319-40c4-9288-55a00f0e6b1f": {
+        "id": "dd1138e6-6319-40c4-9288-55a00f0e6b1f",
+        "word": "world",
+        "transcription": "wɜːrld",
+        "partOfSpeech": "noun",
+        "description": "the earth and all people and places on it"
+      },
+      "0d9c2dbf-074f-42bd-a4a2-1e9bc63005ac": {
+        "id": "0d9c2dbf-074f-42bd-a4a2-1e9bc63005ac",
+        "word": "worry",
+        "transcription": "ˈwɜːri",
+        "partOfSpeech": "verb/noun",
+        "description": "to feel anxious; a feeling of concern"
+      },
+      "341fa206-ff85-42ac-99dd-3785bf023eb6": {
+        "id": "341fa206-ff85-42ac-99dd-3785bf023eb6",
+        "word": "worth",
+        "transcription": "wɜːrθ",
+        "partOfSpeech": "noun/adjective",
+        "description": "having a value; value of something"
+      },
+      "920c6365-672b-4e96-afad-37c90cf8d9e1": {
+        "id": "920c6365-672b-4e96-afad-37c90cf8d9e1",
+        "word": "would",
+        "transcription": "wʊd",
+        "partOfSpeech": "modal verb",
+        "description": "used to indicate a conditional action or future in the past"
+      },
+      "0ddb792e-6f56-49be-9e9f-64b3fe537828": {
+        "id": "0ddb792e-6f56-49be-9e9f-64b3fe537828",
+        "word": "wound",
+        "transcription": "wuːnd",
+        "partOfSpeech": "noun/verb",
+        "description": "an injury; to injure"
+      },
+      "05e269cb-6b3e-4540-b988-d220a3a14f0e": {
+        "id": "05e269cb-6b3e-4540-b988-d220a3a14f0e",
+        "word": "wrap",
+        "transcription": "ræp",
+        "partOfSpeech": "verb",
+        "description": "to cover something by winding material around it"
+      },
+      "de728f35-84b0-41af-a24b-8007a1bddd0e": {
+        "id": "de728f35-84b0-41af-a24b-8007a1bddd0e",
+        "word": "write",
+        "transcription": "raɪt",
+        "partOfSpeech": "verb",
+        "description": "to form letters or words on a surface"
+      },
+      "be88fd46-49eb-419b-979b-da7b933f2a00": {
+        "id": "be88fd46-49eb-419b-979b-da7b933f2a00",
+        "word": "writer",
+        "transcription": "ˈraɪtər",
+        "partOfSpeech": "noun",
+        "description": "a person who writes books, stories, or articles"
+      },
+      "487ed551-1701-47bf-b830-b63dcc344dbe": {
+        "id": "487ed551-1701-47bf-b830-b63dcc344dbe",
+        "word": "wrong",
+        "transcription": "rɔːŋ",
+        "partOfSpeech": "adjective",
+        "description": "not correct"
+      }
+    }
+  }
+}
