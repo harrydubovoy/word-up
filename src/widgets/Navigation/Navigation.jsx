@@ -37,9 +37,9 @@ export function Navigation() {
         <ListItem disablePadding>
           <Link to="/archive" label="Archive" icon={<Inventory2OutlinedIcon />} />
         </ListItem>
-        <ListItem disablePadding>
-          <Link to="/suggested-dictionary" label="Suggested" icon={<AssistantOutlinedIcon />} />
-        </ListItem>
+        {/*<ListItem disablePadding>*/}
+        {/*  <Link to="/suggested-dictionary" label="Suggested" icon={<AssistantOutlinedIcon />} />*/}
+        {/*</ListItem>*/}
       </List>
     </Wrap>
   );
