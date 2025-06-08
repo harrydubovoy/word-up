@@ -15,7 +15,7 @@ export const router = createBrowserRouter(createRoutesFromElements(
     <Route path="edit/:id" element={<EditPage />} />
     <Route path="dictionary" element={<DictionaryPage />} />
     <Route path="archive" element={<ArchivePage />} />
-    {/*<Route path="suggested-dictionary" element={<SuggestedDictionaryPage />} />*/}
+    <Route path="suggested-dictionary" element={<SuggestedDictionaryPage />} />
     {/* <Route path="*" element={<NotFoundScreen />} /> */}
   </Route>,
 ));

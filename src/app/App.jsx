@@ -21,12 +21,12 @@ export function App() {
       >
         <Box sx={{
           display: 'grid',
-          gridTemplateColumns: '1fr 2fr 1fr',
+          gridTemplateColumns: '0.8fr 2fr 0.8fr',
           gridTemplateRows: '1fr auto',
           maxHeight: '90%',
           height: '100%',
           width: '100%',
-          maxWidth: '1124px',
+          maxWidth: '1154px',
           margin: '0 auto',
           padding: '0 16px',
           gap: '0 16px',
