@@ -1,4 +1,4 @@
-export const Box = ({ children, type, captionTop, captionBottom }) => (
+export const BoxLayout = ({ children, type, captionTop, captionBottom }) => (
     <>
         {captionTop && (
             <div className="header">

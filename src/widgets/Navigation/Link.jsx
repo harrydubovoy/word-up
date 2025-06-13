@@ -5,6 +5,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { styled } from '../../ui-kit/theme';
 
+import { Button } from '../../ui-kit/Button';
+
 const ListItemButton = styled(MuiListItemButton)(() => ({
   borderRadius: '8px',
 }));
@@ -30,6 +32,11 @@ export function Link({ to, icon, label }) {
   const isActiveStyle = useActiveLinkStyle(to);
 
   return (
+    <Button onClick={handleOnNavigate}>{label}</Button>
+  )
+
+  return (
+
     <ListItemButton sx={{ ...isActiveStyle }} onClick={handleOnNavigate}>
       <ListItemIcon sx={{ color: 'inherit' }}>
         {icon}

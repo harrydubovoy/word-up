@@ -1,7 +1,5 @@
-import MuiButton from '@mui/material/Button';
-import MuiIconButton from '@mui/material/IconButton';
+import {buttonBaseClasses} from "@mui/material";
 
-const Button = MuiButton;
-const ButtonIcon = MuiIconButton;
-
-export { Button, ButtonIcon };
+export const Button = ({ children, variant, border, size, ...restProps }) => (
+    <button box-={border} size-={} variant={variant} {...restProps}>{children}</button>
+)
