@@ -1,1 +1,0 @@
-export { PartOfSpeechBadge } from './PartOfSpeechBadge';

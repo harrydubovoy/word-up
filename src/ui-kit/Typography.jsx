@@ -1,5 +1,14 @@
-import MuiTypography from '@mui/material/Typography';
+export function Typography({ children, variant }) {
+  if (/h[1-6]/.test(variant)) {
+    const TagH = variant;
+    return (
+      <TagH>{children}</TagH>
+    );
+  }
 
-const Typography = MuiTypography;
-
-export { Typography };
+  if (variant === 'p') {
+    return (
+      <p>{children}</p>
+    );
+  }
+}

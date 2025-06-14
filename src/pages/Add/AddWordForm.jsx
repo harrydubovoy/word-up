@@ -20,7 +20,7 @@ export function AddWordForm() {
         reset();
       }}
     >
-      <Stack spacing={3}>
+      <Stack spacing={1}>
         <WordFormFields />
         <Button variant="contained" fullWidth type="submit">
           Add

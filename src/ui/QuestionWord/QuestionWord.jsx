@@ -1,9 +1,10 @@
-import { Card, CardContent } from '../../ui-kit/Card';
+import MuiBox from '@mui/material/Box';
+
 import { Typography } from '../../ui-kit/Typography';
+import { Box } from '../../ui-kit/Box';
+import { Badge } from '../../ui-kit/Badge';
 
 import { If } from '../../shared/utils/If';
-
-import { PartOfSpeechChip } from '../PartOfSpeechChip';
 
 export function QuestionWord({
   isTestReversed,
@@ -14,36 +15,26 @@ export function QuestionWord({
   onReverseTest,
 }) {
   return (
-    <Card
-      sx={{
-        position: 'relative',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '132px',
-        backgroundColor: (theme) => theme.palette.jetStream,
-        color: (theme) => theme.palette.lunarGreen,
-        cursor: isTestStarted ? 'default' : 'pointer',
-      }}
-      onClick={onReverseTest}
-    >
-      <CardContent>
-        <>
-          <If condition={!isTestReversed}>
-            <PartOfSpeechChip label={partOfSpeech} />
+    <MuiBox onClick={isTestStarted ? Function.prototype : onReverseTest}>
+      <Box type="round">
+        <MuiBox sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+          <If condition={(!isTestReversed && partOfSpeech)}>
+            <Badge>{partOfSpeech}</Badge>
           </If>
-          <Typography color="inherit" variant="h5">
-            {questionWord}
-          </Typography>
+          <MuiBox sx={{ margin: '12px 0' }}>
+            <Typography variant="h1">
+              {questionWord}
+            </Typography>
+          </MuiBox>
           <If condition={transcription && !isTestReversed}>
-            <Typography sx={{ marginTop: '8px', textAlign: 'center' }} variant="subtitle2" fontWeight="400">
-              /
+            <Typography variant="p">
+              [
               {transcription}
-              /
+              ]
             </Typography>
           </If>
-        </>
-      </CardContent>
-    </Card>
+        </MuiBox>
+      </Box>
+    </MuiBox>
   );
 }

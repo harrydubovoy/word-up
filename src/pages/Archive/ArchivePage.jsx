@@ -11,9 +11,10 @@ import { EmptyScreen, isArchiveEmptyScreenVisible } from '../../widgets/EmptyScr
 
 const Grid = styled(Box)({
   display: 'grid',
-  gridTemplateColumns: '1fr 1fr',
+  gridTemplateColumns: '1fr',
   gap: '8px',
 
+  maxWidth: '90%',
   width: '100%',
   margin: '0 auto',
 });

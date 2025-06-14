@@ -1,8 +1,8 @@
-import { Box } from '../../../ui-kit/Box';
+import MuiBox from '@mui/material/Box';
 
 function EmptyScreenContent({ children }) {
   return (
-    <Box sx={{
+    <MuiBox sx={{
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
@@ -11,7 +11,7 @@ function EmptyScreenContent({ children }) {
     }}
     >
       {children}
-    </Box>
+    </MuiBox>
   );
 }
 

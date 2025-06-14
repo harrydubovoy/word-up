@@ -1,19 +1,16 @@
-import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+import MuiBox from '@mui/material/Box';
 
-import { TextField } from '../../ui-kit/TextField';
-import { ButtonIcon } from '../../ui-kit/Button';
-import { Box } from '../../ui-kit/Box';
+import { Input } from '../../ui-kit/Input';
+
+import { QuestionWord } from '../../ui/QuestionWord';
+import { TestProgress } from '../../ui/TestProgress';
+import { ResultAnswersList } from '../../ui/ResultAnswer';
 
 import { Branch } from '../../shared/utils/Branch';
 import { If } from '../../shared/utils/If';
 import { isEnterKey } from '../../shared/utils/input';
 
-import { QuestionWord } from '../../ui/QuestionWord';
-import { TestProgress } from '../../ui/TestProgress';
-
 import { Restart } from './Restart';
-
-import { ResultAnswersList } from '../../ui/ResultAnswer';
 
 import { useCurrentQuestionWord } from './hooks/useCurrentQuestionWord';
 import { useTestQuestions } from './hooks/useTestQuestions';
@@ -89,12 +86,12 @@ export function TestPage() {
   };
 
   return (
-    <Box sx={{ maxWidth: '70%', margin: '0 auto', padding: '8px 0' }}>
-      <Box sx={{ padding: '0 0 16px' }}>
+    <MuiBox sx={{ maxWidth: '90%', margin: '0 auto', padding: '8px 0' }}>
+      <MuiBox sx={{ padding: '0 0 16px' }}>
         <Branch
           condition={isTestFinished}
           slotIf={(
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <MuiBox sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <QuestionWord
                 isTestReversed={isTestReversed}
                 isTestStarted={isTestStarted}
@@ -103,37 +100,30 @@ export function TestPage() {
                 partOfSpeech={partOfSpeech}
                 onReverseTest={handleReverseTest}
               />
-              <TextField
-                variant="outlined"
-                autoFocus
-                className="pr-10"
-                ref={answerInputRef}
-                onKeyDown={handleOnKeyDown}
-                endAdornment={(
-                  <ButtonIcon
-                    aria-label="Send answer"
-                    size="icon"
-                    onClick={handleOnSubmit}
-                  >
-                    <SendOutlinedIcon />
-                  </ButtonIcon>
-                )}
-              />
-            </Box>
+              <MuiBox>
+                <Input
+                  autoFocus
+                  type="text"
+                  label="Answer"
+                  onKeyDown={handleOnKeyDown}
+                  ref={answerInputRef}
+                />
+              </MuiBox>
+            </MuiBox>
           )}
           slotElse={(
             <Restart onRestart={handleRestart} />
           )}
         />
-      </Box>
+      </MuiBox>
       <If condition={isTestStarted}>
-        <Box>
+        <MuiBox>
           <TestProgress cursor={cursor} totalTestPlan={testPlanTotal} />
-          <Box sx={{ marginTop: '16px' }}>
+          <MuiBox sx={{ marginTop: '16px' }}>
             <ResultAnswersList answersList={answersList} />
-          </Box>
-        </Box>
+          </MuiBox>
+        </MuiBox>
       </If>
-    </Box>
+    </MuiBox>
   );
 }

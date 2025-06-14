@@ -1,12 +1,9 @@
 import PublicOutlinedIcon from '@mui/icons-material/PublicOutlined';
-import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 
 import { WordCard } from '../../ui/WordCard';
 import { ButtonIcon } from '../../ui-kit/Button';
 import { openExternalDictionaryPageByWord } from '../../shared/utils/navigation';
-
-import { DescriptionWordCard } from '../DescriptionWordCard';
 
 import { useSuggestedDictionaryCardController } from './controller';
 

@@ -1,5 +1,6 @@
+import MuiBox from '@mui/material/Box';
+
 import { styled } from '../../ui-kit/theme';
-import { Box } from '../../ui-kit/Box';
 
 import { List } from '../../shared/utils/List';
 
@@ -9,11 +10,12 @@ import { DictionaryWordCard } from '../../widgets/DictionaryWordCard';
 
 import { useUnmountPage } from './useUnmountPage';
 
-const Grid = styled(Box)({
+const Grid = styled(MuiBox)({
   display: 'grid',
-  gridTemplateColumns: '1fr 1fr',
+  gridTemplateColumns: '1fr',
   gap: '8px',
 
+  maxWidth: '90%',
   width: '100%',
   margin: '0 auto',
 });

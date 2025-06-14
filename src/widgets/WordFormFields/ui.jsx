@@ -1,8 +1,6 @@
-import PublicOutlinedIcon from '@mui/icons-material/PublicOutlined';
-
 import { Stack } from '../../ui-kit/Stack';
-import { TextField } from '../../ui-kit/TextField';
-import { ButtonIcon } from '../../ui-kit/Button';
+import { Input } from '../../ui-kit/Input';
+import { Textarea } from '../../ui-kit/Textarea';
 
 import { useFormHandlerContext } from '../../shared/contextes/FormHandler';
 import { openExternalDictionaryPageByWord } from '../../shared/utils/navigation';
@@ -17,49 +15,28 @@ export function WordFormFields() {
   };
 
   return (
-    <Stack spacing={2}>
-      <TextField
+    <Stack spacing={0}>
+      <Input
         {...register(WORD_PAIR_KEYS.FOREIGN)}
         autoFocus
         required
-        fullWidth
-        variant="filled"
         label="Foreign"
-        endAdornment={(
-          <ButtonIcon
-            variant="filled"
-            disabled={!values[WORD_PAIR_KEYS.FOREIGN]}
-            onClick={handleOnOpenDictionary}
-          >
-            <PublicOutlinedIcon />
-          </ButtonIcon>
-        )}
       />
-      <TextField
+      <Input
         {...register(WORD_PAIR_KEYS.NATIVE)}
-        variant="filled"
-        fullWidth
         label="Native"
         required
       />
-      <TextField
+      <Input
         {...register(WORD_PAIR_KEYS.TRANSCRIPTION)}
-        variant="filled"
-        fullWidth
         label="Transcription"
       />
-      <TextField
+      <Input
         {...register(WORD_PAIR_KEYS.PART_OF_SPEECH)}
-        variant="filled"
-        fullWidth
         label="Part of speech"
       />
-      <TextField
+      <Textarea
         {...register(WORD_PAIR_KEYS.DESCRIPTION)}
-        variant="filled"
-        fullWidth
-        multiline
-        type="textarea"
         label="Description / Meaning / Example"
       />
     </Stack>

@@ -1,45 +1,32 @@
-import MuiListItem from '@mui/material/ListItem';
-import MuiListItemText from '@mui/material/ListItemText';
-
 import { Box } from '../../ui-kit/Box';
-import { If } from '../../shared/utils/If';
+import { Typography } from '../../ui-kit/Typography';
+import { Badge } from '../../ui-kit/Badge';
 import { Branch } from '../../shared/utils/Branch';
 
 export function ResultAnswerItem({ questionWord, userAnswerWord, isRightAnswer, rightAnswer }) {
   return (
-    <MuiListItem sx={{ position: 'relative', backgroundColor: isRightAnswer ? '#c5e1a5' : '#fecaca' }}>
-      <Box
-        component="span"
-        sx={{
-          position: 'absolute',
-          right: '24px',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          fontSize: '20px',
-        }}
-      >
+    <Box
+      captionTop={[
+        ' ',
+        <Badge key="answer-badge" variant={isRightAnswer ? 'green' : 'red'}>
+          <Branch
+            condition={isRightAnswer}
+            slotIf="Right"
+            slotElse="Wrong"
+          />
+        </Badge>,
+      ]}
+    >
+      <Typography variant="h3">{questionWord}</Typography>
+      <Typography variant="h3">
         <Branch
           condition={isRightAnswer}
-          slotIf={<>👍</>}
-          slotElse={<>🙂</>}
+          slotIf={userAnswerWord}
+          slotElse={<span style={{ textDecoration: 'line-through' }}>{userAnswerWord}</span>}
         />
-      </Box>
-      <MuiListItemText
-        primary={(
-          <>
-            <Box component="span" sx={{ textDecoration: isRightAnswer ? '' : 'line-through' }}>
-              {userAnswerWord}
-            </Box>
-            <If condition={!isRightAnswer}>
-              &nbsp;
-              <Box component="span">
-                {rightAnswer}
-              </Box>
-            </If>
-          </>
-        )}
-        secondary={questionWord}
-      />
-    </MuiListItem>
+        {' '}
+        {!isRightAnswer && rightAnswer}
+      </Typography>
+    </Box>
   );
 }

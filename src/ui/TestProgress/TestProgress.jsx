@@ -1,23 +1,23 @@
-import { Box } from '../../ui-kit/Box';
+import MuiBox from '@mui/material/Box';
+
 import { Progress } from '../../ui-kit/Progress';
-import { Typography } from '../../ui-kit/Typography';
 
 import { getProgress } from './utils';
 
 export function TestProgress({ cursor, totalTestPlan }) {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+    <MuiBox sx={{ display: 'grid', gap: '4px' }}>
       <Progress value={getProgress(totalTestPlan, cursor)} />
-      <Typography variant="body2" fontWeight="400" fontSize="12px" sx={{ display: 'flex', justifyContent: 'space-between', padding: '0 8px' }}>
-        <Box component="span">
+      <MuiBox sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <MuiBox>
           Completed
-        </Box>
-        <Box component="span">
+        </MuiBox>
+        <MuiBox>
           {cursor}
           /
           {totalTestPlan}
-        </Box>
-      </Typography>
-    </Box>
+        </MuiBox>
+      </MuiBox>
+    </MuiBox>
   );
 }

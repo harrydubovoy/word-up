@@ -25,13 +25,13 @@ export function EditFormWord() {
         handleOnBack();
       }}
     >
-      <Stack spacing={3}>
+      <Stack spacing={0}>
         <WordFormFields />
-        <Stack direction="row" spacing={1}>
-          <Button variant="outlined" fullWidth type="button" onClick={handleOnBack}>
+        <Stack justifyContent="end" direction="row" spacing={1}>
+          <Button type="button" onClick={handleOnBack}>
             Cancel
           </Button>
-          <Button variant="contained" fullWidth type="submit">
+          <Button type="submit">
             Update
           </Button>
         </Stack>

@@ -2,14 +2,12 @@ import { Outlet } from 'react-router-dom';
 import MuiBox from '@mui/material/Box';
 
 import { Box } from '../ui-kit/Box';
+import { Badge } from '../ui-kit/Badge';
 
 import { Navigation } from '../widgets/Navigation';
-import { Content } from '../ui/Content';
-import { Copyright } from '../widgets/Copyright';
+// import { Copyright } from '../widgets/Copyright';
 
 import { AsideContentPortalProvider, EXTRA_ASIDE_AREA } from '../shared/contextes/AsideContentPortal';
-
-import { BoxLayout } from '../ui-kit/BoxLayout';
 
 import './App.css';
 
@@ -24,44 +22,25 @@ export function App() {
       >
         <MuiBox sx={{
           display: 'grid',
-          gridTemplateColumns: '0.8fr 2fr 0.8fr',
+          gridTemplateColumns: '0.7fr 1.5fr 0.7fr',
           gridTemplateRows: '1fr auto',
           maxHeight: '90%',
           height: '100%',
           width: '100%',
-          maxWidth: '1154px',
+          maxWidth: '984px',
           margin: '0 auto',
           padding: '0 16px',
           gap: '0 16px',
         }}
         >
-          <Box>
+          <Box captionTop={[<Badge key="navigation" variant="background0">Navigation</Badge>]}>
             <Navigation />
           </Box>
-          <Box>
-            Hello
+          <Box className="overflow-hidden">
+            <MuiBox sx={{ height: '100%', width: '100%', overflow: 'auto' }}>
+              <Outlet />
+            </MuiBox>
           </Box>
-          {/*<Content sx={{ backgroundColor: '#32473b' }}>*/}
-          {/*  <Navigation />*/}
-          {/*</Content>*/}
-
-          {/*<Content sx={{ backgroundColor: '#e0dfdc', overflow: 'hidden' }}>*/}
-          {/*  <Box sx={{*/}
-          {/*    overflowY: 'auto',*/}
-          {/*    height: '100%',*/}
-          {/*    margin: '0 -16px',*/}
-          {/*    padding: '0 16px',*/}
-          {/*  }}*/}
-          {/*  >*/}
-          {/*    <Outlet />*/}
-          {/*  </Box>*/}
-          {/*</Content>*/}
-
-          {/*<div id={EXTRA_ASIDE_AREA} />*/}
-
-          {/*<Box sx={{ gridColumn: '2 / 3', gridRow: '2 / 2' }}>*/}
-          {/*  <Copyright />*/}
-          {/*</Box>*/}
         </MuiBox>
       </MuiBox>
     </AsideContentPortalProvider>

@@ -1,9 +1,6 @@
-import RestoreOutlinedIcon from '@mui/icons-material/RestoreOutlined';
-import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
-
 import { WordCard } from '../../ui/WordCard';
 
-import { ButtonIcon } from '../../ui-kit/Button';
+import { Button } from '../../ui-kit/Button';
 import { useArchive } from '../../entities';
 
 import { useArchiveCardController } from './controller';
@@ -26,12 +23,12 @@ export function ArchiveWordCard({ id }) {
       partOfSpeech={selectPartOfSpeechById(id)}
       renderActions={() => (
         <>
-          <ButtonIcon onClick={handleRestore}>
-            <RestoreOutlinedIcon />
-          </ButtonIcon>
-          <ButtonIcon onClick={handleRemove}>
-            <DeleteForeverOutlinedIcon />
-          </ButtonIcon>
+          <Button size="small" onClick={handleRestore}>
+            [R]
+          </Button>
+          <Button size="small" onClick={handleRemove}>
+            [D]
+          </Button>
         </>
       )}
     />
