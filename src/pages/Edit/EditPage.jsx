@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import MuiBox from '@mui/material/Box';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 
 import { FormHandlerProvider } from '../../shared/contextes/FormHandler';
 import { WORD_PAIR_KEYS } from '../../shared/constants/word';
@@ -25,10 +25,10 @@ export function EditPage() {
   });
 
   return (
-    <MuiBox sx={{ maxWidth: '90%', margin: '0 auto', padding: '8px 0' }}>
+    <LayoutBox sx={{ maxWidth: '90%', margin: '0 auto', padding: '8px 0' }}>
       <FormHandlerProvider initialState={initialState.current}>
         <EditFormWord />
       </FormHandlerProvider>
-    </MuiBox>
+    </LayoutBox>
   );
 }

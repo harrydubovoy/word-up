@@ -1,4 +1,4 @@
-import { Stack } from '../../ui-kit/Stack';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { Input } from '../../ui-kit/Input';
 import { Textarea } from '../../ui-kit/Textarea';
 
@@ -15,7 +15,7 @@ export function WordFormFields() {
   };
 
   return (
-    <Stack spacing={0}>
+    <LayoutBox>
       <Input
         {...register(WORD_PAIR_KEYS.FOREIGN)}
         autoFocus
@@ -39,6 +39,6 @@ export function WordFormFields() {
         {...register(WORD_PAIR_KEYS.DESCRIPTION)}
         label="Description / Meaning / Example"
       />
-    </Stack>
+    </LayoutBox>
   );
 }

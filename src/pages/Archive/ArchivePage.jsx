@@ -1,15 +1,15 @@
 import { length } from 'ramda';
-import Box from '@mui/material/Box';
 
 import { List } from '../../shared/utils/List';
 import { styled } from '../../ui-kit/theme';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 
 import { useArchive } from '../../entities';
 
 import { ArchiveWordCard } from '../../widgets/ArchiveWordCard';
 import { EmptyScreen, isArchiveEmptyScreenVisible } from '../../widgets/EmptyScreen';
 
-const Grid = styled(Box)({
+const Grid = styled(LayoutBox)({
   display: 'grid',
   gridTemplateColumns: '1fr',
   gap: '8px',

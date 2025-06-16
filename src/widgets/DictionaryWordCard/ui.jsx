@@ -36,11 +36,11 @@ export function DictionaryWordCard({ id }) {
       renderActions={() => (
         <>
           <Button size="small" onClick={handleMoveToArchive}>
-            [-A]
+            [Del]
           </Button>
 
           <Button size="small" onClick={handleNavigateToEditPage}>
-            [E]
+            [Ed]
           </Button>
 
           <Button size="small" onClick={handleOpenExternalDictionary}>
@@ -50,8 +50,8 @@ export function DictionaryWordCard({ id }) {
           <Button size="small" onClick={handleToggleTestPlan}>
             <Branch
               condition={isExistAtTestPlan}
-              slotIf="[-At]"
-              slotElse="[+At]"
+              slotIf="[DelT]"
+              slotElse="[AddT]"
             />
           </Button>
         </>

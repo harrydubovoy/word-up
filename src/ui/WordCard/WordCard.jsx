@@ -1,5 +1,4 @@
-import MuiBox from '@mui/material/Box';
-
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { Box } from '../../ui-kit/Box';
 import { Typography } from '../../ui-kit/Typography';
 import { Badge } from '../../ui-kit/Badge';
@@ -18,13 +17,13 @@ export function WordCard({
 }) {
   return (
     <Box captionTop={isSelected ? selectedTuple : null}>
-      <MuiBox>
+      <LayoutBox>
         <If condition={partOfSpeech}>
-          <MuiBox sx={{ marginBottom: '8px' }}>
+          <LayoutBox sx={{ marginBottom: '8px' }}>
             <Badge variant="background1">{partOfSpeech}</Badge>
-          </MuiBox>
+          </LayoutBox>
         </If>
-        <MuiBox sx={{ display: 'flex', gap: '2px' }}>
+        <LayoutBox sx={{ display: 'flex', gap: '2px' }}>
           <Typography variant="h3">{foreign}</Typography>
           <If condition={transcription}>
             <Typography variant="p">
@@ -33,18 +32,18 @@ export function WordCard({
               ]
             </Typography>
           </If>
-        </MuiBox>
+        </LayoutBox>
         <Typography variant="h3">{native}</Typography>
 
-        <MuiBox sx={{ display: 'flex', justifyContent: 'end', gap: '4px', marginTop: '12px' }}>
+        <LayoutBox sx={{ display: 'flex', justifyContent: 'end', gap: '4px', marginTop: '12px' }}>
           {renderActions()}
-        </MuiBox>
+        </LayoutBox>
         <If condition={description}>
           <Box type="round">
             <Typography variant="p">{description}</Typography>
           </Box>
         </If>
-      </MuiBox>
+      </LayoutBox>
     </Box>
   );
 }

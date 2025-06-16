@@ -1,5 +1,4 @@
-import MuiBox from '@mui/material/Box';
-
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { Input } from '../../ui-kit/Input';
 
 import { QuestionWord } from '../../ui/QuestionWord';
@@ -86,12 +85,12 @@ export function TestPage() {
   };
 
   return (
-    <MuiBox sx={{ maxWidth: '90%', margin: '0 auto', padding: '8px 0' }}>
-      <MuiBox sx={{ padding: '0 0 16px' }}>
+    <LayoutBox sx={{ maxWidth: '90%', margin: '0 auto', padding: '8px 0' }}>
+      <LayoutBox sx={{ padding: '0 0 16px' }}>
         <Branch
           condition={isTestFinished}
           slotIf={(
-            <MuiBox sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <LayoutBox sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <QuestionWord
                 isTestReversed={isTestReversed}
                 isTestStarted={isTestStarted}
@@ -100,7 +99,7 @@ export function TestPage() {
                 partOfSpeech={partOfSpeech}
                 onReverseTest={handleReverseTest}
               />
-              <MuiBox>
+              <LayoutBox>
                 <Input
                   autoFocus
                   type="text"
@@ -108,22 +107,22 @@ export function TestPage() {
                   onKeyDown={handleOnKeyDown}
                   ref={answerInputRef}
                 />
-              </MuiBox>
-            </MuiBox>
+              </LayoutBox>
+            </LayoutBox>
           )}
           slotElse={(
             <Restart onRestart={handleRestart} />
           )}
         />
-      </MuiBox>
+      </LayoutBox>
       <If condition={isTestStarted}>
-        <MuiBox>
+        <LayoutBox>
           <TestProgress cursor={cursor} totalTestPlan={testPlanTotal} />
-          <MuiBox sx={{ marginTop: '16px' }}>
+          <LayoutBox sx={{ marginTop: '16px' }}>
             <ResultAnswersList answersList={answersList} />
-          </MuiBox>
-        </MuiBox>
+          </LayoutBox>
+        </LayoutBox>
       </If>
-    </MuiBox>
+    </LayoutBox>
   );
 }

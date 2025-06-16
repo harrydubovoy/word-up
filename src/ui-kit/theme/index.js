@@ -1,15 +1,16 @@
-import { ThemeProvider, createTheme, styled } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider, css } from '@emotion/react';
+import styled from '@emotion/styled';
 
-const theme = createTheme({
+const defaultTheme = {
+  spacing: (factor) => `${factor * 8}px`,
   palette: {
-    mode: 'light',
     primary: {
-      main: '#32473b',
+      main: '#1976d2',
     },
-    jetStream: '#afd0c9',
-    lunarGreen: '#384135',
+    secondary: {
+      main: '#dc004e',
+    },
   },
-});
+};
 
-export { theme, ThemeProvider, CssBaseline, styled };
+export { ThemeProvider, styled, css, defaultTheme };

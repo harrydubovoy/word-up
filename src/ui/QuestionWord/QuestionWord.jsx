@@ -1,5 +1,4 @@
-import MuiBox from '@mui/material/Box';
-
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { Typography } from '../../ui-kit/Typography';
 import { Box } from '../../ui-kit/Box';
 import { Badge } from '../../ui-kit/Badge';
@@ -15,17 +14,17 @@ export function QuestionWord({
   onReverseTest,
 }) {
   return (
-    <MuiBox onClick={isTestStarted ? Function.prototype : onReverseTest}>
+    <LayoutBox onClick={isTestStarted ? Function.prototype : onReverseTest}>
       <Box type="round">
-        <MuiBox sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+        <LayoutBox sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start', gap: '4px' }}>
           <If condition={(!isTestReversed && partOfSpeech)}>
             <Badge>{partOfSpeech}</Badge>
           </If>
-          <MuiBox sx={{ margin: '12px 0' }}>
+          <LayoutBox sx={{ margin: '12px 0' }}>
             <Typography variant="h1">
               {questionWord}
             </Typography>
-          </MuiBox>
+          </LayoutBox>
           <If condition={transcription && !isTestReversed}>
             <Typography variant="p">
               [
@@ -33,8 +32,8 @@ export function QuestionWord({
               ]
             </Typography>
           </If>
-        </MuiBox>
+        </LayoutBox>
       </Box>
-    </MuiBox>
+    </LayoutBox>
   );
 }

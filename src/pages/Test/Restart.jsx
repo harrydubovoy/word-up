@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import MuiBox from '@mui/material/Box';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 
 import { Button } from '../../ui-kit/Button';
 import { Typography } from '../../ui-kit/Typography';
@@ -17,7 +17,7 @@ export function Restart({ onRestart }) {
       <Typography variant="h1">
         Would you like to try again?
       </Typography>
-      <MuiBox sx={{ display: 'flex', justifyContent: 'center' }}>
+      <LayoutBox sx={{ display: 'flex', justifyContent: 'center' }}>
         <Button
           variant="contained"
           fullWidth
@@ -25,7 +25,7 @@ export function Restart({ onRestart }) {
         >
           Yes, I would
         </Button>
-      </MuiBox>
+      </LayoutBox>
     </Box>
   );
 }

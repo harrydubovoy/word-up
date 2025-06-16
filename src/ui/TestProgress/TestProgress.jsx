@@ -1,23 +1,22 @@
-import MuiBox from '@mui/material/Box';
-
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { Progress } from '../../ui-kit/Progress';
 
 import { getProgress } from './utils';
 
 export function TestProgress({ cursor, totalTestPlan }) {
   return (
-    <MuiBox sx={{ display: 'grid', gap: '4px' }}>
+    <LayoutBox sx={{ display: 'grid', gap: '4px' }}>
       <Progress value={getProgress(totalTestPlan, cursor)} />
-      <MuiBox sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <MuiBox>
+      <LayoutBox sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <LayoutBox>
           Completed
-        </MuiBox>
-        <MuiBox>
+        </LayoutBox>
+        <LayoutBox>
           {cursor}
           /
           {totalTestPlan}
-        </MuiBox>
-      </MuiBox>
-    </MuiBox>
+        </LayoutBox>
+      </LayoutBox>
+    </LayoutBox>
   );
 }
