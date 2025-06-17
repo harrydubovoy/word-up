@@ -21,6 +21,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@webtui/css": "^0.1.1",
+    "@webtui/plugin-nf": "^0.1.1",
     "@webtui/theme-catppuccin": "^0.0.3",
     "ramda": "^0.30.1",
     "react": "^19.1.0",

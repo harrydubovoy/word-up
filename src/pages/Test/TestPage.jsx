@@ -1,5 +1,6 @@
 import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { Input } from '../../ui-kit/Input';
+import { Container } from '../../ui-kit/Container';
 
 import { QuestionWord } from '../../ui/QuestionWord';
 import { TestProgress } from '../../ui/TestProgress';
@@ -8,6 +9,8 @@ import { ResultAnswersList } from '../../ui/ResultAnswer';
 import { Branch } from '../../shared/utils/Branch';
 import { If } from '../../shared/utils/If';
 import { isEnterKey } from '../../shared/utils/input';
+
+import { EmptyScreen, isDefaultEmptyScreenVisible } from '../../widgets/EmptyScreen';
 
 import { Restart } from './Restart';
 
@@ -85,44 +88,46 @@ export function TestPage() {
   };
 
   return (
-    <LayoutBox sx={{ maxWidth: '90%', margin: '0 auto', padding: '8px 0' }}>
-      <LayoutBox sx={{ padding: '0 0 16px' }}>
-        <Branch
-          condition={isTestFinished}
-          slotIf={(
-            <LayoutBox sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <QuestionWord
-                isTestReversed={isTestReversed}
-                isTestStarted={isTestStarted}
-                questionWord={questionWord}
-                transcription={transcription}
-                partOfSpeech={partOfSpeech}
-                onReverseTest={handleReverseTest}
-              />
-              <LayoutBox>
-                <Input
-                  autoFocus
-                  type="text"
-                  label="Answer"
-                  onKeyDown={handleOnKeyDown}
-                  ref={answerInputRef}
+    <EmptyScreen type={isDefaultEmptyScreenVisible(Boolean(testPlanTotal))}>
+      <Container>
+        <LayoutBox sx={{ margin: '0 0 16px' }}>
+          <Branch
+            condition={isTestFinished}
+            slotIf={(
+              <LayoutBox sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <QuestionWord
+                  isTestReversed={isTestReversed}
+                  isTestStarted={isTestStarted}
+                  questionWord={questionWord}
+                  transcription={transcription}
+                  partOfSpeech={partOfSpeech}
+                  onReverseTest={handleReverseTest}
                 />
+                <LayoutBox>
+                  <Input
+                    autoFocus
+                    type="text"
+                    label="Answer"
+                    onKeyDown={handleOnKeyDown}
+                    ref={answerInputRef}
+                  />
+                </LayoutBox>
               </LayoutBox>
-            </LayoutBox>
           )}
-          slotElse={(
-            <Restart onRestart={handleRestart} />
+            slotElse={(
+              <Restart onRestart={handleRestart} />
           )}
-        />
-      </LayoutBox>
-      <If condition={isTestStarted}>
-        <LayoutBox>
-          <TestProgress cursor={cursor} totalTestPlan={testPlanTotal} />
-          <LayoutBox sx={{ marginTop: '16px' }}>
-            <ResultAnswersList answersList={answersList} />
-          </LayoutBox>
+          />
         </LayoutBox>
-      </If>
-    </LayoutBox>
+        <If condition={isTestStarted}>
+          <LayoutBox>
+            <TestProgress cursor={cursor} totalTestPlan={testPlanTotal} />
+            <LayoutBox sx={{ marginTop: '16px' }}>
+              <ResultAnswersList answersList={answersList} />
+            </LayoutBox>
+          </LayoutBox>
+        </If>
+      </Container>
+    </EmptyScreen>
   );
 }

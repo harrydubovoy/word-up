@@ -1,14 +1,30 @@
+import { styled } from '../../ui-kit/theme';
 import { LayoutBox } from '../../ui-kit/LayoutBox';
+import { Container } from '../../ui-kit/Container';
+
 import { Link } from './Link';
+
+const NavigationList = styled(LayoutBox)({
+  display: 'grid',
+  margin: '12px 0',
+
+  '& li::before': {
+    content: '"├ "',
+  },
+});
 
 export function Navigation() {
   return (
-    <LayoutBox sx={{ display: 'grid' }}>
-      <Link to="/">[T] Test</Link>
-      <Link to="/dictionary">[D] Dictionary</Link>
-      <Link to="/add">[+A] Add</Link>
-      <Link to="/archive">[-A] Archive</Link>
-      {/*<Link to="/suggested-dictionary">[S] Suggested</Link>*/}
-    </LayoutBox>
+    <Container>
+      <NavigationList as="ul">
+        <Link to="/">Test</Link>
+        <Link to="/dictionary">Dictionary</Link>
+        <Link to="/add">Add</Link>
+        <Link to="/archive">Archive</Link>
+
+        {/* <Link to="/suggested-dictionary">[S] Suggested</Link> */}
+      </NavigationList>
+    </Container>
+
   );
 }

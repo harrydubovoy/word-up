@@ -1,4 +1,4 @@
-import { LayoutBox } from '../../ui-kit/LayoutBox';
+import { Container } from '../../ui-kit/Container';
 
 import { AddWordForm } from './AddWordForm';
 
@@ -6,10 +6,10 @@ import { FormHandlerProvider } from '../../shared/contextes/FormHandler';
 
 export function AddPage() {
   return (
-    <LayoutBox sx={{ maxWidth: '90%', margin: '0 auto', padding: '8px 0' }}>
+    <Container>
       <FormHandlerProvider>
         <AddWordForm />
       </FormHandlerProvider>
-    </LayoutBox>
+    </Container>
   );
 }

@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { LayoutBox } from '../../ui-kit/LayoutBox';
+import { Container } from '../../ui-kit/Container';
 
 import { FormHandlerProvider } from '../../shared/contextes/FormHandler';
 import { WORD_PAIR_KEYS } from '../../shared/constants/word';
@@ -25,10 +25,10 @@ export function EditPage() {
   });
 
   return (
-    <LayoutBox sx={{ maxWidth: '90%', margin: '0 auto', padding: '8px 0' }}>
+    <Container>
       <FormHandlerProvider initialState={initialState.current}>
         <EditFormWord />
       </FormHandlerProvider>
-    </LayoutBox>
+    </Container>
   );
 }

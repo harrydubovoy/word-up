@@ -16,7 +16,15 @@ export function QuestionWord({
   return (
     <LayoutBox onClick={isTestStarted ? Function.prototype : onReverseTest}>
       <Box type="round">
-        <LayoutBox sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start', gap: '4px' }}>
+        <LayoutBox sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '4px',
+          height: '95px',
+        }}
+        >
           <If condition={(!isTestReversed && partOfSpeech)}>
             <Badge>{partOfSpeech}</Badge>
           </If>

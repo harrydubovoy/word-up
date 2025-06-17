@@ -11,4 +11,6 @@ export function Typography({ children, variant }) {
       <p>{children}</p>
     );
   }
+
+  return children;
 }

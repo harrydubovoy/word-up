@@ -5,7 +5,7 @@ import { LayoutBox } from '../ui-kit/LayoutBox';
 import { Badge } from '../ui-kit/Badge';
 
 import { Navigation } from '../widgets/Navigation';
-// import { Copyright } from '../widgets/Copyright';
+import { Copyright } from '../widgets/Copyright';
 
 import { AsideContentPortalProvider, EXTRA_ASIDE_AREA } from '../shared/contextes/AsideContentPortal';
 
@@ -39,6 +39,15 @@ export function App() {
               <Outlet />
             </LayoutBox>
           </Box>
+
+          <LayoutBox>
+            <div id={EXTRA_ASIDE_AREA} />
+          </LayoutBox>
+
+          <LayoutBox sx={{ gridColumn: '2 / 3', gridRow: '2 / 2' }}>
+            <Copyright />
+          </LayoutBox>
+
         </LayoutBox>
       </LayoutBox>
     </AsideContentPortalProvider>

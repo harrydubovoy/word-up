@@ -44,14 +44,14 @@ export function DictionaryWordCard({ id }) {
           </Button>
 
           <Button size="small" onClick={handleOpenExternalDictionary}>
-            [ExD]
+            [Info]
           </Button>
 
           <Button size="small" onClick={handleToggleTestPlan}>
             <Branch
               condition={isExistAtTestPlan}
-              slotIf="[DelT]"
-              slotElse="[AddT]"
+              slotIf="[Excl]"
+              slotElse="[Incl]"
             />
           </Button>
         </>

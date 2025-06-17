@@ -3,6 +3,7 @@ import { length } from 'ramda';
 import { List } from '../../shared/utils/List';
 import { styled } from '../../ui-kit/theme';
 import { LayoutBox } from '../../ui-kit/LayoutBox';
+import { Container } from '../../ui-kit/Container';
 
 import { useArchive } from '../../entities';
 
@@ -24,13 +25,15 @@ export function ArchivePage() {
 
   return (
     <EmptyScreen type={isArchiveEmptyScreenVisible(length(archiveIds))}>
-      <Grid>
-        <List.Map array={archiveIds}>
-          {(id) => (
-            <ArchiveWordCard key={id} id={id} />
-          )}
-        </List.Map>
-      </Grid>
+      <Container>
+        <Grid>
+          <List.Map array={archiveIds}>
+            {(id) => (
+              <ArchiveWordCard key={id} id={id} />
+            )}
+          </List.Map>
+        </Grid>
+      </Container>
     </EmptyScreen>
   );
 }

@@ -24,10 +24,10 @@ export function ArchiveWordCard({ id }) {
       renderActions={() => (
         <>
           <Button size="small" onClick={handleRestore}>
-            [R]
+            [Rest]
           </Button>
           <Button size="small" onClick={handleRemove}>
-            [D]
+            [Del]
           </Button>
         </>
       )}

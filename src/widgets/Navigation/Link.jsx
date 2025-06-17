@@ -1,23 +1,30 @@
-import { useMatch, useNavigate } from 'react-router-dom';
+import { useMatch, Link as RRDLink } from 'react-router-dom';
 
-import { Button } from '../../ui-kit/Button';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
+import { styled } from '../../ui-kit/theme';
+
+const NavigationItem = styled(LayoutBox)({
+  display: 'flex',
+  alignItems: 'center',
+  gap: '4px',
+});
+
+const NavigationLink = styled(RRDLink)({
+  width: '100%',
+});
 
 const useActiveVariant = (to) => {
   const isMatch = useMatch(to);
 
-  return isMatch ? 'default' : 'background1';
+  return isMatch ? 'background1' : 'background0';
 };
 
 export function Link({ to, children }) {
-  const navigate = useNavigate();
-
-  const handleOnNavigate = () => {
-    navigate(to);
-  };
-
   const activeVariant = useActiveVariant(to);
 
   return (
-    <Button variant={activeVariant} size="small" onClick={handleOnNavigate}>{children}</Button>
+    <NavigationItem as="li" sx={{ backgroundColor: `var(--${activeVariant})` }}>
+      <NavigationLink to={to} size="small">{children}</NavigationLink>
+    </NavigationItem>
   );
 }

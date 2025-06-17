@@ -13,11 +13,11 @@ export function Restart({ onRestart }) {
   }, []);
 
   return (
-    <Box sx={{ display: 'grid', gap: '16px' }}>
-      <Typography variant="h1">
-        Would you like to try again?
-      </Typography>
-      <LayoutBox sx={{ display: 'flex', justifyContent: 'center' }}>
+    <Box>
+      <LayoutBox sx={{ display: 'grid', justifyContent: 'center', gap: '4px' }}>
+        <Typography variant="h1">
+          Would you like to try again?
+        </Typography>
         <Button
           variant="contained"
           fullWidth

@@ -1,14 +1,12 @@
-import { Box } from './Box';
+import { LayoutBox } from './LayoutBox';
 
 import { styled } from './theme';
 
-const Container = styled(Box)(() => ({
+const Container = styled(LayoutBox)(() => ({
   padding: '0 16px',
   width: '100%',
   margin: '0 auto',
-  '@media (min-width: 576px)': {
-    maxWidth: '380px',
-  },
+  maxWidth: '542px',
 }));
 
 export { Container };

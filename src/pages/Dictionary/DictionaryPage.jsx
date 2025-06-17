@@ -1,7 +1,12 @@
+import { length } from 'ramda';
+
 import { styled } from '../../ui-kit/theme';
 import { LayoutBox } from '../../ui-kit/LayoutBox';
+import { Container } from '../../ui-kit/Container';
 
 import { List } from '../../shared/utils/List';
+
+import { EmptyScreen, isDefaultEmptyScreenVisible } from '../../widgets/EmptyScreen';
 
 import { useDictionary } from '../../entities';
 
@@ -24,12 +29,16 @@ export function DictionaryPage() {
   const { dictionaryIds } = useDictionary();
 
   return (
-    <Grid>
-      <List.Map array={dictionaryIds}>
-        {(id) => (
-          <DictionaryWordCard key={id} id={id} />
-        )}
-      </List.Map>
-    </Grid>
+    <EmptyScreen type={isDefaultEmptyScreenVisible(length(dictionaryIds))}>
+      <Container>
+        <Grid>
+          <List.Map array={dictionaryIds}>
+            {(id) => (
+              <DictionaryWordCard key={id} id={id} />
+            )}
+          </List.Map>
+        </Grid>
+      </Container>
+    </EmptyScreen>
   );
 }
