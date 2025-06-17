@@ -1,9 +1,9 @@
-import { Card, CardContent } from '../../ui-kit/Card';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { Typography } from '../../ui-kit/Typography';
+import { Box } from '../../ui-kit/Box';
+import { Badge } from '../../ui-kit/Badge';
 
 import { If } from '../../shared/utils/If';
-
-import { PartOfSpeechChip } from '../PartOfSpeechChip';
 
 export function QuestionWord({
   isTestReversed,
@@ -14,36 +14,34 @@ export function QuestionWord({
   onReverseTest,
 }) {
   return (
-    <Card
-      sx={{
-        position: 'relative',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '132px',
-        backgroundColor: (theme) => theme.palette.jetStream,
-        color: (theme) => theme.palette.lunarGreen,
-        cursor: isTestStarted ? 'default' : 'pointer',
-      }}
-      onClick={onReverseTest}
-    >
-      <CardContent>
-        <>
-          <If condition={!isTestReversed}>
-            <PartOfSpeechChip label={partOfSpeech} />
+    <LayoutBox onClick={isTestStarted ? Function.prototype : onReverseTest}>
+      <Box type="round">
+        <LayoutBox sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '4px',
+          height: '95px',
+        }}
+        >
+          <If condition={(!isTestReversed && partOfSpeech)}>
+            <Badge>{partOfSpeech}</Badge>
           </If>
-          <Typography color="inherit" variant="h5">
-            {questionWord}
-          </Typography>
+          <LayoutBox sx={{ margin: '12px 0' }}>
+            <Typography variant="h1">
+              {questionWord}
+            </Typography>
+          </LayoutBox>
           <If condition={transcription && !isTestReversed}>
-            <Typography sx={{ marginTop: '8px', textAlign: 'center' }} variant="subtitle2" fontWeight="400">
-              /
+            <Typography variant="p">
+              [
               {transcription}
-              /
+              ]
             </Typography>
           </If>
-        </>
-      </CardContent>
-    </Card>
+        </LayoutBox>
+      </Box>
+    </LayoutBox>
   );
 }

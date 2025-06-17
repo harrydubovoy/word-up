@@ -1,6 +1,5 @@
 import { useRef } from 'react';
-
-import { Box } from '../../ui-kit/Box';
+import { Container } from '../../ui-kit/Container';
 
 import { FormHandlerProvider } from '../../shared/contextes/FormHandler';
 import { WORD_PAIR_KEYS } from '../../shared/constants/word';
@@ -26,10 +25,10 @@ export function EditPage() {
   });
 
   return (
-    <Box sx={{ maxWidth: '80%', margin: '0 auto', padding: '8px 0' }}>
+    <Container>
       <FormHandlerProvider initialState={initialState.current}>
         <EditFormWord />
       </FormHandlerProvider>
-    </Box>
+    </Container>
   );
 }

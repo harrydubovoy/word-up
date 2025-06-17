@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-import { Stack } from '../../ui-kit/Stack';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { Button } from '../../ui-kit/Button';
 import { Form } from '../../ui-kit/Form';
 
@@ -25,17 +25,17 @@ export function EditFormWord() {
         handleOnBack();
       }}
     >
-      <Stack spacing={3}>
+      <LayoutBox>
         <WordFormFields />
-        <Stack direction="row" spacing={1}>
-          <Button variant="outlined" fullWidth type="button" onClick={handleOnBack}>
+        <LayoutBox sx={{ display: 'flex', alignItems: 'center', justifyContent: 'end', gap: '8px' }}>
+          <Button type="button" onClick={handleOnBack}>
             Cancel
           </Button>
-          <Button variant="contained" fullWidth type="submit">
+          <Button type="submit">
             Update
           </Button>
-        </Stack>
-      </Stack>
+        </LayoutBox>
+      </LayoutBox>
     </Form>
   );
 }

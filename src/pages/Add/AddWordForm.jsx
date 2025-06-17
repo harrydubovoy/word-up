@@ -1,6 +1,6 @@
-import { Stack } from '../../ui-kit/Stack';
 import { Button } from '../../ui-kit/Button';
 import { Form } from '../../ui-kit/Form';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 
 import { useFormHandlerContext } from '../../shared/contextes/FormHandler';
 
@@ -20,12 +20,14 @@ export function AddWordForm() {
         reset();
       }}
     >
-      <Stack spacing={3}>
+      <LayoutBox>
         <WordFormFields />
-        <Button variant="contained" fullWidth type="submit">
-          Add
-        </Button>
-      </Stack>
+        <LayoutBox sx={{ display: 'flex', justifyContent: 'end' }}>
+          <Button type="submit">
+            Add
+          </Button>
+        </LayoutBox>
+      </LayoutBox>
     </Form>
   );
 }

@@ -1,4 +1,4 @@
-import MuiList from '@mui/material/List';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 
 import { List } from '../../shared/utils/List';
 
@@ -6,7 +6,7 @@ import { ResultAnswerItem } from './ResultAnswerItem';
 
 export function ResultAnswersList({ answersList }) {
   return (
-    <MuiList sx={{ display: 'grid', gap: '8px' }}>
+    <LayoutBox>
       <List.Map array={answersList}>
         {({
           wordPairId,
@@ -24,6 +24,6 @@ export function ResultAnswersList({ answersList }) {
           />
         )}
       </List.Map>
-    </MuiList>
+    </LayoutBox>
   );
 }

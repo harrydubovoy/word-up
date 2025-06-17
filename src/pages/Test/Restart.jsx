@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 
 import { Button } from '../../ui-kit/Button';
 import { Typography } from '../../ui-kit/Typography';
@@ -12,11 +13,11 @@ export function Restart({ onRestart }) {
   }, []);
 
   return (
-    <Box sx={{ display: 'grid', gap: '16px' }}>
-      <Typography variant="h5" textAlign="center">
-        Would you like to try again?
-      </Typography>
-      <Box className="mt-6">
+    <Box>
+      <LayoutBox sx={{ display: 'grid', justifyContent: 'center', gap: '4px' }}>
+        <Typography variant="h1">
+          Would you like to try again?
+        </Typography>
         <Button
           variant="contained"
           fullWidth
@@ -24,7 +25,7 @@ export function Restart({ onRestart }) {
         >
           Yes, I would
         </Button>
-      </Box>
+      </LayoutBox>
     </Box>
   );
 }

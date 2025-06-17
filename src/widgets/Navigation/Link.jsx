@@ -1,40 +1,30 @@
-import { useMatch, useNavigate } from 'react-router-dom';
+import { useMatch, Link as RRDLink } from 'react-router-dom';
 
-import MuiListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { styled } from '../../ui-kit/theme';
 
-const ListItemButton = styled(MuiListItemButton)(() => ({
-  borderRadius: '8px',
-}));
+const NavigationItem = styled(LayoutBox)({
+  display: 'flex',
+  alignItems: 'center',
+  gap: '4px',
+});
 
-const useActiveLinkStyle = (to) => {
+const NavigationLink = styled(RRDLink)({
+  width: '100%',
+});
+
+const useActiveVariant = (to) => {
   const isMatch = useMatch(to);
 
-  return {
-    backgroundColor: isMatch ? 'rgba(0, 0, 0, 0.2)' : 'inherit',
-    '&:hover': {
-      backgroundColor: 'rgba(0, 0, 0, 0.2)',
-    },
-  };
+  return isMatch ? 'background1' : 'background0';
 };
 
-export function Link({ to, icon, label }) {
-  const navigate = useNavigate();
-
-  const handleOnNavigate = () => {
-    navigate(to);
-  };
-
-  const isActiveStyle = useActiveLinkStyle(to);
+export function Link({ to, children }) {
+  const activeVariant = useActiveVariant(to);
 
   return (
-    <ListItemButton sx={{ ...isActiveStyle }} onClick={handleOnNavigate}>
-      <ListItemIcon sx={{ color: 'inherit' }}>
-        {icon}
-      </ListItemIcon>
-      <ListItemText primary={label} />
-    </ListItemButton>
+    <NavigationItem as="li" sx={{ backgroundColor: `var(--${activeVariant})` }}>
+      <NavigationLink to={to} size="small">{children}</NavigationLink>
+    </NavigationItem>
   );
 }

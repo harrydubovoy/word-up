@@ -1,38 +1,10 @@
-import Typography from '@mui/material/Typography';
-import MuiCard from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { Box } from '../../ui-kit/Box';
+import { Typography } from '../../ui-kit/Typography';
+import { Badge } from '../../ui-kit/Badge';
+import { If } from '../../shared/utils/If';
 
-import { PartOfSpeechChip } from '../PartOfSpeechChip';
-import { Transcription } from './Transcription';
-
-import { styled, theme } from '../../ui-kit/theme';
-
-const Card = styled(MuiCard)`
-  position: relative;
-  border-radius: 12px;
-
-  ${(props) => props.isSelected && `
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 6px;
-      height: 100%;
-      background-color: ${theme.palette.primary.main};
-    }
-  `}
-`;
-
-const CardFooter = styled(Box)({
-  display: 'flex',
-  justifyContent: 'end',
-  gap: '4px',
-  padding: '0 16px 16px',
-});
+const selectedTuple = [' ', <Badge key="added" variant="yellow">Added</Badge>];
 
 export function WordCard({
   isSelected,
@@ -40,25 +12,38 @@ export function WordCard({
   foreign,
   transcription,
   partOfSpeech,
+  description,
   renderActions,
 }) {
   return (
-    <Card isSelected={isSelected} sx={{ width: '100%', display: 'grid', gridTemplateRows: '1fr auto' }}>
-      <PartOfSpeechChip label={partOfSpeech} />
-      <CardContent>
-        <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 16 }}>
-          {native}
-        </Typography>
-        <Typography variant="subtitle1" component="div">
-          {foreign}
-        </Typography>
-        <Transcription>
-          {transcription}
-        </Transcription>
-      </CardContent>
-      <CardFooter>
-        {renderActions()}
-      </CardFooter>
-    </Card>
+    <Box captionTop={isSelected ? selectedTuple : null}>
+      <LayoutBox>
+        <If condition={partOfSpeech}>
+          <LayoutBox sx={{ marginBottom: '8px' }}>
+            <Badge variant="background1">{partOfSpeech}</Badge>
+          </LayoutBox>
+        </If>
+        <LayoutBox sx={{ display: 'flex', gap: '2px' }}>
+          <Typography variant="h3">{foreign}</Typography>
+          <If condition={transcription}>
+            <Typography variant="p">
+              [
+              {transcription}
+              ]
+            </Typography>
+          </If>
+        </LayoutBox>
+        <Typography variant="h3">{native}</Typography>
+
+        <LayoutBox sx={{ display: 'flex', justifyContent: 'end', gap: '4px', marginTop: '12px' }}>
+          {renderActions()}
+        </LayoutBox>
+        <If condition={description}>
+          <Box type="round">
+            <Typography variant="p">{description}</Typography>
+          </Box>
+        </If>
+      </LayoutBox>
+    </Box>
   );
 }

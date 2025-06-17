@@ -4,16 +4,16 @@ import { useAsideContentPortalContext } from '../../shared/contextes/AsideConten
 
 import { SuggestedDictionaryAside } from './SuggestedDictionaryAside';
 import { styled } from '../../ui-kit/theme';
-import { Box } from '../../ui-kit/Box';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 import { List } from '../../shared/utils/List';
 import { SuggestedDictionaryWordCard } from '../../widgets/SuggestedDictionaryWordCard';
 import { EmptyScreen } from '../../widgets/EmptyScreen';
 
 import { useSuggestedDictionaryStoreContext } from '../../shared/contextes/SuggestedDictionaryStore';
 
-const Grid = styled(Box)({
+const Grid = styled(LayoutBox)({
   display: 'grid',
-  gridTemplateColumns: '1fr 1fr',
+  gridTemplateColumns: '1fr',
   gap: '8px',
 
   width: '100%',

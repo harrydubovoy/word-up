@@ -1,5 +1,3 @@
-import MuiLink from '@mui/material/Link';
-
-const Link = MuiLink;
-
-export { Link };
+export function Link({ children, ...props }) {
+  return <a {...props}>{children}</a>;
+}

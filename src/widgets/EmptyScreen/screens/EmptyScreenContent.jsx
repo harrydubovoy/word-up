@@ -1,8 +1,8 @@
-import { Box } from '../../../ui-kit/Box';
+import { LayoutBox } from '../../../ui-kit/LayoutBox';
 
 function EmptyScreenContent({ children }) {
   return (
-    <Box sx={{
+    <LayoutBox sx={{
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
@@ -11,7 +11,7 @@ function EmptyScreenContent({ children }) {
     }}
     >
       {children}
-    </Box>
+    </LayoutBox>
   );
 }
 

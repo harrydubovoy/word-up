@@ -1,46 +1,30 @@
-import MuiList from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBulletedOutlined';
-import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
-import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
-import AssistantOutlinedIcon from '@mui/icons-material/AssistantOutlined';
+import { styled } from '../../ui-kit/theme';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
+import { Container } from '../../ui-kit/Container';
 
 import { Link } from './Link';
-import { styled } from '../../ui-kit/theme';
 
-const Wrap = styled('div')(() => ({
+const NavigationList = styled(LayoutBox)({
   display: 'grid',
-  alignItems: 'center',
-  color: '#dceee3',
-}));
+  margin: '12px 0',
 
-const List = styled(MuiList)(() => ({
-  display: 'grid',
-  gap: '8px',
-  padding: '0',
-}));
+  '& li::before': {
+    content: '"├ "',
+  },
+});
 
 export function Navigation() {
   return (
-    <Wrap>
-      <List>
-        <ListItem disablePadding>
-          <Link to="/" label="Test" icon={<HomeOutlinedIcon />} />
-        </ListItem>
-        <ListItem disablePadding>
-          <Link to="/dictionary" label="Dictionary" icon={<FormatListBulletedOutlinedIcon />} />
-        </ListItem>
-        <ListItem disablePadding>
-          <Link to="/add" label="Add" icon={<AddOutlinedIcon />} />
-        </ListItem>
-        <ListItem disablePadding>
-          <Link to="/archive" label="Archive" icon={<Inventory2OutlinedIcon />} />
-        </ListItem>
-        <ListItem disablePadding>
-          <Link to="/suggested-dictionary" label="Suggested" icon={<AssistantOutlinedIcon />} />
-        </ListItem>
-      </List>
-    </Wrap>
+    <Container>
+      <NavigationList as="ul">
+        <Link to="/">Test</Link>
+        <Link to="/dictionary">Dictionary</Link>
+        <Link to="/add">Add</Link>
+        <Link to="/archive">Archive</Link>
+
+        {/* <Link to="/suggested-dictionary">[S] Suggested</Link> */}
+      </NavigationList>
+    </Container>
+
   );
 }

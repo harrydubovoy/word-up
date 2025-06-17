@@ -1,6 +1,6 @@
 import { List } from '../../shared/utils/List';
 import { Button } from '../../ui-kit/Button';
-import { Box } from '../../ui-kit/Box';
+import { LayoutBox } from '../../ui-kit/LayoutBox';
 
 import { letters } from '../../shared/contextes/SuggestedDictionaryStore';
 
@@ -10,12 +10,12 @@ export function Alphabet({ onClick }) {
   };
 
   return (
-    <Box sx={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+    <LayoutBox sx={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
       <List.Map array={letters}>
         {(letter) => (
-          <Button size="small" onClick={handleOnClick(letter)} key={letter} variant="contained">{letter}</Button>
+          <Button size="small" onClick={handleOnClick(letter)} key={letter}>{letter}</Button>
         )}
       </List.Map>
-    </Box>
+    </LayoutBox>
   );
 }

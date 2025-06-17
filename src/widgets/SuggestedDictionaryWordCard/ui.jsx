@@ -1,12 +1,6 @@
-import PublicOutlinedIcon from '@mui/icons-material/PublicOutlined';
-import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
-import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
-
 import { WordCard } from '../../ui/WordCard';
 import { ButtonIcon } from '../../ui-kit/Button';
 import { openExternalDictionaryPageByWord } from '../../shared/utils/navigation';
-
-import { DescriptionWordCard } from '../DescriptionWordCard';
 
 import { useSuggestedDictionaryCardController } from './controller';
 
@@ -32,26 +26,15 @@ export function SuggestedDictionaryWordCard({ id }) {
       native={native}
       transcription={transcription}
       partOfSpeech={partOfSpeech}
+      description={description}
       renderActions={() => (
         <>
-
           <ButtonIcon onClick={handleOpenExternalDictionary(foreign)}>
-            <PublicOutlinedIcon />
+            [ExD]
           </ButtonIcon>
 
-          {/*<ButtonIcon*/}
-          {/*  disabled={!description}*/}
-          {/*  onClick={handleRenderDescription(*/}
-          {/*    <DescriptionWordCard>*/}
-          {/*      {description}*/}
-          {/*    </DescriptionWordCard>,*/}
-          {/*  )}*/}
-          {/*>*/}
-          {/*  <DescriptionOutlinedIcon />*/}
-          {/*</ButtonIcon>*/}
-
           <ButtonIcon onClick={handleAddToDication}>
-            <AddOutlinedIcon />
+            [+A]
           </ButtonIcon>
         </>
       )}
