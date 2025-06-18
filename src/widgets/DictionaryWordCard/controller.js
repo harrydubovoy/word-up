@@ -32,6 +32,7 @@ export const useDictionaryCardController = (id) => {
     const dictionaryEntity = selectEntityById(id);
     createArchiveEntity({ id, data: dictionaryEntity });
     removeOneById({ id });
+    removeTestPlanEntity({ id });
   };
 
   return {
