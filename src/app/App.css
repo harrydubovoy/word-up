@@ -18,12 +18,6 @@
     }
 }
 
-.box-caption {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .input {
     display: block;
 }
@@ -38,19 +32,6 @@
     resize: vertical;
     width: 100%;
     min-height: 115px;
-}
-
-.progress-bar {
-    height: 8px;
-    background-color: var(--foreground0);
-}
-
-.progress-bar-filled {
-    background-color: var(--background3);
-    height: 100%;
-    position: relative;
-    width: 0;
-    transition: width 0.3s;
 }
 
 html, body, #root {

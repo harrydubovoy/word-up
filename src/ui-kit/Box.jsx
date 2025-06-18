@@ -1,4 +1,13 @@
+import { LayoutBox } from './LayoutBox';
+import { styled } from './theme';
+
 import { If } from '../shared/utils/If';
+
+const BoxCaption = styled(LayoutBox)({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+});
 
 const getShear = (captionTop, captionBottom) => {
   if (captionTop) {
@@ -26,25 +35,25 @@ export function Box({ children, htmlTag, type, captionTop, captionBottom, classN
       className={className}
     >
       <If condition={captionTop}>
-        <div className="box-caption">
+        <BoxCaption>
           <If condition={captionTop?.[0]}>
             <span>{captionTop?.[0]}</span>
           </If>
           <If condition={captionTop?.[1]}>
             <span>{captionTop?.[1]}</span>
           </If>
-        </div>
+        </BoxCaption>
       </If>
       {children}
       <If condition={captionBottom}>
-        <div className="box-caption">
+        <BoxCaption>
           <If condition={captionBottom?.[0]}>
             <span>{captionBottom?.[0]}</span>
           </If>
           <If condition={captionBottom?.[1]}>
             <span>{captionBottom?.[1]}</span>
           </If>
-        </div>
+        </BoxCaption>
       </If>
     </HtmlTag>
   );
