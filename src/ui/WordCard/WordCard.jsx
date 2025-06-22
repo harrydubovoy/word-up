@@ -1,10 +1,12 @@
-import Typography from '@mui/material/Typography';
 import MuiCard from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
 import { Box } from '../../ui-kit/Box';
 
 import { PartOfSpeechChip } from '../PartOfSpeechChip';
+import { ForeignWord } from './ForeignWord';
+import { NativeWord } from './NativeWord';
+import { Description } from './Description';
 import { Transcription } from './Transcription';
 
 import { styled, theme } from '../../ui-kit/theme';
@@ -40,21 +42,25 @@ export function WordCard({
   foreign,
   transcription,
   partOfSpeech,
+  description,
   renderActions,
 }) {
   return (
     <Card isSelected={isSelected} sx={{ width: '100%', display: 'grid', gridTemplateRows: '1fr auto' }}>
       <PartOfSpeechChip label={partOfSpeech} />
       <CardContent>
-        <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 16 }}>
+        <NativeWord>
           {native}
-        </Typography>
-        <Typography variant="subtitle1" component="div">
+        </NativeWord>
+        <ForeignWord>
           {foreign}
-        </Typography>
+        </ForeignWord>
         <Transcription>
           {transcription}
         </Transcription>
+        <Description>
+          {description}
+        </Description>
       </CardContent>
       <CardFooter>
         {renderActions()}

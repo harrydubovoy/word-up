@@ -1,1 +1,1 @@
-export { WordCard } from './WordCard.jsx';
+export { WordCard } from './WordCard';

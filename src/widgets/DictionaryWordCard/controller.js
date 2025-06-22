@@ -1,5 +1,4 @@
 import { useArchive, useDictionary, useTestPlan } from '../../entities';
-import { useAsideContentPortalContext } from '../../shared/contextes/AsideContentPortal';
 
 export const useDictionaryCardController = (id) => {
   const { selectEntityById, removeOneById } = useDictionary();
@@ -12,13 +11,7 @@ export const useDictionaryCardController = (id) => {
     selectEntityById: selectTestPlanEntityById,
   } = useTestPlan();
 
-  const { addRenderComponent } = useAsideContentPortalContext();
-
   const isExistAtTestPlan = Boolean(selectTestPlanEntityById(id));
-
-  const handleRenderDescription = (component) => () => {
-    addRenderComponent(component);
-  };
 
   const handleToggleTestPlan = () => {
     if (isExistAtTestPlan) {
@@ -40,6 +33,5 @@ export const useDictionaryCardController = (id) => {
 
     handleMoveToArchive,
     handleToggleTestPlan,
-    handleRenderDescription,
   };
 };

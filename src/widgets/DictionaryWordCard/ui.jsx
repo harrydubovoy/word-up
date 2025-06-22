@@ -3,14 +3,11 @@ import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
-import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 
 import { WordCard } from '../../ui/WordCard';
 import { ButtonIcon } from '../../ui-kit/Button';
 import { useDictionary } from '../../entities';
 import { Branch } from '../../shared/utils/Branch';
-
-import { DescriptionWordCard } from '../DescriptionWordCard';
 
 import { useDictionaryCardController } from './controller';
 import { useOpenExternalDictionary } from './useOpenExternalDictionary';
@@ -32,7 +29,6 @@ export function DictionaryWordCard({ id }) {
     isExistAtTestPlan,
     handleMoveToArchive,
     handleToggleTestPlan,
-    handleRenderDescription,
   } = useDictionaryCardController(id);
 
   return (
@@ -42,6 +38,7 @@ export function DictionaryWordCard({ id }) {
       native={selectNativeById(id)}
       transcription={selectTranscription(id)}
       partOfSpeech={selectPartOfSpeechById(id)}
+      description={selectDescriptionById(id)}
       renderActions={() => (
         <>
 
@@ -55,17 +52,6 @@ export function DictionaryWordCard({ id }) {
 
           <ButtonIcon onClick={handleOpenExternalDictionary}>
             <PublicOutlinedIcon />
-          </ButtonIcon>
-
-          <ButtonIcon
-            disabled={!selectDescriptionById(id)}
-            onClick={handleRenderDescription(
-              <DescriptionWordCard>
-                {selectDescriptionById(id)}
-              </DescriptionWordCard>,
-            )}
-          >
-            <DescriptionOutlinedIcon />
           </ButtonIcon>
 
           <ButtonIcon onClick={handleToggleTestPlan}>
