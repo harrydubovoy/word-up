@@ -9,7 +9,7 @@ import AssistantOutlinedIcon from '@mui/icons-material/AssistantOutlined';
 import { Link } from './Link';
 import { styled } from '../../ui-kit/theme';
 
-const Wrap = styled('div')(() => ({
+const Nav = styled('div')(() => ({
   display: 'grid',
   alignItems: 'center',
   color: '#dceee3',
@@ -23,24 +23,24 @@ const List = styled(MuiList)(() => ({
 
 export function Navigation() {
   return (
-    <Wrap>
+    <Nav>
       <List>
         <ListItem disablePadding>
-          <Link to="/" label="Test" icon={<HomeOutlinedIcon />} />
+          <Link to="/" icon={<HomeOutlinedIcon />} />
         </ListItem>
         <ListItem disablePadding>
-          <Link to="/dictionary" label="Dictionary" icon={<FormatListBulletedOutlinedIcon />} />
+          <Link to="/dictionary" icon={<FormatListBulletedOutlinedIcon />} />
         </ListItem>
         <ListItem disablePadding>
           <Link to="/add" label="Add" icon={<AddOutlinedIcon />} />
         </ListItem>
         <ListItem disablePadding>
-          <Link to="/archive" label="Archive" icon={<Inventory2OutlinedIcon />} />
+          <Link to="/archive" icon={<Inventory2OutlinedIcon />} />
         </ListItem>
         <ListItem disablePadding>
-          <Link to="/suggested-dictionary" label="Suggested" icon={<AssistantOutlinedIcon />} />
+          <Link to="/suggested-dictionary" icon={<AssistantOutlinedIcon />} />
         </ListItem>
       </List>
-    </Wrap>
+    </Nav>
   );
 }

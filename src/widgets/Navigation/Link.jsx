@@ -1,8 +1,6 @@
 import { useMatch, useNavigate } from 'react-router-dom';
 
 import MuiListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import { styled } from '../../ui-kit/theme';
 
 const ListItemButton = styled(MuiListItemButton)(() => ({
@@ -20,7 +18,7 @@ const useActiveLinkStyle = (to) => {
   };
 };
 
-export function Link({ to, icon, label }) {
+export function Link({ to, icon }) {
   const navigate = useNavigate();
 
   const handleOnNavigate = () => {
@@ -31,10 +29,7 @@ export function Link({ to, icon, label }) {
 
   return (
     <ListItemButton sx={{ ...isActiveStyle }} onClick={handleOnNavigate}>
-      <ListItemIcon sx={{ color: 'inherit' }}>
-        {icon}
-      </ListItemIcon>
-      <ListItemText primary={label} />
+      {icon}
     </ListItemButton>
   );
 }

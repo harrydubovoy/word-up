@@ -32,7 +32,7 @@ export function App() {
           gap: '0 16px',
         }}
         >
-          <Content sx={{ backgroundColor: '#32473b' }}>
+          <Content sx={{ backgroundColor: '#32473b', maxWidth: '56px', marginLeft: 'auto' }}>
             <Navigation />
           </Content>
 
